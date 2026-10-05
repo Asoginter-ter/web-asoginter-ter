@@ -26,7 +26,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            color: #1e293b;
+            color: #333;
             background: #ffffff;
             line-height: 1.6;
         }
@@ -50,13 +50,13 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: #ffffff;
-            border-bottom: 1px solid #e2e8f0;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid #eeeeee;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
         }
 
         .barra-navegacion {
-            min-height: 90px;
+            min-height: 82px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -67,7 +67,7 @@
             display: flex;
             align-items: center;
             gap: 14px;
-            color: #0f172a;
+            color: #222;
         }
 
         .marca img {
@@ -84,97 +84,41 @@
         .marca-nombre {
             font-size: 18px;
             font-weight: 800;
-            color: #0f172a;
-            letter-spacing: -0.5px;
+            color: #222;
         }
 
         .marca-subtitulo {
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #ef4444; 
+            font-size: 12px;
+            color: #777;
             margin-top: 2px;
         }
 
         nav {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 25px;
         }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-btn {
-            color: #475569;
+        nav a {
+            color: #333;
             font-size: 14px;
             font-weight: 700;
-            cursor: pointer;
-            transition: 0.2s;
-            background: none;
-            border: none;
-            padding: 10px 0;
+            transition: 0.3s;
         }
 
-        .dropdown:hover .dropdown-btn {
-            color: #1d4ed8;
-        }
-
-        .dropdown-contenido {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #ffffff;
-            min-width: 200px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            z-index: 1;
-            padding: 6px 0;
-        }
-
-        .dropdown-contenido a {
-            color: #475569;
-            padding: 10px 20px;
-            display: block;
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .dropdown-contenido a:hover {
-            background-color: #f8fafc;
-            color: #1d4ed8;
-        }
-
-        .dropdown:hover .dropdown-contenido {
-            display: block;
-        }
-
-        nav > a {
-            color: #475569;
-            font-size: 14px;
-            font-weight: 700;
-            transition: 0.2s;
-        }
-
-        nav > a:hover {
-            color: #1d4ed8;
+        nav a:hover {
+            color: #7b1fa2;
         }
 
         .boton-nav {
-            background: #1d4ed8;
+            background: #7b1fa2;
             color: white !important;
-            padding: 11px 22px;
-            border-radius: 6px;
-            font-weight: 700;
+            padding: 11px 18px;
+            border-radius: 25px;
         }
 
         .boton-nav:hover {
-            background: #1e40af;
+            background: #5e177b;
         }
 
 
@@ -185,54 +129,50 @@
         .hero {
             position: relative;
             overflow: hidden;
-            min-height: 650px;
+            min-height: 680px;
             display: flex;
             align-items: center;
             background:
-                radial-gradient(circle at 10% 20%, rgba(29, 78, 216, 0.05), transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(22, 163, 74, 0.05), transparent 40%),
-                #ffffff;
-            border-bottom: 1px solid #f1f5f9;
+                radial-gradient(circle at 10% 20%, rgba(0, 125, 255, 0.16), transparent 30%),
+                radial-gradient(circle at 90% 80%, rgba(0, 160, 70, 0.18), transparent 30%),
+                linear-gradient(135deg, #fff8fc 0%, #ffffff 55%, #f7fff9 100%);
         }
 
         .hero-contenido {
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
+            grid-template-columns: 1.15fr 0.85fr;
             align-items: center;
             gap: 60px;
         }
 
         .etiqueta {
             display: inline-block;
-            padding: 6px 14px;
-            border-radius: 4px;
-            background: #fee2e2;
-            color: #dc2626;
-            font-size: 12px;
+            padding: 8px 15px;
+            border-radius: 30px;
+            background: #f2e4f6;
+            color: #7b1fa2;
+            font-size: 13px;
             font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: clamp(36px, 4.5vw, 58px);
-            line-height: 1.1;
-            color: #0f172a;
+            font-size: clamp(38px, 5vw, 65px);
+            line-height: 1.05;
+            color: #222;
             margin-bottom: 24px;
             letter-spacing: -1.5px;
-            font-weight: 900;
         }
 
         .hero h1 span {
-            color: #1d4ed8;
+            color: #7b1fa2;
         }
 
         .hero-texto {
-            max-width: 620px;
-            font-size: 18px;
-            color: #475569;
-            margin-bottom: 35px;
+            max-width: 650px;
+            font-size: 19px;
+            color: #666;
+            margin-bottom: 30px;
         }
 
         .botones {
@@ -243,32 +183,32 @@
 
         .boton-principal {
             display: inline-block;
-            background: #1d4ed8;
+            background: #7b1fa2;
             color: white;
-            padding: 14px 28px;
-            border-radius: 6px;
+            padding: 14px 25px;
+            border-radius: 30px;
             font-weight: 700;
-            transition: 0.2s;
-            box-shadow: 0 4px 12px rgba(29, 78, 216, 0.15);
+            transition: 0.3s;
+            box-shadow: 0 8px 25px rgba(123, 31, 162, 0.22);
         }
 
         .boton-principal:hover {
-            transform: translateY(-1px);
-            background: #1e40af;
+            transform: translateY(-2px);
+            background: #5e177b;
         }
 
         .boton-secundario {
             display: inline-block;
-            border: 2px solid #16a34a;
-            color: #15803d;
-            padding: 12px 26px;
-            border-radius: 6px;
+            border: 2px solid #7b1fa2;
+            color: #7b1fa2;
+            padding: 12px 24px;
+            border-radius: 30px;
             font-weight: 700;
-            transition: 0.2s;
+            transition: 0.3s;
         }
 
         .boton-secundario:hover {
-            background: #16a34a;
+            background: #7b1fa2;
             color: white;
         }
 
@@ -278,70 +218,61 @@
             align-items: center;
         }
 
+        .hero-logo::before {
+            content: "";
+            position: absolute;
+            width: 390px;
+            height: 390px;
+            background: linear-gradient(
+                135deg,
+                rgba(123, 31, 162, 0.12),
+                rgba(0, 120, 255, 0.10),
+                rgba(0, 150, 60, 0.10)
+            );
+            border-radius: 50%;
+            z-index: 0;
+        }
+
         .hero-logo img {
             position: relative;
             z-index: 1;
-            width: 320px;
-            max-width: 95%;
-            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.08));
+            width: 330px;
+            max-width: 90%;
+            filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.13));
         }
 
 
         /* =========================
-           BLOQUE LEMA
+           SECCIONES
         ========================== */
 
-        .bloque-lema {
-            background: #16a34a;
-            padding: 60px 0;
-            text-align: center;
-            color: #ffffff;
-        }
-
-        .bloque-lema h2 {
-            font-size: clamp(22px, 3vw, 32px);
-            font-style: italic;
-            font-weight: 500;
-            max-width: 900px;
-            margin: auto;
-            line-height: 1.4;
-        }
-
-
-        /* =========================
-           SECCIONES GENERALES
-        ========================== */
-
-        section.modulo-contenido {
-            padding: 100px 0;
+        section {
+            padding: 90px 0;
         }
 
         .titulo-seccion {
             text-align: center;
-            margin-bottom: 65px;
+            margin-bottom: 55px;
         }
 
         .titulo-seccion .pequeno {
-            color: #1d4ed8;
-            font-size: 12px;
+            color: #7b1fa2;
+            font-size: 13px;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
         .titulo-seccion h2 {
-            font-size: 36px;
-            font-weight: 800;
+            font-size: 38px;
             margin: 8px 0 15px;
-            color: #0f172a;
-            letter-spacing: -0.5px;
+            color: #222;
         }
 
         .titulo-seccion p {
-            max-width: 650px;
+            max-width: 700px;
             margin: auto;
-            color: #475569;
-            font-size: 16px;
+            color: #777;
         }
 
 
@@ -355,62 +286,816 @@
 
         .nosotros-grid {
             display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 60px;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
             align-items: center;
         }
 
         .nosotros-texto h3 {
-            font-size: 28px;
-            font-weight: 800;
-            color: #0f172a;
+            font-size: 30px;
+            color: #222;
             margin-bottom: 20px;
         }
 
         .nosotros-texto p {
-            color: #475569;
-            margin-bottom: 20px;
-            font-size: 16px;
+            color: #666;
+            margin-bottom: 16px;
         }
 
         .frase {
-            margin-top: 30px;
-            padding: 22px 25px;
-            border-left: 4px solid #1d4ed8;
-            background: #f0fdf4;
-            border-radius: 0 8px 8px 0;
-            color: #1e293b;
+            margin-top: 25px;
+            padding: 20px 25px;
+            border-left: 5px solid #7b1fa2;
+            background: #faf5fc;
+            border-radius: 0 12px 12px 0;
+            color: #555;
             font-weight: 600;
         }
 
         .tarjeta-destacada {
-            padding: 50px;
-            border-radius: 12px;
-            background: #0f172a;
+            padding: 45px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #7b1fa2, #9c42bd);
             color: white;
-            border-top: 6px solid #ef4444;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+            box-shadow: 0 20px 45px rgba(123, 31, 162, 0.18);
         }
 
         .tarjeta-destacada h3 {
-            font-size: 26px;
-            font-weight: 800;
+            font-size: 30px;
             margin-bottom: 18px;
-            letter-spacing: -0.5px;
         }
 
         .tarjeta-destacada p {
-            color: #94a3b8;
+            opacity: 0.94;
+        }
+
+
+        /* =========================
+           OBJETIVOS
+        ========================== */
+
+        .objetivos {
+            background: #f8f8fa;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 35px 30px;
+            border-radius: 18px;
+            border: 1px solid #eeeeee;
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .icono {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background: #f2e4f6;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .tarjeta h3 {
+            color: #222;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .tarjeta p {
+            color: #777;
             font-size: 15px;
-            line-height: 1.7;
+        }
+
+
+        /* =========================
+           ACTIVIDADES
+        ========================== */
+
+        .actividades {
+            background: white;
+        }
+
+        .actividad-contenedor {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .actividad-aviso {
+            padding: 45px;
+            background: #f8f3fa;
+            border-radius: 25px;
+            border: 1px dashed #c59bd2;
+        }
+
+        .actividad-aviso h3 {
+            color: #7b1fa2;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .actividad-aviso p {
+            color: #666;
+        }
+
+
+        /* =========================
+           CONTACTO
+        ========================== */
+
+        .contacto {
+            background:
+                linear-gradient(135deg, #68158a, #7b1fa2);
+            color: white;
+        }
+
+        .contacto .titulo-seccion .pequeno,
+        .contacto .titulo-seccion h2 {
+            color: white;
+        }
+
+        .contacto .titulo-seccion p {
+            color: rgba(255,255,255,0.82);
+        }
+
+        .contacto-caja {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contacto-caja p {
+            margin-bottom: 25px;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .boton-blanco {
+            display: inline-block;
+            background: white;
+            color: #7b1fa2;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 800;
+        }
+
+
+        /* =========================
+           PIE DE PÁGINA
+        ========================== */
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 40px 0 25px;
+        }
+
+        .footer-contenido {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .footer-marca {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-marca img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+
+        .footer-marca strong {
+            display: block;
+        }
+
+        .footer-marca span {
+            color: #aaa;
+            font-size: 12px;
+        }
+
+        .copyright {
+            border-top: 1px solid #444;
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           MÓVIL
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .barra-navegacion {
+                flex-direction: column;
+                padding: 15px 0;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 80px 0;
+            }
+
+            .hero-contenido {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-texto {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .botones {
+                justify-content: center;
+            }
+
+            .hero-logo {
+                margin-top: 20px;
+            }
+
+            .nosotros-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .contenedor {
+                width: 92%;
+            }
+
+            .marca-nombre {
+                font-size: 15px;
+            }
+
+            .marca-subtitulo {
+                font-size: 11px;
+            }
+
+            .marca img {
+                width: 48px;
+                height: 48px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 39px;
+            }
+
+            .hero-texto {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .titulo-seccion h2 {
+                font-size: 31px;
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr;
+            }
+
+            .tarjeta-destacada {
+                padding: 30px;
+            }
+
+            .footer-contenido {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
+
 <body>
 
+
+    <!-- =========================
+         CABECERA
+    ========================== -->
+
     <header>
+
         <div class="contenedor barra-navegacion">
-            <a href="#" class="marca">
-                <img src="LOGO ASOGINTER (1).png" alt="Logo Asoginter-ter">
+
+            <a href="#inicio" class="marca">
+
+                <img
+                    src="LOGO%20ASOGINTER%20%281%29.png"
+                    alt="Logo de Asoginter-ter"
+                >
+
                 <div class="marca-texto">
-                    <span class="marca-nombre">ASOGINTER-TER</span>
+                    <span class="marca-nombre">
+                        Asoginter-ter
+                    </span>
+
+                    <span class="marca-subtitulo">
+                        Asociación Gitana Europea e Intercultural
+                    </span>
+                </div>
+
+            </a>
+
+
+            <nav>
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#nosotros">
+                    Quiénes somos
+                </a>
+
+                <a href="#objetivos">
+                    Objetivos
+                </a>
+
+                <a href="#actividades">
+                    Actividades
+                </a>
+
+                <a href="#contacto" class="boton-nav">
+                    Contacto
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="contenedor hero-contenido">
+
+                <div>
+
+                    <span class="etiqueta">
+                        Torrent · Valencia
+                    </span>
+
+                    <h1>
+                        Asociación Gitana
+                        <span>Europea e Intercultural</span>
+                    </h1>
+
+                    <p class="hero-texto">
+                        Una asociación comprometida con la comunidad gitana,
+                        la convivencia, la igualdad y la interculturalidad.
+                    </p>
+
+                    <div class="botones">
+
+                        <a
+                            href="#nosotros"
+                            class="boton-principal"
+                        >
+                            Conócenos
+                        </a>
+
+                        <a
+                            href="#contacto"
+                            class="boton-secundario"
+                        >
+                            Contacta con nosotros
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-logo">
+
+                    <img
+                        src="LOGO%20ASOGINTER%20%281%29.png"
+                        alt="Logo de la Asociación Gitana Europea e Intercultural de Torrent"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUIÉNES SOMOS
+        ========================== -->
+
+        <section class="nosotros" id="nosotros">
+
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+
+                    <span class="pequeno">
+                        Nuestra asociación
+                    </span>
+
+                    <h2>
+                        Quiénes somos
+                    </h2>
+
+                    <p>
+                        Conoce nuestra identidad y el compromiso
+                        de nuestra asociación con la comunidad.
+                    </p>
+
+                </div>
+
+
+                <div class="nosotros-grid">
+
+                    <div class="nosotros-texto">
+
+                        <h3>
+                            Asociación Gitana Europea e Intercultural de Torrent
+                        </h3>
+
+                        <p>
+                            Asoginter-ter nace con la voluntad de trabajar
+                            por la comunidad gitana y contribuir a una sociedad
+                            basada en el respeto, la igualdad y la convivencia.
+                        </p>
+
+                        <p>
+                            Desde Torrent queremos fomentar la participación
+                            social y cultural y poner en valor la diversidad
+                            y la riqueza de nuestra comunidad.
+                        </p>
+
+                        <div class="frase">
+                            “Voz del pueblo gitano de Torrent”
+                        </div>
+
+                    </div>
+
+
+                    <div class="tarjeta-destacada">
+
+                        <h3>
+                            Unidos por la convivencia
+                        </h3>
+
+                        <p>
+                            Nuestro objetivo es contribuir a una sociedad
+                            donde todas las personas puedan participar,
+                            desarrollarse y convivir desde el respeto
+                            y la igualdad.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OBJETIVOS
+        ========================== -->
+
+        <section class="objetivos" id="objetivos">
+
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+
+                    <span class="pequeno">
+                        Nuestro trabajo
+                    </span>
+
+                    <h2>
+                        Objetivos
+                    </h2>
+
+                    <p>
+                        Algunas de las áreas en las que queremos
+                        centrar nuestro trabajo.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjetas">
+
+
+                    <article class="tarjeta">
+
+                        <div class="icono">
+                            🤝
+                        </div>
+
+                        <h3>
+                            Igualdad
+                        </h3>
+
+                        <p>
+                            Fomentar la igualdad de oportunidades
+                            y el respeto entre todas las personas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <div class="icono">
+                            🌍
+                        </div>
+
+                        <h3>
+                            Interculturalidad
+                        </h3>
+
+                        <p>
+                            Promover la convivencia y el conocimiento
+                            entre diferentes culturas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <div class="icono">
+                            🎓
+                        </div>
+
+                        <h3>
+                            Educación
+                        </h3>
+
+                        <p>
+                            Impulsar iniciativas relacionadas con la
+                            educación, formación y participación.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <div class="icono">
+                            🎭
+                        </div>
+
+                        <h3>
+                            Cultura
+                        </h3>
+
+                        <p>
+                            Poner en valor la cultura, la historia
+                            y las tradiciones del pueblo gitano.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <div class="icono">
+                            👥
+                        </div>
+
+                        <h3>
+                            Participación
+                        </h3>
+
+                        <p>
+                            Favorecer la participación social y
+                            comunitaria de la ciudadanía.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <div class="icono">
+                            ❤️
+                        </div>
+
+                        <h3>
+                            Comunidad
+                        </h3>
+
+                        <p>
+                            Trabajar junto a personas y entidades
+                            para fortalecer nuestra comunidad.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACTIVIDADES
+        ========================== -->
+
+        <section class="actividades" id="actividades">
+
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+
+                    <span class="pequeno">
+                        Participa
+                    </span>
+
+                    <h2>
+                        Actividades y proyectos
+                    </h2>
+
+                    <p>
+                        En este espacio podremos publicar nuestras
+                        próximas actividades, proyectos y eventos.
+                    </p>
+
+                </div>
+
+
+                <div class="actividad-contenedor">
+
+                    <div class="actividad-aviso">
+
+                        <h3>
+                            Próximamente
+                        </h3>
+
+                        <p>
+                            Aquí iremos publicando las actividades,
+                            proyectos, talleres, encuentros y eventos
+                            organizados por Asoginter-ter.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section class="contacto" id="contacto">
+
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+
+                    <span class="pequeno">
+                        Estamos aquí
+                    </span>
+
+                    <h2>
+                        Contacta con nosotros
+                    </h2>
+
+                    <p>
+                        Si quieres conocer nuestra asociación,
+                        colaborar o participar en nuestras actividades,
+                        estaremos encantados de escucharte.
+                    </p>
+
+                </div>
+
+
+                <div class="contacto-caja">
+
+                    <p>
+                        Asociación Gitana Europea e Intercultural de Torrent
+                    </p>
+
+                    <p>
+                        Torrent · Valencia
+                    </p>
+
+                    <!--
+                    CUANDO TENGAMOS EL EMAIL,
+                    PODEMOS AÑADIRLO AQUÍ.
+                    -->
+
+                    <a
+                        href="#"
+                        class="boton-blanco"
+                    >
+                        Próximamente: información de contacto
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer>
+
+        <div class="contenedor">
+
+            <div class="footer-contenido">
+
+                <div class="footer-marca">
+
+                    <img
+                        src="LOGO%20ASOGINTER%20%281%29.png"
+                        alt="Logo Asoginter-ter"
+                    >
+
+                    <div>
+
+                        <strong>
+                            Asoginter-ter
+                        </strong>
+
+                        <span>
+                            Asociación Gitana Europea e Intercultural
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="copyright">
+
+                © 2026 Asociación Gitana Europea e Intercultural de Torrent.
+                Todos los derechos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
