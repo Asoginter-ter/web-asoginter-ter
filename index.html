@@ -89,7 +89,8 @@
 
         .marca-subtitulo {
             font-size: 12px;
-            color: #777;
+            color: #dc2626; /* Rojo de la rueda */
+            font-weight: 700;
             margin-top: 2px;
         }
 
@@ -107,18 +108,18 @@
         }
 
         nav a:hover {
-            color: #7b1fa2;
+            color: #1d4ed8; /* Azul Gitano */
         }
 
         .boton-nav {
-            background: #7b1fa2;
+            background: #1d4ed8; /* Azul Gitano */
             color: white !important;
             padding: 11px 18px;
             border-radius: 25px;
         }
 
         .boton-nav:hover {
-            background: #5e177b;
+            background: #1e40af;
         }
 
 
@@ -133,12 +134,11 @@
             display: flex;
             align-items: center;
             background:
-                radial-gradient(circle at 50% 20%, rgba(0, 125, 255, 0.12), transparent 35%),
-                radial-gradient(circle at 50% 80%, rgba(0, 160, 70, 0.14), transparent 35%),
-                linear-gradient(135deg, #fff8fc 0%, #ffffff 55%, #f7fff9 100%);
+                radial-gradient(circle at 50% 20%, rgba(29, 78, 216, 0.08), transparent 35%),
+                radial-gradient(circle at 50% 80%, rgba(22, 163, 74, 0.10), transparent 35%),
+                linear-gradient(135deg, #f0fdf4 0%, #ffffff 55%, #eff6ff 100%);
         }
 
-        /* Cambiado a flex-direction column y text-align center para forzar el medio */
         .hero-contenido {
             display: flex;
             flex-direction: column;
@@ -152,8 +152,8 @@
             display: inline-block;
             padding: 8px 15px;
             border-radius: 30px;
-            background: #f2e4f6;
-            color: #7b1fa2;
+            background: #fee2e2; /* Rojo suave */
+            color: #dc2626; /* Rojo de la rueda */
             font-size: 13px;
             font-weight: 800;
             margin-bottom: 20px;
@@ -168,7 +168,7 @@
         }
 
         .hero h1 span {
-            color: #7b1fa2;
+            color: #1d4ed8; /* Azul Gitano */
         }
 
         .hero-texto {
@@ -178,7 +178,6 @@
             color: #666;
         }
 
-        /* Centrado de la fila de botones */
         .botones {
             display: flex;
             justify-content: center;
@@ -188,24 +187,24 @@
 
         .boton-principal {
             display: inline-block;
-            background: #7b1fa2;
+            background: #1d4ed8; /* Azul Gitano */
             color: white;
             padding: 14px 25px;
             border-radius: 30px;
             font-weight: 700;
             transition: 0.3s;
-            box-shadow: 0 8px 25px rgba(123, 31, 162, 0.22);
+            box-shadow: 0 8px 25px rgba(29, 78, 216, 0.18);
         }
 
         .boton-principal:hover {
             transform: translateY(-2px);
-            background: #5e177b;
+            background: #1e40af;
         }
 
         .boton-secundario {
             display: inline-block;
-            border: 2px solid #7b1fa2;
-            color: #7b1fa2;
+            border: 2px solid #16a34a; /* Verde Gitano */
+            color: #15803d;
             padding: 12px 24px;
             border-radius: 30px;
             font-weight: 700;
@@ -213,7 +212,7 @@
         }
 
         .boton-secundario:hover {
-            background: #7b1fa2;
+            background: #16a34a;
             color: white;
         }
 
@@ -230,9 +229,9 @@
             height: 390px;
             background: linear-gradient(
                 135deg,
-                rgba(123, 31, 162, 0.12),
-                rgba(0, 120, 255, 0.10),
-                rgba(0, 150, 60, 0.10)
+                rgba(239, 68, 68, 0.06),
+                rgba(29, 78, 216, 0.06),
+                rgba(22, 163, 74, 0.06)
             );
             border-radius: 50%;
             z-index: 0;
@@ -261,7 +260,7 @@
         }
 
         .titulo-seccion .pequeno {
-            color: #7b1fa2;
+            color: #1d4ed8; /* Azul Gitano */
             font-size: 13px;
             font-weight: 800;
             text-transform: uppercase;
@@ -310,8 +309,8 @@
         .frase {
             margin-top: 25px;
             padding: 20px 25px;
-            border-left: 5px solid #7b1fa2;
-            background: #faf5fc;
+            border-left: 5px solid #16a34a; /* Verde Gitano */
+            background: #f0fdf4;
             border-radius: 0 12px 12px 0;
             color: #555;
             font-weight: 600;
@@ -320,9 +319,9 @@
         .tarjeta-destacada {
             padding: 45px;
             border-radius: 25px;
-            background: linear-gradient(135deg, #7b1fa2, #9c42bd);
+            background: linear-gradient(135deg, #1d4ed8, #1e40af); /* Gradiente Azul Gitano */
             color: white;
-            box-shadow: 0 20px 45px rgba(123, 31, 162, 0.18);
+            box-shadow: 0 20px 45px rgba(29, 78, 216, 0.15);
         }
 
         .tarjeta-destacada h3 {
@@ -393,9 +392,7 @@
 
     <section id="inicio" class="hero">
         <div class="contenedor hero-contenido">
-            <!-- Bloque de texto superior centrado -->
             <div>
                 <span class="etiqueta">Torrent · Valencia</span>
-                <h1>Asociación Gitana <br><span>Europea e Intercultural</span></h1>
+                <h1>Asociación Gitana <br><span>Europee e Intercultural</span></h1>
                 <p class="hero-texto">Una asociación comprometida con la comunidad gitana, la convivencia, la igualdad y la interculturalidad.</p>
-                <div class="botones">
