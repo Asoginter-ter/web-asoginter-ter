@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asociación Gitana Europea e Intercultural de Torrent</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #6a1b9a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6a1b9a, #9c4dcc);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 30px;
+            background: white;
+            color: #6a1b9a;
+            padding: 13px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #6a1b9a;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .contenido {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .tarjetas {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .tarjeta {
+            background: #f5f0f7;
+            padding: 30px;
+            border-radius: 15px;
+            width: 280px;
+        }
+
+        .tarjeta h3 {
+            color: #6a1b9a;
+            margin-bottom: 12px;
+        }
+
+        #contacto {
+            background: #f5f0f7;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                text-align: center;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        Asoginter-ter
+    </div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Quiénes somos</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>Asociación Gitana Europea e Intercultural de Torrent</h1>
+
+    <p>
+        Trabajamos por la convivencia, la igualdad, la cultura
+        y la participación del pueblo gitano.
+    </p>
+
+    <a class="boton" href="#contacto">Contacta con nosotros</a>
+</section>
+
+<section id="nosotros">
+    <h2>Quiénes somos</h2>
+
+    <div class="contenido">
+        <p>
+            La Asociación Gitana Europea e Intercultural de Torrent
+            es una entidad comprometida con la comunidad gitana y
+            con la construcción de una sociedad basada en el respeto,
+            la igualdad y la convivencia intercultural.
+        </p>
+
+        <p style="margin-top:20px;">
+            Desde Torrent trabajamos para dar voz a la comunidad,
+            promover oportunidades y fomentar la participación
+            social y cultural.
+        </p>
+    </div>
+</section>
+
+<section id="actividades">
+    <h2>Qué hacemos</h2>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>🤝 Inclusión</h3>
+            <p>
+                Promovemos la inclusión social y la igualdad
+                de oportunidades.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🎓 Educación</h3>
+            <p>
+                Apoyamos iniciativas educativas y el desarrollo
+                de nuevas oportunidades para jóvenes y familias.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🎭 Cultura</h3>
+            <p>
+                Difundimos y ponemos en valor la cultura,
+                la historia y las tradiciones gitanas.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <div class="contenido">
+        <p>
+            Si quieres conocer nuestro trabajo, colaborar con
+            la asociación o participar en nuestras actividades,
+            ponte en contacto con nosotros.
+        </p>
+
+        <p style="margin-top:20px;">
+            <strong>Asociación Gitana Europea e Intercultural de Torrent</strong>
+        </p>
+
+        <p>
+            Torrent, Valencia
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 Asociación Gitana Europea e Intercultural de Torrent
+    </p>
+</footer>
+
+</body>
+</html>
