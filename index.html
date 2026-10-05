@@ -26,7 +26,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            color: #1e293b; /* Gris oscuro institucional, más limpio que el #333 */
+            color: #1e293b;
             background: #ffffff;
             line-height: 1.6;
         }
@@ -43,7 +43,7 @@
 
 
         /* =========================
-           CABECERA (Estilo Nueva Vida)
+           CABECERA
         ========================== */
 
         header {
@@ -93,7 +93,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #ef4444; /* Rojo del logotipo para destacar el subtítulo */
+            color: #ef4444; 
             margin-top: 2px;
         }
 
@@ -103,7 +103,6 @@
             gap: 30px;
         }
 
-        /* Menú Jerárquico Desplegable (Dropdown) */
         .dropdown {
             position: relative;
             display: inline-block;
@@ -121,7 +120,7 @@
         }
 
         .dropdown:hover .dropdown-btn {
-            color: #1d4ed8; /* Azul del logo al pasar el ratón */
+            color: #1d4ed8;
         }
 
         .dropdown-contenido {
@@ -163,14 +162,14 @@
         }
 
         nav > a:hover {
-            color: #1d4ed8; /* Azul del logo */
+            color: #1d4ed8;
         }
 
         .boton-nav {
-            background: #1d4ed8; /* Cambiado a Azul Corporativo */
+            background: #1d4ed8;
             color: white !important;
             padding: 11px 22px;
-            border-radius: 6px; /* Bordes más institucionales, menos redondeados */
+            border-radius: 6px;
             font-weight: 700;
         }
 
@@ -180,7 +179,7 @@
 
 
         /* =========================
-           PORTADA (Hero adaptado)
+           PORTADA
         ========================== */
 
         .hero {
@@ -189,7 +188,6 @@
             min-height: 650px;
             display: flex;
             align-items: center;
-            /* Degradado limpio con los tonos azul y verde muy sutiles de fondo */
             background:
                 radial-gradient(circle at 10% 20%, rgba(29, 78, 216, 0.05), transparent 40%),
                 radial-gradient(circle at 90% 80%, rgba(22, 163, 74, 0.05), transparent 40%),
@@ -208,8 +206,8 @@
             display: inline-block;
             padding: 6px 14px;
             border-radius: 4px;
-            background: #fee2e2; /* Fondo rojo suave */
-            color: #dc2626; /* Texto rojo vivo de la rueda */
+            background: #fee2e2;
+            color: #dc2626;
             font-size: 12px;
             font-weight: 800;
             text-transform: uppercase;
@@ -227,7 +225,7 @@
         }
 
         .hero h1 span {
-            color: #1d4ed8; /* Resaltado en Azul Gitano */
+            color: #1d4ed8;
         }
 
         .hero-texto {
@@ -245,7 +243,7 @@
 
         .boton-principal {
             display: inline-block;
-            background: #1d4ed8; /* Azul Gitano */
+            background: #1d4ed8;
             color: white;
             padding: 14px 28px;
             border-radius: 6px;
@@ -261,7 +259,7 @@
 
         .boton-secundario {
             display: inline-block;
-            border: 2px solid #16a34a; /* Verde Gitano */
+            border: 2px solid #16a34a;
             color: #15803d;
             padding: 12px 26px;
             border-radius: 6px;
@@ -290,11 +288,11 @@
 
 
         /* =========================
-           BLOQUE LEMA (Nueva Vida)
+           BLOQUE LEMA
         ========================== */
 
         .bloque-lema {
-            background: #16a34a; /* Fondo verde vibrante de la bandera */
+            background: #16a34a;
             padding: 60px 0;
             text-align: center;
             color: #ffffff;
@@ -324,7 +322,7 @@
         }
 
         .titulo-seccion .pequeno {
-            color: #1d4ed8; /* Azul */
+            color: #1d4ed8;
             font-size: 12px;
             font-weight: 800;
             text-transform: uppercase;
@@ -348,7 +346,7 @@
 
 
         /* =========================
-           QUIÉNES SOMOS (Bloques Limpios)
+           QUIÉNES SOMOS
         ========================== */
 
         .nosotros {
@@ -378,8 +376,8 @@
         .frase {
             margin-top: 30px;
             padding: 22px 25px;
-            border-left: 4px solid #1d4ed8; /* Borde Azul */
-            background: #f0fdf4; /* Fondo verde muy sutil */
+            border-left: 4px solid #1d4ed8;
+            background: #f0fdf4;
             border-radius: 0 8px 8px 0;
             color: #1e293b;
             font-weight: 600;
@@ -387,5 +385,32 @@
 
         .tarjeta-destacada {
             padding: 50px;
-            border-radius: 12px; /* Menos redondeado, más institucional */
-            background: #0f172a; /* Fondo pizarra oscuro para contraste elegante */
+            border-radius: 12px;
+            background: #0f172a;
+            color: white;
+            border-top: 6px solid #ef4444;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+        }
+
+        .tarjeta-destacada h3 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+        }
+
+        .tarjeta-destacada p {
+            color: #94a3b8;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="contenedor barra-navegacion">
+            <a href="#" class="marca">
+                <img src="LOGO ASOGINTER (1).png" alt="Logo Asoginter-ter">
+                <div class="marca-texto">
+                    <span class="marca-nombre">ASOGINTER-TER</span>
