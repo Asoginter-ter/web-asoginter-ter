@@ -1,1442 +1,2115 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent</title>
-
-<meta name="description" content="Asociación Gitana Europea e Intercultural de Torrent. Inclusión, igualdad, cultura e interculturalidad.">
-<meta name="keywords" content="ASOGINTER, asociación gitana, Torrent, interculturalidad, inclusión, igualdad, cultura gitana">
-<meta name="author" content="Asociación Gitana Europea e Intercultural de Torrent">
-
-<style>
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-html{
-    scroll-behavior:smooth;
-    scroll-padding-top:115px;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    color:#333;
-    background:#fff;
-    line-height:1.6;
-    overflow-x:hidden;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-section{
-    padding:80px 20px;
-}
-
-.container{
-    max-width:1150px;
-    width:100%;
-    margin:0 auto;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(255,255,255,.97);
-    box-shadow:0 2px 12px rgba(0,0,0,.08);
-}
-
-.header-container{
-    max-width:1200px;
-    min-height:82px;
-    margin:auto;
-    padding:10px 25px;
-    display:grid;
-    grid-template-columns:90px 1fr auto;
-    align-items:center;
-    gap:20px;
-}
-
-.header-logo{
-    width:85px;
-    height:65px;
-    object-fit:contain;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:24px;
-    flex-wrap:wrap;
-}
-
-nav a{
-    font-size:14px;
-    font-weight:bold;
-    color:#333;
-    white-space:nowrap;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#c62828;
-}
-
-.social{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.social a{
-    width:36px;
-    height:36px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#fff;
-    font-weight:bold;
-    font-size:15px;
-}
-
-.instagram{
-    background:#d62976;
-}
-
-.facebook{
-    background:#1877f2;
-}
-
-.color-bar{
-    height:6px;
-    display:flex;
-}
-
-.color-bar span{
-    flex:1;
-}
-
-.blue{background:#1479b8;}
-.green{background:#39a852;}
-.red{background:#c62828;}
-.purple{background:#7b3f98;}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-    min-height:690px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    overflow:hidden;
-    padding:70px 20px;
-
-    background:
-        linear-gradient(
-            rgba(255,255,255,.58),
-            rgba(255,255,255,.58)
-        ),
-        url("fondo-asoginter.png")
-        center center / cover no-repeat;
-}
-
-.hero-content{
-    width:100%;
-    max-width:950px;
-    padding:45px 35px;
-    text-align:center;
-    background:rgba(255,255,255,.84);
-    border-radius:25px;
-    box-shadow:0 12px 40px rgba(0,0,0,.12);
-}
-
-.hero-emblem{
-    width:170px;
-    height:170px;
-    object-fit:contain;
-    margin:0 auto 15px;
-}
-
-.hero-formal-name{
-    font-size:20px;
-    font-weight:bold;
-    letter-spacing:1px;
-    color:#555;
-    margin-bottom:5px;
-}
-
-.hero-title{
-    font-size:clamp(55px,10vw,105px);
-    font-weight:900;
-    letter-spacing:5px;
-    color:#c62828;
-    line-height:1;
-    margin-bottom:20px;
-}
-
-.hero-tagline{
-    font-size:22px;
-    font-weight:bold;
-    color:#444;
-    margin-bottom:18px;
-}
-
-.hero-description{
-    max-width:750px;
-    margin:auto;
-    font-size:18px;
-    color:#555;
-}
-
-.hero-buttons{
-    margin-top:30px;
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:13px 25px;
-    border-radius:30px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:#c62828;
-    color:#fff;
-}
-
-.btn-primary:hover{
-    background:#a91f1f;
-    transform:translateY(-2px);
-}
-
-.btn-secondary{
-    background:#fff;
-    color:#c62828;
-    border:2px solid #c62828;
-}
-
-.btn-secondary:hover{
-    background:#c62828;
-    color:#fff;
-}
-
-
-/* =========================
-   TITULOS
-========================= */
-
-.section-title{
-    text-align:center;
-    font-size:38px;
-    margin-bottom:15px;
-    color:#333;
-}
-
-.section-title span{
-    color:#c62828;
-}
-
-.section-intro{
-    max-width:800px;
-    margin:0 auto 45px;
-    text-align:center;
-    color:#666;
-    font-size:17px;
-}
-
-
-/* =========================
-   QUIENES SOMOS
-========================= */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.about-text p{
-    margin-bottom:18px;
-    font-size:17px;
-}
-
-.about-highlight{
-    margin-top:25px;
-    padding:22px;
-    border-left:5px solid #c62828;
-    background:#fafafa;
-    border-radius:0 12px 12px 0;
-    font-weight:bold;
-    color:#555;
-}
-
-.about-logo{
-    height:390px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:15px;
-    overflow:hidden;
-    background:#f6f7fb;
-}
-
-.about-logo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-
-/* =========================
-   MISION
-========================= */
-
-.mission{
-    background:#f7f7f7;
-}
-
-.mission-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.mission-card{
-    background:#fff;
-    padding:35px;
-    border-radius:16px;
-    box-shadow:0 6px 22px rgba(0,0,0,.06);
-}
-
-.mission-card h3{
-    color:#c62828;
-    font-size:24px;
-    margin-bottom:15px;
-}
-
-
-/* =========================
-   QUE HACEMOS
-========================= */
-
-.cards-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.activity-card{
-    background:#fff;
-    border-radius:16px;
-    padding:30px 25px;
-    text-align:center;
-    border:1px solid #eee;
-    box-shadow:0 7px 25px rgba(0,0,0,.06);
-    transition:.3s;
-}
-
-.activity-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 30px rgba(0,0,0,.10);
-}
-
-.professional-icon{
-    width:68px;
-    height:68px;
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:0 auto 18px;
-}
-
-.professional-icon svg{
-    width:36px;
-    height:36px;
-}
-
-.icon-blue{
-    background:#e5f3fb;
-    color:#1479b8;
-}
-
-.icon-green{
-    background:#e7f6ea;
-    color:#39a852;
-}
-
-.icon-red{
-    background:#fdeaea;
-    color:#c62828;
-}
-
-.icon-purple{
-    background:#f1e9f5;
-    color:#7b3f98;
-}
-
-.activity-card h3{
-    margin-bottom:10px;
-    font-size:20px;
-}
-
-.activity-card p{
-    color:#666;
-    font-size:15px;
-}
-
-.health-message{
-    margin-top:45px;
-    background:#f7f7f7;
-    padding:30px;
-    border-radius:18px;
-    text-align:center;
-}
-
-.health-message strong{
-    color:#c62828;
-}
-
-
-/* =========================
-   FRASE
-========================= */
-
-.quote-section{
-    background:#c62828;
-    color:#fff;
-    text-align:center;
-    padding:70px 20px;
-}
-
-.quote{
-    max-width:900px;
-    margin:auto;
-    font-size:27px;
-    font-weight:bold;
-    line-height:1.5;
-}
-
-
-/* =========================
-   ACTIVIDADES
-========================= */
-
-.activities-intro-box{
-    max-width:920px;
-    margin:0 auto 40px;
-    padding:25px 30px;
-    background:#fafafa;
-    border-left:5px solid #c62828;
-    border-radius:0 15px 15px 0;
-    text-align:center;
-    color:#555;
-    box-shadow:0 5px 18px rgba(0,0,0,.04);
-}
-
-.activities-intro-box strong{
-    color:#c62828;
-}
-
-
-/* =========================
-   FORMACIÓN FSE+
-========================= */
-
-.training-feature{
-    display:grid;
-    grid-template-columns:.95fr 1.05fr;
-    gap:40px;
-    padding:30px;
-    background:#fff;
-    border-radius:22px;
-    border:1px solid #ececec;
-    box-shadow:0 10px 30px rgba(0,0,0,.07);
-    margin-bottom:35px;
-}
-
-.training-content{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-
-.training-label{
-    display:inline-flex;
-    align-self:flex-start;
-    padding:7px 12px;
-    border-radius:20px;
-    background:#fdeaea;
-    color:#c62828;
-    font-size:12px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:.7px;
-    margin-bottom:15px;
-}
-
-.training-content h3{
-    color:#c62828;
-    font-size:30px;
-    line-height:1.2;
-    margin-bottom:15px;
-}
-
-.program-title{
-    font-size:17px;
-    font-weight:700;
-    line-height:1.5;
-    color:#444;
-    margin-bottom:16px;
-}
-
-.training-content > p{
-    color:#666;
-    margin-bottom:16px;
-}
-
-.training-list{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    margin-top:5px;
-}
-
-.training-item{
-    padding:12px 15px;
-    border-radius:12px;
-    background:#fafafa;
-    border-left:4px solid #c62828;
-    font-size:14px;
-    color:#555;
-}
-
-.training-item strong{
-    color:#333;
-}
-
-.training-item .company{
-    color:#c62828;
-    font-weight:bold;
-}
-
-.training-note{
-    margin-top:18px;
-    padding:13px 15px;
-    background:#f7f7f7;
-    border-radius:12px;
-    font-size:13px;
-    color:#666;
-}
-
-
-/* =========================
-   COLLAGE FOTOS
-========================= */
-
-.course-collage{
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    grid-template-rows:230px 185px;
-    gap:12px;
-    min-height:427px;
-}
-
-.course-photo{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:15px;
-    box-shadow:0 5px 16px rgba(0,0,0,.10);
-}
-
-.course-photo-main{
-    grid-column:1 / -1;
-    object-position:center 43%;
-}
-
-.course-photo-group{
-    object-position:center;
-}
-
-.course-photo-forklift{
-    object-position:center 42%;
-}
-
-
-/* =========================
-   ÁMBITOS DE TRABAJO
-========================= */
-
-.areas-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    margin-top:35px;
-}
-
-.area-card{
-    background:#fff;
-    border-radius:18px;
-    padding:30px 25px;
-    border:1px solid #eee;
-    box-shadow:0 7px 22px rgba(0,0,0,.05);
-    transition:.3s;
-}
-
-.area-card:hover{
-    transform:translateY(-4px);
-}
-
-.area-icon{
-    width:56px;
-    height:56px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:15px;
-    margin-bottom:17px;
-}
-
-.area-icon svg{
-    width:29px;
-    height:29px;
-}
-
-.area-card h3{
-    font-size:19px;
-    margin-bottom:10px;
-    color:#333;
-}
-
-.area-card p{
-    font-size:14px;
-    color:#666;
-}
-
-
-/* =========================
-   DISPENSA SOLIDARIA
-========================= */
-
-.solidarity-feature{
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    gap:30px;
-    align-items:stretch;
-    margin-top:35px;
-}
-
-.solidarity-card{
-    background:#fff;
-    border:1px solid #eee;
-    border-radius:20px;
-    padding:35px;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
-}
-
-.solidarity-label{
-    display:inline-block;
-    padding:7px 12px;
-    border-radius:20px;
-    background:#e7f6ea;
-    color:#2b8a3e;
-    font-size:12px;
-    font-weight:bold;
-    text-transform:uppercase;
-    margin-bottom:15px;
-}
-
-.solidarity-card h3{
-    color:#c62828;
-    font-size:28px;
-    margin-bottom:15px;
-}
-
-.solidarity-card p{
-    color:#666;
-    font-size:16px;
-    margin-bottom:12px;
-}
-
-.solidarity-card strong{
-    color:#333;
-}
-
-.solidarity-card a{
-    color:#c62828;
-    font-weight:bold;
-}
-
-.solidarity-card a:hover{
-    text-decoration:underline;
-}
-
-.solidarity-visual{
-    min-height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:30px;
-    border-radius:20px;
-    background:linear-gradient(135deg,#fff7f7,#f6fbff);
-    border:1px solid #eee;
-}
-
-.solidarity-visual-inner{
-    text-align:center;
-}
-
-.big-symbol{
-    width:95px;
-    height:95px;
-    margin:0 auto 20px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#fdeaea;
-    color:#c62828;
-}
-
-.solidarity-visual h4{
-    font-size:22px;
-    margin-bottom:8px;
-}
-
-.solidarity-visual p{
-    max-width:300px;
-    margin:auto;
-    color:#666;
-    font-size:14px;
-}
-
-
-/* =========================
-   TRABAJO EN RED
-========================= */
-
-.collaboration-banner{
-    margin-top:35px;
-    padding:32px 30px;
-    background:#c62828;
-    color:#fff;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 8px 25px rgba(198,40,40,.12);
-}
-
-.collaboration-banner h3{
-    font-size:27px;
-    margin-bottom:12px;
-}
-
-.collaboration-banner p{
-    max-width:850px;
-    margin:0 auto;
-    font-size:16px;
-    line-height:1.7;
-}
-
-
-/* =========================
-   TARJETAS
-========================= */
-
-.news-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    margin-top:35px;
-}
-
-.news-card{
-    border-radius:15px;
-    background:#f7f7f7;
-    padding:25px;
-    min-height:180px;
-    border-top:4px solid #c62828;
-}
-
-.news-card:nth-child(2){
-    border-top-color:#1479b8;
-}
-
-.news-card:nth-child(3){
-    border-top-color:#39a852;
-}
-
-.news-card h3{
-    color:#c62828;
-    margin-bottom:12px;
-    font-size:20px;
-}
-
-.news-card p{
-    color:#666;
-    font-size:14px;
-}
-
-
-/* =========================
-   COLABORA
-========================= */
-
-.collaborate{
-    background:#f7f7f7;
-}
-
-.collaborate-box{
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-    background:#fff;
-    padding:45px;
-    border-radius:20px;
-    box-shadow:0 7px 25px rgba(0,0,0,.07);
-}
-
-.collaborate-box p{
-    margin-bottom:25px;
-    color:#666;
-}
-
-
-/* =========================
-   CONTACTO
-========================= */
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:start;
-}
-
-.contact-list{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.contact-item{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    padding:15px;
-    border-radius:12px;
-    background:#fafafa;
-}
-
-.contact-icon{
-    width:56px;
-    height:56px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-shrink:0;
-}
-
-.contact-icon svg{
-    width:27px;
-    height:27px;
-}
-
-.address-icon{
-    background:#e6f2fb;
-    color:#1479b8;
-}
-
-.phone-icon{
-    background:#e8f7eb;
-    color:#39a852;
-}
-
-.whatsapp-icon{
-    background:#e8f7eb;
-    color:#25d366;
-}
-
-.email-icon{
-    background:#fff1e5;
-    color:#ef7d00;
-}
-
-.contact-item h4{
-    margin-bottom:3px;
-}
-
-.contact-item p{
-    color:#666;
-}
-
-.contact-item a:hover{
-    color:#c62828;
-}
-
-
-/* =========================
-   MAPA
-========================= */
-
-.map-container{
-    width:100%;
-    border-radius:16px;
-    overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,.10);
-    border:1px solid #e5e5e5;
-}
-
-.map-container iframe{
-    display:block;
-    width:100%;
-    height:400px;
-    border:0;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    background:#222;
-    color:#fff;
-    text-align:center;
-    padding:35px 20px;
-}
-
-footer p{
-    margin:5px 0;
-    color:#ddd;
-}
-
-footer strong{
-    color:#fff;
-    font-size:25px;
-}
-
-
-/* =========================
-   TABLET
-========================= */
-
-@media(max-width:900px){
-
-    .header-container{
-        grid-template-columns:80px 1fr;
-        grid-template-areas:
-            "logo social"
-            "nav nav";
-        gap:8px 12px;
-        padding:10px 15px;
-    }
-
-    .header-logo{
-        grid-area:logo;
-    }
-
-    .social{
-        grid-area:social;
-        justify-content:flex-end;
-    }
-
-    nav{
-        grid-area:nav;
-        justify-content:flex-start;
-        flex-wrap:nowrap;
-        overflow-x:auto;
-        scrollbar-width:none;
-        gap:20px;
-    }
-
-    nav::-webkit-scrollbar{
-        display:none;
-    }
-
-    .about-grid,
-    .mission-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .cards-grid,
-    .news-grid,
-    .areas-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .training-feature{
-        grid-template-columns:1fr;
-    }
-
-    .solidarity-feature{
-        grid-template-columns:1fr;
-    }
-
-}
-
-
-/* =========================
-   MOVIL
-========================= */
-
-@media(max-width:600px){
-
-    html{
-        scroll-padding-top:120px;
-    }
-
-    section{
-        padding:58px 0;
-    }
-
-    .container{
-        width:92%;
-    }
-
-    .header-container{
-        grid-template-columns:1fr auto;
-        grid-template-rows:auto auto;
-        gap:8px 12px;
-        padding:9px 4%;
-    }
-
-    .header-logo{
-        width:70px;
-        height:52px;
-        justify-self:start;
-    }
-
-    .social{
-        justify-self:end;
-        gap:7px;
-    }
-
-    .social a{
-        width:34px;
-        height:34px;
-    }
-
-    nav{
-        grid-column:1 / -1;
-        width:100%;
-        overflow-x:auto;
-        overflow-y:hidden;
-        justify-content:flex-start;
-        flex-wrap:nowrap;
-        gap:10px;
-        padding-bottom:2px;
-        -webkit-overflow-scrolling:touch;
-        scrollbar-width:none;
-    }
-
-    nav::-webkit-scrollbar{
-        display:none;
-    }
-
-    nav a{
-        font-size:10.5px;
-        padding:7px 8px;
-        white-space:nowrap;
-    }
-
-
-    /* HERO */
-
-    .hero{
-        min-height:auto;
-        padding:30px 12px 38px;
-    }
-
-    .hero-content{
-        padding:30px 18px 35px;
-        border-radius:20px;
-    }
-
-    .hero-emblem{
-        width:125px;
-        height:125px;
-    }
-
-    .hero-formal-name{
-        font-size:13px;
-        line-height:1.45;
-        letter-spacing:.7px;
-    }
-
-    .hero-title{
-        font-size:clamp(48px,16vw,68px);
-        letter-spacing:2px;
-        margin-bottom:14px;
-    }
-
-    .hero-tagline{
-        font-size:17px;
-        line-height:1.4;
-    }
-
-    .hero-description{
-        font-size:15px;
-        line-height:1.55;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        gap:10px;
-        margin-top:23px;
-    }
-
-    .btn{
-        width:100%;
-        min-height:48px;
-    }
-
-
-    /* TITULOS */
-
-    .section-title{
-        font-size:30px;
-    }
-
-    .section-intro{
-        font-size:15px;
-        margin-bottom:32px;
-    }
-
-
-    /* QUIENES SOMOS */
-
-    .about-grid{
-        grid-template-columns:1fr;
-        gap:28px;
-    }
-
-    .about-text p{
-        font-size:15px;
-    }
-
-    .about-highlight{
-        padding:18px;
-        font-size:14px;
-    }
-
-    .about-logo{
-        height:290px;
-    }
-
-
-    /* MISION */
-
-    .mission-grid{
-        grid-template-columns:1fr;
-    }
-
-    .mission-card{
-        padding:27px 22px;
-    }
-
-
-    /* QUÉ HACEMOS */
-
-    .cards-grid{
-        grid-template-columns:1fr;
-        gap:18px;
-    }
-
-    .activity-card{
-        padding:25px 20px;
-    }
-
-    .professional-icon{
-        width:62px;
-        height:62px;
-    }
-
-    .professional-icon svg{
-        width:32px;
-        height:32px;
-    }
-
-    .activity-card h3{
-        font-size:19px;
-    }
-
-    .activity-card p{
-        font-size:14px;
-    }
-
-    .health-message{
-        margin-top:30px;
-        padding:22px 17px;
-        font-size:14px;
-    }
-
-
-    /* FRASE */
-
-    .quote-section{
-        padding:55px 18px;
-    }
-
-    .quote{
-        font-size:21px;
-        line-height:1.45;
-    }
-
-
-    /* ACTIVIDADES */
-
-    .activities-intro-box{
-        padding:20px 18px;
-        font-size:14px;
-    }
-
-    .training-feature{
-        grid-template-columns:1fr;
-        padding:20px;
-        gap:25px;
-    }
-
-    .training-content h3{
-        font-size:25px;
-    }
-
-    .program-title{
-        font-size:16px;
-    }
-
-    .training-item{
-        font-size:13px;
-        padding:11px 12px;
-    }
-
-    .course-collage{
-        grid-template-columns:1.08fr .92fr;
-        grid-template-rows:210px 160px;
-        min-height:382px;
-        gap:8px;
-    }
-
-    .areas-grid{
-        grid-template-columns:1fr;
-        gap:18px;
-    }
-
-    .area-card{
-        padding:25px 20px;
-    }
-
-    .solidarity-feature{
-        grid-template-columns:1fr;
-    }
-
-    .solidarity-card{
-        padding:28px 22px;
-    }
-
-    .solidarity-card h3{
-        font-size:25px;
-    }
-
-    .solidarity-visual{
-        min-height:260px;
-    }
-
-    .collaboration-banner{
-        padding:27px 20px;
-    }
-
-    .collaboration-banner h3{
-        font-size:24px;
-    }
-
-    .collaboration-banner p{
-        font-size:14px;
-    }
-
-    .news-grid{
-        grid-template-columns:1fr;
-        gap:18px;
-    }
-
-    .news-card{
-        min-height:auto;
-        padding:22px;
-    }
-
-
-    /* COLABORA */
-
-    .collaborate-box{
-        padding:30px 20px;
-    }
-
-    .collaborate-box .section-title{
-        font-size:26px;
-    }
-
-
-    /* CONTACTO */
-
-    .contact-grid{
-        grid-template-columns:1fr;
-        gap:30px;
-    }
-
-    .contact-item{
-        gap:13px;
-        padding:13px 10px;
-        align-items:flex-start;
-    }
-
-    .contact-icon{
-        width:50px;
-        height:50px;
-    }
-
-    .contact-item h4{
-        font-size:15px;
-    }
-
-    .contact-item p{
-        font-size:14px;
-        line-height:1.5;
-    }
-
-    .map-container iframe{
-        height:285px;
-    }
-
-
-    footer{
-        padding:28px 15px;
-    }
-
-    footer p{
-        font-size:13px;
-        line-height:1.5;
-    }
-
-}
-
-
-/* =========================
-   MOVILES PEQUEÑOS
-========================= */
-
-@media(max-width:380px){
-
-    .header-logo{
-        width:64px;
-        height:48px;
-    }
-
-    .social a{
-        width:31px;
-        height:31px;
-        font-size:13px;
-    }
-
-    nav a{
-        font-size:10px;
-    }
-
-    .hero-content{
-        padding:26px 14px 30px;
-    }
-
-    .hero-emblem{
-        width:108px;
-        height:108px;
-    }
-
-    .hero-title{
-        font-size:46px;
-    }
-
-    .hero-formal-name{
-        font-size:11px;
-    }
-
-    .hero-tagline{
-        font-size:15px;
-    }
-
-    .hero-description{
-        font-size:14px;
-    }
-
-    .about-logo{
-        height:255px;
-    }
-
-    .course-collage{
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:170px 125px;
-    }
-
-    .map-container iframe{
-        height:255px;
-    }
-
-}
-
-</style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent
+    </title>
+
+    <meta
+        name="description"
+        content="Asociación Gitana Europea e Intercultural de Torrent. Inclusión, igualdad, cultura e interculturalidad."
+    >
+
+    <meta
+        name="keywords"
+        content="ASOGINTER, asociación gitana, Torrent, inclusión, igualdad, cultura gitana, interculturalidad"
+    >
+
+    <meta
+        name="author"
+        content="Asociación Gitana Europea e Intercultural de Torrent"
+    >
+
+
+    <style>
+
+        /* ==================================================
+           GENERAL
+        ================================================== */
+
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        html{
+            scroll-behavior:smooth;
+            scroll-padding-top:115px;
+        }
+
+        body{
+            font-family:Arial,Helvetica,sans-serif;
+            color:#333;
+            background:#fff;
+            line-height:1.6;
+            overflow-x:hidden;
+        }
+
+        a{
+            text-decoration:none;
+            color:inherit;
+        }
+
+        img{
+            max-width:100%;
+            display:block;
+        }
+
+        section{
+            padding:80px 20px;
+        }
+
+        .container{
+            max-width:1150px;
+            width:100%;
+            margin:0 auto;
+        }
+
+
+        /* ==================================================
+           HEADER
+        ================================================== */
+
+        header{
+            position:sticky;
+            top:0;
+            z-index:1000;
+            background:rgba(255,255,255,.97);
+            box-shadow:0 2px 12px rgba(0,0,0,.08);
+        }
+
+        .header-container{
+            max-width:1200px;
+            min-height:82px;
+            margin:auto;
+            padding:10px 25px;
+
+            display:grid;
+            grid-template-columns:90px 1fr auto;
+            align-items:center;
+            gap:20px;
+        }
+
+        .header-logo{
+            width:85px;
+            height:65px;
+            object-fit:contain;
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:24px;
+            flex-wrap:wrap;
+        }
+
+        nav a{
+            color:#333;
+            font-size:14px;
+            font-weight:bold;
+            white-space:nowrap;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#c62828;
+        }
+
+        .social{
+            display:flex;
+            gap:10px;
+            align-items:center;
+        }
+
+        .social a{
+            width:36px;
+            height:36px;
+            border-radius:50%;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            color:#fff;
+            font-size:15px;
+            font-weight:bold;
+        }
+
+        .instagram{
+            background:#d62976;
+        }
+
+        .facebook{
+            background:#1877f2;
+        }
+
+
+        /* ==================================================
+           BARRA DE COLORES
+        ================================================== */
+
+        .color-bar{
+            height:6px;
+            display:flex;
+        }
+
+        .color-bar span{
+            flex:1;
+        }
+
+        .blue{
+            background:#1479b8;
+        }
+
+        .green{
+            background:#39a852;
+        }
+
+        .red{
+            background:#c62828;
+        }
+
+        .purple{
+            background:#7b3f98;
+        }
+
+
+        /* ==================================================
+           HERO
+        ================================================== */
+
+        .hero{
+            min-height:690px;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            position:relative;
+            overflow:hidden;
+
+            padding:70px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(255,255,255,.58),
+                    rgba(255,255,255,.58)
+                ),
+                url("fondo-asoginter.png")
+                center center / cover no-repeat;
+        }
+
+        .hero-content{
+            width:100%;
+            max-width:950px;
+
+            padding:45px 35px;
+
+            text-align:center;
+
+            background:rgba(255,255,255,.84);
+
+            border-radius:25px;
+
+            box-shadow:
+                0 12px 40px
+                rgba(0,0,0,.12);
+        }
+
+        .hero-emblem{
+            width:170px;
+            height:170px;
+
+            object-fit:contain;
+
+            margin:0 auto 15px;
+        }
+
+        .hero-formal-name{
+            font-size:20px;
+            font-weight:bold;
+            letter-spacing:1px;
+            color:#555;
+            margin-bottom:5px;
+        }
+
+        .hero-title{
+            font-size:clamp(55px,10vw,105px);
+            font-weight:900;
+            letter-spacing:5px;
+            color:#c62828;
+            line-height:1;
+            margin-bottom:20px;
+        }
+
+        .hero-tagline{
+            font-size:22px;
+            font-weight:bold;
+            color:#444;
+            margin-bottom:18px;
+        }
+
+        .hero-description{
+            max-width:750px;
+            margin:auto;
+            font-size:18px;
+            color:#555;
+        }
+
+        .hero-buttons{
+            margin-top:30px;
+
+            display:flex;
+            justify-content:center;
+
+            gap:15px;
+
+            flex-wrap:wrap;
+        }
+
+        .btn{
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+
+            padding:13px 25px;
+
+            border-radius:30px;
+
+            font-weight:bold;
+
+            transition:.3s;
+        }
+
+        .btn-primary{
+            background:#c62828;
+            color:#fff;
+        }
+
+        .btn-primary:hover{
+            background:#a91f1f;
+            transform:translateY(-2px);
+        }
+
+        .btn-secondary{
+            background:#fff;
+            color:#c62828;
+
+            border:
+                2px solid
+                #c62828;
+        }
+
+        .btn-secondary:hover{
+            background:#c62828;
+            color:#fff;
+        }
+
+
+        /* ==================================================
+           TITULOS
+        ================================================== */
+
+        .section-title{
+            text-align:center;
+            font-size:38px;
+            line-height:1.2;
+            margin-bottom:15px;
+            color:#333;
+        }
+
+        .section-title span{
+            color:#c62828;
+        }
+
+        .section-intro{
+            max-width:800px;
+            margin:0 auto 45px;
+
+            text-align:center;
+
+            color:#666;
+
+            font-size:17px;
+        }
+
+
+        /* ==================================================
+           QUIENES SOMOS
+        ================================================== */
+
+        .about-grid{
+            display:grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap:50px;
+
+            align-items:center;
+        }
+
+        .about-text p{
+            margin-bottom:18px;
+            font-size:17px;
+        }
+
+        .about-highlight{
+            margin-top:25px;
+
+            padding:22px;
+
+            border-left:
+                5px solid
+                #c62828;
+
+            background:#fafafa;
+
+            border-radius:
+                0
+                12px
+                12px
+                0;
+
+            font-weight:bold;
+
+            color:#555;
+        }
+
+        .about-logo{
+            height:390px;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            border-radius:15px;
+
+            overflow:hidden;
+
+            background:#f6f7fb;
+        }
+
+        .about-logo img{
+            width:100%;
+            height:100%;
+
+            object-fit:cover;
+
+            object-position:center;
+        }
+
+
+        /* ==================================================
+           MISION
+        ================================================== */
+
+        .mission{
+            background:#f7f7f7;
+        }
+
+        .mission-grid{
+            display:grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap:30px;
+        }
+
+        .mission-card{
+            background:#fff;
+
+            padding:35px;
+
+            border-radius:16px;
+
+            box-shadow:
+                0 6px 22px
+                rgba(0,0,0,.06);
+        }
+
+        .mission-card h3{
+            color:#c62828;
+
+            font-size:24px;
+
+            margin-bottom:15px;
+        }
+
+
+        /* ==================================================
+           QUÉ HACEMOS
+        ================================================== */
+
+        .cards-grid{
+            display:grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:25px;
+        }
+
+        .activity-card{
+            background:#fff;
+
+            border-radius:16px;
+
+            padding:30px 25px;
+
+            text-align:center;
+
+            border:1px solid #eee;
+
+            box-shadow:
+                0 7px 25px
+                rgba(0,0,0,.06);
+
+            transition:.3s;
+        }
+
+        .activity-card:hover{
+            transform:translateY(-5px);
+
+            box-shadow:
+                0 12px 30px
+                rgba(0,0,0,.10);
+        }
+
+        .professional-icon{
+            width:68px;
+            height:68px;
+
+            border-radius:18px;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            margin:0 auto 18px;
+        }
+
+        .professional-icon svg{
+            width:36px;
+            height:36px;
+        }
+
+        .icon-blue{
+            background:#e5f3fb;
+            color:#1479b8;
+        }
+
+        .icon-green{
+            background:#e7f6ea;
+            color:#39a852;
+        }
+
+        .icon-red{
+            background:#fdeaea;
+            color:#c62828;
+        }
+
+        .icon-purple{
+            background:#f1e9f5;
+            color:#7b3f98;
+        }
+
+        .activity-card h3{
+            margin-bottom:10px;
+            font-size:20px;
+        }
+
+        .activity-card p{
+            color:#666;
+            font-size:15px;
+        }
+
+        .health-message{
+            margin-top:45px;
+
+            background:#f7f7f7;
+
+            padding:30px;
+
+            border-radius:18px;
+
+            text-align:center;
+        }
+
+        .health-message strong{
+            color:#c62828;
+        }
+
+
+        /* ==================================================
+           FRASE
+        ================================================== */
+
+        .quote-section{
+            background:#c62828;
+
+            color:#fff;
+
+            text-align:center;
+
+            padding:70px 20px;
+        }
+
+        .quote{
+            max-width:900px;
+
+            margin:auto;
+
+            font-size:27px;
+
+            font-weight:bold;
+
+            line-height:1.5;
+        }
+
+
+        /* ==================================================
+           ACTIVIDADES
+        ================================================== */
+
+        .activity-intro-box{
+            max-width:980px;
+
+            margin:
+                0 auto 35px;
+
+            padding:
+                25px 28px;
+
+            border-radius:
+                18px;
+
+            background:
+                #fafafa;
+
+            border-left:
+                5px solid
+                #c62828;
+
+            box-shadow:
+                0 6px 20px
+                rgba(0,0,0,.05);
+
+            text-align:center;
+        }
+
+        .activity-intro-box p{
+            color:#5f5f5f;
+
+            font-size:16px;
+
+            line-height:1.65;
+        }
+
+        .activity-intro-box strong{
+            color:#c62828;
+        }
+
+
+        /* ==================================================
+           FSE+
+        ================================================== */
+
+        .training-feature{
+            display:grid;
+
+            grid-template-columns:
+                .92fr
+                1.08fr;
+
+            gap:38px;
+
+            align-items:stretch;
+
+            padding:30px;
+
+            background:#fff;
+
+            border-radius:22px;
+
+            border:1px solid #ececec;
+
+            box-shadow:
+                0 10px 30px
+                rgba(0,0,0,.07);
+
+            overflow:hidden;
+
+            margin-bottom:35px;
+        }
+
+        .training-content{
+            display:flex;
+
+            flex-direction:column;
+
+            justify-content:center;
+        }
+
+        .training-label{
+            display:inline-flex;
+
+            align-self:flex-start;
+
+            padding:
+                7px 12px;
+
+            border-radius:20px;
+
+            background:#fdeaea;
+
+            color:#c62828;
+
+            font-size:12px;
+
+            font-weight:800;
+
+            text-transform:uppercase;
+
+            letter-spacing:.7px;
+
+            margin-bottom:15px;
+        }
+
+        .training-content h3{
+            color:#c62828;
+
+            font-size:30px;
+
+            line-height:1.2;
+
+            margin-bottom:15px;
+        }
+
+        .program-title{
+            font-size:17px;
+
+            font-weight:700;
+
+            line-height:1.45;
+
+            color:#444;
+
+            margin-bottom:16px;
+        }
+
+        .training-content > p{
+            color:#666;
+
+            margin-bottom:16px;
+        }
+
+        .training-list{
+            display:flex;
+
+            flex-direction:column;
+
+            gap:10px;
+
+            margin-top:5px;
+        }
+
+        .training-item{
+            padding:
+                11px 14px;
+
+            border-radius:12px;
+
+            background:#fafafa;
+
+            border-left:
+                4px solid
+                #c62828;
+
+            font-size:14px;
+
+            color:#555;
+        }
+
+        .training-item strong{
+            color:#333;
+        }
+
+        .company{
+            color:#c62828;
+
+            font-weight:bold;
+        }
+
+        .training-note{
+            margin-top:18px;
+
+            padding:
+                13px 15px;
+
+            background:#f7f7f7;
+
+            border-radius:12px;
+
+            font-size:13px;
+
+            color:#666;
+        }
+
+
+        /* ==================================================
+           COLLAGE
+        ================================================== */
+
+        .course-collage{
+            display:grid;
+
+            grid-template-columns:
+                1.15fr
+                .85fr;
+
+            grid-template-rows:
+                230px
+                185px;
+
+            gap:12px;
+
+            min-height:427px;
+        }
+
+        .course-photo{
+            width:100%;
+            height:100%;
+
+            object-fit:cover;
+
+            border-radius:15px;
+
+            box-shadow:
+                0 5px 16px
+                rgba(0,0,0,.10);
+        }
+
+        .course-photo-main{
+            grid-column:
+                1 / -1;
+
+            object-position:
+                center 43%;
+        }
+
+        .course-photo-group{
+            object-position:
+                center;
+        }
+
+        .course-photo-forklift{
+            object-position:
+                center 42%;
+        }
+
+
+        /* ==================================================
+           TARJETAS DE ÁMBITOS
+        ================================================== */
+
+        .areas-grid{
+            display:grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:22px;
+
+            margin-bottom:35px;
+        }
+
+        .area-card{
+            background:#fff;
+
+            border:
+                1px solid
+                #ececec;
+
+            border-radius:
+                16px;
+
+            padding:
+                24px 22px;
+
+            box-shadow:
+                0 7px 22px
+                rgba(0,0,0,.05);
+
+            transition:
+                .3s;
+        }
+
+        .area-card:hover{
+            transform:
+                translateY(-4px);
+
+            box-shadow:
+                0 12px 28px
+                rgba(0,0,0,.08);
+        }
+
+        .area-card h3{
+            color:#333;
+
+            font-size:19px;
+
+            margin-bottom:8px;
+        }
+
+        .area-card p{
+            color:#666;
+
+            font-size:14px;
+        }
+
+        .area-icon{
+            width:150px;
+            height:95px;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            margin-bottom:18px;
+
+            border-radius:22px;
+
+            overflow:hidden;
+        }
+
+        .area-icon svg{
+            width:145px;
+            height:90px;
+            display:block;
+        }
+
+        .area-green{
+            background:#eef9f0;
+        }
+
+        .area-purple{
+            background:#f5eef8;
+        }
+
+        .area-red{
+            background:#fff0f0;
+        }
+
+        .area-blue{
+            background:#edf7fc;
+        }
+
+
+        /* ==================================================
+           SOLIDARIDAD
+        ================================================== */
+
+        .solidarity-feature{
+            display:grid;
+
+            grid-template-columns:
+                1.15fr
+                .85fr;
+
+            gap:30px;
+
+            align-items:stretch;
+
+            margin-top:35px;
+
+            margin-bottom:35px;
+        }
+
+        .solidarity-content{
+            background:#fff;
+
+            border:
+                1px solid
+                #eeeeee;
+
+            border-radius:20px;
+
+            padding:35px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,.06);
+        }
+
+        .solidarity-badge{
+            display:inline-flex;
+
+            padding:
+                7px 12px;
+
+            border-radius:20px;
+
+            background:#e7f6ea;
+
+            color:#2f8f45;
+
+            font-size:12px;
+
+            font-weight:800;
+
+            text-transform:uppercase;
+
+            letter-spacing:.6px;
+
+            margin-bottom:15px;
+        }
+
+        .solidarity-content h3{
+            color:#c62828;
+
+            font-size:28px;
+
+            line-height:1.2;
+
+            margin-bottom:14px;
+        }
+
+        .solidarity-content p{
+            color:#666;
+
+            margin-bottom:12px;
+
+            font-size:16px;
+        }
+
+        .solidarity-note{
+            margin-top:17px;
+
+            padding:
+                13px
+                15px;
+
+            background:#fafafa;
+
+            border-radius:12px;
+
+            font-size:13px !important;
+        }
+
+        .solidarity-visual{
+            min-height:250px;
+
+            border-radius:16px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #e8f7eb,
+                    #e6f2fb
+                );
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            text-align:center;
+
+            padding:30px;
+        }
+
+        .solidarity-visual-inner{
+            max-width:360px;
+        }
+
+        .big-symbol{
+            width:95px;
+            height:95px;
+
+            margin:
+                0 auto 18px;
+
+            border-radius:50%;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            background:#fdeaea;
+
+            color:#c62828;
+        }
+
+        .solidarity-visual h4{
+            font-size:22px;
+
+            margin-bottom:7px;
+        }
+
+        .solidarity-visual p{
+            max-width:300px;
+
+            margin:auto;
+
+            color:#666;
+
+            font-size:14px;
+        }
+
+
+        /* ==================================================
+           TRABAJO EN RED
+        ================================================== */
+
+        .collaboration-banner{
+            padding:
+                32px
+                28px;
+
+            border-radius:
+                20px;
+
+            background:
+                #c62828;
+
+            color:
+                #fff;
+
+            text-align:
+                center;
+
+            margin-bottom:
+                35px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(198,40,40,.12);
+        }
+
+        .collaboration-banner h3{
+            font-size:
+                27px;
+
+            margin-bottom:
+                12px;
+        }
+
+        .collaboration-banner p{
+            max-width:
+                850px;
+
+            margin:
+                auto;
+
+            font-size:
+                16px;
+
+            line-height:
+                1.7;
+        }
+
+
+        /* ==================================================
+           TARJETAS FINALES
+        ================================================== */
+
+        .news-grid{
+            display:grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                25px;
+        }
+
+        .news-card{
+            border-radius:
+                15px;
+
+            background:
+                #f7f7f7;
+
+            padding:
+                25px;
+
+            min-height:
+                180px;
+
+            border-top:
+                4px solid
+                #c62828;
+        }
+
+        .news-card:nth-child(2){
+            border-top-color:
+                #1479b8;
+        }
+
+        .news-card:nth-child(3){
+            border-top-color:
+                #39a852;
+        }
+
+        .news-card h3{
+            color:
+                #c62828;
+
+            margin-bottom:
+                12px;
+
+            font-size:
+                20px;
+        }
+
+        .news-card p{
+            color:
+                #666;
+
+            font-size:
+                14px;
+        }
+
+
+        /* ==================================================
+           COLABORA
+        ================================================== */
+
+        .collaborate{
+            background:
+                #f7f7f7;
+        }
+
+        .collaborate-box{
+            max-width:
+                900px;
+
+            margin:
+                auto;
+
+            text-align:
+                center;
+
+            background:
+                #fff;
+
+            padding:
+                45px;
+
+            border-radius:
+                20px;
+
+            box-shadow:
+                0 7px 25px
+                rgba(0,0,0,.07);
+        }
+
+        .collaborate-box p{
+            margin-bottom:
+                25px;
+
+            color:
+                #666;
+        }
+
+
+        /* ==================================================
+           CONTACTO
+        ================================================== */
+
+        .contact-grid{
+            display:grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap:
+                40px;
+
+            align-items:
+                start;
+        }
+
+        .contact-list{
+            display:flex;
+
+            flex-direction:
+                column;
+
+            gap:
+                20px;
+        }
+
+        .contact-item{
+            display:flex;
+
+            align-items:center;
+
+            gap:
+                18px;
+
+            padding:
+                15px;
+
+            border-radius:
+                12px;
+
+            background:
+                #fafafa;
+        }
+
+        .contact-icon{
+            width:
+                56px;
+
+            height:
+                56px;
+
+            border-radius:
+                50%;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            flex-shrink:
+                0;
+        }
+
+        .contact-icon svg{
+            width:
+                27px;
+
+            height:
+                27px;
+        }
+
+        .address-icon{
+            background:
+                #e6f2fb;
+
+            color:
+                #1479b8;
+        }
+
+        .phone-icon{
+            background:
+                #e8f7eb;
+
+            color:
+                #39a852;
+        }
+
+        .whatsapp-icon{
+            background:
+                #e8f7eb;
+
+            color:
+                #25d366;
+        }
+
+        .email-icon{
+            background:
+                #fff1e5;
+
+            color:
+                #ef7d00;
+        }
+
+        .contact-item h4{
+            margin-bottom:
+                3px;
+        }
+
+        .contact-item p{
+            color:
+                #666;
+        }
+
+        .contact-item a:hover{
+            color:
+                #c62828;
+        }
+
+        .map-container{
+            width:
+                100%;
+
+            border-radius:
+                16px;
+
+            overflow:
+                hidden;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,.10);
+
+            border:
+                1px solid
+                #e5e5e5;
+        }
+
+        .map-container iframe{
+            display:
+                block;
+
+            width:
+                100%;
+
+            height:
+                400px;
+
+            border:
+                0;
+        }
+
+
+        /* ==================================================
+           FOOTER
+        ================================================== */
+
+        footer{
+            background:
+                #222;
+
+            color:
+                #fff;
+
+            text-align:
+                center;
+
+            padding:
+                35px
+                20px;
+        }
+
+        footer p{
+            margin:
+                5px
+                0;
+
+            color:
+                #ddd;
+        }
+
+        footer strong{
+            color:
+                #fff;
+
+            font-size:
+                25px;
+        }
+
+
+        /* ==================================================
+           TABLET
+        ================================================== */
+
+        @media(max-width:900px){
+
+            .header-container{
+                grid-template-columns:
+                    80px
+                    1fr;
+
+                grid-template-areas:
+                    "logo social"
+                    "nav nav";
+
+                gap:
+                    8px
+                    12px;
+
+                padding:
+                    10px
+                    15px;
+            }
+
+            .header-logo{
+                grid-area:
+                    logo;
+            }
+
+            .social{
+                grid-area:
+                    social;
+
+                justify-content:
+                    flex-end;
+            }
+
+            nav{
+                grid-area:
+                    nav;
+
+                justify-content:
+                    flex-start;
+
+                flex-wrap:
+                    nowrap;
+
+                overflow-x:
+                    auto;
+
+                scrollbar-width:
+                    none;
+
+                gap:
+                    20px;
+            }
+
+            nav::-webkit-scrollbar{
+                display:none;
+            }
+
+            .about-grid,
+            .mission-grid,
+            .contact-grid{
+                grid-template-columns:
+                    1fr;
+            }
+
+            .cards-grid,
+            .news-grid,
+            .areas-grid{
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .training-feature,
+            .solidarity-feature{
+                grid-template-columns:
+                    1fr;
+            }
+
+        }
+
+
+        /* ==================================================
+           MOVIL
+        ================================================== */
+
+        @media(max-width:600px){
+
+            html{
+                scroll-padding-top:
+                    120px;
+            }
+
+            section{
+                padding:
+                    58px
+                    0;
+            }
+
+            .container{
+                width:
+                    92%;
+            }
+
+
+            /* HEADER */
+
+            .header-container{
+                grid-template-columns:
+                    1fr
+                    auto;
+
+                grid-template-rows:
+                    auto
+                    auto;
+
+                gap:
+                    8px
+                    12px;
+
+                padding:
+                    9px
+                    4%;
+            }
+
+            .header-logo{
+                width:
+                    70px;
+
+                height:
+                    52px;
+
+                justify-self:
+                    start;
+            }
+
+            .social{
+                justify-self:
+                    end;
+
+                gap:
+                    7px;
+            }
+
+            .social a{
+                width:
+                    34px;
+
+                height:
+                    34px;
+            }
+
+            nav{
+                grid-column:
+                    1 /
+                    -1;
+
+                width:
+                    100%;
+
+                overflow-x:
+                    auto;
+
+                overflow-y:
+                    hidden;
+
+                justify-content:
+                    flex-start;
+
+                flex-wrap:
+                    nowrap;
+
+                gap:
+                    10px;
+
+                padding-bottom:
+                    2px;
+
+                -webkit-overflow-scrolling:
+                    touch;
+
+                scrollbar-width:
+                    none;
+            }
+
+            nav::-webkit-scrollbar{
+                display:
+                    none;
+            }
+
+            nav a{
+                font-size:
+                    10.5px;
+
+                padding:
+                    7px
+                    8px;
+            }
+
+
+            /* HERO */
+
+            .hero{
+                min-height:
+                    auto;
+
+                padding:
+                    30px
+                    12px
+                    38px;
+            }
+
+            .hero-content{
+                padding:
+                    30px
+                    18px
+                    35px;
+
+                border-radius:
+                    20px;
+            }
+
+            .hero-emblem{
+                width:
+                    125px;
+
+                height:
+                    125px;
+            }
+
+            .hero-formal-name{
+                font-size:
+                    13px;
+
+                line-height:
+                    1.45;
+            }
+
+            .hero-title{
+                font-size:
+                    clamp(
+                        48px,
+                        16vw,
+                        68px
+                    );
+
+                letter-spacing:
+                    2px;
+            }
+
+            .hero-tagline{
+                font-size:
+                    17px;
+
+                line-height:
+                    1.4;
+            }
+
+            .hero-description{
+                font-size:
+                    15px;
+            }
+
+            .hero-buttons{
+                flex-direction:
+                    column;
+
+                gap:
+                    10px;
+
+                margin-top:
+                    23px;
+            }
+
+            .btn{
+                width:
+                    100%;
+
+                min-height:
+                    48px;
+            }
+
+
+            /* TITULOS */
+
+            .section-title{
+                font-size:
+                    30px;
+            }
+
+            .section-intro{
+                font-size:
+                    15px;
+            }
+
+
+            /* QUIENES SOMOS */
+
+            .about-grid{
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    28px;
+            }
+
+            .about-text p{
+                font-size:
+                    15px;
+            }
+
+            .about-highlight{
+                padding:
+                    18px;
+
+                font-size:
+                    14px;
+            }
+
+            .about-logo{
+                height:
+                    290px;
+            }
+
+
+            /* MISION */
+
+            .mission-grid{
+                grid-template-columns:
+                    1fr;
+            }
+
+            .mission-card{
+                padding:
+                    27px
+                    22px;
+            }
+
+
+            /* QUÉ HACEMOS */
+
+            .cards-grid{
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    18px;
+            }
+
+            .activity-card{
+                padding:
+                    25px
+                    20px;
+            }
+
+            .professional-icon{
+                width:
+                    62px;
+
+                height:
+                    62px;
+            }
+
+
+            /* FRASE */
+
+            .quote-section{
+                padding:
+                    55px
+                    18px;
+            }
+
+            .quote{
+                font-size:
+                    21px;
+            }
+
+
+            /* ACTIVIDADES */
+
+            .activity-intro-box{
+                padding:
+                    20px
+                    17px;
+            }
+
+            .activity-intro-box p{
+                font-size:
+                    14px;
+            }
+
+            .training-feature{
+                grid-template-columns:
+                    1fr;
+
+                padding:
+                    20px;
+
+                gap:
+                    25px;
+            }
+
+            .training-content h3{
+                font-size:
+                    25px;
+            }
+
+            .program-title{
+                font-size:
+                    16px;
+            }
+
+            .training-item{
+                font-size:
+                    13px;
+            }
+
+
+            /* COLLAGE */
+
+            .course-collage{
+                grid-template-columns:
+                    1.08fr
+                    .92fr;
+
+                grid-template-rows:
+                    210px
+                    160px;
+
+                min-height:
+                    382px;
+
+                gap:
+                    8px;
+            }
+
+
+            /* AREAS */
+
+            .areas-grid{
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    18px;
+            }
+
+            .area-card{
+                padding:
+                    22px
+                    18px;
+            }
+
+            .area-icon{
+                margin-left:
+                    auto;
+
+                margin-right:
+                    auto;
+
+                width:
+                    145px;
+            }
+
+            .area-icon svg{
+                width:
+                    140px;
+            }
+
+
+            /* SOLIDARIDAD */
+
+            .solidarity-feature{
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    20px;
+            }
+
+            .solidarity-content{
+                padding:
+                    28px
+                    22px;
+            }
+
+            .solidarity-content h3{
+                font-size:
+                    25px;
+            }
+
+
+            /* RED */
+
+            .collaboration-banner{
+                padding:
+                    27px
+                    20px;
+            }
+
+            .collaboration-banner h3{
+                font-size:
+                    24px;
+            }
+
+            .collaboration-banner p{
+                font-size:
+                    14px;
+            }
+
+
+            /* NEWS */
+
+            .news-grid{
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    18px;
+            }
+
+
+            /* CONTACTO */
+
+            .contact-grid{
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    25px;
+            }
+
+            .contact-item{
+                gap:
+                    13px;
+
+                padding:
+                    13px
+                    10px;
+
+                align-items:
+                    flex-start;
+            }
+
+            .contact-icon{
+                width:
+                    50px;
+
+                height:
+                    50px;
+            }
+
+            .contact-item h4{
+                font-size:
+                    15px;
+            }
+
+            .contact-item p{
+                font-size:
+                    14px;
+            }
+
+            .map-container iframe{
+                height:
+                    285px;
+            }
+
+            footer{
+                padding:
+                    28px
+                    15px;
+            }
+
+            footer p{
+                font-size:
+                    13px;
+            }
+
+        }
+
+
+        /* ==================================================
+           MOVIL PEQUEÑO
+        ================================================== */
+
+        @media(max-width:380px){
+
+            .header-logo{
+                width:
+                    64px;
+
+                height:
+                    48px;
+            }
+
+            .social a{
+                width:
+                    31px;
+
+                height:
+                    31px;
+
+                font-size:
+                    13px;
+            }
+
+            nav a{
+                font-size:
+                    10px;
+            }
+
+            .hero-content{
+                padding:
+                    26px
+                    14px
+                    30px;
+            }
+
+            .hero-emblem{
+                width:
+                    108px;
+
+                height:
+                    108px;
+            }
+
+            .hero-title{
+                font-size:
+                    46px;
+            }
+
+            .hero-formal-name{
+                font-size:
+                    11px;
+            }
+
+            .hero-tagline{
+                font-size:
+                    15px;
+            }
+
+            .hero-description{
+                font-size:
+                    14px;
+            }
+
+            .about-logo{
+                height:
+                    255px;
+            }
+
+            .course-collage{
+                grid-template-columns:
+                    1fr
+                    1fr;
+
+                grid-template-rows:
+                    170px
+                    125px;
+            }
+
+            .map-container iframe{
+                height:
+                    255px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =====================================================
+<!-- ==================================================
      HEADER
-===================================================== -->
+================================================== -->
 
 <header>
 
     <div class="header-container">
+
 
         <a href="#inicio">
 
             <img
                 class="header-logo"
                 src="LOGO%20ASOGINTER%20%281%29.png"
-                alt="Logo de ASOGINTER"
+                alt="Logo ASOGINTER"
             >
 
         </a>
@@ -1473,6 +2146,7 @@ footer strong{
 
         <div class="social">
 
+
             <a
                 class="instagram"
                 href="https://www.instagram.com/asoginter/"
@@ -1482,6 +2156,7 @@ footer strong{
             >
                 IG
             </a>
+
 
             <a
                 class="facebook"
@@ -1493,7 +2168,9 @@ footer strong{
                 f
             </a>
 
+
         </div>
+
 
     </div>
 
@@ -1501,22 +2178,30 @@ footer strong{
     <div class="color-bar">
 
         <span class="blue"></span>
+
         <span class="green"></span>
+
         <span class="red"></span>
+
         <span class="purple"></span>
 
     </div>
 
+
 </header>
 
 
-<!-- =====================================================
+<!-- ==================================================
      INICIO
-===================================================== -->
+================================================== -->
 
-<section class="hero" id="inicio">
+<section
+    class="hero"
+    id="inicio"
+>
 
     <div class="hero-content">
+
 
         <img
             class="hero-emblem"
@@ -1527,8 +2212,8 @@ footer strong{
 
         <div class="hero-formal-name">
 
-            ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL
-            DE TORRENT
+            ASOCIACIÓN GITANA EUROPEA
+            E INTERCULTURAL DE TORRENT
 
         </div>
 
@@ -1561,8 +2246,8 @@ footer strong{
 
 
             <a
-                class="btn btn-primary"
                 href="#quienes-somos"
+                class="btn btn-primary"
             >
 
                 Conócenos
@@ -1571,8 +2256,8 @@ footer strong{
 
 
             <a
-                class="btn btn-secondary"
                 href="#contacto"
+                class="btn btn-secondary"
             >
 
                 Contacta con nosotros
@@ -1582,14 +2267,15 @@ footer strong{
 
         </div>
 
+
     </div>
 
 </section>
 
 
-<!-- =====================================================
+<!-- ==================================================
      QUIÉNES SOMOS
-===================================================== -->
+================================================== -->
 
 <section id="quienes-somos">
 
@@ -1607,8 +2293,7 @@ footer strong{
         <p class="section-intro">
 
             Una asociación comprometida con la inclusión,
-            la igualdad, la cultura y la convivencia
-            intercultural.
+            la igualdad, la cultura y la convivencia intercultural.
 
         </p>
 
@@ -1624,8 +2309,7 @@ footer strong{
                     La Asociación Gitana Europea e Intercultural
                     de Torrent trabaja para favorecer la inclusión
                     social, la igualdad de oportunidades y la
-                    convivencia entre personas de diferentes
-                    culturas.
+                    convivencia entre personas de diferentes culturas.
 
                 </p>
 
@@ -1664,14 +2348,15 @@ footer strong{
 
         </div>
 
+
     </div>
 
 </section>
 
 
-<!-- =====================================================
+<!-- ==================================================
      MISIÓN Y VISIÓN
-===================================================== -->
+================================================== -->
 
 <section class="mission">
 
@@ -1688,9 +2373,8 @@ footer strong{
 
         <p class="section-intro">
 
-            Construimos oportunidades y espacios
-            de convivencia desde la participación
-            y el respeto.
+            Construimos oportunidades y espacios de convivencia
+            desde la participación y el respeto.
 
         </p>
 
@@ -1704,10 +2388,11 @@ footer strong{
                     Misión
                 </h3>
 
+
                 <p>
 
-                    Favorecer la inclusión social y
-                    la igualdad de oportunidades mediante
+                    Favorecer la inclusión social y la
+                    igualdad de oportunidades mediante
                     programas, actividades, formación
                     y acompañamiento dirigidos a la
                     comunidad y al conjunto de la sociedad.
@@ -1722,6 +2407,7 @@ footer strong{
                 <h3>
                     Visión
                 </h3>
+
 
                 <p>
 
@@ -1738,14 +2424,15 @@ footer strong{
 
         </div>
 
+
     </div>
 
 </section>
 
 
-<!-- =====================================================
+<!-- ==================================================
      QUÉ HACEMOS
-===================================================== -->
+================================================== -->
 
 <section id="que-hacemos">
 
@@ -1763,8 +2450,7 @@ footer strong{
         <p class="section-intro">
 
             Desarrollamos proyectos y acciones dirigidos
-            a mejorar las oportunidades, la participación
-            social y la convivencia.
+            a mejorar las oportunidades y la participación social.
 
         </p>
 
@@ -1772,36 +2458,42 @@ footer strong{
         <div class="cards-grid">
 
 
+            <!-- INCLUSIÓN -->
+
             <div class="activity-card">
 
                 <div class="professional-icon icon-blue">
+
 
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                     >
 
                         <path
                             d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
-                        ></path>
+                        />
 
                         <circle
                             cx="9"
                             cy="7"
                             r="4"
-                        ></circle>
+                        />
 
                         <path
                             d="M22 21v-2a4 4 0 0 0-3-3.87"
-                        ></path>
+                        />
 
                         <path
                             d="M16 3.13a4 4 0 0 1 0 7.75"
-                        ></path>
+                        />
 
                     </svg>
+
 
                 </div>
 
@@ -1813,35 +2505,41 @@ footer strong{
 
                 <p>
 
-                    Acompañamiento y acciones para
-                    favorecer la participación y
-                    la inclusión.
+                    Acompañamiento y acciones para favorecer
+                    la participación y la inclusión.
 
                 </p>
+
 
             </div>
 
 
+            <!-- EDUCACIÓN -->
+
             <div class="activity-card">
 
                 <div class="professional-icon icon-green">
+
 
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                     >
 
                         <path
                             d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
-                        ></path>
+                        />
 
                         <path
                             d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-                        ></path>
+                        />
 
                     </svg>
+
 
                 </div>
 
@@ -1853,45 +2551,59 @@ footer strong{
 
                 <p>
 
-                    Actividades formativas para
-                    mejorar las capacidades y
-                    oportunidades.
+                    Actividades formativas para mejorar
+                    las capacidades y oportunidades.
 
                 </p>
+
 
             </div>
 
 
+            <!-- CULTURA -->
+
             <div class="activity-card">
 
                 <div class="professional-icon icon-red">
+
 
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                     >
 
                         <circle
                             cx="13.5"
                             cy="6.5"
                             r="3.5"
-                        ></circle>
+                        />
 
                         <circle
                             cx="6.5"
                             cy="12.5"
                             r="3.5"
-                        ></circle>
+                        />
 
                         <circle
                             cx="17.5"
                             cy="17.5"
                             r="3.5"
-                        ></circle>
+                        />
+
+                        <path
+                            d="M13 10l-3 2"
+                        />
+
+                        <path
+                            d="M10 15l4 1"
+                        />
 
                     </svg>
+
 
                 </div>
 
@@ -1903,38 +2615,49 @@ footer strong{
 
                 <p>
 
-                    Promoción, conocimiento y puesta
-                    en valor de la cultura y la
-                    historia gitana.
+                    Promoción, conocimiento y puesta en valor
+                    de la cultura y la historia gitana.
 
                 </p>
+
 
             </div>
 
 
+            <!-- IGUALDAD -->
+
             <div class="activity-card">
 
                 <div class="professional-icon icon-purple">
+
 
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                     >
 
-                        <path d="M12 3v18"></path>
-                        <path d="M3 7h18"></path>
+                        <path
+                            d="M12 3v18"
+                        />
+
+                        <path
+                            d="M3 7h18"
+                        />
 
                         <path
                             d="M5 7l-3 6a4 4 0 0 0 6 0L5 7z"
-                        ></path>
+                        />
 
                         <path
                             d="M19 7l-3 6a4 4 0 0 0 6 0l-3-6z"
-                        ></path>
+                        />
 
                     </svg>
+
 
                 </div>
 
@@ -1946,35 +2669,41 @@ footer strong{
 
                 <p>
 
-                    Trabajamos para combatir las
-                    desigualdades y favorecer la
-                    igualdad de oportunidades.
+                    Trabajamos para combatir las desigualdades
+                    y favorecer la igualdad de oportunidades.
 
                 </p>
+
 
             </div>
 
 
+            <!-- JUVENTUD -->
+
             <div class="activity-card">
 
                 <div class="professional-icon icon-green">
+
 
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                     >
 
                         <path
                             d="M3 17l6-6 4 4 8-8"
-                        ></path>
+                        />
 
                         <path
                             d="M14 7h7v7"
-                        ></path>
+                        />
 
                     </svg>
+
 
                 </div>
 
@@ -1986,43 +2715,51 @@ footer strong{
 
                 <p>
 
-                    Impulsamos la participación,
-                    formación y desarrollo de
-                    niños, niñas y jóvenes.
+                    Impulsamos la participación, formación
+                    y desarrollo de niños, niñas y jóvenes.
 
                 </p>
+
 
             </div>
 
 
+            <!-- INTERCULTURALIDAD -->
+
             <div class="activity-card">
 
                 <div class="professional-icon icon-blue">
+
 
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                     >
 
                         <circle
                             cx="12"
                             cy="12"
                             r="9"
-                        ></circle>
+                        />
 
-                        <path d="M3 12h18"></path>
+                        <path
+                            d="M3 12h18"
+                        />
 
                         <path
                             d="M12 3a14 14 0 0 1 0 18"
-                        ></path>
+                        />
 
                         <path
                             d="M12 3a14 14 0 0 0 0 18"
-                        ></path>
+                        />
 
                     </svg>
+
 
                 </div>
 
@@ -2034,11 +2771,11 @@ footer strong{
 
                 <p>
 
-                    Creamos espacios de encuentro,
-                    diálogo y convivencia entre
-                    diferentes culturas.
+                    Creamos espacios de encuentro, diálogo
+                    y convivencia entre diferentes culturas.
 
                 </p>
+
 
             </div>
 
@@ -2047,6 +2784,7 @@ footer strong{
 
 
         <div class="health-message">
+
 
             <p>
 
@@ -2068,6 +2806,7 @@ footer strong{
 
             </p>
 
+
         </div>
 
 
@@ -2076,11 +2815,12 @@ footer strong{
 </section>
 
 
-<!-- =====================================================
-     FRASE DESTACADA
-===================================================== -->
+<!-- ==================================================
+     FRASE
+================================================== -->
 
 <section class="quote-section">
+
 
     <p class="quote">
 
@@ -2090,12 +2830,13 @@ footer strong{
 
     </p>
 
+
 </section>
 
 
-<!-- =====================================================
+<!-- ==================================================
      ACTIVIDADES Y PROYECTOS
-===================================================== -->
+================================================== -->
 
 <section id="actividades">
 
@@ -2118,41 +2859,46 @@ footer strong{
         </p>
 
 
-        <div class="activities-intro-box">
+        <div class="activity-intro-box">
 
 
             <p>
 
-                Nuestra asociación trabaja en
+                Las actividades que aparecen a continuación
+                son <strong>solo una muestra</strong> del
+                trabajo que desarrollamos desde ASOGINTER.
+
+                Colaboramos con diferentes
                 <strong>
-                    diferentes ámbitos sociales,
-                    educativos, laborales, culturales
-                    y comunitarios
-                </strong>,
-                adaptando nuestras acciones a las
-                necesidades de las personas y del entorno.
+                    colectivos, entidades, administraciones
+                    y empresas
+                </strong>
+
+                en distintos ámbitos sociales, educativos,
+                laborales, culturales y comunitarios.
 
             </p>
 
 
             <p style="margin-top:12px;">
 
-                Apostamos también por el
+                Apostamos por el
                 <strong>
                     trabajo en red
                 </strong>
-                y la colaboración con diferentes
-                entidades, administraciones, empresas
-                y colectivos.
+                y por adaptar nuestras acciones
+                a las necesidades de las personas
+                y del entorno.
 
             </p>
+
 
         </div>
 
 
-        <!-- =================================================
+        <!-- ==================================================
              ITINERARIO FSE+
-        ================================================= -->
+        ================================================== -->
 
         <div class="training-feature">
 
@@ -2186,11 +2932,10 @@ footer strong{
 
                 <p>
 
-                    A través de este programa se
-                    desarrollan acciones formativas
-                    orientadas a mejorar las competencias
-                    profesionales y favorecer las
-                    oportunidades de acceso al empleo.
+                    A través de este programa se realizan
+                    acciones formativas orientadas a mejorar
+                    las competencias profesionales y favorecer
+                    las oportunidades de acceso al empleo.
 
                 </p>
 
@@ -2252,13 +2997,7 @@ footer strong{
                         · Formación realizada en
 
                         <span class="company">
-                            <a
-                                href="http://www.rudeformacion.es/"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                Rude Formación
-                            </a>
+                            Rude Formación
                         </span>.
 
                     </div>
@@ -2273,13 +3012,7 @@ footer strong{
                         · Formación realizada en
 
                         <span class="company">
-                            <a
-                                href="http://www.rudeformacion.es/"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                Rude Formación
-                            </a>
+                            Rude Formación
                         </span>.
 
                     </div>
@@ -2301,7 +3034,7 @@ footer strong{
             </div>
 
 
-            <!-- COLLAGE -->
+            <!-- FOTOS CARRETILLERO -->
 
             <div class="course-collage">
 
@@ -2333,9 +3066,9 @@ footer strong{
         </div>
 
 
-        <!-- =================================================
-             OTROS ÁMBITOS
-        ================================================= -->
+        <!-- ==================================================
+             ÁMBITOS DE TRABAJO
+        ================================================== -->
 
         <div class="areas-grid">
 
@@ -2344,22 +3077,102 @@ footer strong{
 
             <div class="area-card">
 
-                <div class="area-icon icon-green">
+
+                <div class="area-icon area-green">
 
                     <svg
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 180 110"
                         fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
 
-                        <path
-                            d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
-                        ></path>
+                        <!-- libros -->
+
+                        <rect
+                            x="18"
+                            y="72"
+                            width="60"
+                            height="11"
+                            rx="4"
+                            fill="#39A852"
+                        />
+
+                        <rect
+                            x="22"
+                            y="59"
+                            width="55"
+                            height="11"
+                            rx="4"
+                            fill="#1479B8"
+                        />
+
+                        <rect
+                            x="28"
+                            y="46"
+                            width="48"
+                            height="11"
+                            rx="4"
+                            fill="#C62828"
+                        />
+
+
+                        <!-- niño -->
+
+                        <circle
+                            cx="93"
+                            cy="34"
+                            r="13"
+                            fill="#F2B88B"
+                        />
 
                         <path
-                            d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-                        ></path>
+                            d="M81 31C83 16 105 14 108 31C103 27 88 28 81 31Z"
+                            fill="#333"
+                        />
+
+                        <path
+                            d="M78 76C78 57 87 49 98 49C109 49 118 57 118 76"
+                            fill="#1479B8"
+                        />
+
+
+                        <!-- niña -->
+
+                        <circle
+                            cx="132"
+                            cy="38"
+                            r="12"
+                            fill="#F2B88B"
+                        />
+
+                        <path
+                            d="M119 35C121 18 143 18 146 35"
+                            stroke="#C62828"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M118 77C118 60 125 52 136 52C147 52 154 60 154 77"
+                            fill="#C62828"
+                        />
+
+
+                        <!-- libro -->
+
+                        <path
+                            d="M84 77C97 69 110 69 121 77V90C109 83 96 83 84 90Z"
+                            fill="#fff"
+                            stroke="#C62828"
+                            stroke-width="3"
+                        />
+
+                        <path
+                            d="M121 77C133 69 146 69 158 77V90C146 83 133 83 121 90Z"
+                            fill="#fff"
+                            stroke="#C62828"
+                            stroke-width="3"
+                        />
 
                     </svg>
 
@@ -2382,6 +3195,7 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
@@ -2389,25 +3203,103 @@ footer strong{
 
             <div class="area-card">
 
-                <div class="area-icon icon-purple">
+
+                <div class="area-icon area-purple">
 
                     <svg
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 180 110"
                         fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
 
-                        <path d="M12 3v18"></path>
-                        <path d="M3 7h18"></path>
+                        <line
+                            x1="90"
+                            y1="18"
+                            x2="90"
+                            y2="92"
+                            stroke="#555"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                        />
+
+                        <line
+                            x1="48"
+                            y1="35"
+                            x2="132"
+                            y2="35"
+                            stroke="#555"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                        />
+
+                        <line
+                            x1="90"
+                            y1="18"
+                            x2="90"
+                            y2="35"
+                            stroke="#7B3F98"
+                            stroke-width="5"
+                        />
+
+                        <line
+                            x1="54"
+                            y1="35"
+                            x2="42"
+                            y2="59"
+                            stroke="#555"
+                            stroke-width="3"
+                        />
+
+                        <line
+                            x1="54"
+                            y1="35"
+                            x2="66"
+                            y2="59"
+                            stroke="#555"
+                            stroke-width="3"
+                        />
 
                         <path
-                            d="M5 7l-3 6a4 4 0 0 0 6 0L5 7z"
-                        ></path>
+                            d="M34 59H72C69 70 37 70 34 59Z"
+                            fill="#C62828"
+                        />
+
+                        <line
+                            x1="126"
+                            y1="35"
+                            x2="114"
+                            y2="59"
+                            stroke="#555"
+                            stroke-width="3"
+                        />
+
+                        <line
+                            x1="126"
+                            y1="35"
+                            x2="138"
+                            y2="59"
+                            stroke="#555"
+                            stroke-width="3"
+                        />
 
                         <path
-                            d="M19 7l-3 6a4 4 0 0 0 6 0l-3-6z"
-                        ></path>
+                            d="M106 59H144C141 70 109 70 106 59Z"
+                            fill="#C62828"
+                        />
+
+                        <path
+                            d="M75 92H105"
+                            stroke="#555"
+                            stroke-width="6"
+                            stroke-linecap="round"
+                        />
+
+                        <circle
+                            cx="90"
+                            cy="18"
+                            r="5"
+                            fill="#7B3F98"
+                        />
 
                     </svg>
 
@@ -2428,6 +3320,7 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
@@ -2435,18 +3328,58 @@ footer strong{
 
             <div class="area-card">
 
-                <div class="area-icon icon-red">
+
+                <div class="area-icon area-red">
 
                     <svg
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 180 110"
                         fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
 
+                        <!-- hojas -->
+
                         <path
-                            d="M20.8 8.6c0-2.4-1.9-4.3-4.3-4.3-1.9 0-3.5 1.2-4.2 2.8-.7-1.6-2.3-2.8-4.2-2.8C5.7 4.3 3.8 6.2 3.8 8.6c0 5 8.5 10.2 8.5 10.2s8.5-5.2 8.5-10.2z"
-                        ></path>
+                            d="M40 80C28 62 30 45 44 33C56 49 56 67 40 80Z"
+                            fill="#39A852"
+                        />
+
+                        <path
+                            d="M140 80C152 62 150 45 136 33C124 49 124 67 140 80Z"
+                            fill="#39A852"
+                        />
+
+
+                        <!-- manos -->
+
+                        <path
+                            d="M50 71C57 62 65 57 73 55L85 64C78 71 70 77 62 80Z"
+                            fill="#F2B88B"
+                        />
+
+                        <path
+                            d="M130 71C123 62 115 57 107 55L95 64C102 71 110 77 118 80Z"
+                            fill="#F2B88B"
+                        />
+
+
+                        <!-- corazón -->
+
+                        <path
+                            d="M90 76C84 66 61 54 61 38C61 26 73 21 81 29L90 38L99 29C107 21 119 26 119 38C119 54 96 66 90 76Z"
+                            fill="#C62828"
+                        />
+
+
+                        <!-- pulso -->
+
+                        <path
+                            d="M74 49H82L86 42L91 55L96 45L100 49H106"
+                            stroke="#fff"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
 
                     </svg>
 
@@ -2466,6 +3399,7 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
@@ -2473,32 +3407,90 @@ footer strong{
 
             <div class="area-card">
 
-                <div class="area-icon icon-red">
+
+                <div class="area-icon area-red">
 
                     <svg
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 180 110"
                         fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
 
-                        <circle
-                            cx="12"
-                            cy="12"
-                            r="9"
-                        ></circle>
+                        <!-- guitarra -->
+
+                        <ellipse
+                            cx="52"
+                            cy="62"
+                            rx="17"
+                            ry="22"
+                            fill="#E3A04A"
+                        />
+
+                        <ellipse
+                            cx="43"
+                            cy="52"
+                            rx="12"
+                            ry="15"
+                            fill="#E3A04A"
+                        />
+
+                        <path
+                            d="M57 47L94 21"
+                            stroke="#555"
+                            stroke-width="8"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M86 25L102 36"
+                            stroke="#555"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                        />
 
                         <circle
-                            cx="9"
-                            cy="9"
-                            r="1"
-                        ></circle>
+                            cx="50"
+                            cy="60"
+                            r="5"
+                            fill="#C62828"
+                        />
+
+
+                        <!-- rueda gitana -->
 
                         <circle
-                            cx="15"
-                            cy="9"
-                            r="1"
-                        ></circle>
+                            cx="126"
+                            cy="61"
+                            r="23"
+                            fill="#1479B8"
+                        />
+
+                        <circle
+                            cx="126"
+                            cy="61"
+                            r="18"
+                            fill="#fff"
+                        />
+
+                        <circle
+                            cx="126"
+                            cy="61"
+                            r="6"
+                            fill="#C62828"
+                        />
+
+                        <path
+                            d="M126 43V79M108 61H144M113 48L139 74M139 48L113 74"
+                            stroke="#39A852"
+                            stroke-width="3"
+                        />
+
+                        <path
+                            d="M153 24V49C153 54 147 57 143 54C139 51 142 45 148 45C151 45 153 46 153 49"
+                            stroke="#C62828"
+                            stroke-width="4"
+                            stroke-linecap="round"
+                        />
 
                     </svg>
 
@@ -2513,11 +3505,11 @@ footer strong{
                 <p>
 
                     Actividades culturales, encuentros
-                    y acciones para favorecer la
-                    convivencia y el reconocimiento
-                    de la diversidad.
+                    y acciones para favorecer la convivencia
+                    y el reconocimiento de la diversidad.
 
                 </p>
+
 
             </div>
 
@@ -2526,34 +3518,94 @@ footer strong{
 
             <div class="area-card">
 
-                <div class="area-icon icon-blue">
+
+                <div class="area-icon area-blue">
 
                     <svg
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 180 110"
                         fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
 
-                        <circle
-                            cx="9"
-                            cy="7"
-                            r="3"
-                        ></circle>
+                        <!-- persona izquierda -->
 
                         <circle
-                            cx="17"
-                            cy="8"
-                            r="3"
-                        ></circle>
+                            cx="48"
+                            cy="47"
+                            r="10"
+                            fill="#F2B88B"
+                        />
 
                         <path
-                            d="M3 21v-2a6 6 0 0 1 12 0v2"
-                        ></path>
+                            d="M30 82C30 65 37 58 48 58C59 58 66 65 66 82"
+                            fill="#1479B8"
+                        />
 
                         <path
-                            d="M15 14a5 5 0 0 1 6 5v2"
-                        ></path>
+                            d="M37 62L25 45"
+                            stroke="#1479B8"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                        />
+
+
+                        <!-- persona central -->
+
+                        <circle
+                            cx="90"
+                            cy="38"
+                            r="11"
+                            fill="#F2B88B"
+                        />
+
+                        <path
+                            d="M70 81C70 61 78 52 90 52C102 52 110 61 110 81"
+                            fill="#C62828"
+                        />
+
+                        <path
+                            d="M80 58L66 42"
+                            stroke="#C62828"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M100 58L113 40"
+                            stroke="#C62828"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                        />
+
+
+                        <!-- persona derecha -->
+
+                        <circle
+                            cx="132"
+                            cy="47"
+                            r="10"
+                            fill="#F2B88B"
+                        />
+
+                        <path
+                            d="M114 82C114 65 121 58 132 58C143 58 150 65 150 82"
+                            fill="#39A852"
+                        />
+
+                        <path
+                            d="M141 61L154 45"
+                            stroke="#39A852"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                        />
+
+
+                        <path
+                            d="M30 91C60 101 119 101 151 91"
+                            stroke="#7B3F98"
+                            stroke-width="4"
+                            stroke-linecap="round"
+                        />
 
                     </svg>
 
@@ -2573,6 +3625,7 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
@@ -2580,22 +3633,89 @@ footer strong{
 
             <div class="area-card">
 
-                <div class="area-icon icon-green">
+
+                <div class="area-icon area-green">
 
                     <svg
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 180 110"
                         fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
 
-                        <path
-                            d="M3 17l6-6 4 4 8-8"
-                        ></path>
+                        <!-- maletín -->
+
+                        <rect
+                            x="25"
+                            y="42"
+                            width="70"
+                            height="48"
+                            rx="7"
+                            fill="#34495E"
+                        />
 
                         <path
-                            d="M14 7h7v7"
-                        ></path>
+                            d="M45 42V34C45 30 49 27 53 27H67C71 27 75 30 75 34V42"
+                            stroke="#34495E"
+                            stroke-width="7"
+                        />
+
+                        <rect
+                            x="55"
+                            y="60"
+                            width="10"
+                            height="10"
+                            rx="2"
+                            fill="#E3A04A"
+                        />
+
+
+                        <!-- barras -->
+
+                        <rect
+                            x="111"
+                            y="68"
+                            width="12"
+                            height="22"
+                            rx="2"
+                            fill="#39A852"
+                        />
+
+                        <rect
+                            x="129"
+                            y="56"
+                            width="12"
+                            height="34"
+                            rx="2"
+                            fill="#39A852"
+                        />
+
+                        <rect
+                            x="147"
+                            y="42"
+                            width="12"
+                            height="48"
+                            rx="2"
+                            fill="#39A852"
+                        />
+
+
+                        <!-- flecha -->
+
+                        <path
+                            d="M107 59L132 36L149 45"
+                            stroke="#C62828"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M140 35H154V49"
+                            stroke="#C62828"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
 
                     </svg>
 
@@ -2616,25 +3736,26 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
         </div>
 
 
-        <!-- =================================================
+        <!-- ==================================================
              DISPENSA SOLIDARIA
-        ================================================= -->
+        ================================================== -->
 
         <div class="solidarity-feature">
 
 
-            <div class="solidarity-card">
+            <div class="solidarity-content">
 
 
-                <div class="solidarity-label">
+                <div class="solidarity-badge">
 
-                    Solidaridad y apoyo
+                    Solidaridad y apoyo a las familias
 
                 </div>
 
@@ -2672,12 +3793,12 @@ footer strong{
                 </p>
 
 
-                <p>
+                <p class="solidarity-note">
 
-                    Esta es otra de las acciones que
-                    forman parte del trabajo social
-                    y comunitario que realizamos
-                    desde la asociación.
+                    Una muestra más del trabajo comunitario
+                    y de la colaboración con otras entidades
+                    para dar respuesta a las necesidades
+                    de las familias.
 
                 </p>
 
@@ -2706,7 +3827,7 @@ footer strong{
 
                             <path
                                 d="M20.8 8.6c0-2.4-1.9-4.3-4.3-4.3-1.9 0-3.5 1.2-4.2 2.8-.7-1.6-2.3-2.8-4.2-2.8C5.7 4.3 3.8 6.2 3.8 8.6c0 5 8.5 10.2 8.5 10.2s8.5-5.2 8.5-10.2z"
-                            ></path>
+                            />
 
                         </svg>
 
@@ -2715,7 +3836,9 @@ footer strong{
 
 
                     <h4>
+
                         Apoyo y solidaridad
+
                     </h4>
 
 
@@ -2729,15 +3852,16 @@ footer strong{
 
                 </div>
 
+
             </div>
 
 
         </div>
 
 
-        <!-- =================================================
+        <!-- ==================================================
              TRABAJO EN RED
-        ================================================= -->
+        ================================================== -->
 
         <div class="collaboration-banner">
 
@@ -2763,9 +3887,9 @@ footer strong{
         </div>
 
 
-        <!-- =================================================
-             MÁS ACTIVIDADES
-        ================================================= -->
+        <!-- ==================================================
+             OTRAS ACTIVIDADES
+        ================================================== -->
 
         <div class="news-grid">
 
@@ -2831,9 +3955,9 @@ footer strong{
 </section>
 
 
-<!-- =====================================================
+<!-- ==================================================
      COLABORA
-===================================================== -->
+================================================== -->
 
 <section
     class="collaborate"
@@ -2860,8 +3984,7 @@ footer strong{
 
                 Tu participación puede ayudar
                 a construir una sociedad más
-                inclusiva, igualitaria
-                e intercultural.
+                inclusiva, igualitaria e intercultural.
 
             </p>
 
@@ -2878,14 +4001,15 @@ footer strong{
 
         </div>
 
+
     </div>
 
 </section>
 
 
-<!-- =====================================================
+<!-- ==================================================
      CONTACTO
-===================================================== -->
+================================================== -->
 
 <section id="contacto">
 
@@ -2929,17 +4053,19 @@ footer strong{
                             fill="none"
                             stroke="currentColor"
                             stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                         >
 
                             <path
                                 d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"
-                            ></path>
+                            />
 
                             <circle
                                 cx="12"
                                 cy="10"
                                 r="2.5"
-                            ></circle>
+                            />
 
                         </svg>
 
@@ -2986,6 +4112,8 @@ footer strong{
                             fill="none"
                             stroke="currentColor"
                             stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                         >
 
                             <path
@@ -3001,7 +4129,7 @@ footer strong{
                                 a2 2 0 0 1 2.11-.45
                                 12.84 12.84 0 0 0 2.81.7
                                 A2 2 0 0 1 22 16.92z"
-                            ></path>
+                            />
 
                         </svg>
 
@@ -3019,7 +4147,9 @@ footer strong{
 
                         <p>
 
-                            <a href="tel:+349615578810">
+                            <a
+                                href="tel:+349615578810"
+                            >
 
                                 961 55 78 810
 
@@ -3047,17 +4177,19 @@ footer strong{
                             fill="none"
                             stroke="currentColor"
                             stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                         >
 
                             <path
                                 d="M21 11.5a8.38 8.38 0 0 1-9
                                 8.5 8.5 0 0 1-4-.95L3 21l1.95-4.7
                                 A8.5 8.5 0 1 1 21 11.5z"
-                            ></path>
+                            />
 
                             <path
                                 d="M8.5 9.5c.4 2 2 3.6 4 4"
-                            ></path>
+                            />
 
                         </svg>
 
@@ -3107,6 +4239,8 @@ footer strong{
                             fill="none"
                             stroke="currentColor"
                             stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                         >
 
                             <rect
@@ -3115,11 +4249,11 @@ footer strong{
                                 width="18"
                                 height="14"
                                 rx="2"
-                            ></rect>
+                            />
 
                             <polyline
                                 points="3,7 12,13 21,7"
-                            ></polyline>
+                            />
 
                         </svg>
 
@@ -3191,9 +4325,9 @@ footer strong{
 </section>
 
 
-<!-- =====================================================
+<!-- ==================================================
      FOOTER
-===================================================== -->
+================================================== -->
 
 <footer>
 
