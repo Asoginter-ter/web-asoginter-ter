@@ -1,305 +1,2202 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent</title><meta name="description" content="ASOGINTER - Asociación Gitana Europea e Intercultural de Torrent. Trabajamos por la inclusión, la igualdad, la convivencia y el reconocimiento de la cultura gitana."><style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;color:#333;background:#fff;line-height:1.7}
-a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
-.container{width:90%;max-width:1180px;margin:auto}
-:root{--azul:#2456a6;--azul-oscuro:#173b73;--verde:#4e9b45;--rojo:#d94b45;--morado:#7b4a9e;--gris:#666;--gris-claro:#f5f6f8;--blanco:#fff}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-header{background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.header-inner{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.logo img{width:105px;height:70px;object-fit:contain;object-position:left center}
-nav{flex:1}
-nav ul{list-style:none;display:flex;align-items:center;justify-content:flex-end;gap:25px}
-nav a{font-size:13px;font-weight:bold;color:#444;transition:.3s}
-nav a:hover{color:var(--azul)}
-.menu-contacto{background:var(--azul);color:#fff!important;padding:10px 17px;border-radius:4px}
-.menu-contacto:hover{background:var(--azul-oscuro)}
+<title>ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent</title>
 
-.header-social{display:flex;align-items:center;gap:8px}
-.header-social a{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px;font-weight:bold;transition:.3s}
-.header-social a:hover{transform:translateY(-2px)}
-.header-instagram{background:var(--morado)}
-.header-facebook{background:#3159a6}
+<meta name="description" content="ASOGINTER - Asociación Gitana Europea e Intercultural de Torrent. Trabajamos por la inclusión, la igualdad, la convivencia y el reconocimiento de la cultura gitana.">
 
-.color-bar{display:flex;height:7px}
-.color-bar div{flex:1}
-.color-blue{background:var(--azul)}
-.color-green{background:var(--verde)}
-.color-red{background:var(--rojo)}
-.color-purple{background:var(--morado)}
+<style>
 
-.hero{min-height:690px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(rgba(255,255,255,.58),rgba(255,255,255,.58)),url("fondo-asoginter.png") center center/cover no-repeat}
-.hero:before{content:"";position:absolute;width:550px;height:550px;border-radius:50%;background:rgba(255,255,255,.06);right:-190px;top:-160px}
-.hero:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.05);left:-190px;bottom:-200px}
-.hero-content{position:relative;z-index:2;color:var(--azul-oscuro);max-width:920px;margin:25px auto;padding:48px 65px 52px;text-align:center;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.82);border-radius:24px;box-shadow:0 18px 55px rgba(23,59,115,.16);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
-.hero-logo{width:195px;height:195px;object-fit:contain;margin:0 auto 18px;background:transparent;padding:0;border-radius:0;box-shadow:none;filter:drop-shadow(0 8px 14px rgba(23,59,115,.12))}
-.hero-small{text-transform:uppercase;letter-spacing:2.2px;font-size:13px;line-height:1.55;font-weight:700;margin-bottom:10px;color:var(--azul-oscuro)}
-.hero h1{font-size:clamp(58px,8vw,94px);line-height:1;margin-bottom:16px;font-weight:900;letter-spacing:6px;color:var(--azul-oscuro)}
-.hero-subtitle{font-size:21px;line-height:1.5;font-weight:700;margin:0 auto 14px;color:var(--azul-oscuro)}
-.hero-description{font-size:17px;line-height:1.7;max-width:680px;margin:0 auto 28px;color:#444}
-.hero-buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 25px;border-radius:30px;font-weight:bold;transition:.3s}
-.btn-primary{background:var(--azul);color:#fff}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(0,0,0,.15)}
-.btn-outline{border:2px solid var(--azul);color:var(--azul-oscuro);background:rgba(255,255,255,.82)}
-.btn-outline:hover{background:var(--azul);color:#fff}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-section{padding:90px 0}
-.section-title{text-align:center;margin-bottom:55px}
-.section-title .small{color:var(--azul);text-transform:uppercase;letter-spacing:2px;font-size:13px;font-weight:bold;margin-bottom:10px}
-.section-title h2{font-size:40px;line-height:1.2;color:var(--azul-oscuro);margin-bottom:15px}
-.section-title p{max-width:720px;margin:auto;color:var(--gris);font-size:17px}
+html{
+    scroll-behavior:smooth;
+}
 
-.about{background:#fff}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.about-text h3{color:var(--azul-oscuro);font-size:30px;margin-bottom:20px}
-.about-text p{color:var(--gris);margin-bottom:18px}
-.about-highlight{border-left:5px solid var(--verde);padding:20px 25px;background:#f7faf7;margin-top:25px;font-size:18px;font-weight:bold;color:#444}
-.about-logo{background:#f6f7fb;min-height:350px;display:flex;align-items:center;justify-content:center;border-radius:8px;padding:50px}
-.about-logo img{max-width:300px}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+    background:#fff;
+    line-height:1.7;
+}
 
-.mission{background:var(--gris-claro)}
-.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.mission-card{background:#fff;padding:45px;border-radius:7px;box-shadow:0 5px 25px rgba(0,0,0,.06);border-top:5px solid var(--azul)}
-.mission-card:nth-child(2){border-top-color:var(--morado)}
-.mission-card h3{color:var(--azul-oscuro);font-size:27px;margin-bottom:15px}
-.mission-card p{color:var(--gris)}
+a{
+    text-decoration:none;
+    color:inherit;
+}
 
-.activities{background:#fff}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.card{padding:35px 30px;border:1px solid #e9e9e9;border-radius:7px;background:#fff;transition:.3s;position:relative;overflow:hidden}
-.card:before{content:"";position:absolute;height:5px;left:0;right:0;top:0;background:var(--azul)}
-.card:nth-child(2):before{background:var(--verde)}
-.card:nth-child(3):before{background:var(--rojo)}
-.card:nth-child(4):before{background:var(--morado)}
-.card:nth-child(5):before{background:var(--azul)}
-.card:nth-child(6):before{background:var(--verde)}
-.card:hover{transform:translateY(-7px);box-shadow:0 12px 30px rgba(0,0,0,.09)}
-.icon{font-size:38px;margin-bottom:20px}
-.card h3{font-size:21px;color:var(--azul-oscuro);margin-bottom:12px}
-.card p{color:var(--gris);font-size:15px}
+img{
+    max-width:100%;
+    display:block;
+}
 
-.quote{background:linear-gradient(135deg,var(--azul-oscuro),var(--morado));color:#fff;text-align:center}
-.quote-content{max-width:900px;margin:auto}
-.quote-mark{font-size:70px;line-height:.8;opacity:.5}
-.quote h2{font-size:36px;line-height:1.3;margin:20px 0}
-.quote p{font-size:18px;opacity:.9}
+.container{
+    width:90%;
+    max-width:1180px;
+    margin:auto;
+}
 
-.news{background:var(--gris-claro)}
-.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.news-card{background:#fff;border-radius:7px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.05)}
-.news-image{height:180px;background:linear-gradient(135deg,var(--azul),var(--morado));display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;font-weight:bold;text-align:center;padding:20px}
-.news-body{padding:25px}
-.news-body h3{color:var(--azul-oscuro);margin-bottom:10px}
-.news-body p{color:var(--gris);font-size:15px}
+:root{
+    --azul:#2456a6;
+    --azul-oscuro:#173b73;
+    --verde:#4e9b45;
+    --rojo:#d94b45;
+    --morado:#7b4a9e;
+    --gris:#666;
+    --gris-claro:#f5f6f8;
+    --blanco:#ffffff;
+}
 
-.collaborate{background:#fff}
-.collaborate-box{background:linear-gradient(135deg,#f1f6ff,#faf5fc);padding:65px;text-align:center;border-radius:10px;border:1px solid #e8e8e8}
-.collaborate-box h2{color:var(--azul-oscuro);font-size:36px;margin-bottom:15px}
-.collaborate-box p{max-width:750px;margin:0 auto 30px;color:var(--gris);font-size:17px}
 
-.contact{background:var(--gris-claro)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-.contact-info h3{color:var(--azul-oscuro);font-size:30px;margin-bottom:20px}
-.contact-info p{color:var(--gris);margin-bottom:25px}
-.contact-item{display:flex;gap:18px;align-items:flex-start;margin-bottom:22px}
-.contact-icon{min-width:56px;width:56px;height:56px;border-radius:50%;background:var(--azul);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 20px rgba(36,86,166,.2)}
-.contact-icon svg{width:28px;height:28px;fill:currentColor;display:block}
-.contact-item:nth-of-type(2) .contact-icon,.contact-item.phone .contact-icon{background:#20b85a;box-shadow:0 8px 20px rgba(32,184,90,.22)}
-.contact-item:nth-of-type(3) .contact-icon,.contact-item.whatsapp .contact-icon{background:#20b85a;box-shadow:0 8px 20px rgba(32,184,90,.22)}
-.contact-item:nth-of-type(4) .contact-icon,.contact-item.email .contact-icon{background:#f5a623;box-shadow:0 8px 20px rgba(245,166,35,.22)}
-.contact-item strong{display:block;color:#333;margin-bottom:3px}
-.contact-item a{color:var(--azul)}
-.contact-item a:hover{text-decoration:underline}
-.contact-box{background:#fff;padding:40px;border-radius:8px;box-shadow:0 5px 25px rgba(0,0,0,.06)}
-.contact-box h3{color:var(--azul-oscuro);margin-bottom:20px;font-size:25px}
-.social-large{display:flex;gap:12px;margin-top:25px;flex-wrap:wrap}
-.social-large a{display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border-radius:5px;color:#fff;font-weight:bold;transition:.3s}
-.social-large a:hover{transform:translateY(-2px)}
-.instagram{background:var(--morado)}
-.facebook{background:#3159a6}
-.whatsapp{background:#299447}
+/* =========================
+   CABECERA
+========================= */
 
-footer{background:#172238;color:#dbe1ec;padding:55px 0 25px}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:50px;margin-bottom:40px}
-.footer-logo img{width:120px;background:#fff;padding:8px;border-radius:5px;margin-bottom:20px}
-footer h3{color:#fff;margin-bottom:15px}
-footer p{color:#c5ccd8;font-size:14px;margin-bottom:5px}
-footer ul{list-style:none}
-footer li{margin-bottom:9px}
-footer a{color:#cbd3df;font-size:14px}
-footer a:hover{color:#fff}
-.footer-social{display:flex;gap:10px;margin-top:15px}
-.footer-social a{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold;font-size:17px}
-.copyright{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;text-align:center;color:#aeb8c7;font-size:13px}
+header{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.header-inner{
+    min-height:92px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo img{
+    width:105px;
+    height:70px;
+    object-fit:contain;
+    object-position:left center;
+}
+
+nav{
+    flex:1;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:25px;
+}
+
+nav a{
+    font-size:13px;
+    font-weight:bold;
+    color:#444;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--azul);
+}
+
+.menu-contacto{
+    background:var(--azul);
+    color:white !important;
+    padding:10px 17px;
+    border-radius:4px;
+}
+
+.menu-contacto:hover{
+    background:var(--azul-oscuro);
+}
+
+
+/* =========================
+   REDES SOCIALES
+========================= */
+
+.header-social{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.header-social a{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.header-social a:hover{
+    transform:translateY(-2px);
+}
+
+.header-instagram{
+    background:var(--morado);
+}
+
+.header-facebook{
+    background:#3159a6;
+}
+
+
+/* =========================
+   BARRA DE COLORES
+========================= */
+
+.color-bar{
+    display:flex;
+    height:7px;
+}
+
+.color-bar div{
+    flex:1;
+}
+
+.color-blue{
+    background:var(--azul);
+}
+
+.color-green{
+    background:var(--verde);
+}
+
+.color-red{
+    background:var(--rojo);
+}
+
+.color-purple{
+    background:var(--morado);
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.hero{
+    min-height:690px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,.58),
+            rgba(255,255,255,.58)
+        ),
+        url("fondo-asoginter.png")
+        center center / cover no-repeat;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:550px;
+    height:550px;
+    border-radius:50%;
+    background:rgba(255,255,255,.06);
+    right:-190px;
+    top:-160px;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:rgba(255,255,255,.05);
+    left:-190px;
+    bottom:-200px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:var(--azul-oscuro);
+    max-width:920px;
+    margin:25px auto;
+    padding:48px 65px 52px;
+    text-align:center;
+
+    background:rgba(255,255,255,.72);
+    border:1px solid rgba(255,255,255,.82);
+    border-radius:24px;
+
+    box-shadow:
+        0 18px 55px rgba(23,59,115,.16);
+
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+}
+
+.hero-logo{
+    width:195px;
+    height:195px;
+    object-fit:contain;
+    margin:0 auto 18px;
+    background:transparent;
+    padding:0;
+    border-radius:0;
+    box-shadow:none;
+
+    filter:
+        drop-shadow(
+            0 8px 14px rgba(23,59,115,.12)
+        );
+}
+
+.hero-small{
+    text-transform:uppercase;
+    letter-spacing:2.2px;
+    font-size:13px;
+    line-height:1.55;
+    font-weight:700;
+    margin-bottom:10px;
+    color:var(--azul-oscuro);
+}
+
+.hero h1{
+    font-size:clamp(58px,8vw,94px);
+    line-height:1;
+    margin-bottom:16px;
+    font-weight:900;
+    letter-spacing:6px;
+    color:var(--azul-oscuro);
+}
+
+.hero-subtitle{
+    font-size:21px;
+    line-height:1.5;
+    font-weight:700;
+    margin:0 auto 14px;
+    color:var(--azul-oscuro);
+}
+
+.hero-description{
+    font-size:17px;
+    line-height:1.7;
+    max-width:680px;
+    margin:0 auto 28px;
+    color:#444;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--azul);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 7px 20px rgba(0,0,0,.15);
+}
+
+.btn-outline{
+    border:2px solid var(--azul);
+    color:var(--azul-oscuro);
+    background:rgba(255,255,255,.82);
+}
+
+.btn-outline:hover{
+    background:var(--azul);
+    color:white;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title .small{
+    color:var(--azul);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.section-title h2{
+    font-size:40px;
+    line-height:1.2;
+    color:var(--azul-oscuro);
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:720px;
+    margin:auto;
+    color:var(--gris);
+    font-size:17px;
+}
+
+
+/* =========================
+   QUIÉNES SOMOS
+========================= */
+
+.about{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-text h3{
+    color:var(--azul-oscuro);
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:var(--gris);
+    margin-bottom:18px;
+}
+
+.about-highlight{
+    border-left:5px solid var(--verde);
+    padding:20px 25px;
+    background:#f7faf7;
+    margin-top:25px;
+    font-size:18px;
+    font-weight:bold;
+    color:#444;
+}
+
+.about-logo{
+    background:#f6f7fb;
+    min-height:350px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+    padding:50px;
+}
+
+.about-logo img{
+    max-width:300px;
+}
+
+
+/* =========================
+   MISIÓN Y VISIÓN
+========================= */
+
+.mission{
+    background:var(--gris-claro);
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.mission-card{
+    background:white;
+    padding:45px;
+    border-radius:7px;
+    box-shadow:0 5px 25px rgba(0,0,0,.06);
+    border-top:5px solid var(--azul);
+}
+
+.mission-card:nth-child(2){
+    border-top-color:var(--morado);
+}
+
+.mission-card h3{
+    color:var(--azul-oscuro);
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.mission-card p{
+    color:var(--gris);
+}
+
+
+/* =========================
+   QUÉ HACEMOS
+========================= */
+
+.activities{
+    background:white;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    padding:35px 30px;
+    border:1px solid #e9e9e9;
+    border-radius:7px;
+    background:white;
+    transition:.3s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    height:5px;
+    left:0;
+    right:0;
+    top:0;
+    background:var(--azul);
+}
+
+.card:nth-child(2)::before{
+    background:var(--verde);
+}
+
+.card:nth-child(3)::before{
+    background:var(--rojo);
+}
+
+.card:nth-child(4)::before{
+    background:var(--morado);
+}
+
+.card:nth-child(5)::before{
+    background:var(--azul);
+}
+
+.card:nth-child(6)::before{
+    background:var(--verde);
+}
+
+.card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 12px 30px rgba(0,0,0,.09);
+}
+
+
+/* ICONOS PROFESIONALES */
+
+.icon{
+    width:58px;
+    height:58px;
+    margin-bottom:22px;
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#eef4ff;
+    color:var(--azul);
+
+    box-shadow:
+        0 8px 20px rgba(36,86,166,.10);
+}
+
+.icon svg{
+    width:31px;
+    height:31px;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.8;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.card:nth-child(2) .icon{
+    background:#eef8ed;
+    color:var(--verde);
+}
+
+.card:nth-child(3) .icon{
+    background:#fff1f0;
+    color:var(--rojo);
+}
+
+.card:nth-child(4) .icon{
+    background:#f5eef9;
+    color:var(--morado);
+}
+
+.card:nth-child(5) .icon{
+    background:#eef4ff;
+    color:var(--azul);
+}
+
+.card:nth-child(6) .icon{
+    background:#eef8ed;
+    color:var(--verde);
+}
+
+.card h3{
+    font-size:21px;
+    color:var(--azul-oscuro);
+    margin-bottom:12px;
+}
+
+.card p{
+    color:var(--gris);
+    font-size:15px;
+}
+
+
+/* =========================
+   FRASE DE SALUD
+========================= */
+
+.health-message{
+    max-width:900px;
+    margin:40px auto 0;
+    padding:28px 35px;
+
+    background:#f7faf7;
+    border-left:5px solid var(--verde);
+    border-radius:8px;
+
+    text-align:center;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.04);
+}
+
+.health-message p:first-child{
+    font-size:19px;
+    color:var(--azul-oscuro);
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.health-message p:last-child{
+    font-size:14px;
+    color:var(--gris);
+}
+
+
+/* =========================
+   FRASE PRINCIPAL
+========================= */
+
+.quote{
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul-oscuro),
+            var(--morado)
+        );
+
+    color:white;
+    text-align:center;
+}
+
+.quote-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.quote-mark{
+    font-size:70px;
+    line-height:.8;
+    opacity:.5;
+}
+
+.quote h2{
+    font-size:36px;
+    line-height:1.3;
+    margin:20px 0;
+}
+
+.quote p{
+    font-size:18px;
+    opacity:.9;
+}
+
+
+/* =========================
+   ACTIVIDADES
+========================= */
+
+.news{
+    background:var(--gris-claro);
+}
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.news-card{
+    background:white;
+    border-radius:7px;
+    overflow:hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.05);
+}
+
+.news-image{
+    height:180px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul),
+            var(--morado)
+        );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    padding:20px;
+}
+
+.news-body{
+    padding:25px;
+}
+
+.news-body h3{
+    color:var(--azul-oscuro);
+    margin-bottom:10px;
+}
+
+.news-body p{
+    color:var(--gris);
+    font-size:15px;
+}
+
+
+/* =========================
+   COLABORA
+========================= */
+
+.collaborate{
+    background:white;
+}
+
+.collaborate-box{
+    background:
+        linear-gradient(
+            135deg,
+            #f1f6ff,
+            #faf5fc
+        );
+
+    padding:65px;
+    text-align:center;
+
+    border-radius:10px;
+    border:1px solid #e8e8e8;
+}
+
+.collaborate-box h2{
+    color:var(--azul-oscuro);
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.collaborate-box p{
+    max-width:750px;
+    margin:0 auto 30px;
+    color:var(--gris);
+    font-size:17px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact{
+    background:var(--gris-claro);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contact-info h3{
+    color:var(--azul-oscuro);
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    color:var(--gris);
+    margin-bottom:25px;
+}
+
+.contact-item{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    margin-bottom:22px;
+}
+
+.contact-icon{
+    min-width:56px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+
+    background:var(--azul);
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:
+        0 8px 20px rgba(36,86,166,.20);
+}
+
+.contact-icon svg{
+    width:28px;
+    height:28px;
+    fill:currentColor;
+    display:block;
+}
+
+.contact-item:nth-of-type(2) .contact-icon{
+    background:#20b85a;
+    box-shadow:
+        0 8px 20px rgba(32,184,90,.22);
+}
+
+.contact-item:nth-of-type(3) .contact-icon{
+    background:#20b85a;
+    box-shadow:
+        0 8px 20px rgba(32,184,90,.22);
+}
+
+.contact-item:nth-of-type(4) .contact-icon{
+    background:#f5a623;
+    box-shadow:
+        0 8px 20px rgba(245,166,35,.22);
+}
+
+.contact-item strong{
+    display:block;
+    color:#333;
+    margin-bottom:3px;
+}
+
+.contact-item a{
+    color:var(--azul);
+}
+
+.contact-item a:hover{
+    text-decoration:underline;
+}
+
+.contact-box{
+    background:white;
+    padding:40px;
+    border-radius:8px;
+
+    box-shadow:
+        0 5px 25px rgba(0,0,0,.06);
+}
+
+.contact-box h3{
+    color:var(--azul-oscuro);
+    margin-bottom:20px;
+    font-size:25px;
+}
+
+.social-large{
+    display:flex;
+    gap:12px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.social-large a{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:12px 18px;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.social-large a:hover{
+    transform:translateY(-2px);
+}
+
+.instagram{
+    background:var(--morado);
+}
+
+.facebook{
+    background:#3159a6;
+}
+
+.whatsapp{
+    background:#299447;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#172238;
+    color:#dbe1ec;
+    padding:55px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:50px;
+    margin-bottom:40px;
+}
+
+.footer-logo img{
+    width:120px;
+    background:white;
+    padding:8px;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+footer h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#c5ccd8;
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-bottom:9px;
+}
+
+footer a{
+    color:#cbd3df;
+    font-size:14px;
+}
+
+footer a:hover{
+    color:white;
+}
+
+.footer-social{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.footer-social a{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.12);
+    padding-top:22px;
+    text-align:center;
+    color:#aeb8c7;
+    font-size:13px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
 
 @media(max-width:1000px){
-.header-inner{flex-wrap:wrap;padding:15px 0}
-nav{order:3;flex-basis:100%}
-nav ul{justify-content:center;flex-wrap:wrap;gap:15px}
-.about-grid,.mission-grid,.contact-grid{grid-template-columns:1fr}
-.cards,.news-grid{grid-template-columns:1fr 1fr}
-.footer-grid{grid-template-columns:1fr 1fr}
+
+    .header-inner{
+        flex-wrap:wrap;
+        padding:15px 0;
+    }
+
+    nav{
+        order:3;
+        flex-basis:100%;
+    }
+
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .about-grid,
+    .mission-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cards,
+    .news-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
+
+
+/* =========================
+   MÓVIL
+========================= */
+
 @media(max-width:600px){
-.container{width:92%}
-section{padding:65px 0}
-.header-inner{justify-content:center}
-.logo img{width:90px}
-.header-social{order:2}
-nav{order:3}
-nav ul{gap:9px}
-nav a{font-size:11px}
-.menu-contacto{padding:8px 12px}
-.header-social a{width:32px;height:32px}
-.hero{min-height:650px}
-.hero-content{padding:38px 20px 42px;margin:18px auto;border-radius:18px}
-.hero-logo{width:145px;height:145px;margin-bottom:16px}
-.hero-small{font-size:10px;letter-spacing:1px;line-height:1.5}
-.hero h1{font-size:54px;letter-spacing:2px}
-.hero-subtitle{font-size:18px}
-.hero-description{font-size:16px}
-.section-title h2{font-size:32px}
-.cards,.news-grid,.footer-grid{grid-template-columns:1fr}
-.mission-card,.collaborate-box,.contact-box{padding:30px 25px}
-.quote h2{font-size:28px}
-.about-logo{min-height:280px}
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .header-inner{
+        justify-content:center;
+    }
+
+    .logo img{
+        width:90px;
+    }
+
+    .header-social{
+        order:2;
+    }
+
+    nav{
+        order:3;
+    }
+
+    nav ul{
+        gap:9px;
+    }
+
+    nav a{
+        font-size:11px;
+    }
+
+    .menu-contacto{
+        padding:8px 12px;
+    }
+
+    .header-social a{
+        width:32px;
+        height:32px;
+    }
+
+    .hero{
+        min-height:650px;
+    }
+
+    .hero-content{
+        width:94%;
+        margin:18px auto;
+        padding:38px 22px 42px;
+        border-radius:20px;
+    }
+
+    .hero-logo{
+        width:145px;
+        height:145px;
+        margin-bottom:17px;
+    }
+
+    .hero-small{
+        font-size:10px;
+        letter-spacing:1px;
+        line-height:1.5;
+    }
+
+    .hero h1{
+        font-size:52px;
+        letter-spacing:3px;
+    }
+
+    .hero-subtitle{
+        font-size:17px;
+    }
+
+    .hero-description{
+        font-size:16px;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+
+    .cards,
+    .news-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .mission-card,
+    .collaborate-box,
+    .contact-box{
+        padding:30px 25px;
+    }
+
+    .quote h2{
+        font-size:28px;
+    }
+
+    .about-logo{
+        min-height:280px;
+    }
 }
-</style></head><body>
 
-<header><div class="container header-inner">
-<a href="#inicio" class="logo"><img src="LOGO%20ASOGINTER%20%281%29.png" alt="Logo de ASOGINTER"></a>
-<nav><ul>
-<li><a href="#inicio">INICIO</a></li>
-<li><a href="#quienes-somos">QUIÉNES SOMOS</a></li>
-<li><a href="#que-hacemos">QUÉ HACEMOS</a></li>
-<li><a href="#actividades">ACTIVIDADES</a></li>
-<li><a href="#colabora">COLABORA</a></li>
-<li><a href="#contacto" class="menu-contacto">CONTACTO</a></li>
-</ul></nav>
+</style>
+</head>
+
+<body>
+
+
+<!-- =========================
+     CABECERA
+========================= -->
+
+<header>
+
+<div class="container header-inner">
+
+<a href="#inicio" class="logo">
+<img
+src="LOGO%20ASOGINTER%20%281%29.png"
+alt="Logo de ASOGINTER">
+</a>
+
+<nav>
+
+<ul>
+
+<li>
+<a href="#inicio">INICIO</a>
+</li>
+
+<li>
+<a href="#quienes-somos">QUIÉNES SOMOS</a>
+</li>
+
+<li>
+<a href="#que-hacemos">QUÉ HACEMOS</a>
+</li>
+
+<li>
+<a href="#actividades">ACTIVIDADES</a>
+</li>
+
+<li>
+<a href="#colabora">COLABORA</a>
+</li>
+
+<li>
+<a href="#contacto" class="menu-contacto">
+CONTACTO
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+
 <div class="header-social">
-<a href="https://www.instagram.com/asoginter/" target="_blank" rel="noopener" class="header-instagram" aria-label="Instagram de ASOGINTER">◎</a>
-<a href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES" target="_blank" rel="noopener" class="header-facebook" aria-label="Facebook de ASOGINTER">f</a>
-</div></div></header>
 
-<div class="color-bar"><div class="color-blue"></div><div class="color-green"></div><div class="color-red"></div><div class="color-purple"></div></div>
+<a
+href="https://www.instagram.com/asoginter/"
+target="_blank"
+rel="noopener"
+class="header-instagram"
+aria-label="Instagram de ASOGINTER">
+◎
+</a>
 
-<section class="hero" id="inicio"><div class="container"><div class="hero-content">
-<img src="logo-emblema-asoginter.png" alt="Emblema ASOGINTER" class="hero-logo">
-<div class="hero-small">ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL DE TORRENT</div>
-<h1>ASOGINTER</h1>
-<p class="hero-subtitle">Inclusión · Igualdad · Cultura · Interculturalidad</p>
-<p class="hero-description">Trabajamos por una sociedad más inclusiva, igualitaria, intercultural y respetuosa con la diversidad.</p>
-<div class="hero-buttons">
-<a href="#quienes-somos" class="btn btn-primary">Conoce nuestra asociación</a>
-<a href="#contacto" class="btn btn-outline">Contacta con nosotros</a>
-</div></div></div></section>
+<a
+href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
+target="_blank"
+rel="noopener"
+class="header-facebook"
+aria-label="Facebook de ASOGINTER">
+f
+</a>
 
-<section class="about" id="quienes-somos"><div class="container">
-<div class="section-title"><div class="small">ASOGINTER</div><h2>Quiénes somos</h2><p>Una asociación comprometida con la convivencia, la igualdad y el reconocimiento de la diversidad.</p></div>
-<div class="about-grid"><div class="about-text">
-<h3>Trabajamos por una sociedad con más oportunidades</h3>
-<p>La Asociación Gitana Europea e Intercultural de Torrent, ASOGINTER, trabaja con el compromiso de contribuir a una sociedad más justa, inclusiva e intercultural.</p>
-<p>Nuestro trabajo pone en valor la cultura gitana, fomenta la igualdad de oportunidades y promueve la convivencia y el respeto entre las diferentes personas y comunidades.</p>
-<div class="about-highlight">Creemos en la diversidad como una oportunidad para construir una sociedad mejor.</div>
-</div><div class="about-logo"><img src="LOGO%20ASOGINTER%20%281%29.png" alt="ASOGINTER"></div></div>
-</div></section>
-
-<section class="mission"><div class="container">
-<div class="section-title"><div class="small">Nuestro compromiso</div><h2>Misión y visión</h2></div>
-<div class="mission-grid">
-<div class="mission-card"><h3>Nuestra misión</h3><p>Promover la inclusión social, la igualdad de oportunidades y la participación de la comunidad gitana, favoreciendo la convivencia y el diálogo intercultural.</p></div>
-<div class="mission-card"><h3>Nuestra visión</h3><p>Construir una sociedad donde todas las personas puedan participar en igualdad de condiciones, libres de discriminación y donde la diversidad cultural sea reconocida y valorada.</p></div>
-</div></div></section>
-
-<section class="activities" id="que-hacemos"><div class="container">
-<div class="section-title"><div class="small">Nuestro trabajo</div><h2>¿Qué hacemos?</h2><p>Trabajamos en diferentes ámbitos para favorecer la inclusión, la igualdad y la convivencia.</p></div>
-<div class="cards">
-<div class="card"><div class="icon">🤝</div><h3>Inclusión social</h3><p>Favorecemos la inclusión y la participación social, trabajando para reducir situaciones de desigualdad.</p></div>
-<div class="card"><div class="icon">📚</div><h3>Educación y formación</h3><p>Promovemos la educación y la formación como herramientas fundamentales para generar nuevas oportunidades.</p></div>
-<div class="card"><div class="icon">🎨</div><h3>Cultura gitana</h3><p>Ponemos en valor la historia, la cultura y las tradiciones del pueblo gitano.</p></div>
-<div class="card"><div class="icon">⚖️</div><h3>Igualdad</h3><p>Trabajamos por la igualdad de oportunidades y contra cualquier forma de discriminación.</p></div>
-<div class="card"><div class="icon">🌱</div><h3>Juventud</h3><p>Apostamos por la participación y el desarrollo de las nuevas generaciones.</p></div>
-<div class="card"><div class="icon">🌍</div><h3>Interculturalidad</h3><p>Fomentamos el conocimiento, el diálogo y la convivencia entre diferentes culturas.</p></div>
-</div></div></section>
-
-<section class="quote"><div class="container"><div class="quote-content">
-<div class="quote-mark">“</div>
-<h2>La diversidad nos une y la convivencia nos hace avanzar.</h2>
-<p>ASOGINTER · Torrent</p>
-</div></div></section>
-
-<section class="news" id="actividades"><div class="container">
-<div class="section-title"><div class="small">Actualidad</div><h2>Actividades y noticias</h2><p>Próximamente podrás conocer aquí nuestras actividades, proyectos y noticias.</p></div>
-<div class="news-grid">
-<article class="news-card"><div class="news-image">ACTIVIDADES</div><div class="news-body"><h3>Actividades de la asociación</h3><p>En este espacio iremos compartiendo nuestras próximas actividades y proyectos.</p></div></article>
-<article class="news-card"><div class="news-image">CULTURA GITANA</div><div class="news-body"><h3>Cultura e interculturalidad</h3><p>Información sobre iniciativas destinadas a poner en valor la cultura gitana y favorecer el diálogo intercultural.</p></div></article>
-<article class="news-card"><div class="news-image">PARTICIPACIÓN</div><div class="news-body"><h3>Participa con nosotros</h3><p>Descubre cómo puedes acercarte a la asociación y formar parte de nuestras iniciativas.</p></div></article>
-</div></div></section>
-
-<section class="collaborate" id="colabora"><div class="container"><div class="collaborate-box">
-<h2>¿Quieres colaborar con nosotros?</h2>
-<p>Si compartes nuestro compromiso con la igualdad, la inclusión, la convivencia y la diversidad, estaremos encantados de conocerte.</p>
-<a href="#contacto" class="btn" style="background:#2456a6;color:white;">Ponte en contacto</a>
-</div></div></section>
-
-<section class="contact" id="contacto"><div class="container">
-<div class="section-title"><div class="small">Estamos a tu disposición</div><h2>Contacta con nosotros</h2><p>Puedes contactar con ASOGINTER a través de cualquiera de nuestros canales.</p></div>
-<div class="contact-grid"><div class="contact-info">
-<h3>Dónde estamos</h3><p>Nuestra asociación se encuentra en Torrent, Valencia.</p>
-
-<div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 8 12 8 12s8-6.75 8-12c0-4.42-3.58-8-8-8zm0 11.25A3.25 3.25 0 1 1 12 6.75a3.25 3.25 0 0 1 0 6.5z"/></svg></div><div><strong>Dirección</strong><span>Calle Juan XXIII, nº 6 Bajo<br>Torrent, Valencia<br>CP 46900</span></div></div>
-
-<div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C11.61 21 3 12.39 3 2.99A1 1 0 0 1 4 2h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg></div><div><strong>Teléfono</strong><a href="tel:+349615578810">961 55 78 810</a></div></div>
-
-<div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 3H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h3v3l4-3h9a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-1 12H9l-2 1.5V15H5V6h14v9z"/></svg></div><div><strong>WhatsApp</strong><a href="https://wa.me/34621259271" target="_blank" rel="noopener">621 25 92 71</a></div></div>
-
-<div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div><strong>Email</strong><a href="mailto:asoginter@gmail.com">asoginter@gmail.com</a></div></div>
-
-</div><div class="contact-box">
-<h3>Síguenos en redes sociales</h3>
-<p>Puedes conocer nuestras actividades, noticias y novedades a través de nuestras redes sociales.</p>
-<div class="social-large">
-<a class="instagram" href="https://www.instagram.com/asoginter/" target="_blank" rel="noopener">◎ Instagram</a>
-<a class="facebook" href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES" target="_blank" rel="noopener">f Facebook</a>
-<a class="whatsapp" href="https://wa.me/34621259271" target="_blank" rel="noopener">💬 WhatsApp</a>
 </div>
+
+</div>
+
+</header>
+
+
+<div class="color-bar">
+<div class="color-blue"></div>
+<div class="color-green"></div>
+<div class="color-red"></div>
+<div class="color-purple"></div>
+</div>
+
+
+<!-- =========================
+     PORTADA
+========================= -->
+
+<section class="hero" id="inicio">
+
+<div class="container">
+
+<div class="hero-content">
+
+<img
+src="logo-emblema-asoginter.png"
+alt="Emblema ASOGINTER"
+class="hero-logo">
+
+<div class="hero-small">
+ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL DE TORRENT
+</div>
+
+<h1>
+ASOGINTER
+</h1>
+
+<p class="hero-subtitle">
+Inclusión · Igualdad · Cultura · Interculturalidad
+</p>
+
+<p class="hero-description">
+Trabajamos por una sociedad más inclusiva, igualitaria,
+intercultural y respetuosa con la diversidad.
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#quienes-somos"
+class="btn btn-primary">
+Conoce nuestra asociación
+</a>
+
+<a
+href="#contacto"
+class="btn btn-outline">
+Contacta con nosotros
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     QUIÉNES SOMOS
+========================= -->
+
+<section class="about" id="quienes-somos">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">
+ASOGINTER
+</div>
+
+<h2>
+Quiénes somos
+</h2>
+
+<p>
+Una asociación comprometida con la convivencia,
+la igualdad y el reconocimiento de la diversidad.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="about-text">
+
+<h3>
+Trabajamos por una sociedad con más oportunidades
+</h3>
+
+<p>
+La Asociación Gitana Europea e Intercultural de Torrent,
+ASOGINTER, trabaja con el compromiso de contribuir a una
+sociedad más justa, inclusiva e intercultural.
+</p>
+
+<p>
+Nuestro trabajo pone en valor la cultura gitana,
+fomenta la igualdad de oportunidades y promueve
+la convivencia y el respeto entre las diferentes
+personas y comunidades.
+</p>
+
+
+<div class="about-highlight">
+
+“Hablar de la comunidad gitana es hablar de historia,
+cultura, esfuerzo y futuro. Gracias por el espacio y por escuchar.”
+
+</div>
+
+</div>
+
+
+<div class="about-logo">
+
+<img
+src="LOGO%20ASOGINTER%20%281%29.png"
+alt="ASOGINTER">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MISIÓN Y VISIÓN
+========================= -->
+
+<section class="mission">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">
+Nuestro compromiso
+</div>
+
+<h2>
+Misión y visión
+</h2>
+
+</div>
+
+
+<div class="mission-grid">
+
+
+<div class="mission-card">
+
+<h3>
+Nuestra misión
+</h3>
+
+<p>
+Promover la inclusión social, la igualdad de oportunidades
+y la participación de la comunidad gitana, favoreciendo
+la convivencia y el diálogo intercultural.
+</p>
+
+</div>
+
+
+<div class="mission-card">
+
+<h3>
+Nuestra visión
+</h3>
+
+<p>
+Construir una sociedad donde todas las personas puedan
+participar en igualdad de condiciones, libres de discriminación
+y donde la diversidad cultural sea reconocida y valorada.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     QUÉ HACEMOS
+========================= -->
+
+<section class="activities" id="que-hacemos">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">
+Nuestro trabajo
+</div>
+
+<h2>
+¿Qué hacemos?
+</h2>
+
+<p>
+Trabajamos en diferentes ámbitos para favorecer
+la inclusión, la igualdad y la convivencia.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<!-- INCLUSIÓN -->
+
+<div class="card">
+
+<div class="icon" aria-hidden="true">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M7 11.5l-2-2a2 2 0 0 1 2.8-2.8l3 3 1.4-1.4a2 2 0 0 1 2.8 0l3.2 3.2a2 2 0 0 1 0 2.8l-4.7 4.7a3 3 0 0 1-4.2 0L4.8 14a2 2 0 0 1 0-2.8 2 2 0 0 1 2.2-.4z"/>
+
+<path d="M9 6l2-2a2 2 0 0 1 2.8 0l1.2 1.2"/>
+
+</svg>
+
+</div>
+
+<h3>
+Inclusión social
+</h3>
+
+<p>
+Favorecemos la inclusión y la participación social,
+trabajando para reducir situaciones de desigualdad.
+</p>
+
+</div>
+
+
+<!-- EDUCACIÓN -->
+
+<div class="card">
+
+<div class="icon" aria-hidden="true">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H19v15H7.5A2.5 2.5 0 0 0 5 20.5z"/>
+
+<path d="M5 5.5v15A2.5 2.5 0 0 1 7.5 23H19"/>
+
+<path d="M8 7h7M8 10h7M8 13h5"/>
+
+</svg>
+
+</div>
+
+<h3>
+Educación y formación
+</h3>
+
+<p>
+Promovemos la educación y la formación como herramientas
+fundamentales para generar nuevas oportunidades.
+</p>
+
+</div>
+
+
+<!-- CULTURA -->
+
+<div class="card">
+
+<div class="icon" aria-hidden="true">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M12 3a9 9 0 1 0 0 18h1.2a2 2 0 0 0 0-4H12a2 2 0 0 1 0-4h5a4 4 0 0 0 4-4c0-3.3-4-6-9-6z"/>
+
+<circle cx="7.5" cy="9" r="1"/>
+
+<circle cx="11" cy="6.5" r="1"/>
+
+<circle cx="16" cy="7.5" r="1"/>
+
+</svg>
+
+</div>
+
+<h3>
+Cultura gitana
+</h3>
+
+<p>
+Ponemos en valor la historia, la cultura y las tradiciones
+del pueblo gitano.
+</p>
+
+</div>
+
+
+<!-- IGUALDAD -->
+
+<div class="card">
+
+<div class="icon" aria-hidden="true">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M12 4v16"/>
+
+<path d="M7 20h10"/>
+
+<path d="M5 7h14"/>
+
+<path d="M7 7l-3 6a3 3 0 0 0 6 0L7 7z"/>
+
+<path d="M17 7l-3 6a3 3 0 0 0 6 0l-3-6z"/>
+
+</svg>
+
+</div>
+
+<h3>
+Igualdad
+</h3>
+
+<p>
+Trabajamos por la igualdad de oportunidades y contra
+cualquier forma de discriminación.
+</p>
+
+</div>
+
+
+<!-- JUVENTUD -->
+
+<div class="card">
+
+<div class="icon" aria-hidden="true">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M12 21V10"/>
+
+<path d="M12 13c-4 0-6-2-6-6 4 0 6 2 6 6z"/>
+
+<path d="M12 10c0-4 2-6 6-6 0 4-2 6-6 6z"/>
+
+</svg>
+
+</div>
+
+<h3>
+Juventud
+</h3>
+
+<p>
+Apostamos por la participación y el desarrollo
+de las nuevas generaciones.
+</p>
+
+</div>
+
+
+<!-- INTERCULTURALIDAD -->
+
+<div class="card">
+
+<div class="icon" aria-hidden="true">
+
+<svg viewBox="0 0 24 24">
+
+<circle cx="12" cy="12" r="9"/>
+
+<path d="M3 12h18"/>
+
+<path d="M12 3c2.5 2.5 3.5 5.5 3.5 9S14.5 18.5 12 21"/>
+
+<path d="M12 3c-2.5 2.5-3.5 5.5-3.5 9S9.5 18.5 12 21"/>
+
+</svg>
+
+</div>
+
+<h3>
+Interculturalidad
+</h3>
+
+<p>
+Fomentamos el conocimiento, el diálogo y la convivencia
+entre diferentes culturas.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="health-message">
+
+<p>
+“La salud empieza en el barrio, crece con la comunidad y llega a todas las personas.”
+</p>
+
+<p>
+Opre Rroma · Salud y libertad · Sastipen Tali
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FRASE
+========================= -->
+
+<section class="quote">
+
+<div class="container">
+
+<div class="quote-content">
+
+<div class="quote-mark">
+“
+</div>
+
+<h2>
+TODOS A UNA SOLA VOZ DERRIBAREMOS LOS MUROS DE INTOLERANCIA Y DESIGUALDAD PARA CONQUISTAR ESPACIOS DE CONVIVENCIA
+</h2>
+
+<p>
+ASOGINTER · Torrent
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ACTIVIDADES
+========================= -->
+
+<section class="news" id="actividades">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">
+Actualidad
+</div>
+
+<h2>
+Actividades y noticias
+</h2>
+
+<p>
+Próximamente podrás conocer aquí nuestras actividades,
+proyectos y noticias.
+</p>
+
+</div>
+
+
+<div class="news-grid">
+
+
+<article class="news-card">
+
+<div class="news-image">
+ACTIVIDADES
+</div>
+
+<div class="news-body">
+
+<h3>
+Actividades de la asociación
+</h3>
+
+<p>
+En este espacio iremos compartiendo nuestras próximas
+actividades y proyectos.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="news-card">
+
+<div class="news-image">
+CULTURA GITANA
+</div>
+
+<div class="news-body">
+
+<h3>
+Cultura e interculturalidad
+</h3>
+
+<p>
+Información sobre iniciativas destinadas a poner en valor
+la cultura gitana y favorecer el diálogo intercultural.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="news-card">
+
+<div class="news-image">
+PARTICIPACIÓN
+</div>
+
+<div class="news-body">
+
+<h3>
+Participa con nosotros
+</h3>
+
+<p>
+Descubre cómo puedes acercarte a la asociación y formar
+parte de nuestras iniciativas.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     COLABORA
+========================= -->
+
+<section class="collaborate" id="colabora">
+
+<div class="container">
+
+<div class="collaborate-box">
+
+<h2>
+¿Quieres colaborar con nosotros?
+</h2>
+
+<p>
+Si compartes nuestro compromiso con la igualdad,
+la inclusión, la convivencia y la diversidad,
+estaremos encantados de conocerte.
+</p>
+
+<a
+href="#contacto"
+class="btn"
+style="background:#2456a6;color:white;">
+Ponte en contacto
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
+<section class="contact" id="contacto">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">
+Estamos a tu disposición
+</div>
+
+<h2>
+Contacta con nosotros
+</h2>
+
+<p>
+Puedes contactar con ASOGINTER a través
+de cualquiera de nuestros canales.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-info">
+
+<h3>
+Dónde estamos
+</h3>
+
+<p>
+Nuestra asociación se encuentra en Torrent, Valencia.
+</p>
+
+
+<!-- DIRECCIÓN -->
+
+<div class="contact-item">
+
+<div class="contact-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 8 12 8 12s8-6.75 8-12c0-4.42-3.58-8-8-8zm0 11.25A3.25 3.25 0 1 1 12 6.75a3.25 3.25 0 0 1 0 6.5z"/>
+
+</svg>
+
+</div>
+
+<div>
+
+<strong>
+Dirección
+</strong>
+
+<span>
+Calle Juan XXIII, nº 6 Bajo<br>
+Torrent, Valencia<br>
+CP 46900
+</span>
+
+</div>
+
+</div>
+
+
+<!-- TELÉFONO -->
+
+<div class="contact-item">
+
+<div class="contact-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C11.61 21 3 12.39 3 2.99A1 1 0 0 1 4 2h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/>
+
+</svg>
+
+</div>
+
+<div>
+
+<strong>
+Teléfono
+</strong>
+
+<a href="tel:+349615578810">
+961 55 78 810
+</a>
+
+</div>
+
+</div>
+
+
+<!-- WHATSAPP -->
+
+<div class="contact-item">
+
+<div class="contact-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M20 3H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h3v3l4-3h9a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-1 12H9l-2 1.5V15H5V6h14v9z"/>
+
+</svg>
+
+</div>
+
+<div>
+
+<strong>
+WhatsApp
+</strong>
+
+<a
+href="https://wa.me/34621259271"
+target="_blank"
+rel="noopener">
+
+621 25 92 71
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- EMAIL -->
+
+<div class="contact-item">
+
+<div class="contact-icon">
+
+<svg viewBox="0 0 24 24">
+
+<path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+
+</svg>
+
+</div>
+
+<div>
+
+<strong>
+Email
+</strong>
+
+<a href="mailto:asoginter@gmail.com">
+asoginter@gmail.com
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- REDES -->
+
+<div class="contact-box">
+
+<h3>
+Síguenos en redes sociales
+</h3>
+
+<p>
+Puedes conocer nuestras actividades, noticias y novedades
+a través de nuestras redes sociales.
+</p>
+
+
+<div class="social-large">
+
+<a
+class="instagram"
+href="https://www.instagram.com/asoginter/"
+target="_blank"
+rel="noopener">
+
+◎ Instagram
+
+</a>
+
+
+<a
+class="facebook"
+href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
+target="_blank"
+rel="noopener">
+
+f Facebook
+
+</a>
+
+
+<a
+class="whatsapp"
+href="https://wa.me/34621259271"
+target="_blank"
+rel="noopener">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+
 <br>
-<p><strong>Instagram:</strong> @asoginter</p>
-<p><strong>Facebook:</strong> Asociación Gitana Europea e Intercultural</p>
-</div></div></div></section>
 
-<footer><div class="container"><div class="footer-grid">
+<p>
+<strong>Instagram:</strong>
+@asoginter
+</p>
+
+<p>
+<strong>Facebook:</strong>
+Asociación Gitana Europea e Intercultural
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
 <div class="footer-logo">
-<img src="LOGO%20ASOGINTER%20%281%29.png" alt="Logo ASOGINTER">
-<h3>ASOGINTER</h3>
-<p>Asociación Gitana Europea e Intercultural de Torrent.</p>
+
+<img
+src="LOGO%20ASOGINTER%20%281%29.png"
+alt="Logo ASOGINTER">
+
+<h3>
+ASOGINTER
+</h3>
+
+<p>
+Asociación Gitana Europea e Intercultural de Torrent.
+</p>
+
+
 <div class="footer-social">
-<a href="https://www.instagram.com/asoginter/" target="_blank" rel="noopener" class="instagram" aria-label="Instagram">◎</a>
-<a href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES" target="_blank" rel="noopener" class="facebook" aria-label="Facebook">f</a>
-<a href="https://wa.me/34621259271" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">💬</a>
-</div></div>
 
-<div><h3>Enlaces</h3><ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#quienes-somos">Quiénes somos</a></li>
-<li><a href="#que-hacemos">Qué hacemos</a></li>
-<li><a href="#actividades">Actividades</a></li>
-<li><a href="#colabora">Colabora</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul></div>
+<a
+href="https://www.instagram.com/asoginter/"
+target="_blank"
+rel="noopener"
+class="instagram"
+aria-label="Instagram">
 
-<div><h3>Contacto</h3>
-<p>Calle Juan XXIII, nº 6 Bajo</p>
-<p>Torrent, Valencia · 46900</p>
-<p><a href="mailto:asoginter@gmail.com">asoginter@gmail.com</a></p>
-<p>961 55 78 810</p>
-<p>WhatsApp: 621 25 92 71</p>
-</div></div>
+◎
 
-<div class="copyright">© 2026 ASOGINTER · Asociación Gitana Europea e Intercultural de Torrent</div>
-</div></footer>
+</a>
 
-</body></html>
+
+<a
+href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
+target="_blank"
+rel="noopener"
+class="facebook"
+aria-label="Facebook">
+
+f
+
+</a>
+
+
+<a
+href="https://wa.me/34621259271"
+target="_blank"
+rel="noopener"
+class="whatsapp"
+aria-label="WhatsApp">
+
+💬
+
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+Enlaces
+</h3>
+
+<ul>
+
+<li>
+<a href="#inicio">
+Inicio
+</a>
+</li>
+
+<li>
+<a href="#quienes-somos">
+Quiénes somos
+</a>
+</li>
+
+<li>
+<a href="#que-hacemos">
+Qué hacemos
+</a>
+</li>
+
+<li>
+<a href="#actividades">
+Actividades
+</a>
+</li>
+
+<li>
+<a href="#colabora">
+Colabora
+</a>
+</li>
+
+<li>
+<a href="#contacto">
+Contacto
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+Contacto
+</h3>
+
+<p>
+Calle Juan XXIII, nº 6 Bajo
+</p>
+
+<p>
+Torrent, Valencia · 46900
+</p>
+
+<p>
+<a href="mailto:asoginter@gmail.com">
+asoginter@gmail.com
+</a>
+</p>
+
+<p>
+961 55 78 810
+</p>
+
+<p>
+WhatsApp: 621 25 92 71
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 ASOGINTER · Asociación Gitana Europea e Intercultural de Torrent
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
