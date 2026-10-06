@@ -20,6 +20,7 @@
 
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 115px;
         }
 
         body {
@@ -27,6 +28,7 @@
             color: #333;
             background: #fff;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         a {
@@ -36,11 +38,12 @@
 
         img {
             max-width: 100%;
+            display: block;
         }
 
-        /* =========================
+        /* =====================================
            HEADER
-        ========================= */
+        ===================================== */
 
         header {
             position: sticky;
@@ -54,9 +57,10 @@
             max-width: 1200px;
             margin: auto;
             min-height: 82px;
-            display: flex;
+            display: grid;
+            grid-template-columns: 90px 1fr auto;
             align-items: center;
-            justify-content: space-between;
+            gap: 20px;
             padding: 10px 25px;
         }
 
@@ -68,10 +72,10 @@
 
         nav {
             display: flex;
+            justify-content: center;
             align-items: center;
             gap: 24px;
             flex-wrap: wrap;
-            justify-content: center;
         }
 
         nav a {
@@ -79,6 +83,7 @@
             font-weight: bold;
             color: #333;
             transition: 0.3s;
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -98,7 +103,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #fff;
             font-weight: bold;
             font-size: 15px;
         }
@@ -110,10 +115,6 @@
         .facebook {
             background: #1877f2;
         }
-
-        /* =========================
-           COLOR BAR
-        ========================= */
 
         .color-bar {
             height: 6px;
@@ -140,9 +141,74 @@
             background: #7b3f98;
         }
 
-        /* =========================
+        /* =====================================
+           GENERAL
+        ===================================== */
+
+        .container {
+            max-width: 1150px;
+            width: 92%;
+            margin: auto;
+        }
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .section-title span {
+            color: #c62828;
+        }
+
+        .section-intro {
+            max-width: 800px;
+            margin: 0 auto 45px;
+            text-align: center;
+            color: #666;
+            font-size: 17px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #c62828;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #a91f1f;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: #c62828;
+            border: 2px solid #c62828;
+        }
+
+        .btn-secondary:hover {
+            background: #c62828;
+            color: #fff;
+        }
+
+        /* =====================================
            HERO
-        ========================= */
+        ===================================== */
 
         .hero {
             min-height: 690px;
@@ -166,7 +232,7 @@
             width: 100%;
             max-width: 950px;
             text-align: center;
-            background: rgba(255,255,255,0.82);
+            background: rgba(255,255,255,0.84);
             padding: 45px 35px;
             border-radius: 25px;
             box-shadow: 0 12px 40px rgba(0,0,0,0.12);
@@ -177,7 +243,6 @@
             height: 170px;
             object-fit: contain;
             margin: 0 auto 15px;
-            display: block;
         }
 
         .hero-formal-name {
@@ -219,70 +284,9 @@
             flex-wrap: wrap;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 13px 25px;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-            background: #c62828;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #a91f1f;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: #fff;
-            color: #c62828;
-            border: 2px solid #c62828;
-        }
-
-        .btn-secondary:hover {
-            background: #c62828;
-            color: white;
-        }
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
-        section {
-            padding: 80px 20px;
-        }
-
-        .container {
-            max-width: 1150px;
-            margin: auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 38px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .section-title span {
-            color: #c62828;
-        }
-
-        .section-intro {
-            max-width: 800px;
-            margin: 0 auto 45px;
-            text-align: center;
-            color: #666;
-            font-size: 17px;
-        }
-
-        /* =========================
-           QUIENES SOMOS
-        ========================= */
+        /* =====================================
+           QUIÉNES SOMOS
+        ===================================== */
 
         .about-grid {
             display: grid;
@@ -307,26 +311,25 @@
         }
 
         .about-logo {
-            min-height: 350px;
+            height: 390px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 12px;
+            border-radius: 15px;
             overflow: hidden;
             background: #f6f7fb;
-            padding: 0;
         }
 
         .about-logo img {
             width: 100%;
-            height: 390px;
+            height: 100%;
             object-fit: cover;
             object-position: center;
         }
 
-        /* =========================
-           MISION
-        ========================= */
+        /* =====================================
+           MISIÓN
+        ===================================== */
 
         .mission {
             background: #f7f7f7;
@@ -351,9 +354,9 @@
             margin-bottom: 15px;
         }
 
-        /* =========================
-           QUE HACEMOS
-        ========================= */
+        /* =====================================
+           QUÉ HACEMOS
+        ===================================== */
 
         .cards-grid {
             display: grid;
@@ -433,9 +436,9 @@
             color: #c62828;
         }
 
-        /* =========================
+        /* =====================================
            CITA
-        ========================= */
+        ===================================== */
 
         .quote-section {
             background: #c62828;
@@ -452,9 +455,124 @@
             line-height: 1.5;
         }
 
-        /* =========================
-           ACTIVIDADES
-        ========================= */
+        /* =====================================
+           ACTIVIDADES Y FORMACIÓN
+        ===================================== */
+
+        .training-feature {
+            display: grid;
+            grid-template-columns: 0.92fr 1.08fr;
+            gap: 38px;
+            align-items: stretch;
+            padding: 30px;
+            background: #fff;
+            border-radius: 22px;
+            border: 1px solid #ececec;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+            overflow: hidden;
+            margin-bottom: 35px;
+        }
+
+        .training-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8px;
+        }
+
+        .training-label {
+            display: inline-flex;
+            align-self: flex-start;
+            padding: 7px 12px;
+            border-radius: 20px;
+            background: #fdeaea;
+            color: #c62828;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            margin-bottom: 15px;
+        }
+
+        .training-content h3 {
+            color: #c62828;
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .program-title {
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.45;
+            color: #444;
+            margin-bottom: 16px;
+        }
+
+        .training-content > p {
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .training-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .training-item {
+            padding: 11px 14px;
+            border-radius: 12px;
+            background: #fafafa;
+            border-left: 4px solid #c62828;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .training-item strong {
+            color: #333;
+        }
+
+        .training-note {
+            margin-top: 18px;
+            padding: 13px 15px;
+            background: #f7f7f7;
+            border-radius: 12px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* COLLAGE DE FOTOS */
+
+        .course-collage {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            grid-template-rows: 230px 185px;
+            gap: 12px;
+            min-height: 427px;
+        }
+
+        .course-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 16px rgba(0,0,0,0.10);
+        }
+
+        .course-photo-main {
+            grid-column: 1 / -1;
+            object-position: center 43%;
+        }
+
+        .course-photo-group {
+            object-position: center;
+        }
+
+        .course-photo-forklift {
+            object-position: center 42%;
+        }
 
         .news-grid {
             display: grid;
@@ -467,6 +585,15 @@
             background: #f7f7f7;
             padding: 25px;
             min-height: 180px;
+            border-top: 4px solid #c62828;
+        }
+
+        .news-card:nth-child(2) {
+            border-top-color: #1479b8;
+        }
+
+        .news-card:nth-child(3) {
+            border-top-color: #39a852;
         }
 
         .news-card h3 {
@@ -474,9 +601,9 @@
             margin-bottom: 12px;
         }
 
-        /* =========================
+        /* =====================================
            COLABORA
-        ========================= */
+        ===================================== */
 
         .collaborate {
             background: #f7f7f7;
@@ -497,9 +624,9 @@
             color: #666;
         }
 
-        /* =========================
+        /* =====================================
            CONTACTO
-        ========================= */
+        ===================================== */
 
         .contact-grid {
             display: grid;
@@ -566,21 +693,17 @@
             color: #666;
         }
 
-        .contact-item a {
-            color: #555;
-        }
-
         .contact-item a:hover {
             color: #c62828;
         }
 
-        /* =========================
+        /* =====================================
            MAPA
-        ========================= */
+        ===================================== */
 
         .map-container {
             width: 100%;
-            margin-top: 35px;
+            margin-top: 0;
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 8px 25px rgba(0,0,0,0.10);
@@ -594,9 +717,9 @@
             border: 0;
         }
 
-        /* =========================
+        /* =====================================
            FOOTER
-        ========================= */
+        ===================================== */
 
         footer {
             background: #222;
@@ -610,20 +733,46 @@
             color: #ddd;
         }
 
-        /* =========================
-           RESPONSIVE
-        ========================= */
+        footer strong {
+            color: white;
+            font-size: 25px;
+        }
 
-        @media(max-width: 900px) {
+        /* =====================================
+           TABLET
+        ===================================== */
+
+        @media (max-width: 900px) {
 
             .header-container {
-                flex-direction: column;
-                gap: 12px;
-                padding: 15px;
+                grid-template-columns: 80px 1fr;
+                grid-template-areas:
+                    "logo social"
+                    "nav nav";
+                gap: 8px 12px;
+                padding: 10px 15px;
+            }
+
+            .header-logo {
+                grid-area: logo;
+            }
+
+            .social {
+                grid-area: social;
+                justify-content: flex-end;
             }
 
             nav {
-                gap: 12px;
+                grid-area: nav;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                scrollbar-width: none;
+                gap: 20px;
+            }
+
+            nav::-webkit-scrollbar {
+                display: none;
             }
 
             .about-grid,
@@ -637,80 +786,329 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .hero {
-                min-height: 620px;
+            .training-feature {
+                grid-template-columns: 1fr;
+            }
+
+            .course-collage {
+                min-height: 420px;
             }
         }
 
-        @media(max-width: 600px) {
+        /* =====================================
+           MÓVIL
+        ===================================== */
+
+        @media (max-width: 600px) {
 
             section {
-                padding: 60px 18px;
+                padding: 58px 0;
+            }
+
+            .header-container {
+                min-height: auto;
+                display: grid;
+                grid-template-columns: 1fr auto;
+                grid-template-rows: auto auto;
+                gap: 8px 12px;
+                padding: 9px 4%;
             }
 
             .header-logo {
-                width: 75px;
-                height: 55px;
+                width: 70px;
+                height: 52px;
+                justify-self: start;
+            }
+
+            .social {
+                justify-self: end;
+                gap: 7px;
+            }
+
+            .social a {
+                width: 34px;
+                height: 34px;
             }
 
             nav {
-                gap: 9px;
+                grid-column: 1 / -1;
+                width: 100%;
+                overflow-x: auto;
+                overflow-y: hidden;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                gap: 10px;
+                padding-bottom: 2px;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
             }
 
             nav a {
-                font-size: 12px;
+                font-size: 10.5px;
+                padding: 7px 8px;
+                white-space: nowrap;
+            }
+
+            nav::-webkit-scrollbar {
+                display: none;
+            }
+
+            .color-bar {
+                height: 5px;
             }
 
             .hero {
-                min-height: 600px;
-                padding: 35px 15px;
+                min-height: auto;
+                padding: 30px 12px 38px;
             }
 
             .hero-content {
-                padding: 30px 20px;
+                padding: 30px 18px 35px;
+                border-radius: 20px;
             }
 
             .hero-emblem {
-                width: 130px;
-                height: 130px;
+                width: 125px;
+                height: 125px;
+                margin-bottom: 13px;
             }
 
             .hero-formal-name {
-                font-size: 15px;
+                font-size: 13px;
+                line-height: 1.45;
+                letter-spacing: 0.7px;
             }
 
             .hero-title {
-                font-size: 55px;
+                font-size: clamp(48px, 16vw, 68px);
                 letter-spacing: 2px;
+                margin-bottom: 14px;
             }
 
             .hero-tagline {
-                font-size: 18px;
+                font-size: 17px;
+                line-height: 1.4;
+                margin-bottom: 13px;
             }
 
             .hero-description {
-                font-size: 16px;
+                font-size: 15px;
+                line-height: 1.55;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 23px;
+            }
+
+            .btn {
+                width: 100%;
+                min-height: 48px;
             }
 
             .section-title {
                 font-size: 30px;
             }
 
+            .section-intro {
+                font-size: 15px;
+                margin-bottom: 32px;
+            }
+
+            .about-grid,
+            .mission-grid,
+            .contact-grid,
+            .training-feature {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .about-text p {
+                font-size: 15px;
+            }
+
+            .about-highlight {
+                padding: 18px;
+                font-size: 14px;
+            }
+
+            .about-logo {
+                height: 290px;
+            }
+
+            .mission-card {
+                padding: 27px 22px;
+            }
+
             .cards-grid,
             .news-grid {
                 grid-template-columns: 1fr;
+                gap: 18px;
             }
 
-            .about-logo img {
-                height: 300px;
+            .activity-card {
+                padding: 25px 20px;
+            }
+
+            .professional-icon {
+                width: 62px;
+                height: 62px;
+                margin-bottom: 14px;
+            }
+
+            .professional-icon svg {
+                width: 32px;
+                height: 32px;
+            }
+
+            .activity-card h3 {
+                font-size: 19px;
+            }
+
+            .activity-card p {
+                font-size: 14px;
+            }
+
+            .health-message {
+                margin-top: 30px;
+                padding: 22px 17px;
+                font-size: 14px;
+            }
+
+            .quote-section {
+                padding: 55px 18px;
             }
 
             .quote {
                 font-size: 21px;
+                line-height: 1.45;
+            }
+
+            .training-feature {
+                padding: 20px;
+                gap: 25px;
+            }
+
+            .training-content {
+                padding: 0;
+            }
+
+            .training-content h3 {
+                font-size: 25px;
+            }
+
+            .program-title {
+                font-size: 16px;
+            }
+
+            .course-collage {
+                grid-template-columns: 1.08fr 0.92fr;
+                grid-template-rows: 210px 160px;
+                min-height: 382px;
+            }
+
+            .news-card {
+                min-height: 0;
+                padding: 22px;
+            }
+
+            .collaborate-box {
+                padding: 30px 20px;
+            }
+
+            .collaborate-box .section-title {
+                font-size: 26px;
+            }
+
+            .contact-item {
+                gap: 13px;
+                padding: 13px 10px;
+                align-items: flex-start;
+            }
+
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .contact-item h4 {
+                font-size: 15px;
+            }
+
+            .contact-item p {
+                font-size: 14px;
+                line-height: 1.5;
             }
 
             .map-container iframe {
-                height: 300px;
+                height: 285px;
+            }
+
+            footer {
+                padding: 28px 15px;
+            }
+
+            footer p {
+                font-size: 13px;
+                line-height: 1.5;
+            }
+        }
+
+        @media (max-width: 380px) {
+
+            .header-logo {
+                width: 64px;
+                height: 48px;
+            }
+
+            .social a {
+                width: 31px;
+                height: 31px;
+                font-size: 13px;
+            }
+
+            nav a {
+                font-size: 10px;
+            }
+
+            .hero-content {
+                padding: 26px 14px 30px;
+            }
+
+            .hero-emblem {
+                width: 108px;
+                height: 108px;
+            }
+
+            .hero-title {
+                font-size: 46px;
+            }
+
+            .hero-formal-name {
+                font-size: 11px;
+            }
+
+            .hero-tagline {
+                font-size: 15px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .about-logo {
+                height: 255px;
+            }
+
+            .course-collage {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 170px 125px;
+                gap: 8px;
+            }
+
+            .map-container iframe {
+                height: 255px;
             }
         }
 
@@ -719,9 +1117,9 @@
 
 <body>
 
-    <!-- =========================
+    <!-- =====================================
          CABECERA
-    ========================= -->
+    ===================================== -->
 
     <header>
 
@@ -749,6 +1147,7 @@
                     class="instagram"
                     href="https://www.instagram.com/asoginter/"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Instagram">
                     IG
                 </a>
@@ -757,6 +1156,7 @@
                     class="facebook"
                     href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Facebook">
                     f
                 </a>
@@ -775,9 +1175,9 @@
     </header>
 
 
-    <!-- =========================
+    <!-- =====================================
          INICIO
-    ========================= -->
+    ===================================== -->
 
     <section class="hero" id="inicio">
 
@@ -807,13 +1207,19 @@
             </p>
 
             <div class="hero-buttons">
-                <a class="btn btn-primary" href="#quienes-somos">
+
+                <a
+                    class="btn btn-primary"
+                    href="#quienes-somos">
                     Conócenos
                 </a>
 
-                <a class="btn btn-secondary" href="#contacto">
+                <a
+                    class="btn btn-secondary"
+                    href="#contacto">
                     Contacta con nosotros
                 </a>
+
             </div>
 
         </div>
@@ -821,9 +1227,9 @@
     </section>
 
 
-    <!-- =========================
-         QUIENES SOMOS
-    ========================= -->
+    <!-- =====================================
+         QUIÉNES SOMOS
+    ===================================== -->
 
     <section id="quienes-somos">
 
@@ -878,9 +1284,9 @@
     </section>
 
 
-    <!-- =========================
-         MISION Y VISION
-    ========================= -->
+    <!-- =====================================
+         MISIÓN Y VISIÓN
+    ===================================== -->
 
     <section class="mission">
 
@@ -929,9 +1335,9 @@
     </section>
 
 
-    <!-- =========================
-         QUE HACEMOS
-    ========================= -->
+    <!-- =====================================
+         QUÉ HACEMOS
+    ===================================== -->
 
     <section id="que-hacemos">
 
@@ -949,17 +1355,19 @@
             <div class="cards-grid">
 
 
-                <!-- INCLUSION -->
+                <!-- INCLUSIÓN -->
 
                 <div class="activity-card">
 
                     <div class="professional-icon icon-blue">
 
-                        <svg viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             stroke-linecap="round"
-                             stroke-linejoin="round">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
 
                             <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
@@ -980,17 +1388,19 @@
                 </div>
 
 
-                <!-- EDUCACION -->
+                <!-- EDUCACIÓN -->
 
                 <div class="activity-card">
 
                     <div class="professional-icon icon-green">
 
-                        <svg viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             stroke-linecap="round"
-                             stroke-linejoin="round">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
 
                             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                             <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
@@ -1015,11 +1425,13 @@
 
                     <div class="professional-icon icon-red">
 
-                        <svg viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             stroke-linecap="round"
-                             stroke-linejoin="round">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
 
                             <circle cx="13.5" cy="6.5" r="3.5"></circle>
                             <circle cx="6.5" cy="12.5" r="3.5"></circle>
@@ -1047,11 +1459,13 @@
 
                     <div class="professional-icon icon-purple">
 
-                        <svg viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             stroke-linecap="round"
-                             stroke-linejoin="round">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
 
                             <path d="M12 3v18"></path>
                             <path d="M3 7h18"></path>
@@ -1079,11 +1493,13 @@
 
                     <div class="professional-icon icon-green">
 
-                        <svg viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             stroke-linecap="round"
-                             stroke-linejoin="round">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
 
                             <path d="M3 17l6-6 4 4 8-8"></path>
                             <path d="M14 7h7v7"></path>
@@ -1108,11 +1524,13 @@
 
                     <div class="professional-icon icon-blue">
 
-                        <svg viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             stroke-linecap="round"
-                             stroke-linejoin="round">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
 
                             <circle cx="12" cy="12" r="9"></circle>
                             <path d="M3 12h18"></path>
@@ -1155,9 +1573,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================
          FRASE
-    ========================= -->
+    ===================================== -->
 
     <section class="quote-section">
 
@@ -1169,9 +1587,9 @@
     </section>
 
 
-    <!-- =========================
-         ACTIVIDADES
-    ========================= -->
+    <!-- =====================================
+         ACTIVIDADES Y PROYECTOS
+    ===================================== -->
 
     <section id="actividades">
 
@@ -1182,26 +1600,94 @@
             </h2>
 
             <p class="section-intro">
-                Un espacio para compartir nuestras actividades,
-                proyectos, formaciones y noticias.
+                Conoce algunas de las actividades y acciones que
+                desarrollamos desde ASOGINTER.
             </p>
+
+
+            <!-- FORMACIÓN -->
+
+            <div class="training-feature">
+
+                <div class="training-content">
+
+                    <div class="training-label">
+                        Formación e inserción sociolaboral
+                    </div>
+
+                    <h3>
+                        Itinerarios para el empleo
+                    </h3>
+
+                    <p class="program-title">
+                        Itinerarios integrados para la inserción sociolaboral
+                        de personas en situación o riesgo de exclusión social
+                        FSE+ 2021-2027
+                    </p>
+
+                    <p>
+                        A través de este programa, desde ASOGINTER se realizan
+                        acciones formativas orientadas a mejorar las competencias
+                        profesionales y favorecer las oportunidades de acceso al empleo.
+                    </p>
+
+                    <div class="training-list">
+
+                        <div class="training-item">
+                            <strong>Carretillero</strong> · Formación realizada en Agropeven.
+                        </div>
+
+                        <div class="training-item">
+                            <strong>Prevención de Riesgos Laborales</strong> · Formación realizada en una empresa colaboradora.
+                        </div>
+
+                        <div class="training-item">
+                            <strong>Manipulador de alimentos</strong> · Formación realizada en una empresa colaboradora.
+                        </div>
+
+                    </div>
+
+                    <div class="training-note">
+                        Formación orientada a reforzar conocimientos y competencias
+                        útiles para la incorporación y mejora de las oportunidades laborales.
+                    </div>
+
+                </div>
+
+
+                <!-- COLLAGE FOTOGRÁFICO -->
+
+                <div class="course-collage">
+
+                    <img
+                        class="course-photo course-photo-main"
+                        src="carretillero-1.jpeg"
+                        alt="Participantes mostrando sus certificados de formación">
+
+                    <img
+                        class="course-photo course-photo-group"
+                        src="carretillero-2.jpeg"
+                        alt="Grupo participante durante la formación">
+
+                    <img
+                        class="course-photo course-photo-forklift"
+                        src="carretillero-3.jpeg"
+                        alt="Prácticas de manejo de carretilla elevadora">
+
+                </div>
+
+            </div>
+
+
+            <!-- OTRAS ACTIVIDADES -->
 
             <div class="news-grid">
 
                 <div class="news-card">
 
-                    <h3>Formación</h3>
-
-                    <p>
-                        Cursos y actividades formativas dirigidas a
-                        mejorar las oportunidades de las personas.
-                    </p>
-
-                </div>
-
-                <div class="news-card">
-
-                    <h3>Infancia y juventud</h3>
+                    <h3>
+                        Infancia y juventud
+                    </h3>
 
                     <p>
                         Actividades educativas y de participación
@@ -1212,11 +1698,26 @@
 
                 <div class="news-card">
 
-                    <h3>Comunidad</h3>
+                    <h3>
+                        Comunidad
+                    </h3>
 
                     <p>
                         Acciones para fomentar la convivencia,
                         la participación y el encuentro.
+                    </p>
+
+                </div>
+
+                <div class="news-card">
+
+                    <h3>
+                        Próximos proyectos
+                    </h3>
+
+                    <p>
+                        En este espacio iremos incorporando nuevas
+                        actividades, formaciones y proyectos de ASOGINTER.
                     </p>
 
                 </div>
@@ -1228,9 +1729,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================
          COLABORA
-    ========================= -->
+    ===================================== -->
 
     <section class="collaborate" id="colabora">
 
@@ -1247,7 +1748,9 @@
                     más inclusiva, igualitaria e intercultural.
                 </p>
 
-                <a class="btn btn-primary" href="#contacto">
+                <a
+                    class="btn btn-primary"
+                    href="#contacto">
                     Ponte en contacto
                 </a>
 
@@ -1258,9 +1761,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================
          CONTACTO
-    ========================= -->
+    ===================================== -->
 
     <section id="contacto">
 
@@ -1275,25 +1778,24 @@
                 a través de cualquiera de nuestros canales.
             </p>
 
-
             <div class="contact-grid">
-
 
                 <div class="contact-list">
 
 
-                    <!-- DIRECCION -->
+                    <!-- DIRECCIÓN -->
 
                     <div class="contact-item">
 
                         <div class="contact-icon address-icon">
 
-                            <svg viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor"
-                                 stroke-width="2"
-                                 stroke-linecap="round"
-                                 stroke-linejoin="round">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
 
                                 <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"></path>
                                 <circle cx="12" cy="10" r="2.5"></circle>
@@ -1317,18 +1819,19 @@
                     </div>
 
 
-                    <!-- TELEFONO -->
+                    <!-- TELÉFONO -->
 
                     <div class="contact-item">
 
                         <div class="contact-icon phone-icon">
 
-                            <svg viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor"
-                                 stroke-width="2"
-                                 stroke-linecap="round"
-                                 stroke-linejoin="round">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
 
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2
                                 19.79 19.79 0 0 1-8.63-3.07
@@ -1369,15 +1872,16 @@
 
                         <div class="contact-icon whatsapp-icon">
 
-                            <svg viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor"
-                                 stroke-width="2"
-                                 stroke-linecap="round"
-                                 stroke-linejoin="round">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
 
                                 <path d="M21 11.5a8.38 8.38 0 0 1-9
-                                8.5 8.5 8.5 0 0 1-4-.95L3 21l1.95-4.7
+                                8.5 8.5 0 0 1-4-.95L3 21l1.95-4.7
                                 A8.5 8.5 0 1 1 21 11.5z">
                                 </path>
 
@@ -1394,7 +1898,8 @@
                             <p>
                                 <a
                                     href="https://wa.me/34621259271"
-                                    target="_blank">
+                                    target="_blank"
+                                    rel="noopener">
                                     621 25 92 71
                                 </a>
                             </p>
@@ -1410,15 +1915,24 @@
 
                         <div class="contact-icon email-icon">
 
-                            <svg viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor"
-                                 stroke-width="2"
-                                 stroke-linecap="round"
-                                 stroke-linejoin="round">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
 
-                                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-                                <polyline points="3,7 12,13 21,7"></polyline>
+                                <rect
+                                    x="3"
+                                    y="5"
+                                    width="18"
+                                    height="14"
+                                    rx="2">
+                                </rect>
+
+                                <polyline points="3,7 12,13 21,7">
+                                </polyline>
 
                             </svg>
 
@@ -1438,30 +1952,24 @@
 
                     </div>
 
-
                 </div>
 
 
                 <!-- MAPA -->
 
-                <div>
+                <div class="map-container">
 
-                    <div class="map-container">
-
-                        <iframe
-                            src="https://www.google.com/maps?q=Calle%20Juan%20XXIII%2C%206%20Bajo%2C%20Torrent%2C%20Valencia%2C%2046900&output=embed"
-                            width="100%"
-                            height="400"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps?q=Calle%20Juan%20XXIII%2C%206%20Bajo%2C%20Torrent%2C%20Valencia%2C%2046900&output=embed"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
 
                 </div>
-
 
             </div>
 
@@ -1470,9 +1978,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================
          FOOTER
-    ========================= -->
+    ===================================== -->
 
     <footer>
 
@@ -1493,7 +2001,6 @@
         </p>
 
     </footer>
-
 
 </body>
 </html>
