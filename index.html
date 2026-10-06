@@ -51,13 +51,10 @@ img{
     --morado:#7b4a9e;
     --gris:#666;
     --gris-claro:#f5f6f8;
-    --blanco:#ffffff;
 }
 
 
-/* =========================
-   CABECERA
-========================= */
+/* CABECERA */
 
 header{
     background:#fff;
@@ -79,7 +76,6 @@ header{
     width:105px;
     height:70px;
     object-fit:contain;
-    object-position:left center;
 }
 
 nav{
@@ -112,18 +108,8 @@ nav a:hover{
     border-radius:4px;
 }
 
-.menu-contacto:hover{
-    background:var(--azul-oscuro);
-}
-
-
-/* =========================
-   REDES SOCIALES
-========================= */
-
 .header-social{
     display:flex;
-    align-items:center;
     gap:8px;
 }
 
@@ -137,11 +123,6 @@ nav a:hover{
     color:white;
     font-size:16px;
     font-weight:bold;
-    transition:.3s;
-}
-
-.header-social a:hover{
-    transform:translateY(-2px);
 }
 
 .header-instagram{
@@ -153,9 +134,7 @@ nav a:hover{
 }
 
 
-/* =========================
-   BARRA DE COLORES
-========================= */
+/* BARRA DE COLORES */
 
 .color-bar{
     display:flex;
@@ -183,9 +162,7 @@ nav a:hover{
 }
 
 
-/* =========================
-   PORTADA
-========================= */
+/* PORTADA */
 
 .hero{
     min-height:690px;
@@ -203,32 +180,9 @@ nav a:hover{
         center center / cover no-repeat;
 }
 
-.hero::before{
-    content:"";
-    position:absolute;
-    width:550px;
-    height:550px;
-    border-radius:50%;
-    background:rgba(255,255,255,.06);
-    right:-190px;
-    top:-160px;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    width:420px;
-    height:420px;
-    border-radius:50%;
-    background:rgba(255,255,255,.05);
-    left:-190px;
-    bottom:-200px;
-}
-
 .hero-content{
     position:relative;
     z-index:2;
-    color:var(--azul-oscuro);
     max-width:920px;
     margin:25px auto;
     padding:48px 65px 52px;
@@ -238,8 +192,7 @@ nav a:hover{
     border:1px solid rgba(255,255,255,.82);
     border-radius:24px;
 
-    box-shadow:
-        0 18px 55px rgba(23,59,115,.16);
+    box-shadow:0 18px 55px rgba(23,59,115,.16);
 
     backdrop-filter:blur(3px);
     -webkit-backdrop-filter:blur(3px);
@@ -250,10 +203,6 @@ nav a:hover{
     height:195px;
     object-fit:contain;
     margin:0 auto 18px;
-    background:transparent;
-    padding:0;
-    border-radius:0;
-    box-shadow:none;
 
     filter:
         drop-shadow(
@@ -282,15 +231,13 @@ nav a:hover{
 
 .hero-subtitle{
     font-size:21px;
-    line-height:1.5;
     font-weight:700;
-    margin:0 auto 14px;
+    margin-bottom:14px;
     color:var(--azul-oscuro);
 }
 
 .hero-description{
     font-size:17px;
-    line-height:1.7;
     max-width:680px;
     margin:0 auto 28px;
     color:#444;
@@ -316,15 +263,10 @@ nav a:hover{
     color:white;
 }
 
-.btn-primary:hover{
-    transform:translateY(-2px);
-    box-shadow:0 7px 20px rgba(0,0,0,.15);
-}
-
 .btn-outline{
     border:2px solid var(--azul);
     color:var(--azul-oscuro);
-    background:rgba(255,255,255,.82);
+    background:white;
 }
 
 .btn-outline:hover{
@@ -333,9 +275,7 @@ nav a:hover{
 }
 
 
-/* =========================
-   SECCIONES
-========================= */
+/* SECCIONES */
 
 section{
     padding:90px 0;
@@ -370,9 +310,7 @@ section{
 }
 
 
-/* =========================
-   QUIÉNES SOMOS
-========================= */
+/* QUIÉNES SOMOS */
 
 .about{
     background:white;
@@ -406,24 +344,29 @@ section{
     color:#444;
 }
 
+
+/* NUEVA IMAGEN DE QUIÉNES SOMOS */
+
 .about-logo{
-    background:#f6f7fb;
     min-height:350px;
     display:flex;
     align-items:center;
     justify-content:center;
-    border-radius:8px;
-    padding:50px;
+    border-radius:12px;
+    overflow:hidden;
+    background:#f6f7fb;
+    padding:0;
 }
 
 .about-logo img{
-    max-width:300px;
+    width:100%;
+    height:390px;
+    object-fit:cover;
+    object-position:center;
 }
 
 
-/* =========================
-   MISIÓN Y VISIÓN
-========================= */
+/* MISIÓN Y VISIÓN */
 
 .mission{
     background:var(--gris-claro);
@@ -458,9 +401,7 @@ section{
 }
 
 
-/* =========================
-   QUÉ HACEMOS
-========================= */
+/* QUÉ HACEMOS */
 
 .activities{
     background:white;
@@ -533,8 +474,7 @@ section{
     background:#eef4ff;
     color:var(--azul);
 
-    box-shadow:
-        0 8px 20px rgba(36,86,166,.10);
+    box-shadow:0 8px 20px rgba(36,86,166,.10);
 }
 
 .icon svg{
@@ -584,9 +524,7 @@ section{
 }
 
 
-/* =========================
-   FRASE DE SALUD
-========================= */
+/* SALUD */
 
 .health-message{
     max-width:900px;
@@ -599,8 +537,7 @@ section{
 
     text-align:center;
 
-    box-shadow:
-        0 5px 20px rgba(0,0,0,.04);
+    box-shadow:0 5px 20px rgba(0,0,0,.04);
 }
 
 .health-message p:first-child{
@@ -616,9 +553,7 @@ section{
 }
 
 
-/* =========================
-   FRASE PRINCIPAL
-========================= */
+/* FRASE PRINCIPAL */
 
 .quote{
     background:
@@ -655,9 +590,7 @@ section{
 }
 
 
-/* =========================
-   ACTIVIDADES
-========================= */
+/* ACTIVIDADES */
 
 .news{
     background:var(--gris-claro);
@@ -673,9 +606,7 @@ section{
     background:white;
     border-radius:7px;
     overflow:hidden;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,.05);
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
 .news-image{
@@ -696,7 +627,6 @@ section{
     font-size:18px;
     font-weight:bold;
     text-align:center;
-    padding:20px;
 }
 
 .news-body{
@@ -714,9 +644,7 @@ section{
 }
 
 
-/* =========================
-   COLABORA
-========================= */
+/* COLABORA */
 
 .collaborate{
     background:white;
@@ -751,9 +679,7 @@ section{
 }
 
 
-/* =========================
-   CONTACTO
-========================= */
+/* CONTACTO */
 
 .contact{
     background:var(--gris-claro);
@@ -795,34 +721,21 @@ section{
     display:flex;
     align-items:center;
     justify-content:center;
-
-    box-shadow:
-        0 8px 20px rgba(36,86,166,.20);
 }
 
 .contact-icon svg{
     width:28px;
     height:28px;
     fill:currentColor;
-    display:block;
 }
 
-.contact-item:nth-of-type(2) .contact-icon{
-    background:#20b85a;
-    box-shadow:
-        0 8px 20px rgba(32,184,90,.22);
-}
-
+.contact-item:nth-of-type(2) .contact-icon,
 .contact-item:nth-of-type(3) .contact-icon{
     background:#20b85a;
-    box-shadow:
-        0 8px 20px rgba(32,184,90,.22);
 }
 
 .contact-item:nth-of-type(4) .contact-icon{
     background:#f5a623;
-    box-shadow:
-        0 8px 20px rgba(245,166,35,.22);
 }
 
 .contact-item strong{
@@ -835,17 +748,11 @@ section{
     color:var(--azul);
 }
 
-.contact-item a:hover{
-    text-decoration:underline;
-}
-
 .contact-box{
     background:white;
     padding:40px;
     border-radius:8px;
-
-    box-shadow:
-        0 5px 25px rgba(0,0,0,.06);
+    box-shadow:0 5px 25px rgba(0,0,0,.06);
 }
 
 .contact-box h3{
@@ -869,11 +776,6 @@ section{
     border-radius:5px;
     color:white;
     font-weight:bold;
-    transition:.3s;
-}
-
-.social-large a:hover{
-    transform:translateY(-2px);
 }
 
 .instagram{
@@ -889,9 +791,7 @@ section{
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
     background:#172238;
@@ -938,10 +838,6 @@ footer a{
     font-size:14px;
 }
 
-footer a:hover{
-    color:white;
-}
-
 .footer-social{
     display:flex;
     gap:10px;
@@ -952,11 +848,9 @@ footer a:hover{
     width:38px;
     height:38px;
     border-radius:50%;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     color:white;
     font-weight:bold;
     font-size:17px;
@@ -971,9 +865,7 @@ footer a:hover{
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media(max-width:1000px){
 
@@ -1010,9 +902,7 @@ footer a:hover{
 }
 
 
-/* =========================
-   MÓVIL
-========================= */
+/* MÓVIL */
 
 @media(max-width:600px){
 
@@ -1052,11 +942,6 @@ footer a:hover{
         padding:8px 12px;
     }
 
-    .header-social a{
-        width:32px;
-        height:32px;
-    }
-
     .hero{
         min-height:650px;
     }
@@ -1065,19 +950,16 @@ footer a:hover{
         width:94%;
         margin:18px auto;
         padding:38px 22px 42px;
-        border-radius:20px;
     }
 
     .hero-logo{
         width:145px;
         height:145px;
-        margin-bottom:17px;
     }
 
     .hero-small{
         font-size:10px;
         letter-spacing:1px;
-        line-height:1.5;
     }
 
     .hero h1{
@@ -1113,30 +995,32 @@ footer a:hover{
         font-size:28px;
     }
 
-    .about-logo{
-        min-height:280px;
+    .about-logo img{
+        height:300px;
     }
 }
 
 </style>
 </head>
 
+
 <body>
 
 
-<!-- =========================
-     CABECERA
-========================= -->
+<!-- CABECERA -->
 
 <header>
 
 <div class="container header-inner">
 
 <a href="#inicio" class="logo">
+
 <img
 src="LOGO%20ASOGINTER%20%281%29.png"
 alt="Logo de ASOGINTER">
+
 </a>
+
 
 <nav>
 
@@ -1179,18 +1063,20 @@ CONTACTO
 href="https://www.instagram.com/asoginter/"
 target="_blank"
 rel="noopener"
-class="header-instagram"
-aria-label="Instagram de ASOGINTER">
+class="header-instagram">
+
 ◎
+
 </a>
 
 <a
 href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
 target="_blank"
 rel="noopener"
-class="header-facebook"
-aria-label="Facebook de ASOGINTER">
+class="header-facebook">
+
 f
+
 </a>
 
 </div>
@@ -1201,16 +1087,16 @@ f
 
 
 <div class="color-bar">
+
 <div class="color-blue"></div>
 <div class="color-green"></div>
 <div class="color-red"></div>
 <div class="color-purple"></div>
+
 </div>
 
 
-<!-- =========================
-     PORTADA
-========================= -->
+<!-- PORTADA -->
 
 <section class="hero" id="inicio">
 
@@ -1224,7 +1110,9 @@ alt="Emblema ASOGINTER"
 class="hero-logo">
 
 <div class="hero-small">
+
 ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL DE TORRENT
+
 </div>
 
 <h1>
@@ -1245,13 +1133,17 @@ intercultural y respetuosa con la diversidad.
 <a
 href="#quienes-somos"
 class="btn btn-primary">
+
 Conoce nuestra asociación
+
 </a>
 
 <a
 href="#contacto"
 class="btn btn-outline">
+
 Contacta con nosotros
+
 </a>
 
 </div>
@@ -1263,9 +1155,7 @@ Contacta con nosotros
 </section>
 
 
-<!-- =========================
-     QUIÉNES SOMOS
-========================= -->
+<!-- QUIÉNES SOMOS -->
 
 <section class="about" id="quienes-somos">
 
@@ -1290,6 +1180,7 @@ la igualdad y el reconocimiento de la diversidad.
 
 
 <div class="about-grid">
+
 
 <div class="about-text">
 
@@ -1321,13 +1212,16 @@ cultura, esfuerzo y futuro. Gracias por el espacio y por escuchar.”
 </div>
 
 
+<!-- AQUÍ ESTÁ LA NUEVA IMAGEN -->
+
 <div class="about-logo">
 
 <img
-src="LOGO%20ASOGINTER%20%281%29.png"
-alt="ASOGINTER">
+src="imagen-quienes-somos.png"
+alt="Comunidad, convivencia e inclusión en el barrio">
 
 </div>
+
 
 </div>
 
@@ -1336,9 +1230,7 @@ alt="ASOGINTER">
 </section>
 
 
-<!-- =========================
-     MISIÓN Y VISIÓN
-========================= -->
+<!-- MISIÓN Y VISIÓN -->
 
 <section class="mission">
 
@@ -1397,9 +1289,7 @@ y donde la diversidad cultural sea reconocida y valorada.
 </section>
 
 
-<!-- =========================
-     QUÉ HACEMOS
-========================= -->
+<!-- QUÉ HACEMOS -->
 
 <section class="activities" id="que-hacemos">
 
@@ -1426,11 +1316,9 @@ la inclusión, la igualdad y la convivencia.
 <div class="cards">
 
 
-<!-- INCLUSIÓN -->
-
 <div class="card">
 
-<div class="icon" aria-hidden="true">
+<div class="icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -1454,11 +1342,9 @@ trabajando para reducir situaciones de desigualdad.
 </div>
 
 
-<!-- EDUCACIÓN -->
-
 <div class="card">
 
-<div class="icon" aria-hidden="true">
+<div class="icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -1484,11 +1370,9 @@ fundamentales para generar nuevas oportunidades.
 </div>
 
 
-<!-- CULTURA -->
-
 <div class="card">
 
-<div class="icon" aria-hidden="true">
+<div class="icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -1516,11 +1400,9 @@ del pueblo gitano.
 </div>
 
 
-<!-- IGUALDAD -->
-
 <div class="card">
 
-<div class="icon" aria-hidden="true">
+<div class="icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -1550,11 +1432,9 @@ cualquier forma de discriminación.
 </div>
 
 
-<!-- JUVENTUD -->
-
 <div class="card">
 
-<div class="icon" aria-hidden="true">
+<div class="icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -1580,11 +1460,9 @@ de las nuevas generaciones.
 </div>
 
 
-<!-- INTERCULTURALIDAD -->
-
 <div class="card">
 
-<div class="icon" aria-hidden="true">
+<div class="icon">
 
 <svg viewBox="0 0 24 24">
 
@@ -1632,9 +1510,7 @@ Opre Rroma · Salud y libertad · Sastipen Tali
 </section>
 
 
-<!-- =========================
-     FRASE
-========================= -->
+<!-- FRASE -->
 
 <section class="quote">
 
@@ -1661,9 +1537,7 @@ ASOGINTER · Torrent
 </section>
 
 
-<!-- =========================
-     ACTIVIDADES
-========================= -->
+<!-- ACTIVIDADES -->
 
 <section class="news" id="actividades">
 
@@ -1763,9 +1637,7 @@ parte de nuestras iniciativas.
 </section>
 
 
-<!-- =========================
-     COLABORA
-========================= -->
+<!-- COLABORA -->
 
 <section class="collaborate" id="colabora">
 
@@ -1787,7 +1659,9 @@ estaremos encantados de conocerte.
 href="#contacto"
 class="btn"
 style="background:#2456a6;color:white;">
+
 Ponte en contacto
+
 </a>
 
 </div>
@@ -1797,9 +1671,7 @@ Ponte en contacto
 </section>
 
 
-<!-- =========================
-     CONTACTO
-========================= -->
+<!-- CONTACTO -->
 
 <section class="contact" id="contacto">
 
@@ -1837,8 +1709,6 @@ Nuestra asociación se encuentra en Torrent, Valencia.
 </p>
 
 
-<!-- DIRECCIÓN -->
-
 <div class="contact-item">
 
 <div class="contact-icon">
@@ -1868,8 +1738,6 @@ CP 46900
 </div>
 
 
-<!-- TELÉFONO -->
-
 <div class="contact-item">
 
 <div class="contact-icon">
@@ -1896,8 +1764,6 @@ Teléfono
 
 </div>
 
-
-<!-- WHATSAPP -->
 
 <div class="contact-item">
 
@@ -1931,8 +1797,6 @@ rel="noopener">
 </div>
 
 
-<!-- EMAIL -->
-
 <div class="contact-item">
 
 <div class="contact-icon">
@@ -1962,8 +1826,6 @@ asoginter@gmail.com
 
 </div>
 
-
-<!-- REDES -->
 
 <div class="contact-box">
 
@@ -2036,9 +1898,7 @@ Asociación Gitana Europea e Intercultural
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -2068,32 +1928,27 @@ Asociación Gitana Europea e Intercultural de Torrent.
 href="https://www.instagram.com/asoginter/"
 target="_blank"
 rel="noopener"
-class="instagram"
-aria-label="Instagram">
+class="instagram">
 
 ◎
 
 </a>
 
-
 <a
 href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
 target="_blank"
 rel="noopener"
-class="facebook"
-aria-label="Facebook">
+class="facebook">
 
 f
 
 </a>
 
-
 <a
 href="https://wa.me/34621259271"
 target="_blank"
 rel="noopener"
-class="whatsapp"
-aria-label="WhatsApp">
+class="whatsapp">
 
 💬
 
