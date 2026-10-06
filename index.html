@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Asociación Gitana Europea e Intercultural de Torrent | Asoginter-ter</title>
+    <title>Asoginter-ter | Asociación Gitana Europea e Intercultural de Torrent</title>
 
-    <meta name="description"
-          content="Asociación Gitana Europea e Intercultural de Torrent. Voz del pueblo gitano de Torrent.">
+    <meta name="description" content="Asociación Gitana Europea e Intercultural de Torrent. Trabajamos por la inclusión, la igualdad, la convivencia y el reconocimiento de la cultura gitana.">
 
     <style>
+
         /* =========================
-           CONFIGURACIÓN GENERAL
+           ESTILOS GENERALES
         ========================== */
 
         * {
@@ -28,17 +28,39 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #333;
             background: #ffffff;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         a {
             text-decoration: none;
+            color: inherit;
         }
 
-        .contenedor {
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
             width: 90%;
-            max-width: 1150px;
+            max-width: 1180px;
             margin: auto;
+        }
+
+
+        /* =========================
+           COLORES
+        ========================== */
+
+        :root {
+            --azul: #2456a6;
+            --azul-oscuro: #173b73;
+            --verde: #4e9b45;
+            --rojo: #d94b45;
+            --morado: #7b4a9e;
+            --gris: #666;
+            --gris-claro: #f5f5f5;
+            --blanco: #ffffff;
         }
 
 
@@ -47,198 +69,200 @@
         ========================== */
 
         header {
+            background: white;
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.97);
-            border-bottom: 1px solid #eeeeee;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
 
-        .barra-navegacion {
-            min-height: 82px;
+        .header-inner {
+            min-height: 92px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 30px;
         }
 
-        .marca {
+        .logo {
             display: flex;
             align-items: center;
-            gap: 14px;
-            color: #222;
         }
 
-        .marca img {
-            width: 58px;
-            height: 58px;
-            object-fit: contain;
+        .logo img {
+            width: 105px;
+            height: auto;
         }
 
-        .marca-texto {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .marca-nombre {
-            font-size: 18px;
-            font-weight: 800;
-            color: #222;
-        }
-
-        .marca-subtitulo {
-            font-size: 12px;
-            color: #777;
-            margin-top: 2px;
-        }
-
-        nav {
+        nav ul {
+            list-style: none;
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 28px;
         }
 
         nav a {
-            color: #333;
             font-size: 14px;
-            font-weight: 700;
+            font-weight: bold;
+            color: #444;
             transition: 0.3s;
         }
 
         nav a:hover {
-            color: #7b1fa2;
+            color: var(--azul);
         }
 
-        .boton-nav {
-            background: #7b1fa2;
+        .menu-contacto {
+            background: var(--azul);
             color: white !important;
             padding: 11px 18px;
-            border-radius: 25px;
+            border-radius: 4px;
         }
 
-        .boton-nav:hover {
-            background: #5e177b;
+        .menu-contacto:hover {
+            background: var(--azul-oscuro);
         }
 
 
         /* =========================
-           PORTADA
+           HERO
         ========================== */
 
         .hero {
-            position: relative;
-            overflow: hidden;
-            min-height: 680px;
+            min-height: 650px;
             display: flex;
             align-items: center;
+            position: relative;
+            overflow: hidden;
+
             background:
-                radial-gradient(circle at 10% 20%, rgba(0, 125, 255, 0.16), transparent 30%),
-                radial-gradient(circle at 90% 80%, rgba(0, 160, 70, 0.18), transparent 30%),
-                linear-gradient(135deg, #fff8fc 0%, #ffffff 55%, #f7fff9 100%);
+                linear-gradient(
+                    90deg,
+                    rgba(23,59,115,0.94),
+                    rgba(36,86,166,0.82),
+                    rgba(123,74,158,0.68)
+                );
         }
 
-        .hero-contenido {
-            display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            align-items: center;
-            gap: 60px;
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.07);
+            right: -180px;
+            top: -120px;
         }
 
-        .etiqueta {
-            display: inline-block;
-            padding: 8px 15px;
-            border-radius: 30px;
-            background: #f2e4f6;
-            color: #7b1fa2;
-            font-size: 13px;
-            font-weight: 800;
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            left: -150px;
+            bottom: -160px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 850px;
+            padding: 90px 0;
+        }
+
+        .hero-small {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 14px;
+            font-weight: bold;
             margin-bottom: 20px;
+            color: #dce8ff;
         }
 
         .hero h1 {
-            font-size: clamp(38px, 5vw, 65px);
-            line-height: 1.05;
-            color: #222;
-            margin-bottom: 24px;
-            letter-spacing: -1.5px;
+            font-size: clamp(40px, 6vw, 68px);
+            line-height: 1.1;
+            margin-bottom: 25px;
+            font-weight: 800;
         }
 
         .hero h1 span {
-            color: #7b1fa2;
+            color: #ffffff;
         }
 
-        .hero-texto {
-            max-width: 650px;
-            font-size: 19px;
-            color: #666;
-            margin-bottom: 30px;
+        .hero p {
+            font-size: 21px;
+            max-width: 760px;
+            margin-bottom: 35px;
+            color: #f2f5ff;
         }
 
-        .botones {
+        .hero-buttons {
             display: flex;
+            gap: 15px;
             flex-wrap: wrap;
-            gap: 14px;
         }
 
-        .boton-principal {
+        .btn {
             display: inline-block;
-            background: #7b1fa2;
-            color: white;
-            padding: 14px 25px;
-            border-radius: 30px;
-            font-weight: 700;
+            padding: 14px 27px;
+            border-radius: 4px;
+            font-weight: bold;
             transition: 0.3s;
-            box-shadow: 0 8px 25px rgba(123, 31, 162, 0.22);
         }
 
-        .boton-principal:hover {
+        .btn-primary {
+            background: white;
+            color: var(--azul-oscuro);
+        }
+
+        .btn-primary:hover {
             transform: translateY(-2px);
-            background: #5e177b;
+            box-shadow: 0 7px 20px rgba(0,0,0,0.15);
         }
 
-        .boton-secundario {
-            display: inline-block;
-            border: 2px solid #7b1fa2;
-            color: #7b1fa2;
-            padding: 12px 24px;
-            border-radius: 30px;
-            font-weight: 700;
-            transition: 0.3s;
-        }
-
-        .boton-secundario:hover {
-            background: #7b1fa2;
+        .btn-outline {
+            border: 2px solid white;
             color: white;
         }
 
-        .hero-logo {
+        .btn-outline:hover {
+            background: white;
+            color: var(--azul-oscuro);
+        }
+
+
+        /* =========================
+           BANDA DE COLORES
+        ========================== */
+
+        .color-bar {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 7px;
         }
 
-        .hero-logo::before {
-            content: "";
-            position: absolute;
-            width: 390px;
-            height: 390px;
-            background: linear-gradient(
-                135deg,
-                rgba(123, 31, 162, 0.12),
-                rgba(0, 120, 255, 0.10),
-                rgba(0, 150, 60, 0.10)
-            );
-            border-radius: 50%;
-            z-index: 0;
+        .color-bar div {
+            flex: 1;
         }
 
-        .hero-logo img {
-            position: relative;
-            z-index: 1;
-            width: 330px;
-            max-width: 90%;
-            filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.13));
+        .color-blue {
+            background: var(--azul);
+        }
+
+        .color-green {
+            background: var(--verde);
+        }
+
+        .color-red {
+            background: var(--rojo);
+        }
+
+        .color-purple {
+            background: var(--morado);
         }
 
 
@@ -250,166 +274,322 @@
             padding: 90px 0;
         }
 
-        .titulo-seccion {
+        .section-title {
             text-align: center;
             margin-bottom: 55px;
         }
 
-        .titulo-seccion .pequeno {
-            color: #7b1fa2;
-            font-size: 13px;
-            font-weight: 800;
+        .section-title .small {
+            color: var(--azul);
             text-transform: uppercase;
             letter-spacing: 2px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
-        .titulo-seccion h2 {
-            font-size: 38px;
-            margin: 8px 0 15px;
-            color: #222;
+        .section-title h2 {
+            font-size: 40px;
+            line-height: 1.2;
+            color: var(--azul-oscuro);
+            margin-bottom: 15px;
         }
 
-        .titulo-seccion p {
-            max-width: 700px;
+        .section-title p {
+            max-width: 720px;
             margin: auto;
-            color: #777;
+            color: var(--gris);
+            font-size: 17px;
         }
 
 
         /* =========================
-           QUIÉNES SOMOS
+           QUIENES SOMOS
         ========================== */
 
-        .nosotros {
-            background: #ffffff;
+        .about {
+            background: white;
         }
 
-        .nosotros-grid {
+        .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 50px;
+            gap: 70px;
             align-items: center;
         }
 
-        .nosotros-texto h3 {
+        .about-text h3 {
+            color: var(--azul-oscuro);
             font-size: 30px;
-            color: #222;
             margin-bottom: 20px;
         }
 
-        .nosotros-texto p {
-            color: #666;
-            margin-bottom: 16px;
-        }
-
-        .frase {
-            margin-top: 25px;
-            padding: 20px 25px;
-            border-left: 5px solid #7b1fa2;
-            background: #faf5fc;
-            border-radius: 0 12px 12px 0;
-            color: #555;
-            font-weight: 600;
-        }
-
-        .tarjeta-destacada {
-            padding: 45px;
-            border-radius: 25px;
-            background: linear-gradient(135deg, #7b1fa2, #9c42bd);
-            color: white;
-            box-shadow: 0 20px 45px rgba(123, 31, 162, 0.18);
-        }
-
-        .tarjeta-destacada h3 {
-            font-size: 30px;
+        .about-text p {
+            color: var(--gris);
             margin-bottom: 18px;
         }
 
-        .tarjeta-destacada p {
-            opacity: 0.94;
+        .about-highlight {
+            border-left: 5px solid var(--verde);
+            padding: 20px 25px;
+            background: #f7faf7;
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .about-logo {
+            background: #f6f7fb;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding: 50px;
+        }
+
+        .about-logo img {
+            max-width: 300px;
         }
 
 
         /* =========================
-           OBJETIVOS
+           MISION / VISION
         ========================== */
 
-        .objetivos {
-            background: #f8f8fa;
+        .mission {
+            background: var(--gris-claro);
         }
 
-        .tarjetas {
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .mission-card {
+            background: white;
+            padding: 45px;
+            border-radius: 7px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+            border-top: 5px solid var(--azul);
+        }
+
+        .mission-card:nth-child(2) {
+            border-top-color: var(--morado);
+        }
+
+        .mission-card h3 {
+            color: var(--azul-oscuro);
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .mission-card p {
+            color: var(--gris);
+        }
+
+
+        /* =========================
+           QUE HACEMOS
+        ========================== */
+
+        .activities {
+            background: white;
+        }
+
+        .cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
-        .tarjeta {
-            background: white;
+        .card {
             padding: 35px 30px;
-            border-radius: 18px;
-            border: 1px solid #eeeeee;
+            border: 1px solid #e9e9e9;
+            border-radius: 7px;
+            background: white;
             transition: 0.3s;
+            position: relative;
+            overflow: hidden;
         }
 
-        .tarjeta:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        .card::before {
+            content: "";
+            position: absolute;
+            height: 5px;
+            left: 0;
+            right: 0;
+            top: 0;
+            background: var(--azul);
         }
 
-        .icono {
-            width: 55px;
-            height: 55px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 15px;
-            background: #f2e4f6;
-            font-size: 25px;
+        .card:nth-child(2)::before {
+            background: var(--verde);
+        }
+
+        .card:nth-child(3)::before {
+            background: var(--rojo);
+        }
+
+        .card:nth-child(4)::before {
+            background: var(--morado);
+        }
+
+        .card:nth-child(5)::before {
+            background: var(--azul);
+        }
+
+        .card:nth-child(6)::before {
+            background: var(--verde);
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.09);
+        }
+
+        .icon {
+            font-size: 38px;
             margin-bottom: 20px;
         }
 
-        .tarjeta h3 {
-            color: #222;
+        .card h3 {
+            font-size: 21px;
+            color: var(--azul-oscuro);
             margin-bottom: 12px;
-            font-size: 20px;
         }
 
-        .tarjeta p {
-            color: #777;
+        .card p {
+            color: var(--gris);
             font-size: 15px;
         }
 
 
         /* =========================
-           ACTIVIDADES
+           FRASE DESTACADA
         ========================== */
 
-        .actividades {
-            background: white;
+        .quote {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--azul-oscuro),
+                    var(--morado)
+                );
+            color: white;
+            text-align: center;
         }
 
-        .actividad-contenedor {
-            text-align: center;
-            max-width: 800px;
+        .quote-content {
+            max-width: 900px;
             margin: auto;
         }
 
-        .actividad-aviso {
-            padding: 45px;
-            background: #f8f3fa;
-            border-radius: 25px;
-            border: 1px dashed #c59bd2;
+        .quote-mark {
+            font-size: 70px;
+            line-height: 0.8;
+            opacity: 0.5;
         }
 
-        .actividad-aviso h3 {
-            color: #7b1fa2;
-            font-size: 25px;
-            margin-bottom: 12px;
+        .quote h2 {
+            font-size: 36px;
+            line-height: 1.3;
+            margin: 20px 0;
         }
 
-        .actividad-aviso p {
-            color: #666;
+        .quote p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+
+        /* =========================
+           ACTIVIDADES / NOTICIAS
+        ========================== */
+
+        .news {
+            background: var(--gris-claro);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 7px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .news-image {
+            height: 180px;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--azul),
+                    var(--morado)
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .news-body {
+            padding: 25px;
+        }
+
+        .news-body h3 {
+            color: var(--azul-oscuro);
+            margin-bottom: 10px;
+        }
+
+        .news-body p {
+            color: var(--gris);
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           COLABORA
+        ========================== */
+
+        .collaborate {
+            background: white;
+        }
+
+        .collaborate-box {
+            background: linear-gradient(
+                135deg,
+                #f1f6ff,
+                #faf5fc
+            );
+            padding: 65px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #e8e8e8;
+        }
+
+        .collaborate-box h2 {
+            color: var(--azul-oscuro);
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .collaborate-box p {
+            max-width: 750px;
+            margin: 0 auto 30px;
+            color: var(--gris);
+            font-size: 17px;
         }
 
 
@@ -417,196 +597,268 @@
            CONTACTO
         ========================== */
 
-        .contacto {
-            background:
-                linear-gradient(135deg, #68158a, #7b1fa2);
-            color: white;
+        .contact {
+            background: var(--gris-claro);
         }
 
-        .contacto .titulo-seccion .pequeno,
-        .contacto .titulo-seccion h2 {
-            color: white;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
         }
 
-        .contacto .titulo-seccion p {
-            color: rgba(255,255,255,0.82);
+        .contact-info h3 {
+            color: var(--azul-oscuro);
+            font-size: 30px;
+            margin-bottom: 20px;
         }
 
-        .contacto-caja {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .contacto-caja p {
+        .contact-info p {
+            color: var(--gris);
             margin-bottom: 25px;
-            color: rgba(255,255,255,0.9);
         }
 
-        .boton-blanco {
-            display: inline-block;
+        .contact-item {
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            margin-bottom: 22px;
+        }
+
+        .contact-icon {
+            min-width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--azul);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .contact-item a {
+            color: var(--azul);
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
             background: white;
-            color: #7b1fa2;
-            padding: 14px 28px;
-            border-radius: 30px;
-            font-weight: 800;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+        }
+
+        .contact-box h3 {
+            color: var(--azul-oscuro);
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        .social {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .social a {
+            padding: 11px 17px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .instagram {
+            background: var(--morado);
+        }
+
+        .facebook {
+            background: #3159a6;
+        }
+
+        .whatsapp {
+            background: #299447;
         }
 
 
         /* =========================
-           PIE DE PÁGINA
+           FOOTER
         ========================== */
 
         footer {
-            background: #222;
+            background: #172238;
+            color: #dbe1ec;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo img {
+            width: 120px;
+            background: white;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        footer h3 {
             color: white;
-            padding: 40px 0 25px;
+            margin-bottom: 15px;
         }
 
-        .footer-contenido {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
+        footer p {
+            color: #c5ccd8;
+            font-size: 14px;
         }
 
-        .footer-marca {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+        footer ul {
+            list-style: none;
         }
 
-        .footer-marca img {
-            width: 45px;
-            height: 45px;
-            object-fit: contain;
+        footer li {
+            margin-bottom: 9px;
         }
 
-        .footer-marca strong {
-            display: block;
+        footer a {
+            color: #cbd3df;
+            font-size: 14px;
         }
 
-        .footer-marca span {
-            color: #aaa;
-            font-size: 12px;
+        footer a:hover {
+            color: white;
         }
 
         .copyright {
-            border-top: 1px solid #444;
-            margin-top: 30px;
-            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.12);
+            padding-top: 22px;
             text-align: center;
-            color: #999;
+            color: #aeb8c7;
             font-size: 13px;
         }
 
 
         /* =========================
-           MÓVIL
+           RESPONSIVE
         ========================== */
 
         @media (max-width: 900px) {
 
-            .barra-navegacion {
+            .header-inner {
                 flex-direction: column;
                 padding: 15px 0;
             }
 
-            nav {
+            nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 14px;
+                gap: 15px;
             }
 
             .hero {
-                min-height: auto;
-                padding: 80px 0;
+                min-height: 600px;
             }
 
-            .hero-contenido {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero-texto {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .botones {
-                justify-content: center;
-            }
-
-            .hero-logo {
-                margin-top: 20px;
-            }
-
-            .nosotros-grid {
+            .about-grid,
+            .mission-grid,
+            .contact-grid {
                 grid-template-columns: 1fr;
             }
 
-            .tarjetas {
+            .cards,
+            .news-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
+
         @media (max-width: 600px) {
 
-            .contenedor {
+            .container {
                 width: 92%;
-            }
-
-            .marca-nombre {
-                font-size: 15px;
-            }
-
-            .marca-subtitulo {
-                font-size: 11px;
-            }
-
-            .marca img {
-                width: 48px;
-                height: 48px;
-            }
-
-            nav a {
-                font-size: 13px;
-            }
-
-            .hero h1 {
-                font-size: 39px;
-            }
-
-            .hero-texto {
-                font-size: 17px;
             }
 
             section {
                 padding: 65px 0;
             }
 
-            .titulo-seccion h2 {
-                font-size: 31px;
+            .logo img {
+                width: 90px;
             }
 
-            .tarjetas {
+            nav ul {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .menu-contacto {
+                padding: 8px 12px;
+            }
+
+            .hero-content {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .cards,
+            .news-grid,
+            .footer-grid {
                 grid-template-columns: 1fr;
             }
 
-            .tarjeta-destacada {
-                padding: 30px;
+            .mission-card,
+            .collaborate-box,
+            .contact-box {
+                padding: 30px 25px;
             }
 
-            .footer-contenido {
-                flex-direction: column;
-                text-align: center;
+            .quote h2 {
+                font-size: 28px;
+            }
+
+            .about-logo {
+                min-height: 280px;
             }
         }
+
     </style>
 </head>
 
-<body>
 
+<body>
 
     <!-- =========================
          CABECERA
@@ -614,50 +866,43 @@
 
     <header>
 
-        <div class="contenedor barra-navegacion">
+        <div class="container header-inner">
 
-            <a href="#inicio" class="marca">
-
-                <img
-                    src="LOGO%20ASOGINTER%20%281%29.png"
-                    alt="Logo de Asoginter-ter"
-                >
-
-                <div class="marca-texto">
-                    <span class="marca-nombre">
-                        Asoginter-ter
-                    </span>
-
-                    <span class="marca-subtitulo">
-                        Asociación Gitana Europea e Intercultural
-                    </span>
-                </div>
-
+            <a href="#inicio" class="logo">
+                <img src="LOGO%20ASOGINTER%20%281%29.png"
+                     alt="Logo de Asoginter-ter">
             </a>
 
-
             <nav>
+                <ul>
 
-                <a href="#inicio">
-                    Inicio
-                </a>
+                    <li>
+                        <a href="#inicio">INICIO</a>
+                    </li>
 
-                <a href="#nosotros">
-                    Quiénes somos
-                </a>
+                    <li>
+                        <a href="#quienes-somos">QUIÉNES SOMOS</a>
+                    </li>
 
-                <a href="#objetivos">
-                    Objetivos
-                </a>
+                    <li>
+                        <a href="#que-hacemos">QUÉ HACEMOS</a>
+                    </li>
 
-                <a href="#actividades">
-                    Actividades
-                </a>
+                    <li>
+                        <a href="#actividades">ACTIVIDADES</a>
+                    </li>
 
-                <a href="#contacto" class="boton-nav">
-                    Contacto
-                </a>
+                    <li>
+                        <a href="#colabora">COLABORA</a>
+                    </li>
 
+                    <li>
+                        <a href="#contacto" class="menu-contacto">
+                            CONTACTO
+                        </a>
+                    </li>
+
+                </ul>
             </nav>
 
         </div>
@@ -665,420 +910,781 @@
     </header>
 
 
+    <!-- BARRA DE COLORES -->
+
+    <div class="color-bar">
+        <div class="color-blue"></div>
+        <div class="color-green"></div>
+        <div class="color-red"></div>
+        <div class="color-purple"></div>
+    </div>
+
+
     <!-- =========================
-         PORTADA
+         INICIO
     ========================== -->
 
-    <main>
+    <section class="hero" id="inicio">
 
-        <section class="hero" id="inicio">
+        <div class="container">
 
-            <div class="contenedor hero-contenido">
+            <div class="hero-content">
 
-                <div>
-
-                    <span class="etiqueta">
-                        Torrent · Valencia
-                    </span>
-
-                    <h1>
-                        Asociación Gitana
-                        <span>Europea e Intercultural</span>
-                    </h1>
-
-                    <p class="hero-texto">
-                        Una asociación comprometida con la comunidad gitana,
-                        la convivencia, la igualdad y la interculturalidad.
-                    </p>
-
-                    <div class="botones">
-
-                        <a
-                            href="#nosotros"
-                            class="boton-principal"
-                        >
-                            Conócenos
-                        </a>
-
-                        <a
-                            href="#contacto"
-                            class="boton-secundario"
-                        >
-                            Contacta con nosotros
-                        </a>
-
-                    </div>
-
+                <div class="hero-small">
+                    Asociación Gitana Europea e Intercultural
                 </div>
 
-
-                <div class="hero-logo">
-
-                    <img
-                        src="LOGO%20ASOGINTER%20%281%29.png"
-                        alt="Logo de la Asociación Gitana Europea e Intercultural de Torrent"
-                    >
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             QUIÉNES SOMOS
-        ========================== -->
-
-        <section class="nosotros" id="nosotros">
-
-            <div class="contenedor">
-
-                <div class="titulo-seccion">
-
-                    <span class="pequeno">
-                        Nuestra asociación
-                    </span>
-
-                    <h2>
-                        Quiénes somos
-                    </h2>
-
-                    <p>
-                        Conoce nuestra identidad y el compromiso
-                        de nuestra asociación con la comunidad.
-                    </p>
-
-                </div>
-
-
-                <div class="nosotros-grid">
-
-                    <div class="nosotros-texto">
-
-                        <h3>
-                            Asociación Gitana Europea e Intercultural de Torrent
-                        </h3>
-
-                        <p>
-                            Asoginter-ter nace con la voluntad de trabajar
-                            por la comunidad gitana y contribuir a una sociedad
-                            basada en el respeto, la igualdad y la convivencia.
-                        </p>
-
-                        <p>
-                            Desde Torrent queremos fomentar la participación
-                            social y cultural y poner en valor la diversidad
-                            y la riqueza de nuestra comunidad.
-                        </p>
-
-                        <div class="frase">
-                            “Voz del pueblo gitano de Torrent”
-                        </div>
-
-                    </div>
-
-
-                    <div class="tarjeta-destacada">
-
-                        <h3>
-                            Unidos por la convivencia
-                        </h3>
-
-                        <p>
-                            Nuestro objetivo es contribuir a una sociedad
-                            donde todas las personas puedan participar,
-                            desarrollarse y convivir desde el respeto
-                            y la igualdad.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             OBJETIVOS
-        ========================== -->
-
-        <section class="objetivos" id="objetivos">
-
-            <div class="contenedor">
-
-                <div class="titulo-seccion">
-
-                    <span class="pequeno">
-                        Nuestro trabajo
-                    </span>
-
-                    <h2>
-                        Objetivos
-                    </h2>
-
-                    <p>
-                        Algunas de las áreas en las que queremos
-                        centrar nuestro trabajo.
-                    </p>
-
-                </div>
-
-
-                <div class="tarjetas">
-
-
-                    <article class="tarjeta">
-
-                        <div class="icono">
-                            🤝
-                        </div>
-
-                        <h3>
-                            Igualdad
-                        </h3>
-
-                        <p>
-                            Fomentar la igualdad de oportunidades
-                            y el respeto entre todas las personas.
-                        </p>
-
-                    </article>
-
-
-                    <article class="tarjeta">
-
-                        <div class="icono">
-                            🌍
-                        </div>
-
-                        <h3>
-                            Interculturalidad
-                        </h3>
-
-                        <p>
-                            Promover la convivencia y el conocimiento
-                            entre diferentes culturas.
-                        </p>
-
-                    </article>
-
-
-                    <article class="tarjeta">
-
-                        <div class="icono">
-                            🎓
-                        </div>
-
-                        <h3>
-                            Educación
-                        </h3>
-
-                        <p>
-                            Impulsar iniciativas relacionadas con la
-                            educación, formación y participación.
-                        </p>
-
-                    </article>
-
-
-                    <article class="tarjeta">
-
-                        <div class="icono">
-                            🎭
-                        </div>
-
-                        <h3>
-                            Cultura
-                        </h3>
-
-                        <p>
-                            Poner en valor la cultura, la historia
-                            y las tradiciones del pueblo gitano.
-                        </p>
-
-                    </article>
-
-
-                    <article class="tarjeta">
-
-                        <div class="icono">
-                            👥
-                        </div>
-
-                        <h3>
-                            Participación
-                        </h3>
-
-                        <p>
-                            Favorecer la participación social y
-                            comunitaria de la ciudadanía.
-                        </p>
-
-                    </article>
-
-
-                    <article class="tarjeta">
-
-                        <div class="icono">
-                            ❤️
-                        </div>
-
-                        <h3>
-                            Comunidad
-                        </h3>
-
-                        <p>
-                            Trabajar junto a personas y entidades
-                            para fortalecer nuestra comunidad.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ACTIVIDADES
-        ========================== -->
-
-        <section class="actividades" id="actividades">
-
-            <div class="contenedor">
-
-                <div class="titulo-seccion">
-
-                    <span class="pequeno">
-                        Participa
-                    </span>
-
-                    <h2>
-                        Actividades y proyectos
-                    </h2>
-
-                    <p>
-                        En este espacio podremos publicar nuestras
-                        próximas actividades, proyectos y eventos.
-                    </p>
-
-                </div>
-
-
-                <div class="actividad-contenedor">
-
-                    <div class="actividad-aviso">
-
-                        <h3>
-                            Próximamente
-                        </h3>
-
-                        <p>
-                            Aquí iremos publicando las actividades,
-                            proyectos, talleres, encuentros y eventos
-                            organizados por Asoginter-ter.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACTO
-        ========================== -->
-
-        <section class="contacto" id="contacto">
-
-            <div class="contenedor">
-
-                <div class="titulo-seccion">
-
-                    <span class="pequeno">
-                        Estamos aquí
-                    </span>
-
-                    <h2>
+                <h1>
+                    Asoginter-ter
+                </h1>
+
+                <p>
+                    Trabajamos por una sociedad más inclusiva,
+                    igualitaria, intercultural y respetuosa con
+                    la diversidad.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#quienes-somos" class="btn btn-primary">
+                        Conoce nuestra asociación
+                    </a>
+
+                    <a href="#contacto" class="btn btn-outline">
                         Contacta con nosotros
-                    </h2>
-
-                    <p>
-                        Si quieres conocer nuestra asociación,
-                        colaborar o participar en nuestras actividades,
-                        estaremos encantados de escucharte.
-                    </p>
-
-                </div>
-
-
-                <div class="contacto-caja">
-
-                    <p>
-                        Asociación Gitana Europea e Intercultural de Torrent
-                    </p>
-
-                    <p>
-                        Torrent · Valencia
-                    </p>
-
-                    <!--
-                    CUANDO TENGAMOS EL EMAIL,
-                    PODEMOS AÑADIRLO AQUÍ.
-                    -->
-
-                    <a
-                        href="#"
-                        class="boton-blanco"
-                    >
-                        Próximamente: información de contacto
                     </a>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
 
 
     <!-- =========================
-         PIE DE PÁGINA
+         QUIENES SOMOS
+    ========================== -->
+
+    <section class="about" id="quienes-somos">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="small">
+                    Asoginter-ter
+                </div>
+
+                <h2>
+                    Quiénes somos
+                </h2>
+
+                <p>
+                    Una asociación comprometida con la convivencia,
+                    la igualdad y el reconocimiento de la diversidad.
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <h3>
+                        Trabajamos por una sociedad con más oportunidades
+                    </h3>
+
+                    <p>
+                        La Asociación Gitana Europea e Intercultural de
+                        Torrent, Asoginter-ter, nace con el compromiso
+                        de contribuir a una sociedad más justa,
+                        inclusiva e intercultural.
+                    </p>
+
+                    <p>
+                        Nuestro trabajo pone en valor la cultura gitana,
+                        fomenta la igualdad de oportunidades y promueve
+                        la convivencia y el respeto entre las diferentes
+                        personas y comunidades.
+                    </p>
+
+                    <div class="about-highlight">
+                        Creemos en la diversidad como una oportunidad
+                        para construir una sociedad mejor.
+                    </div>
+
+                </div>
+
+
+                <div class="about-logo">
+
+                    <img
+                        src="LOGO%20ASOGINTER%20%281%29.png"
+                        alt="Asoginter-ter">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MISIÓN Y VISIÓN
+    ========================== -->
+
+    <section class="mission">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="small">
+                    Nuestro compromiso
+                </div>
+
+                <h2>
+                    Misión y visión
+                </h2>
+
+            </div>
+
+
+            <div class="mission-grid">
+
+                <div class="mission-card">
+
+                    <h3>
+                        Nuestra misión
+                    </h3>
+
+                    <p>
+                        Promover la inclusión social, la igualdad de
+                        oportunidades y la participación de la comunidad
+                        gitana, favoreciendo la convivencia y el diálogo
+                        intercultural.
+                    </p>
+
+                </div>
+
+
+                <div class="mission-card">
+
+                    <h3>
+                        Nuestra visión
+                    </h3>
+
+                    <p>
+                        Construir una sociedad donde todas las personas
+                        puedan participar en igualdad de condiciones,
+                        libres de discriminación y donde la diversidad
+                        cultural sea reconocida y valorada.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUE HACEMOS
+    ========================== -->
+
+    <section class="activities" id="que-hacemos">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="small">
+                    Nuestro trabajo
+                </div>
+
+                <h2>
+                    ¿Qué hacemos?
+                </h2>
+
+                <p>
+                    Trabajamos en diferentes ámbitos para favorecer
+                    la inclusión, la igualdad y la convivencia.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="icon">🤝</div>
+
+                    <h3>
+                        Inclusión social
+                    </h3>
+
+                    <p>
+                        Favorecemos la inclusión y la participación
+                        social, trabajando para reducir situaciones
+                        de desigualdad.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">📚</div>
+
+                    <h3>
+                        Educación y formación
+                    </h3>
+
+                    <p>
+                        Promovemos la educación y la formación como
+                        herramientas fundamentales para generar nuevas
+                        oportunidades.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">🎨</div>
+
+                    <h3>
+                        Cultura gitana
+                    </h3>
+
+                    <p>
+                        Ponemos en valor la historia, la cultura y
+                        las tradiciones del pueblo gitano.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">⚖️</div>
+
+                    <h3>
+                        Igualdad
+                    </h3>
+
+                    <p>
+                        Trabajamos por la igualdad de oportunidades
+                        y contra cualquier forma de discriminación.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">🌱</div>
+
+                    <h3>
+                        Juventud
+                    </h3>
+
+                    <p>
+                        Apostamos por la participación y el desarrollo
+                        de las nuevas generaciones.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">🌍</div>
+
+                    <h3>
+                        Interculturalidad
+                    </h3>
+
+                    <p>
+                        Fomentamos el conocimiento, el diálogo y la
+                        convivencia entre diferentes culturas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FRASE
+    ========================== -->
+
+    <section class="quote">
+
+        <div class="container">
+
+            <div class="quote-content">
+
+                <div class="quote-mark">
+                    “
+                </div>
+
+                <h2>
+                    La diversidad nos une y la convivencia
+                    nos hace avanzar.
+                </h2>
+
+                <p>
+                    Asoginter-ter · Torrent
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ACTIVIDADES
+    ========================== -->
+
+    <section class="news" id="actividades">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="small">
+                    Actualidad
+                </div>
+
+                <h2>
+                    Actividades y noticias
+                </h2>
+
+                <p>
+                    Próximamente podrás conocer aquí nuestras
+                    actividades, proyectos y noticias.
+                </p>
+
+            </div>
+
+
+            <div class="news-grid">
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        ACTIVIDADES
+                    </div>
+
+                    <div class="news-body">
+
+                        <h3>
+                            Actividades de la asociación
+                        </h3>
+
+                        <p>
+                            En este espacio iremos compartiendo
+                            nuestras próximas actividades y proyectos.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        CULTURA GITANA
+                    </div>
+
+                    <div class="news-body">
+
+                        <h3>
+                            Cultura e interculturalidad
+                        </h3>
+
+                        <p>
+                            Información sobre iniciativas destinadas
+                            a poner en valor la cultura gitana y
+                            favorecer el diálogo intercultural.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        PARTICIPACIÓN
+                    </div>
+
+                    <div class="news-body">
+
+                        <h3>
+                            Participa con nosotros
+                        </h3>
+
+                        <p>
+                            Descubre cómo puedes acercarte a la
+                            asociación y formar parte de nuestras
+                            iniciativas.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COLABORA
+    ========================== -->
+
+    <section class="collaborate" id="colabora">
+
+        <div class="container">
+
+            <div class="collaborate-box">
+
+                <h2>
+                    ¿Quieres colaborar con nosotros?
+                </h2>
+
+                <p>
+                    Si compartes nuestro compromiso con la igualdad,
+                    la inclusión, la convivencia y la diversidad,
+                    estaremos encantados de conocerte.
+                </p>
+
+                <a href="#contacto" class="btn btn-primary"
+                   style="background:#2456a6;color:white;">
+                    Ponte en contacto
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section class="contact" id="contacto">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="small">
+                    Estamos a tu disposición
+                </div>
+
+                <h2>
+                    Contacta con nosotros
+                </h2>
+
+                <p>
+                    Puedes contactar con Asoginter-ter a través
+                    de cualquiera de nuestros canales.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <!-- INFORMACIÓN -->
+
+                <div class="contact-info">
+
+                    <h3>
+                        Dónde estamos
+                    </h3>
+
+                    <p>
+                        Nuestra asociación se encuentra en Torrent,
+                        Valencia.
+                    </p>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Dirección
+                            </strong>
+
+                            <span>
+                                Calle Juan XXIII, nº 6 Bajo<br>
+                                Torrent, Valencia<br>
+                                CP 46900
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📞
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Teléfono
+                            </strong>
+
+                            <a href="tel:+349615578810">
+                                961 55 78 810
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            💬
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                WhatsApp
+                            </strong>
+
+                            <a href="https://wa.me/34621259271"
+                               target="_blank">
+                                621 25 92 71
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ✉️
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Email
+                            </strong>
+
+                            <a href="mailto:asoginter@gmail.com">
+                                asoginter@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REDES -->
+
+                <div class="contact-box">
+
+                    <h3>
+                        Síguenos y mantente informado
+                    </h3>
+
+                    <p>
+                        También puedes seguir la actividad de
+                        Asoginter-ter a través de nuestras redes
+                        sociales.
+                    </p>
+
+
+                    <div class="social">
+
+                        <a
+                            class="instagram"
+                            href="https://www.instagram.com/asoginter/"
+                            target="_blank">
+                            📸 Instagram
+                        </a>
+
+
+                        <a
+                            class="facebook"
+                            href="https://www.facebook.com/"
+                            target="_blank">
+                            👍 Facebook
+                        </a>
+
+
+                        <a
+                            class="whatsapp"
+                            href="https://wa.me/34621259271"
+                            target="_blank">
+                            💬 WhatsApp
+                        </a>
+
+                    </div>
+
+                    <br>
+
+                    <p>
+                        <strong>
+                            Instagram:
+                        </strong>
+                        @asoginter
+                    </p>
+
+                    <p>
+                        <strong>
+                            Facebook:
+                        </strong>
+                        Asociación Gitana Europea e Intercultural
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
     ========================== -->
 
     <footer>
 
-        <div class="contenedor">
+        <div class="container">
 
-            <div class="footer-contenido">
+            <div class="footer-grid">
 
-                <div class="footer-marca">
+
+                <div class="footer-logo">
 
                     <img
                         src="LOGO%20ASOGINTER%20%281%29.png"
-                        alt="Logo Asoginter-ter"
-                    >
+                        alt="Logo Asoginter-ter">
 
-                    <div>
+                    <h3>
+                        Asoginter-ter
+                    </h3>
 
-                        <strong>
-                            Asoginter-ter
-                        </strong>
+                    <p>
+                        Asociación Gitana Europea e Intercultural
+                        de Torrent.
+                    </p>
 
-                        <span>
-                            Asociación Gitana Europea e Intercultural
-                        </span>
+                </div>
 
-                    </div>
+
+                <div>
+
+                    <h3>
+                        Enlaces
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="#inicio">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#quienes-somos">
+                                Quiénes somos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#que-hacemos">
+                                Qué hacemos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#actividades">
+                                Actividades
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contacto">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Contacto
+                    </h3>
+
+                    <p>
+                        Calle Juan XXIII, nº 6 Bajo
+                    </p>
+
+                    <p>
+                        Torrent, Valencia · 46900
+                    </p>
+
+                    <p>
+                        <a href="mailto:asoginter@gmail.com">
+                            asoginter@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        961 55 78 810
+                    </p>
 
                 </div>
 
@@ -1087,8 +1693,8 @@
 
             <div class="copyright">
 
-                © 2026 Asociación Gitana Europea e Intercultural de Torrent.
-                Todos los derechos reservados.
+                © 2026 Asoginter-ter · Asociación Gitana Europea
+                e Intercultural de Torrent
 
             </div>
 
