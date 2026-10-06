@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Asoginter-ter | Asociación Gitana Europea e Intercultural de Torrent</title>
+    <title>ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent</title>
 
-    <meta name="description" content="Asociación Gitana Europea e Intercultural de Torrent. Trabajamos por la inclusión, la igualdad, la convivencia y el reconocimiento de la cultura gitana.">
+    <meta name="description" content="ASOGINTER - Asociación Gitana Europea e Intercultural de Torrent. Trabajamos por la inclusión, la igualdad, la convivencia y el reconocimiento de la cultura gitana.">
 
     <style>
 
-        /* =========================
-           ESTILOS GENERALES
-        ========================== */
+        /* =====================================================
+           CONFIGURACIÓN GENERAL
+        ===================================================== */
 
         * {
             margin: 0;
@@ -27,7 +27,7 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: #333;
-            background: #ffffff;
+            background: #fff;
             line-height: 1.7;
         }
 
@@ -48,9 +48,9 @@
         }
 
 
-        /* =========================
+        /* =====================================================
            COLORES
-        ========================== */
+        ===================================================== */
 
         :root {
             --azul: #2456a6;
@@ -59,21 +59,21 @@
             --rojo: #d94b45;
             --morado: #7b4a9e;
             --gris: #666;
-            --gris-claro: #f5f5f5;
+            --gris-claro: #f5f6f8;
             --blanco: #ffffff;
         }
 
 
-        /* =========================
+        /* =====================================================
            CABECERA
-        ========================== */
+        ===================================================== */
 
         header {
-            background: white;
+            background: #ffffff;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
         }
 
         .header-inner {
@@ -82,11 +82,6 @@
             align-items: center;
             justify-content: space-between;
             gap: 30px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
         }
 
         .logo img {
@@ -124,121 +119,9 @@
         }
 
 
-        /* =========================
-           HERO
-        ========================== */
-
-        .hero {
-            min-height: 650px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(23,59,115,0.94),
-                    rgba(36,86,166,0.82),
-                    rgba(123,74,158,0.68)
-                );
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.07);
-            right: -180px;
-            top: -120px;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.06);
-            left: -150px;
-            bottom: -160px;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            color: white;
-            max-width: 850px;
-            padding: 90px 0;
-        }
-
-        .hero-small {
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #dce8ff;
-        }
-
-        .hero h1 {
-            font-size: clamp(40px, 6vw, 68px);
-            line-height: 1.1;
-            margin-bottom: 25px;
-            font-weight: 800;
-        }
-
-        .hero h1 span {
-            color: #ffffff;
-        }
-
-        .hero p {
-            font-size: 21px;
-            max-width: 760px;
-            margin-bottom: 35px;
-            color: #f2f5ff;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 27px;
-            border-radius: 4px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-            background: white;
-            color: var(--azul-oscuro);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 7px 20px rgba(0,0,0,0.15);
-        }
-
-        .btn-outline {
-            border: 2px solid white;
-            color: white;
-        }
-
-        .btn-outline:hover {
-            background: white;
-            color: var(--azul-oscuro);
-        }
-
-
-        /* =========================
-           BANDA DE COLORES
-        ========================== */
+        /* =====================================================
+           BARRA DE COLORES
+        ===================================================== */
 
         .color-bar {
             display: flex;
@@ -266,9 +149,140 @@
         }
 
 
-        /* =========================
+        /* =====================================================
+           PORTADA / HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 690px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(23, 59, 115, 0.97),
+                    rgba(36, 86, 166, 0.90),
+                    rgba(123, 74, 158, 0.88)
+                );
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 550px;
+            height: 550px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            right: -190px;
+            top: -160px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            left: -190px;
+            bottom: -200px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 75px 0 90px;
+            text-align: center;
+        }
+
+        .hero-logo {
+            width: 155px;
+            height: 155px;
+            object-fit: contain;
+            margin: 0 auto 28px;
+            background: white;
+            padding: 12px;
+            border-radius: 50%;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.20);
+        }
+
+        .hero-small {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #e5ecff;
+        }
+
+        .hero h1 {
+            font-size: clamp(60px, 9vw, 105px);
+            line-height: 1;
+            margin-bottom: 20px;
+            font-weight: 900;
+            letter-spacing: 5px;
+            color: #ffffff;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto 18px;
+            color: white;
+        }
+
+        .hero-description {
+            font-size: 19px;
+            max-width: 750px;
+            margin: 0 auto 35px;
+            color: #f2f5ff;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 27px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--azul-oscuro);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--azul-oscuro);
+        }
+
+
+        /* =====================================================
            SECCIONES
-        ========================== */
+        ===================================================== */
 
         section {
             padding: 90px 0;
@@ -303,9 +317,9 @@
         }
 
 
-        /* =========================
-           QUIENES SOMOS
-        ========================== */
+        /* =====================================================
+           QUIÉNES SOMOS
+        ===================================================== */
 
         .about {
             background: white;
@@ -354,9 +368,9 @@
         }
 
 
-        /* =========================
-           MISION / VISION
-        ========================== */
+        /* =====================================================
+           MISIÓN Y VISIÓN
+        ===================================================== */
 
         .mission {
             background: var(--gris-claro);
@@ -372,7 +386,7 @@
             background: white;
             padding: 45px;
             border-radius: 7px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
             border-top: 5px solid var(--azul);
         }
 
@@ -391,9 +405,9 @@
         }
 
 
-        /* =========================
-           QUE HACEMOS
-        ========================== */
+        /* =====================================================
+           QUÉ HACEMOS
+        ===================================================== */
 
         .activities {
             background: white;
@@ -447,7 +461,7 @@
 
         .card:hover {
             transform: translateY(-7px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.09);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
         }
 
         .icon {
@@ -467,9 +481,9 @@
         }
 
 
-        /* =========================
+        /* =====================================================
            FRASE DESTACADA
-        ========================== */
+        ===================================================== */
 
         .quote {
             background:
@@ -505,9 +519,9 @@
         }
 
 
-        /* =========================
-           ACTIVIDADES / NOTICIAS
-        ========================== */
+        /* =====================================================
+           ACTIVIDADES Y NOTICIAS
+        ===================================================== */
 
         .news {
             background: var(--gris-claro);
@@ -523,7 +537,7 @@
             background: white;
             border-radius: 7px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
         }
 
         .news-image {
@@ -559,20 +573,21 @@
         }
 
 
-        /* =========================
+        /* =====================================================
            COLABORA
-        ========================== */
+        ===================================================== */
 
         .collaborate {
             background: white;
         }
 
         .collaborate-box {
-            background: linear-gradient(
-                135deg,
-                #f1f6ff,
-                #faf5fc
-            );
+            background:
+                linear-gradient(
+                    135deg,
+                    #f1f6ff,
+                    #faf5fc
+                );
             padding: 65px;
             text-align: center;
             border-radius: 10px;
@@ -593,9 +608,9 @@
         }
 
 
-        /* =========================
+        /* =====================================================
            CONTACTO
-        ========================== */
+        ===================================================== */
 
         .contact {
             background: var(--gris-claro);
@@ -655,7 +670,7 @@
             background: white;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
         }
 
         .contact-box h3 {
@@ -692,9 +707,9 @@
         }
 
 
-        /* =========================
-           FOOTER
-        ========================== */
+        /* =====================================================
+           PIE DE PÁGINA
+        ===================================================== */
 
         footer {
             background: #172238;
@@ -725,6 +740,7 @@
         footer p {
             color: #c5ccd8;
             font-size: 14px;
+            margin-bottom: 5px;
         }
 
         footer ul {
@@ -745,7 +761,7 @@
         }
 
         .copyright {
-            border-top: 1px solid rgba(255,255,255,0.12);
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
             padding-top: 22px;
             text-align: center;
             color: #aeb8c7;
@@ -753,9 +769,9 @@
         }
 
 
-        /* =========================
-           RESPONSIVE
-        ========================== */
+        /* =====================================================
+           TABLET
+        ===================================================== */
 
         @media (max-width: 900px) {
 
@@ -771,7 +787,7 @@
             }
 
             .hero {
-                min-height: 600px;
+                min-height: 650px;
             }
 
             .about-grid,
@@ -790,6 +806,10 @@
             }
         }
 
+
+        /* =====================================================
+           MÓVIL
+        ===================================================== */
 
         @media (max-width: 600px) {
 
@@ -817,16 +837,37 @@
                 padding: 8px 12px;
             }
 
+            .hero {
+                min-height: 650px;
+            }
+
             .hero-content {
-                padding: 70px 0;
+                padding: 60px 0 75px;
+            }
+
+            .hero-logo {
+                width: 125px;
+                height: 125px;
+                margin-bottom: 22px;
+            }
+
+            .hero-small {
+                font-size: 10px;
+                letter-spacing: 1px;
+                line-height: 1.5;
             }
 
             .hero h1 {
-                font-size: 40px;
+                font-size: 54px;
+                letter-spacing: 2px;
             }
 
-            .hero p {
+            .hero-subtitle {
                 font-size: 18px;
+            }
+
+            .hero-description {
+                font-size: 17px;
             }
 
             .section-title h2 {
@@ -860,40 +901,56 @@
 
 <body>
 
-    <!-- =========================
+
+    <!-- =====================================================
          CABECERA
-    ========================== -->
+    ===================================================== -->
 
     <header>
 
         <div class="container header-inner">
 
             <a href="#inicio" class="logo">
-                <img src="LOGO%20ASOGINTER%20%281%29.png"
-                     alt="Logo de Asoginter-ter">
+
+                <img
+                    src="LOGO%20ASOGINTER%20%281%29.png"
+                    alt="Logo de ASOGINTER">
+
             </a>
 
+
             <nav>
+
                 <ul>
 
                     <li>
-                        <a href="#inicio">INICIO</a>
+                        <a href="#inicio">
+                            INICIO
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#quienes-somos">QUIÉNES SOMOS</a>
+                        <a href="#quienes-somos">
+                            QUIÉNES SOMOS
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#que-hacemos">QUÉ HACEMOS</a>
+                        <a href="#que-hacemos">
+                            QUÉ HACEMOS
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#actividades">ACTIVIDADES</a>
+                        <a href="#actividades">
+                            ACTIVIDADES
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#colabora">COLABORA</a>
+                        <a href="#colabora">
+                            COLABORA
+                        </a>
                     </li>
 
                     <li>
@@ -903,6 +960,7 @@
                     </li>
 
                 </ul>
+
             </nav>
 
         </div>
@@ -913,16 +971,18 @@
     <!-- BARRA DE COLORES -->
 
     <div class="color-bar">
+
         <div class="color-blue"></div>
         <div class="color-green"></div>
         <div class="color-red"></div>
         <div class="color-purple"></div>
+
     </div>
 
 
-    <!-- =========================
-         INICIO
-    ========================== -->
+    <!-- =====================================================
+         PORTADA
+    ===================================================== -->
 
     <section class="hero" id="inicio">
 
@@ -930,28 +990,71 @@
 
             <div class="hero-content">
 
+
+                <!-- LOGO -->
+
+                <img
+                    src="LOGO%20ASOGINTER%20%281%29.png"
+                    alt="Logo de ASOGINTER"
+                    class="hero-logo">
+
+
+                <!-- NOMBRE COMPLETO -->
+
                 <div class="hero-small">
-                    Asociación Gitana Europea e Intercultural
+
+                    ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL
+                    DE TORRENT
+
                 </div>
 
+
+                <!-- NOMBRE PRINCIPAL -->
+
                 <h1>
-                    Asoginter-ter
+                    ASOGINTER
                 </h1>
 
-                <p>
-                    Trabajamos por una sociedad más inclusiva,
-                    igualitaria, intercultural y respetuosa con
-                    la diversidad.
+
+                <!-- LEMA -->
+
+                <p class="hero-subtitle">
+
+                    Inclusión · Igualdad · Cultura · Interculturalidad
+
                 </p>
+
+
+                <!-- DESCRIPCIÓN -->
+
+                <p class="hero-description">
+
+                    Trabajamos por una sociedad más inclusiva,
+                    igualitaria, intercultural y respetuosa
+                    con la diversidad.
+
+                </p>
+
+
+                <!-- BOTONES -->
 
                 <div class="hero-buttons">
 
-                    <a href="#quienes-somos" class="btn btn-primary">
+                    <a
+                        href="#quienes-somos"
+                        class="btn btn-primary">
+
                         Conoce nuestra asociación
+
                     </a>
 
-                    <a href="#contacto" class="btn btn-outline">
+
+                    <a
+                        href="#contacto"
+                        class="btn btn-outline">
+
                         Contacta con nosotros
+
                     </a>
 
                 </div>
@@ -963,18 +1066,19 @@
     </section>
 
 
-    <!-- =========================
-         QUIENES SOMOS
-    ========================== -->
+    <!-- =====================================================
+         QUIÉNES SOMOS
+    ===================================================== -->
 
     <section class="about" id="quienes-somos">
 
         <div class="container">
 
+
             <div class="section-title">
 
                 <div class="small">
-                    Asoginter-ter
+                    ASOGINTER
                 </div>
 
                 <h2>
@@ -991,29 +1095,40 @@
 
             <div class="about-grid">
 
+
                 <div class="about-text">
 
                     <h3>
-                        Trabajamos por una sociedad con más oportunidades
+                        Trabajamos por una sociedad
+                        con más oportunidades
                     </h3>
 
-                    <p>
-                        La Asociación Gitana Europea e Intercultural de
-                        Torrent, Asoginter-ter, nace con el compromiso
-                        de contribuir a una sociedad más justa,
-                        inclusiva e intercultural.
-                    </p>
 
                     <p>
+
+                        La Asociación Gitana Europea e Intercultural
+                        de Torrent, ASOGINTER, trabaja con el compromiso
+                        de contribuir a una sociedad más justa,
+                        inclusiva e intercultural.
+
+                    </p>
+
+
+                    <p>
+
                         Nuestro trabajo pone en valor la cultura gitana,
                         fomenta la igualdad de oportunidades y promueve
                         la convivencia y el respeto entre las diferentes
                         personas y comunidades.
+
                     </p>
 
+
                     <div class="about-highlight">
+
                         Creemos en la diversidad como una oportunidad
                         para construir una sociedad mejor.
+
                     </div>
 
                 </div>
@@ -1023,9 +1138,10 @@
 
                     <img
                         src="LOGO%20ASOGINTER%20%281%29.png"
-                        alt="Asoginter-ter">
+                        alt="ASOGINTER">
 
                 </div>
+
 
             </div>
 
@@ -1034,13 +1150,14 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          MISIÓN Y VISIÓN
-    ========================== -->
+    ===================================================== -->
 
     <section class="mission">
 
         <div class="container">
+
 
             <div class="section-title">
 
@@ -1057,6 +1174,7 @@
 
             <div class="mission-grid">
 
+
                 <div class="mission-card">
 
                     <h3>
@@ -1064,10 +1182,13 @@
                     </h3>
 
                     <p>
-                        Promover la inclusión social, la igualdad de
-                        oportunidades y la participación de la comunidad
-                        gitana, favoreciendo la convivencia y el diálogo
+
+                        Promover la inclusión social,
+                        la igualdad de oportunidades y
+                        la participación de la comunidad gitana,
+                        favoreciendo la convivencia y el diálogo
                         intercultural.
+
                     </p>
 
                 </div>
@@ -1080,13 +1201,17 @@
                     </h3>
 
                     <p>
-                        Construir una sociedad donde todas las personas
-                        puedan participar en igualdad de condiciones,
-                        libres de discriminación y donde la diversidad
-                        cultural sea reconocida y valorada.
+
+                        Construir una sociedad donde todas las
+                        personas puedan participar en igualdad
+                        de condiciones, libres de discriminación
+                        y donde la diversidad cultural sea
+                        reconocida y valorada.
+
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1095,13 +1220,14 @@
     </section>
 
 
-    <!-- =========================
-         QUE HACEMOS
-    ========================== -->
+    <!-- =====================================================
+         QUÉ HACEMOS
+    ===================================================== -->
 
     <section class="activities" id="que-hacemos">
 
         <div class="container">
+
 
             <div class="section-title">
 
@@ -1114,8 +1240,10 @@
                 </h2>
 
                 <p>
+
                     Trabajamos en diferentes ámbitos para favorecer
                     la inclusión, la igualdad y la convivencia.
+
                 </p>
 
             </div>
@@ -1123,18 +1251,23 @@
 
             <div class="cards">
 
+
                 <div class="card">
 
-                    <div class="icon">🤝</div>
+                    <div class="icon">
+                        🤝
+                    </div>
 
                     <h3>
                         Inclusión social
                     </h3>
 
                     <p>
+
                         Favorecemos la inclusión y la participación
                         social, trabajando para reducir situaciones
                         de desigualdad.
+
                     </p>
 
                 </div>
@@ -1142,16 +1275,20 @@
 
                 <div class="card">
 
-                    <div class="icon">📚</div>
+                    <div class="icon">
+                        📚
+                    </div>
 
                     <h3>
                         Educación y formación
                     </h3>
 
                     <p>
+
                         Promovemos la educación y la formación como
-                        herramientas fundamentales para generar nuevas
-                        oportunidades.
+                        herramientas fundamentales para generar
+                        nuevas oportunidades.
+
                     </p>
 
                 </div>
@@ -1159,15 +1296,19 @@
 
                 <div class="card">
 
-                    <div class="icon">🎨</div>
+                    <div class="icon">
+                        🎨
+                    </div>
 
                     <h3>
                         Cultura gitana
                     </h3>
 
                     <p>
-                        Ponemos en valor la historia, la cultura y
-                        las tradiciones del pueblo gitano.
+
+                        Ponemos en valor la historia, la cultura
+                        y las tradiciones del pueblo gitano.
+
                     </p>
 
                 </div>
@@ -1175,15 +1316,19 @@
 
                 <div class="card">
 
-                    <div class="icon">⚖️</div>
+                    <div class="icon">
+                        ⚖️
+                    </div>
 
                     <h3>
                         Igualdad
                     </h3>
 
                     <p>
+
                         Trabajamos por la igualdad de oportunidades
                         y contra cualquier forma de discriminación.
+
                     </p>
 
                 </div>
@@ -1191,15 +1336,19 @@
 
                 <div class="card">
 
-                    <div class="icon">🌱</div>
+                    <div class="icon">
+                        🌱
+                    </div>
 
                     <h3>
                         Juventud
                     </h3>
 
                     <p>
+
                         Apostamos por la participación y el desarrollo
                         de las nuevas generaciones.
+
                     </p>
 
                 </div>
@@ -1207,18 +1356,23 @@
 
                 <div class="card">
 
-                    <div class="icon">🌍</div>
+                    <div class="icon">
+                        🌍
+                    </div>
 
                     <h3>
                         Interculturalidad
                     </h3>
 
                     <p>
-                        Fomentamos el conocimiento, el diálogo y la
-                        convivencia entre diferentes culturas.
+
+                        Fomentamos el conocimiento, el diálogo y
+                        la convivencia entre diferentes culturas.
+
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1227,9 +1381,9 @@
     </section>
 
 
-    <!-- =========================
-         FRASE
-    ========================== -->
+    <!-- =====================================================
+         FRASE DESTACADA
+    ===================================================== -->
 
     <section class="quote">
 
@@ -1242,12 +1396,14 @@
                 </div>
 
                 <h2>
+
                     La diversidad nos une y la convivencia
                     nos hace avanzar.
+
                 </h2>
 
                 <p>
-                    Asoginter-ter · Torrent
+                    ASOGINTER · Torrent
                 </p>
 
             </div>
@@ -1257,13 +1413,14 @@
     </section>
 
 
-    <!-- =========================
-         ACTIVIDADES
-    ========================== -->
+    <!-- =====================================================
+         ACTIVIDADES Y NOTICIAS
+    ===================================================== -->
 
     <section class="news" id="actividades">
 
         <div class="container">
+
 
             <div class="section-title">
 
@@ -1276,14 +1433,17 @@
                 </h2>
 
                 <p>
+
                     Próximamente podrás conocer aquí nuestras
                     actividades, proyectos y noticias.
+
                 </p>
 
             </div>
 
 
             <div class="news-grid">
+
 
                 <article class="news-card">
 
@@ -1298,8 +1458,10 @@
                         </h3>
 
                         <p>
+
                             En este espacio iremos compartiendo
                             nuestras próximas actividades y proyectos.
+
                         </p>
 
                     </div>
@@ -1320,9 +1482,11 @@
                         </h3>
 
                         <p>
+
                             Información sobre iniciativas destinadas
                             a poner en valor la cultura gitana y
                             favorecer el diálogo intercultural.
+
                         </p>
 
                     </div>
@@ -1343,14 +1507,17 @@
                         </h3>
 
                         <p>
+
                             Descubre cómo puedes acercarte a la
                             asociación y formar parte de nuestras
                             iniciativas.
+
                         </p>
 
                     </div>
 
                 </article>
+
 
             </div>
 
@@ -1359,9 +1526,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          COLABORA
-    ========================== -->
+    ===================================================== -->
 
     <section class="collaborate" id="colabora">
 
@@ -1374,14 +1541,20 @@
                 </h2>
 
                 <p>
+
                     Si compartes nuestro compromiso con la igualdad,
                     la inclusión, la convivencia y la diversidad,
                     estaremos encantados de conocerte.
+
                 </p>
 
-                <a href="#contacto" class="btn btn-primary"
-                   style="background:#2456a6;color:white;">
+                <a
+                    href="#contacto"
+                    class="btn"
+                    style="background:#2456a6;color:white;">
+
                     Ponte en contacto
+
                 </a>
 
             </div>
@@ -1391,13 +1564,14 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          CONTACTO
-    ========================== -->
+    ===================================================== -->
 
     <section class="contact" id="contacto">
 
         <div class="container">
+
 
             <div class="section-title">
 
@@ -1410,8 +1584,10 @@
                 </h2>
 
                 <p>
-                    Puedes contactar con Asoginter-ter a través
+
+                    Puedes contactar con ASOGINTER a través
                     de cualquiera de nuestros canales.
+
                 </p>
 
             </div>
@@ -1420,7 +1596,7 @@
             <div class="contact-grid">
 
 
-                <!-- INFORMACIÓN -->
+                <!-- INFORMACIÓN DE CONTACTO -->
 
                 <div class="contact-info">
 
@@ -1429,8 +1605,10 @@
                     </h3>
 
                     <p>
-                        Nuestra asociación se encuentra en Torrent,
-                        Valencia.
+
+                        Nuestra asociación se encuentra
+                        en Torrent, Valencia.
+
                     </p>
 
 
@@ -1447,9 +1625,11 @@
                             </strong>
 
                             <span>
+
                                 Calle Juan XXIII, nº 6 Bajo<br>
                                 Torrent, Valencia<br>
                                 CP 46900
+
                             </span>
 
                         </div>
@@ -1470,7 +1650,9 @@
                             </strong>
 
                             <a href="tel:+349615578810">
+
                                 961 55 78 810
+
                             </a>
 
                         </div>
@@ -1490,9 +1672,13 @@
                                 WhatsApp
                             </strong>
 
-                            <a href="https://wa.me/34621259271"
-                               target="_blank">
+                            <a
+                                href="https://wa.me/34621259271"
+                                target="_blank"
+                                rel="noopener">
+
                                 621 25 92 71
+
                             </a>
 
                         </div>
@@ -1513,75 +1699,101 @@
                             </strong>
 
                             <a href="mailto:asoginter@gmail.com">
+
                                 asoginter@gmail.com
+
                             </a>
 
                         </div>
 
                     </div>
 
+
                 </div>
 
 
-                <!-- REDES -->
+                <!-- REDES SOCIALES -->
 
                 <div class="contact-box">
 
                     <h3>
-                        Síguenos y mantente informado
+                        Síguenos
                     </h3>
 
                     <p>
-                        También puedes seguir la actividad de
-                        Asoginter-ter a través de nuestras redes
-                        sociales.
+
+                        También puedes seguir la actividad
+                        de ASOGINTER a través de nuestras
+                        redes sociales.
+
                     </p>
 
 
                     <div class="social">
 
+
                         <a
                             class="instagram"
                             href="https://www.instagram.com/asoginter/"
-                            target="_blank">
+                            target="_blank"
+                            rel="noopener">
+
                             📸 Instagram
+
                         </a>
 
 
                         <a
                             class="facebook"
                             href="https://www.facebook.com/"
-                            target="_blank">
+                            target="_blank"
+                            rel="noopener">
+
                             👍 Facebook
+
                         </a>
 
 
                         <a
                             class="whatsapp"
                             href="https://wa.me/34621259271"
-                            target="_blank">
+                            target="_blank"
+                            rel="noopener">
+
                             💬 WhatsApp
+
                         </a>
+
 
                     </div>
 
+
                     <br>
 
+
                     <p>
+
                         <strong>
                             Instagram:
                         </strong>
+
                         @asoginter
+
                     </p>
 
+
                     <p>
+
                         <strong>
                             Facebook:
                         </strong>
+
                         Asociación Gitana Europea e Intercultural
+
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1590,13 +1802,14 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          FOOTER
-    ========================== -->
+    ===================================================== -->
 
     <footer>
 
         <div class="container">
+
 
             <div class="footer-grid">
 
@@ -1605,15 +1818,17 @@
 
                     <img
                         src="LOGO%20ASOGINTER%20%281%29.png"
-                        alt="Logo Asoginter-ter">
+                        alt="Logo ASOGINTER">
 
                     <h3>
-                        Asoginter-ter
+                        ASOGINTER
                     </h3>
 
                     <p>
+
                         Asociación Gitana Europea e Intercultural
                         de Torrent.
+
                     </p>
 
                 </div>
@@ -1686,14 +1901,19 @@
                         961 55 78 810
                     </p>
 
+                    <p>
+                        WhatsApp: 621 25 92 71
+                    </p>
+
                 </div>
+
 
             </div>
 
 
             <div class="copyright">
 
-                © 2026 Asoginter-ter · Asociación Gitana Europea
+                © 2026 ASOGINTER · Asociación Gitana Europea
                 e Intercultural de Torrent
 
             </div>
