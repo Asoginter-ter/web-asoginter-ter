@@ -9,7 +9,6 @@
     <meta name="description" content="ASOGINTER - Asociación Gitana Europea e Intercultural de Torrent. Trabajamos por la inclusión, la igualdad, la convivencia y el reconocimiento de la cultura gitana.">
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -43,11 +42,6 @@
             margin: auto;
         }
 
-
-        /* =========================
-           COLORES
-        ========================== */
-
         :root {
             --azul: #2456a6;
             --azul-oscuro: #173b73;
@@ -59,10 +53,7 @@
             --blanco: #ffffff;
         }
 
-
-        /* =========================
-           CABECERA
-        ========================== */
+        /* CABECERA */
 
         header {
             background: #ffffff;
@@ -119,8 +110,7 @@
             background: var(--azul-oscuro);
         }
 
-
-        /* REDES SOCIALES CABECERA */
+        /* REDES SOCIALES */
 
         .header-social {
             display: flex;
@@ -153,10 +143,7 @@
             background: #3159a6;
         }
 
-
-        /* =========================
-           BARRA DE COLORES
-        ========================== */
+        /* BARRA DE COLORES */
 
         .color-bar {
             display: flex;
@@ -183,25 +170,22 @@
             background: var(--morado);
         }
 
+        /* PORTADA */
 
-        /* =========================
-           PORTADA
-        ========================== */
+        .hero {
+            min-height: 690px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
 
-.hero {
-    min-height: 690px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            rgba(255, 255, 255, 0.58),
-            rgba(255, 255, 255, 0.58)
-        ),
-        url("fondo-asoginter.png") center center / cover no-repeat;
-}
+            background:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.58),
+                    rgba(255, 255, 255, 0.58)
+                ),
+                url("fondo-asoginter.png") center center / cover no-repeat;
+        }
 
         .hero::before {
             content: "";
@@ -228,7 +212,7 @@
         .hero-content {
             position: relative;
             z-index: 2;
-            color: white;
+            color: var(--azul-oscuro);
             max-width: 1050px;
             margin: 0 auto;
             padding: 75px 0 90px;
@@ -252,7 +236,7 @@
             font-size: 14px;
             font-weight: bold;
             margin-bottom: 12px;
-            color: #e5ecff;
+            color: var(--azul-oscuro);
         }
 
         .hero h1 {
@@ -261,21 +245,21 @@
             margin-bottom: 20px;
             font-weight: 900;
             letter-spacing: 5px;
-            color: #ffffff;
+            color: var(--azul-oscuro);
         }
 
         .hero-subtitle {
             font-size: 24px;
             font-weight: bold;
             margin: 0 auto 18px;
-            color: white;
+            color: var(--azul-oscuro);
         }
 
         .hero-description {
             font-size: 19px;
             max-width: 750px;
             margin: 0 auto 35px;
-            color: #f2f5ff;
+            color: #444;
         }
 
         .hero-buttons {
@@ -294,8 +278,8 @@
         }
 
         .btn-primary {
-            background: white;
-            color: var(--azul-oscuro);
+            background: var(--azul);
+            color: white;
         }
 
         .btn-primary:hover {
@@ -304,19 +288,17 @@
         }
 
         .btn-outline {
-            border: 2px solid white;
-            color: white;
+            border: 2px solid var(--azul);
+            color: var(--azul-oscuro);
+            background: rgba(255, 255, 255, 0.82);
         }
 
         .btn-outline:hover {
-            background: white;
-            color: var(--azul-oscuro);
+            background: var(--azul);
+            color: white;
         }
 
-
-        /* =========================
-           SECCIONES
-        ========================== */
+        /* SECCIONES */
 
         section {
             padding: 90px 0;
@@ -350,10 +332,7 @@
             font-size: 17px;
         }
 
-
-        /* =========================
-           QUIÉNES SOMOS
-        ========================== */
+        /* QUIÉNES SOMOS */
 
         .about {
             background: white;
@@ -401,10 +380,7 @@
             max-width: 300px;
         }
 
-
-        /* =========================
-           MISIÓN Y VISIÓN
-        ========================== */
+        /* MISIÓN Y VISIÓN */
 
         .mission {
             background: var(--gris-claro);
@@ -438,10 +414,7 @@
             color: var(--gris);
         }
 
-
-        /* =========================
-           QUÉ HACEMOS
-        ========================== */
+        /* QUÉ HACEMOS */
 
         .activities {
             background: white;
@@ -514,10 +487,7 @@
             font-size: 15px;
         }
 
-
-        /* =========================
-           FRASE
-        ========================== */
+        /* FRASE */
 
         .quote {
             background:
@@ -552,10 +522,7 @@
             opacity: 0.9;
         }
 
-
-        /* =========================
-           ACTIVIDADES / NOTICIAS
-        ========================== */
+        /* ACTIVIDADES / NOTICIAS */
 
         .news {
             background: var(--gris-claro);
@@ -606,10 +573,7 @@
             font-size: 15px;
         }
 
-
-        /* =========================
-           COLABORA
-        ========================== */
+        /* COLABORA */
 
         .collaborate {
             background: white;
@@ -641,10 +605,7 @@
             font-size: 17px;
         }
 
-
-        /* =========================
-           CONTACTO
-        ========================== */
+        /* CONTACTO */
 
         .contact {
             background: var(--gris-claro);
@@ -713,38 +674,6 @@
             font-size: 25px;
         }
 
-        .social {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .social a {
-            padding: 11px 17px;
-            border-radius: 4px;
-            color: white;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        .instagram {
-            background: var(--morado);
-        }
-
-        .facebook {
-            background: #3159a6;
-        }
-
-        .whatsapp {
-            background: #299447;
-        }
-
-
-        /* =========================
-           REDES GRANDES
-        ========================== */
-
         .social-large {
             display: flex;
             gap: 12px;
@@ -767,10 +696,19 @@
             transform: translateY(-2px);
         }
 
+        .instagram {
+            background: var(--morado);
+        }
 
-        /* =========================
-           FOOTER
-        ========================== */
+        .facebook {
+            background: #3159a6;
+        }
+
+        .whatsapp {
+            background: #299447;
+        }
+
+        /* FOOTER */
 
         footer {
             background: #172238;
@@ -847,13 +785,9 @@
             font-size: 13px;
         }
 
-
-        /* =========================
-           TABLET
-        ========================== */
+        /* TABLET */
 
         @media (max-width: 1000px) {
-
             .header-inner {
                 flex-wrap: wrap;
                 padding: 15px 0;
@@ -886,13 +820,9 @@
             }
         }
 
-
-        /* =========================
-           MÓVIL
-        ========================== */
+        /* MÓVIL */
 
         @media (max-width: 600px) {
-
             .container {
                 width: 92%;
             }
@@ -990,1108 +920,739 @@
             .about-logo {
                 min-height: 280px;
             }
-
         }
-
     </style>
 </head>
 
-
 <body>
 
+<header>
+    <div class="container header-inner">
 
-    <!-- =====================================================
-         CABECERA
-    ===================================================== -->
+        <a href="#inicio" class="logo">
+            <img src="LOGO%20ASOGINTER%20%281%29.png" alt="Logo de ASOGINTER">
+        </a>
 
-    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#quienes-somos">QUIÉNES SOMOS</a></li>
+                <li><a href="#que-hacemos">QUÉ HACEMOS</a></li>
+                <li><a href="#actividades">ACTIVIDADES</a></li>
+                <li><a href="#colabora">COLABORA</a></li>
+                <li><a href="#contacto" class="menu-contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
 
-        <div class="container header-inner">
+        <div class="header-social">
+            <a href="https://www.instagram.com/asoginter/" target="_blank" rel="noopener" class="header-instagram" aria-label="Instagram de ASOGINTER">◎</a>
 
+            <a href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES" target="_blank" rel="noopener" class="header-facebook" aria-label="Facebook de ASOGINTER">f</a>
+        </div>
 
-            <!-- LOGO -->
+    </div>
+</header>
 
-            <a href="#inicio" class="logo">
+<div class="color-bar">
+    <div class="color-blue"></div>
+    <div class="color-green"></div>
+    <div class="color-red"></div>
+    <div class="color-purple"></div>
+</div>
+
+<!-- PORTADA -->
+
+<section class="hero" id="inicio">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <img
+                src="LOGO%20ASOGINTER%20%281%29.png"
+                alt="Logo de ASOGINTER"
+                class="hero-logo">
+
+            <div class="hero-small">
+                ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL
+                DE TORRENT
+            </div>
+
+            <h1>ASOGINTER</h1>
+
+            <p class="hero-subtitle">
+                Inclusión · Igualdad · Cultura · Interculturalidad
+            </p>
+
+            <p class="hero-description">
+                Trabajamos por una sociedad más inclusiva,
+                igualitaria, intercultural y respetuosa
+                con la diversidad.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#quienes-somos" class="btn btn-primary">
+                    Conoce nuestra asociación
+                </a>
+
+                <a href="#contacto" class="btn btn-outline">
+                    Contacta con nosotros
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- QUIÉNES SOMOS -->
+
+<section class="about" id="quienes-somos">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="small">
+                ASOGINTER
+            </div>
+
+            <h2>Quiénes somos</h2>
+
+            <p>
+                Una asociación comprometida con la convivencia,
+                la igualdad y el reconocimiento de la diversidad.
+            </p>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <h3>
+                    Trabajamos por una sociedad
+                    con más oportunidades
+                </h3>
+
+                <p>
+                    La Asociación Gitana Europea e Intercultural
+                    de Torrent, ASOGINTER, trabaja con el compromiso
+                    de contribuir a una sociedad más justa,
+                    inclusiva e intercultural.
+                </p>
+
+                <p>
+                    Nuestro trabajo pone en valor la cultura gitana,
+                    fomenta la igualdad de oportunidades y promueve
+                    la convivencia y el respeto entre las diferentes
+                    personas y comunidades.
+                </p>
+
+                <div class="about-highlight">
+                    Creemos en la diversidad como una oportunidad
+                    para construir una sociedad mejor.
+                </div>
+
+            </div>
+
+            <div class="about-logo">
 
                 <img
                     src="LOGO%20ASOGINTER%20%281%29.png"
-                    alt="Logo de ASOGINTER">
+                    alt="ASOGINTER">
 
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MISIÓN Y VISIÓN -->
+
+<section class="mission">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="small">
+                Nuestro compromiso
+            </div>
+
+            <h2>Misión y visión</h2>
+
+        </div>
+
+        <div class="mission-grid">
+
+            <div class="mission-card">
+
+                <h3>Nuestra misión</h3>
+
+                <p>
+                    Promover la inclusión social,
+                    la igualdad de oportunidades y
+                    la participación de la comunidad gitana,
+                    favoreciendo la convivencia y el diálogo
+                    intercultural.
+                </p>
+
+            </div>
+
+            <div class="mission-card">
+
+                <h3>Nuestra visión</h3>
+
+                <p>
+                    Construir una sociedad donde todas las
+                    personas puedan participar en igualdad
+                    de condiciones, libres de discriminación
+                    y donde la diversidad cultural sea
+                    reconocida y valorada.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- QUÉ HACEMOS -->
+
+<section class="activities" id="que-hacemos">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="small">
+                Nuestro trabajo
+            </div>
+
+            <h2>¿Qué hacemos?</h2>
+
+            <p>
+                Trabajamos en diferentes ámbitos para favorecer
+                la inclusión, la igualdad y la convivencia.
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🤝</div>
+                <h3>Inclusión social</h3>
+                <p>
+                    Favorecemos la inclusión y la participación
+                    social, trabajando para reducir situaciones
+                    de desigualdad.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Educación y formación</h3>
+                <p>
+                    Promovemos la educación y la formación como
+                    herramientas fundamentales para generar
+                    nuevas oportunidades.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Cultura gitana</h3>
+                <p>
+                    Ponemos en valor la historia, la cultura
+                    y las tradiciones del pueblo gitano.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚖️</div>
+                <h3>Igualdad</h3>
+                <p>
+                    Trabajamos por la igualdad de oportunidades
+                    y contra cualquier forma de discriminación.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>Juventud</h3>
+                <p>
+                    Apostamos por la participación y el desarrollo
+                    de las nuevas generaciones.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌍</div>
+                <h3>Interculturalidad</h3>
+                <p>
+                    Fomentamos el conocimiento, el diálogo y
+                    la convivencia entre diferentes culturas.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FRASE -->
+
+<section class="quote">
+
+    <div class="container">
+
+        <div class="quote-content">
+
+            <div class="quote-mark">“</div>
+
+            <h2>
+                La diversidad nos une y la convivencia
+                nos hace avanzar.
+            </h2>
+
+            <p>
+                ASOGINTER · Torrent
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ACTIVIDADES Y NOTICIAS -->
+
+<section class="news" id="actividades">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="small">
+                Actualidad
+            </div>
+
+            <h2>Actividades y noticias</h2>
+
+            <p>
+                Próximamente podrás conocer aquí nuestras
+                actividades, proyectos y noticias.
+            </p>
+
+        </div>
+
+        <div class="news-grid">
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    ACTIVIDADES
+                </div>
+
+                <div class="news-body">
+
+                    <h3>
+                        Actividades de la asociación
+                    </h3>
+
+                    <p>
+                        En este espacio iremos compartiendo
+                        nuestras próximas actividades y proyectos.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    CULTURA GITANA
+                </div>
+
+                <div class="news-body">
+
+                    <h3>
+                        Cultura e interculturalidad
+                    </h3>
+
+                    <p>
+                        Información sobre iniciativas destinadas
+                        a poner en valor la cultura gitana y
+                        favorecer el diálogo intercultural.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    PARTICIPACIÓN
+                </div>
+
+                <div class="news-body">
+
+                    <h3>
+                        Participa con nosotros
+                    </h3>
+
+                    <p>
+                        Descubre cómo puedes acercarte a la
+                        asociación y formar parte de nuestras
+                        iniciativas.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COLABORA -->
+
+<section class="collaborate" id="colabora">
+
+    <div class="container">
+
+        <div class="collaborate-box">
+
+            <h2>
+                ¿Quieres colaborar con nosotros?
+            </h2>
+
+            <p>
+                Si compartes nuestro compromiso con la igualdad,
+                la inclusión, la convivencia y la diversidad,
+                estaremos encantados de conocerte.
+            </p>
+
+            <a
+                href="#contacto"
+                class="btn"
+                style="background:#2456a6;color:white;">
+                Ponte en contacto
             </a>
 
+        </div>
 
-            <!-- MENÚ -->
+    </div>
 
-            <nav>
+</section>
+
+<!-- CONTACTO -->
+
+<section class="contact" id="contacto">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="small">
+                Estamos a tu disposición
+            </div>
+
+            <h2>Contacta con nosotros</h2>
+
+            <p>
+                Puedes contactar con ASOGINTER a través
+                de cualquiera de nuestros canales.
+            </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <h3>Dónde estamos</h3>
+
+                <p>
+                    Nuestra asociación se encuentra
+                    en Torrent, Valencia.
+                </p>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">📍</div>
+
+                    <div>
+                        <strong>Dirección</strong>
+
+                        <span>
+                            Calle Juan XXIII, nº 6 Bajo<br>
+                            Torrent, Valencia<br>
+                            CP 46900
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">📞</div>
+
+                    <div>
+                        <strong>Teléfono</strong>
+
+                        <a href="tel:+349615578810">
+                            961 55 78 810
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">💬</div>
+
+                    <div>
+                        <strong>WhatsApp</strong>
+
+                        <a
+                            href="https://wa.me/34621259271"
+                            target="_blank"
+                            rel="noopener">
+                            621 25 92 71
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">✉️</div>
+
+                    <div>
+                        <strong>Email</strong>
+
+                        <a href="mailto:asoginter@gmail.com">
+                            asoginter@gmail.com
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contact-box">
+
+                <h3>
+                    Síguenos en redes sociales
+                </h3>
+
+                <p>
+                    Puedes conocer nuestras actividades,
+                    noticias y novedades a través de nuestras
+                    redes sociales.
+                </p>
+
+                <div class="social-large">
+
+                    <a
+                        class="instagram"
+                        href="https://www.instagram.com/asoginter/"
+                        target="_blank"
+                        rel="noopener">
+                        ◎ Instagram
+                    </a>
+
+                    <a
+                        class="facebook"
+                        href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
+                        target="_blank"
+                        rel="noopener">
+                        f Facebook
+                    </a>
+
+                    <a
+                        class="whatsapp"
+                        href="https://wa.me/34621259271"
+                        target="_blank"
+                        rel="noopener">
+                        💬 WhatsApp
+                    </a>
+
+                </div>
+
+                <br>
+
+                <p>
+                    <strong>Instagram:</strong>
+                    @asoginter
+                </p>
+
+                <p>
+                    <strong>Facebook:</strong>
+                    Asociación Gitana Europea e Intercultural
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-logo">
+
+                <img
+                    src="LOGO%20ASOGINTER%20%281%29.png"
+                    alt="Logo ASOGINTER">
+
+                <h3>ASOGINTER</h3>
+
+                <p>
+                    Asociación Gitana Europea e Intercultural
+                    de Torrent.
+                </p>
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.instagram.com/asoginter/"
+                        target="_blank"
+                        rel="noopener"
+                        class="instagram"
+                        aria-label="Instagram">
+                        ◎
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
+                        target="_blank"
+                        rel="noopener"
+                        class="facebook"
+                        aria-label="Facebook">
+                        f
+                    </a>
+
+                    <a
+                        href="https://wa.me/34621259271"
+                        target="_blank"
+                        rel="noopener"
+                        class="whatsapp"
+                        aria-label="WhatsApp">
+                        💬
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h3>Enlaces</h3>
 
                 <ul>
 
                     <li>
                         <a href="#inicio">
-                            INICIO
+                            Inicio
                         </a>
                     </li>
 
                     <li>
                         <a href="#quienes-somos">
-                            QUIÉNES SOMOS
+                            Quiénes somos
                         </a>
                     </li>
 
                     <li>
                         <a href="#que-hacemos">
-                            QUÉ HACEMOS
+                            Qué hacemos
                         </a>
                     </li>
 
                     <li>
                         <a href="#actividades">
-                            ACTIVIDADES
+                            Actividades
                         </a>
                     </li>
 
                     <li>
                         <a href="#colabora">
-                            COLABORA
+                            Colabora
                         </a>
                     </li>
 
                     <li>
-                        <a href="#contacto" class="menu-contacto">
-                            CONTACTO
+                        <a href="#contacto">
+                            Contacto
                         </a>
                     </li>
 
                 </ul>
 
-            </nav>
+            </div>
 
+            <div>
 
-            <!-- REDES SOCIALES -->
+                <h3>Contacto</h3>
 
-            <div class="header-social">
+                <p>
+                    Calle Juan XXIII, nº 6 Bajo
+                </p>
 
-                <a
-                    href="https://www.instagram.com/asoginter/"
-                    target="_blank"
-                    rel="noopener"
-                    class="header-instagram"
-                    aria-label="Instagram de ASOGINTER">
+                <p>
+                    Torrent, Valencia · 46900
+                </p>
 
-                    ◎
+                <p>
+                    <a href="mailto:asoginter@gmail.com">
+                        asoginter@gmail.com
+                    </a>
+                </p>
 
-                </a>
+                <p>
+                    961 55 78 810
+                </p>
 
-
-                <a
-                    href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
-                    target="_blank"
-                    rel="noopener"
-                    class="header-facebook"
-                    aria-label="Facebook de ASOGINTER">
-
-                    f
-
-                </a>
+                <p>
+                    WhatsApp: 621 25 92 71
+                </p>
 
             </div>
 
         </div>
 
-    </header>
-
-
-    <!-- BARRA DE COLORES -->
-
-    <div class="color-bar">
-
-        <div class="color-blue"></div>
-        <div class="color-green"></div>
-        <div class="color-red"></div>
-        <div class="color-purple"></div>
+        <div class="copyright">
+            © 2026 ASOGINTER · Asociación Gitana Europea
+            e Intercultural de Torrent
+        </div>
 
     </div>
 
-
-    <!-- =====================================================
-         PORTADA
-    ===================================================== -->
-
-    <section class="hero" id="inicio">
-
-        <div class="container">
-
-            <div class="hero-content">
-
-
-                <img
-                    src="LOGO%20ASOGINTER%20%281%29.png"
-                    alt="Logo de ASOGINTER"
-                    class="hero-logo">
-
-
-                <div class="hero-small">
-
-                    ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL
-                    DE TORRENT
-
-                </div>
-
-
-                <h1>
-                    ASOGINTER
-                </h1>
-
-
-                <p class="hero-subtitle">
-
-                    Inclusión · Igualdad · Cultura · Interculturalidad
-
-                </p>
-
-
-                <p class="hero-description">
-
-                    Trabajamos por una sociedad más inclusiva,
-                    igualitaria, intercultural y respetuosa
-                    con la diversidad.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="#quienes-somos"
-                        class="btn btn-primary">
-
-                        Conoce nuestra asociación
-
-                    </a>
-
-
-                    <a
-                        href="#contacto"
-                        class="btn btn-outline">
-
-                        Contacta con nosotros
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         QUIÉNES SOMOS
-    ===================================================== -->
-
-    <section class="about" id="quienes-somos">
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <div class="small">
-                    ASOGINTER
-                </div>
-
-                <h2>
-                    Quiénes somos
-                </h2>
-
-                <p>
-
-                    Una asociación comprometida con la convivencia,
-                    la igualdad y el reconocimiento de la diversidad.
-
-                </p>
-
-            </div>
-
-
-            <div class="about-grid">
-
-
-                <div class="about-text">
-
-                    <h3>
-
-                        Trabajamos por una sociedad
-                        con más oportunidades
-
-                    </h3>
-
-
-                    <p>
-
-                        La Asociación Gitana Europea e Intercultural
-                        de Torrent, ASOGINTER, trabaja con el compromiso
-                        de contribuir a una sociedad más justa,
-                        inclusiva e intercultural.
-
-                    </p>
-
-
-                    <p>
-
-                        Nuestro trabajo pone en valor la cultura gitana,
-                        fomenta la igualdad de oportunidades y promueve
-                        la convivencia y el respeto entre las diferentes
-                        personas y comunidades.
-
-                    </p>
-
-
-                    <div class="about-highlight">
-
-                        Creemos en la diversidad como una oportunidad
-                        para construir una sociedad mejor.
-
-                    </div>
-
-                </div>
-
-
-                <div class="about-logo">
-
-                    <img
-                        src="LOGO%20ASOGINTER%20%281%29.png"
-                        alt="ASOGINTER">
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         MISIÓN Y VISIÓN
-    ===================================================== -->
-
-    <section class="mission">
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <div class="small">
-                    Nuestro compromiso
-                </div>
-
-                <h2>
-                    Misión y visión
-                </h2>
-
-            </div>
-
-
-            <div class="mission-grid">
-
-
-                <div class="mission-card">
-
-                    <h3>
-                        Nuestra misión
-                    </h3>
-
-                    <p>
-
-                        Promover la inclusión social,
-                        la igualdad de oportunidades y
-                        la participación de la comunidad gitana,
-                        favoreciendo la convivencia y el diálogo
-                        intercultural.
-
-                    </p>
-
-                </div>
-
-
-                <div class="mission-card">
-
-                    <h3>
-                        Nuestra visión
-                    </h3>
-
-                    <p>
-
-                        Construir una sociedad donde todas las
-                        personas puedan participar en igualdad
-                        de condiciones, libres de discriminación
-                        y donde la diversidad cultural sea
-                        reconocida y valorada.
-
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         QUÉ HACEMOS
-    ===================================================== -->
-
-    <section class="activities" id="que-hacemos">
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <div class="small">
-                    Nuestro trabajo
-                </div>
-
-                <h2>
-                    ¿Qué hacemos?
-                </h2>
-
-                <p>
-
-                    Trabajamos en diferentes ámbitos para favorecer
-                    la inclusión, la igualdad y la convivencia.
-
-                </p>
-
-            </div>
-
-
-            <div class="cards">
-
-
-                <div class="card">
-
-                    <div class="icon">
-                        🤝
-                    </div>
-
-                    <h3>
-                        Inclusión social
-                    </h3>
-
-                    <p>
-
-                        Favorecemos la inclusión y la participación
-                        social, trabajando para reducir situaciones
-                        de desigualdad.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="icon">
-                        📚
-                    </div>
-
-                    <h3>
-                        Educación y formación
-                    </h3>
-
-                    <p>
-
-                        Promovemos la educación y la formación como
-                        herramientas fundamentales para generar
-                        nuevas oportunidades.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="icon">
-                        🎨
-                    </div>
-
-                    <h3>
-                        Cultura gitana
-                    </h3>
-
-                    <p>
-
-                        Ponemos en valor la historia, la cultura
-                        y las tradiciones del pueblo gitano.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="icon">
-                        ⚖️
-                    </div>
-
-                    <h3>
-                        Igualdad
-                    </h3>
-
-                    <p>
-
-                        Trabajamos por la igualdad de oportunidades
-                        y contra cualquier forma de discriminación.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="icon">
-                        🌱
-                    </div>
-
-                    <h3>
-                        Juventud
-                    </h3>
-
-                    <p>
-
-                        Apostamos por la participación y el desarrollo
-                        de las nuevas generaciones.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="icon">
-                        🌍
-                    </div>
-
-                    <h3>
-                        Interculturalidad
-                    </h3>
-
-                    <p>
-
-                        Fomentamos el conocimiento, el diálogo y
-                        la convivencia entre diferentes culturas.
-
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         FRASE DESTACADA
-    ===================================================== -->
-
-    <section class="quote">
-
-        <div class="container">
-
-            <div class="quote-content">
-
-                <div class="quote-mark">
-                    “
-                </div>
-
-                <h2>
-
-                    La diversidad nos une y la convivencia
-                    nos hace avanzar.
-
-                </h2>
-
-                <p>
-                    ASOGINTER · Torrent
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         ACTIVIDADES Y NOTICIAS
-    ===================================================== -->
-
-    <section class="news" id="actividades">
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <div class="small">
-                    Actualidad
-                </div>
-
-                <h2>
-                    Actividades y noticias
-                </h2>
-
-                <p>
-
-                    Próximamente podrás conocer aquí nuestras
-                    actividades, proyectos y noticias.
-
-                </p>
-
-            </div>
-
-
-            <div class="news-grid">
-
-
-                <article class="news-card">
-
-                    <div class="news-image">
-                        ACTIVIDADES
-                    </div>
-
-                    <div class="news-body">
-
-                        <h3>
-                            Actividades de la asociación
-                        </h3>
-
-                        <p>
-
-                            En este espacio iremos compartiendo
-                            nuestras próximas actividades y proyectos.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="news-card">
-
-                    <div class="news-image">
-                        CULTURA GITANA
-                    </div>
-
-                    <div class="news-body">
-
-                        <h3>
-                            Cultura e interculturalidad
-                        </h3>
-
-                        <p>
-
-                            Información sobre iniciativas destinadas
-                            a poner en valor la cultura gitana y
-                            favorecer el diálogo intercultural.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="news-card">
-
-                    <div class="news-image">
-                        PARTICIPACIÓN
-                    </div>
-
-                    <div class="news-body">
-
-                        <h3>
-                            Participa con nosotros
-                        </h3>
-
-                        <p>
-
-                            Descubre cómo puedes acercarte a la
-                            asociación y formar parte de nuestras
-                            iniciativas.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         COLABORA
-    ===================================================== -->
-
-    <section class="collaborate" id="colabora">
-
-        <div class="container">
-
-            <div class="collaborate-box">
-
-                <h2>
-                    ¿Quieres colaborar con nosotros?
-                </h2>
-
-                <p>
-
-                    Si compartes nuestro compromiso con la igualdad,
-                    la inclusión, la convivencia y la diversidad,
-                    estaremos encantados de conocerte.
-
-                </p>
-
-                <a
-                    href="#contacto"
-                    class="btn"
-                    style="background:#2456a6;color:white;">
-
-                    Ponte en contacto
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         CONTACTO
-    ===================================================== -->
-
-    <section class="contact" id="contacto">
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <div class="small">
-                    Estamos a tu disposición
-                </div>
-
-                <h2>
-                    Contacta con nosotros
-                </h2>
-
-                <p>
-
-                    Puedes contactar con ASOGINTER a través
-                    de cualquiera de nuestros canales.
-
-                </p>
-
-            </div>
-
-
-            <div class="contact-grid">
-
-
-                <div class="contact-info">
-
-                    <h3>
-                        Dónde estamos
-                    </h3>
-
-                    <p>
-
-                        Nuestra asociación se encuentra
-                        en Torrent, Valencia.
-
-                    </p>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            📍
-                        </div>
-
-                        <div>
-
-                            <strong>
-                                Dirección
-                            </strong>
-
-                            <span>
-
-                                Calle Juan XXIII, nº 6 Bajo<br>
-                                Torrent, Valencia<br>
-                                CP 46900
-
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            📞
-                        </div>
-
-                        <div>
-
-                            <strong>
-                                Teléfono
-                            </strong>
-
-                            <a href="tel:+349615578810">
-
-                                961 55 78 810
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            💬
-                        </div>
-
-                        <div>
-
-                            <strong>
-                                WhatsApp
-                            </strong>
-
-                            <a
-                                href="https://wa.me/34621259271"
-                                target="_blank"
-                                rel="noopener">
-
-                                621 25 92 71
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            ✉️
-                        </div>
-
-                        <div>
-
-                            <strong>
-                                Email
-                            </strong>
-
-                            <a href="mailto:asoginter@gmail.com">
-
-                                asoginter@gmail.com
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- REDES SOCIALES -->
-
-                <div class="contact-box">
-
-                    <h3>
-                        Síguenos en redes sociales
-                    </h3>
-
-                    <p>
-
-                        Puedes conocer nuestras actividades,
-                        noticias y novedades a través de nuestras
-                        redes sociales.
-
-                    </p>
-
-
-                    <div class="social-large">
-
-
-                        <a
-                            class="instagram"
-                            href="https://www.instagram.com/asoginter/"
-                            target="_blank"
-                            rel="noopener">
-
-                            ◎ Instagram
-
-                        </a>
-
-
-                        <a
-                            class="facebook"
-                            href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
-                            target="_blank"
-                            rel="noopener">
-
-                            f Facebook
-
-                        </a>
-
-
-                        <a
-                            class="whatsapp"
-                            href="https://wa.me/34621259271"
-                            target="_blank"
-                            rel="noopener">
-
-                            💬 WhatsApp
-
-                        </a>
-
-
-                    </div>
-
-
-                    <br>
-
-
-                    <p>
-
-                        <strong>
-                            Instagram:
-                        </strong>
-
-                        @asoginter
-
-                    </p>
-
-
-                    <p>
-
-                        <strong>
-                            Facebook:
-                        </strong>
-
-                        Asociación Gitana Europea e Intercultural
-
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         PIE DE PÁGINA
-    ===================================================== -->
-
-    <footer>
-
-        <div class="container">
-
-
-            <div class="footer-grid">
-
-
-                <div class="footer-logo">
-
-                    <img
-                        src="LOGO%20ASOGINTER%20%281%29.png"
-                        alt="Logo ASOGINTER">
-
-                    <h3>
-                        ASOGINTER
-                    </h3>
-
-                    <p>
-
-                        Asociación Gitana Europea e Intercultural
-                        de Torrent.
-
-                    </p>
-
-
-                    <div class="footer-social">
-
-
-                        <a
-                            href="https://www.instagram.com/asoginter/"
-                            target="_blank"
-                            rel="noopener"
-                            class="instagram"
-                            aria-label="Instagram">
-
-                            ◎
-
-                        </a>
-
-
-                        <a
-                            href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
-                            target="_blank"
-                            rel="noopener"
-                            class="facebook"
-                            aria-label="Facebook">
-
-                            f
-
-                        </a>
-
-
-                        <a
-                            href="https://wa.me/34621259271"
-                            target="_blank"
-                            rel="noopener"
-                            class="whatsapp"
-                            aria-label="WhatsApp">
-
-                            💬
-
-                        </a>
-
-
-                    </div>
-
-                </div>
-
-
-                <div>
-
-                    <h3>
-                        Enlaces
-                    </h3>
-
-                    <ul>
-
-                        <li>
-                            <a href="#inicio">
-                                Inicio
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#quienes-somos">
-                                Quiénes somos
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#que-hacemos">
-                                Qué hacemos
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#actividades">
-                                Actividades
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#colabora">
-                                Colabora
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#contacto">
-                                Contacto
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div>
-
-                    <h3>
-                        Contacto
-                    </h3>
-
-                    <p>
-                        Calle Juan XXIII, nº 6 Bajo
-                    </p>
-
-                    <p>
-                        Torrent, Valencia · 46900
-                    </p>
-
-                    <p>
-                        <a href="mailto:asoginter@gmail.com">
-                            asoginter@gmail.com
-                        </a>
-                    </p>
-
-                    <p>
-                        961 55 78 810
-                    </p>
-
-                    <p>
-                        WhatsApp: 621 25 92 71
-                    </p>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="copyright">
-
-                © 2026 ASOGINTER · Asociación Gitana Europea
-                e Intercultural de Torrent
-
-            </div>
-
-        </div>
-
-    </footer>
-
+</footer>
 
 </body>
 </html>
