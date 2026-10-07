@@ -1,31 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
+<title>ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
-        ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent
-    </title>
-
-    <meta
-        name="description"
-        content="ASOGINTER. Asociación Gitana Europea e Intercultural de Torrent. Centro Social de Apoyo para la Inclusión y Promoción de la Comunidad Gitana."
-    >
-
-    <meta
-        name="keywords"
-        content="ASOGINTER, asociación gitana, Torrent, inclusión, igualdad, formación, cultura, interculturalidad"
-    >
-
-    <meta
-        name="author"
-        content="Asociación Gitana Europea e Intercultural de Torrent"
-    >
-
+<meta name="description" content="ASOGINTER. Asociación Gitana Europea e Intercultural de Torrent. Centro Social de Apoyo para la Inclusión y Promoción de la Comunidad Gitana.">
+<meta name="author" content="Asociación Gitana Europea e Intercultural de Torrent">
 
 <style>
 
@@ -36,12 +18,12 @@
 *{
     box-sizing:border-box;
     margin:0;
-    padding:0;
+    padding:0
 }
 
 html{
     scroll-behavior:smooth;
-    scroll-padding-top:120px;
+    scroll-padding-top:125px
 }
 
 body{
@@ -49,27 +31,27 @@ body{
     color:#333;
     background:#fff;
     line-height:1.6;
-    overflow-x:hidden;
+    overflow-x:hidden
 }
 
 a{
-    color:inherit;
     text-decoration:none;
+    color:inherit
 }
 
 img{
     max-width:100%;
-    display:block;
+    display:block
 }
 
 section{
-    padding:80px 20px;
+    padding:80px 20px
 }
 
 .container{
     max-width:1150px;
     width:92%;
-    margin:0 auto;
+    margin:0 auto
 }
 
 
@@ -81,11 +63,8 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-
-    background:rgba(255,255,255,.97);
-
-    box-shadow:
-        0 2px 12px rgba(0,0,0,.08);
+    background:rgba(255,255,255,.98);
+    box-shadow:0 2px 12px rgba(0,0,0,.08)
 }
 
 .header-container{
@@ -95,21 +74,15 @@ header{
     padding:10px 25px;
 
     display:grid;
-
-    grid-template-columns:
-        90px
-        1fr
-        auto;
-
+    grid-template-columns:90px 1fr auto;
     align-items:center;
-
-    gap:20px;
+    gap:20px
 }
 
 .header-logo{
     width:85px;
     height:65px;
-    object-fit:contain;
+    object-fit:contain
 }
 
 nav{
@@ -118,30 +91,30 @@ nav{
     align-items:center;
     gap:24px;
     flex-wrap:wrap;
+    min-width:0
 }
 
 nav a{
     font-size:14px;
-    font-weight:bold;
+    font-weight:700;
     color:#333;
     white-space:nowrap;
-    transition:.3s;
+    transition:.3s
 }
 
 nav a:hover{
-    color:#c62828;
+    color:#c62828
 }
 
 .social{
     display:flex;
-    gap:10px;
     align-items:center;
+    gap:10px
 }
 
 .social a{
     width:36px;
     height:36px;
-
     border-radius:50%;
 
     display:flex;
@@ -150,15 +123,15 @@ nav a:hover{
 
     color:#fff;
     font-size:15px;
-    font-weight:bold;
+    font-weight:700
 }
 
 .instagram{
-    background:#d62976;
+    background:#d62976
 }
 
 .facebook{
-    background:#1877f2;
+    background:#1877f2
 }
 
 
@@ -168,27 +141,27 @@ nav a:hover{
 
 .color-bar{
     height:6px;
-    display:flex;
+    display:flex
 }
 
 .color-bar span{
-    flex:1;
+    flex:1
 }
 
 .blue{
-    background:#1479b8;
+    background:#1479b8
 }
 
 .green{
-    background:#39a852;
+    background:#39a852
 }
 
 .red{
-    background:#c62828;
+    background:#c62828
 }
 
 .purple{
-    background:#7b3f98;
+    background:#7b3f98
 }
 
 
@@ -205,20 +178,19 @@ nav a:hover{
 
     padding:70px 20px;
 
-    position:relative;
-
     background:
         linear-gradient(
             rgba(255,255,255,.58),
             rgba(255,255,255,.58)
         ),
         url("fondo-asoginter.png")
-        center center / cover no-repeat;
+        center/cover no-repeat
 }
 
 .hero-content{
     width:100%;
     max-width:950px;
+    margin:0 auto;
 
     padding:45px 35px;
 
@@ -230,31 +202,33 @@ nav a:hover{
 
     box-shadow:
         0 12px 40px
-        rgba(0,0,0,.12);
+        rgba(0,0,0,.12)
 }
 
 .hero-emblem{
     width:170px;
     height:170px;
 
-    margin:
-        0 auto 15px;
-
     object-fit:contain;
+
+    margin:0 auto 15px
 }
 
 .hero-formal-name{
     font-size:20px;
-    font-weight:bold;
+    font-weight:700;
 
     letter-spacing:1px;
 
     color:#555;
 
-    margin-bottom:6px;
+    margin-bottom:6px
 }
 
 .hero-title{
+    display:block;
+    width:100%;
+
     font-size:
         clamp(
             55px,
@@ -264,44 +238,46 @@ nav a:hover{
 
     font-weight:900;
 
-    letter-spacing:5px;
+    letter-spacing:3px;
 
     color:#c62828;
 
     line-height:1;
 
-    margin-bottom:20px;
+    margin:0 auto 20px;
+
+    text-align:center;
+
+    white-space:nowrap
 }
 
 .hero-tagline{
     font-size:22px;
-    font-weight:bold;
+    font-weight:700;
 
     color:#444;
 
-    margin-bottom:18px;
+    margin-bottom:18px
 }
 
 .hero-description{
     max-width:760px;
-
     margin:auto;
 
     font-size:18px;
 
-    color:#555;
+    color:#555
 }
 
 .hero-buttons{
     margin-top:30px;
 
     display:flex;
-
     justify-content:center;
 
     gap:15px;
 
-    flex-wrap:wrap;
+    flex-wrap:wrap
 }
 
 .btn{
@@ -316,36 +292,35 @@ nav a:hover{
 
     border-radius:30px;
 
-    font-weight:bold;
+    font-weight:700;
 
-    transition:.3s;
+    transition:.3s
 }
 
 .btn-primary{
     background:#c62828;
-    color:#fff;
+    color:#fff
 }
 
 .btn-primary:hover{
     background:#a91f1f;
 
     transform:
-        translateY(-2px);
+        translateY(-2px)
 }
 
 .btn-secondary{
     background:#fff;
-
     color:#c62828;
 
     border:
         2px solid
-        #c62828;
+        #c62828
 }
 
 .btn-secondary:hover{
     background:#c62828;
-    color:#fff;
+    color:#fff
 }
 
 
@@ -362,11 +337,11 @@ nav a:hover{
 
     margin-bottom:15px;
 
-    color:#333;
+    color:#333
 }
 
 .section-title span{
-    color:#c62828;
+    color:#c62828
 }
 
 .section-intro{
@@ -381,7 +356,7 @@ nav a:hover{
 
     color:#666;
 
-    font-size:17px;
+    font-size:17px
 }
 
 
@@ -398,13 +373,13 @@ nav a:hover{
 
     gap:50px;
 
-    align-items:center;
+    align-items:center
 }
 
 .about-text p{
     font-size:17px;
 
-    margin-bottom:18px;
+    margin-bottom:18px
 }
 
 .about-highlight{
@@ -412,11 +387,11 @@ nav a:hover{
 
     padding:22px;
 
-    background:#fafafa;
-
     border-left:
         5px solid
         #c62828;
+
+    background:#fafafa;
 
     border-radius:
         0
@@ -424,9 +399,9 @@ nav a:hover{
         12px
         0;
 
-    font-weight:bold;
+    font-weight:700;
 
-    color:#555;
+    color:#555
 }
 
 .about-logo{
@@ -436,13 +411,7 @@ nav a:hover{
 
     border-radius:15px;
 
-    background:#f6f7fb;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
+    background:#f6f7fb
 }
 
 .about-logo img{
@@ -450,6 +419,8 @@ nav a:hover{
     height:100%;
 
     object-fit:cover;
+
+    object-position:center
 }
 
 
@@ -458,7 +429,7 @@ nav a:hover{
 ====================================================== */
 
 .mission{
-    background:#f7f7f7;
+    background:#f7f7f7
 }
 
 .mission-grid{
@@ -468,7 +439,7 @@ nav a:hover{
         1fr
         1fr;
 
-    gap:30px;
+    gap:30px
 }
 
 .mission-card{
@@ -480,7 +451,7 @@ nav a:hover{
 
     box-shadow:
         0 6px 22px
-        rgba(0,0,0,.06);
+        rgba(0,0,0,.06)
 }
 
 .mission-card h3{
@@ -488,7 +459,7 @@ nav a:hover{
 
     font-size:24px;
 
-    margin-bottom:15px;
+    margin-bottom:15px
 }
 
 
@@ -502,7 +473,7 @@ nav a:hover{
     grid-template-columns:
         repeat(3,1fr);
 
-    gap:25px;
+    gap:25px
 }
 
 .activity-card{
@@ -524,7 +495,7 @@ nav a:hover{
         0 7px 25px
         rgba(0,0,0,.06);
 
-    transition:.3s;
+    transition:.3s
 }
 
 .activity-card:hover{
@@ -533,7 +504,7 @@ nav a:hover{
 
     box-shadow:
         0 12px 30px
-        rgba(0,0,0,.10);
+        rgba(0,0,0,.1)
 }
 
 .professional-icon{
@@ -545,69 +516,68 @@ nav a:hover{
     display:flex;
 
     align-items:center;
-
     justify-content:center;
 
     margin:
         0
         auto
-        18px;
+        18px
 }
 
 .professional-icon svg{
     width:36px;
-    height:36px;
+    height:36px
 }
 
 .icon-blue{
     background:#e5f3fb;
-    color:#1479b8;
+    color:#1479b8
 }
 
 .icon-green{
     background:#e7f6ea;
-    color:#39a852;
+    color:#39a852
 }
 
 .icon-red{
     background:#fdeaea;
-    color:#c62828;
+    color:#c62828
 }
 
 .icon-purple{
     background:#f1e9f5;
-    color:#7b3f98;
+    color:#7b3f98
 }
 
 .activity-card h3{
     font-size:20px;
-    margin-bottom:10px;
+    margin-bottom:10px
 }
 
 .activity-card p{
     font-size:15px;
-    color:#666;
+    color:#666
 }
 
 .health-message{
     margin-top:45px;
 
+    background:#f7f7f7;
+
     padding:30px;
 
     border-radius:18px;
 
-    background:#f7f7f7;
-
-    text-align:center;
+    text-align:center
 }
 
 .health-message strong{
-    color:#c62828;
+    color:#c62828
 }
 
 
 /* ======================================================
-   FRASE DESTACADA
+   FRASE
 ====================================================== */
 
 .quote-section{
@@ -617,7 +587,7 @@ nav a:hover{
 
     text-align:center;
 
-    padding:70px 20px;
+    padding:70px 20px
 }
 
 .quote{
@@ -627,9 +597,9 @@ nav a:hover{
 
     font-size:27px;
 
-    font-weight:bold;
+    font-weight:700;
 
-    line-height:1.5;
+    line-height:1.5
 }
 
 
@@ -665,7 +635,7 @@ nav a:hover{
 
     box-shadow:
         0 6px 20px
-        rgba(0,0,0,.05);
+        rgba(0,0,0,.05)
 }
 
 .activity-intro-box p{
@@ -673,16 +643,16 @@ nav a:hover{
 
     font-size:16px;
 
-    line-height:1.65;
+    line-height:1.65
 }
 
 .activity-intro-box strong{
-    color:#c62828;
+    color:#c62828
 }
 
 
 /* ======================================================
-   FORMACIÓN
+   FORMACIÓN FSE+
 ====================================================== */
 
 .training-feature{
@@ -708,7 +678,7 @@ nav a:hover{
         0 10px 30px
         rgba(0,0,0,.07);
 
-    margin-bottom:35px;
+    margin-bottom:35px
 }
 
 .training-content{
@@ -716,7 +686,7 @@ nav a:hover{
 
     flex-direction:column;
 
-    justify-content:center;
+    justify-content:center
 }
 
 .training-label{
@@ -727,8 +697,6 @@ nav a:hover{
     padding:
         7px
         12px;
-
-    margin-bottom:15px;
 
     border-radius:20px;
 
@@ -743,6 +711,8 @@ nav a:hover{
     text-transform:uppercase;
 
     letter-spacing:.7px;
+
+    margin-bottom:15px
 }
 
 .training-content h3{
@@ -752,7 +722,7 @@ nav a:hover{
 
     line-height:1.2;
 
-    margin-bottom:15px;
+    margin-bottom:15px
 }
 
 .program-title{
@@ -764,13 +734,13 @@ nav a:hover{
 
     color:#444;
 
-    margin-bottom:16px;
+    margin-bottom:16px
 }
 
 .training-content > p{
     color:#666;
 
-    margin-bottom:16px;
+    margin-bottom:16px
 }
 
 .training-list{
@@ -778,7 +748,7 @@ nav a:hover{
 
     flex-direction:column;
 
-    gap:10px;
+    gap:10px
 }
 
 .training-item{
@@ -796,21 +766,21 @@ nav a:hover{
 
     color:#555;
 
-    font-size:14px;
+    font-size:14px
 }
 
 .training-item strong{
-    color:#333;
+    color:#333
 }
 
 .company{
     color:#c62828;
 
-    font-weight:bold;
+    font-weight:700
 }
 
 .company a:hover{
-    text-decoration:underline;
+    text-decoration:underline
 }
 
 .training-note{
@@ -820,18 +790,18 @@ nav a:hover{
         13px
         15px;
 
-    border-radius:12px;
-
     background:#f7f7f7;
+
+    border-radius:12px;
 
     font-size:13px;
 
-    color:#666;
+    color:#666
 }
 
 
 /* ======================================================
-   COLLAGE DE FORMACIÓN
+   FOTOS FORMACIÓN
 ====================================================== */
 
 .course-collage{
@@ -849,13 +819,19 @@ nav a:hover{
     gap:12px;
 
     min-height:592px;
+
+    width:100%;
+
+    min-width:0
 }
 
 .course-photo{
+    display:block;
+
     width:100%;
     height:100%;
 
-    display:block;
+    min-width:0;
 
     object-fit:cover;
 
@@ -863,41 +839,40 @@ nav a:hover{
 
     box-shadow:
         0 5px 16px
-        rgba(0,0,0,.10);
+        rgba(0,0,0,.10)
 }
 
 .course-photo-main{
     grid-column:
-        1 / -1;
+        1 /
+        -1;
 
     object-position:
         center
-        43%;
+        43%
 }
 
 .course-photo-group{
-    object-position:
-        center;
+    object-position:center
 }
 
 .course-photo-forklift{
     object-position:
         center
-        42%;
+        42%
 }
 
 .course-photo-training{
     grid-column:
-        1 / -1;
+        1 /
+        -1;
 
-    object-position:
-        center
-        50%;
+    object-position:center
 }
 
 
 /* ======================================================
-   LÍNEAS DE TRABAJO
+   LINEAS DE TRABAJO
 ====================================================== */
 
 .areas-grid{
@@ -908,7 +883,7 @@ nav a:hover{
 
     gap:22px;
 
-    margin-bottom:35px;
+    margin-bottom:35px
 }
 
 .area-card{
@@ -928,7 +903,7 @@ nav a:hover{
         0 7px 22px
         rgba(0,0,0,.05);
 
-    transition:.3s;
+    transition:.3s
 }
 
 .area-card:hover{
@@ -937,7 +912,7 @@ nav a:hover{
 
     box-shadow:
         0 12px 28px
-        rgba(0,0,0,.08);
+        rgba(0,0,0,.08)
 }
 
 .area-card h3{
@@ -945,17 +920,17 @@ nav a:hover{
 
     color:#333;
 
-    margin-bottom:9px;
+    margin-bottom:9px
 }
 
 .area-card p{
-    color:#666;
-
     font-size:14px;
+
+    color:#666
 }
 
 .area-card strong{
-    color:#444;
+    color:#444
 }
 
 .area-icon{
@@ -971,28 +946,28 @@ nav a:hover{
 
     border-radius:22px;
 
-    overflow:hidden;
+    overflow:hidden
 }
 
 .area-icon svg{
     width:145px;
-    height:90px;
+    height:90px
 }
 
 .area-green{
-    background:#eef9f0;
+    background:#eef9f0
 }
 
 .area-purple{
-    background:#f5eef8;
+    background:#f5eef8
 }
 
 .area-red{
-    background:#fff0f0;
+    background:#fff0f0
 }
 
 .area-blue{
-    background:#edf7fc;
+    background:#edf7fc
 }
 
 
@@ -1006,8 +981,7 @@ nav a:hover{
         0
         35px;
 
-    padding:
-        30px;
+    padding:30px;
 
     border-radius:20px;
 
@@ -1021,7 +995,7 @@ nav a:hover{
         0 7px 22px
         rgba(0,0,0,.05);
 
-    text-align:center;
+    text-align:center
 }
 
 .services-panel h3{
@@ -1029,7 +1003,7 @@ nav a:hover{
 
     font-size:25px;
 
-    margin-bottom:12px;
+    margin-bottom:12px
 }
 
 .services-panel p{
@@ -1042,7 +1016,7 @@ nav a:hover{
 
     color:#666;
 
-    font-size:15px;
+    font-size:15px
 }
 
 .service-tags{
@@ -1052,7 +1026,7 @@ nav a:hover{
 
     flex-wrap:wrap;
 
-    gap:9px;
+    gap:9px
 }
 
 .service-tags span{
@@ -1072,7 +1046,7 @@ nav a:hover{
 
     font-size:12px;
 
-    font-weight:bold;
+    font-weight:700
 }
 
 
@@ -1101,7 +1075,7 @@ nav a:hover{
 
     border:
         1px solid
-        #ececec;
+        #ececec
 }
 
 .solidarity-content h3{
@@ -1111,7 +1085,7 @@ nav a:hover{
 
     line-height:1.2;
 
-    margin-bottom:15px;
+    margin-bottom:15px
 }
 
 .solidarity-badge{
@@ -1135,7 +1109,7 @@ nav a:hover{
 
     text-transform:uppercase;
 
-    letter-spacing:.6px;
+    letter-spacing:.6px
 }
 
 .solidarity-content p{
@@ -1143,7 +1117,7 @@ nav a:hover{
 
     font-size:16px;
 
-    margin-bottom:12px;
+    margin-bottom:12px
 }
 
 .solidarity-note{
@@ -1155,7 +1129,7 @@ nav a:hover{
 
     background:#fff;
 
-    font-size:13px !important;
+    font-size:13px !important
 }
 
 .solidarity-visual{
@@ -1167,7 +1141,7 @@ nav a:hover{
 
     border-radius:18px;
 
-    background:#fff;
+    background:#fff
 }
 
 .solidarity-visual img{
@@ -1178,7 +1152,7 @@ nav a:hover{
 
     object-fit:cover;
 
-    object-position:center;
+    object-position:center
 }
 
 
@@ -1203,13 +1177,13 @@ nav a:hover{
 
     box-shadow:
         0 8px 25px
-        rgba(198,40,40,.12);
+        rgba(198,40,40,.12)
 }
 
 .collaboration-banner h3{
     font-size:27px;
 
-    margin-bottom:12px;
+    margin-bottom:12px
 }
 
 .collaboration-banner p{
@@ -1219,7 +1193,7 @@ nav a:hover{
 
     font-size:16px;
 
-    line-height:1.7;
+    line-height:1.7
 }
 
 
@@ -1233,7 +1207,7 @@ nav a:hover{
     grid-template-columns:
         repeat(3,1fr);
 
-    gap:25px;
+    gap:25px
 }
 
 .news-card{
@@ -1247,17 +1221,17 @@ nav a:hover{
 
     border-top:
         4px solid
-        #c62828;
+        #c62828
 }
 
 .news-card:nth-child(2){
     border-top-color:
-        #1479b8;
+        #1479b8
 }
 
 .news-card:nth-child(3){
     border-top-color:
-        #39a852;
+        #39a852
 }
 
 .news-card h3{
@@ -1265,13 +1239,13 @@ nav a:hover{
 
     margin-bottom:12px;
 
-    font-size:20px;
+    font-size:20px
 }
 
 .news-card p{
     color:#666;
 
-    font-size:14px;
+    font-size:14px
 }
 
 
@@ -1280,7 +1254,7 @@ nav a:hover{
 ====================================================== */
 
 .collaborate{
-    background:#f7f7f7;
+    background:#f7f7f7
 }
 
 .collaborate-box{
@@ -1298,13 +1272,13 @@ nav a:hover{
 
     box-shadow:
         0 7px 25px
-        rgba(0,0,0,.07);
+        rgba(0,0,0,.07)
 }
 
 .collaborate-box p{
     margin-bottom:25px;
 
-    color:#666;
+    color:#666
 }
 
 
@@ -1321,7 +1295,7 @@ nav a:hover{
 
     gap:40px;
 
-    align-items:start;
+    align-items:start
 }
 
 .contact-list{
@@ -1329,7 +1303,7 @@ nav a:hover{
 
     flex-direction:column;
 
-    gap:20px;
+    gap:20px
 }
 
 .contact-item{
@@ -1343,7 +1317,7 @@ nav a:hover{
 
     border-radius:12px;
 
-    background:#fafafa;
+    background:#fafafa
 }
 
 .contact-icon{
@@ -1357,44 +1331,44 @@ nav a:hover{
     display:flex;
 
     align-items:center;
-    justify-content:center;
+    justify-content:center
 }
 
 .contact-icon svg{
     width:27px;
-    height:27px;
+    height:27px
 }
 
 .address-icon{
     background:#e6f2fb;
-    color:#1479b8;
+    color:#1479b8
 }
 
 .phone-icon{
     background:#e8f7eb;
-    color:#39a852;
+    color:#39a852
 }
 
 .whatsapp-icon{
     background:#e8f7eb;
-    color:#25d366;
+    color:#25d366
 }
 
 .email-icon{
     background:#fff1e5;
-    color:#ef7d00;
+    color:#ef7d00
 }
 
 .contact-item h4{
-    margin-bottom:3px;
+    margin-bottom:3px
 }
 
 .contact-item p{
-    color:#666;
+    color:#666
 }
 
 .contact-item a:hover{
-    color:#c62828;
+    color:#c62828
 }
 
 
@@ -1415,7 +1389,7 @@ nav a:hover{
 
     box-shadow:
         0 8px 25px
-        rgba(0,0,0,.10);
+        rgba(0,0,0,.1)
 }
 
 .map-container iframe{
@@ -1425,7 +1399,7 @@ nav a:hover{
 
     height:400px;
 
-    border:0;
+    border:0
 }
 
 
@@ -1442,7 +1416,7 @@ footer{
 
     padding:
         35px
-        20px;
+        20px
 }
 
 footer p{
@@ -1450,12 +1424,13 @@ footer p{
         5px
         0;
 
-    color:#ddd;
+    color:#ddd
 }
 
 footer strong{
     font-size:25px;
-    color:#fff;
+
+    color:#fff
 }
 
 
@@ -1484,37 +1459,50 @@ footer strong{
     }
 
     .header-logo{
-        grid-area:logo;
+        grid-area:
+            logo;
     }
 
     .social{
-        grid-area:social;
+        grid-area:
+            social;
 
-        justify-content:flex-end;
+        justify-content:
+            flex-end;
     }
 
     nav{
-        grid-area:nav;
+        grid-area:
+            nav;
 
-        justify-content:flex-start;
+        justify-content:
+            flex-start;
 
-        flex-wrap:nowrap;
+        flex-wrap:
+            nowrap;
 
-        overflow-x:auto;
+        overflow-x:
+            auto;
 
-        scrollbar-width:none;
+        scrollbar-width:
+            none;
 
-        gap:20px;
+        gap:
+            20px;
     }
 
     nav::-webkit-scrollbar{
-        display:none;
+        display:
+            none;
     }
 
     .about-grid,
     .mission-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
+    .contact-grid,
+    .training-feature,
+    .solidarity-feature{
+        grid-template-columns:
+            1fr;
     }
 
     .cards-grid,
@@ -1522,16 +1510,6 @@ footer strong{
     .news-grid{
         grid-template-columns:
             repeat(2,1fr);
-    }
-
-    .training-feature{
-        grid-template-columns:
-            1fr;
-    }
-
-    .solidarity-feature{
-        grid-template-columns:
-            1fr;
     }
 
 }
@@ -1543,6 +1521,11 @@ footer strong{
 
 @media(max-width:600px){
 
+    html{
+        scroll-padding-top:
+            120px;
+    }
+
     section{
         padding:
             58px
@@ -1550,7 +1533,8 @@ footer strong{
     }
 
     .container{
-        width:92%;
+        width:
+            92%;
     }
 
 
@@ -1575,63 +1559,88 @@ footer strong{
     }
 
     .header-logo{
-        width:70px;
-        height:52px;
+        width:
+            70px;
 
-        justify-self:start;
+        height:
+            52px;
+
+        justify-self:
+            start;
     }
 
     .social{
-        justify-self:end;
+        justify-self:
+            end;
 
-        gap:7px;
+        gap:
+            7px;
     }
 
     .social a{
-        width:34px;
-        height:34px;
+        width:
+            34px;
+
+        height:
+            34px;
     }
 
     nav{
         grid-column:
-            1 / -1;
+            1 /
+            -1;
 
-        width:100%;
+        width:
+            100%;
 
-        overflow-x:auto;
+        overflow-x:
+            auto;
 
-        overflow-y:hidden;
+        overflow-y:
+            hidden;
 
-        justify-content:flex-start;
+        justify-content:
+            flex-start;
 
-        flex-wrap:nowrap;
+        flex-wrap:
+            nowrap;
 
-        gap:10px;
+        gap:
+            10px;
 
-        padding-bottom:2px;
+        padding-bottom:
+            2px;
 
-        scrollbar-width:none;
+        -webkit-overflow-scrolling:
+            touch;
+
+        scrollbar-width:
+            none;
     }
 
     nav::-webkit-scrollbar{
-        display:none;
+        display:
+            none;
     }
 
     nav a{
-        font-size:10.5px;
+        font-size:
+            10.5px;
 
         padding:
             7px
             9px;
 
-        white-space:nowrap;
+        white-space:
+            nowrap;
     }
 
 
     /* HERO */
 
     .hero{
-        min-height:auto;
+        min-height:
+            auto;
 
         padding:
             30px
@@ -1640,89 +1649,165 @@ footer strong{
     }
 
     .hero-content{
+        width:
+            100%;
+
+        max-width:
+            100%;
+
+        margin:
+            0
+            auto;
+
         padding:
             30px
             18px
             35px;
 
-        border-radius:20px;
+        border-radius:
+            20px;
+
+        overflow:
+            visible;
     }
 
     .hero-emblem{
-        width:125px;
-        height:125px;
+        width:
+            125px;
+
+        height:
+            125px;
     }
 
     .hero-formal-name{
-        font-size:13px;
-        line-height:1.45;
+        font-size:
+            13px;
+
+        line-height:
+            1.45;
+
+        letter-spacing:
+            .7px;
     }
 
     .hero-title{
         font-size:
-            clamp(
-                48px,
-                16vw,
-                68px
-            );
+            37px !important;
 
-        letter-spacing:2px;
+        letter-spacing:
+            0 !important;
+
+        line-height:
+            1.05 !important;
+
+        white-space:
+            normal !important;
+
+        width:
+            100% !important;
+
+        max-width:
+            100% !important;
+
+        text-align:
+            center !important;
+
+        overflow:
+            visible !important;
+
+        word-break:
+            normal !important;
+
+        overflow-wrap:
+            normal !important;
     }
 
     .hero-tagline{
-        font-size:17px;
+        font-size:
+            17px;
+
+        line-height:
+            1.4;
     }
 
     .hero-description{
-        font-size:15px;
+        font-size:
+            15px;
+
+        line-height:
+            1.55;
     }
 
     .hero-buttons{
-        flex-direction:column;
+        flex-direction:
+            column;
+
+        gap:
+            10px;
+
+        margin-top:
+            23px;
     }
 
     .btn{
-        width:100%;
-        min-height:48px;
+        width:
+            100%;
+
+        min-height:
+            48px;
     }
 
 
     /* TITULOS */
 
     .section-title{
-        font-size:30px;
+        font-size:
+            30px;
     }
 
     .section-intro{
-        font-size:15px;
+        font-size:
+            15px;
+
+        margin-bottom:
+            32px;
     }
 
 
     /* ABOUT */
 
     .about-grid{
-        grid-template-columns:1fr;
-        gap:28px;
+        grid-template-columns:
+            1fr;
+
+        gap:
+            28px;
     }
 
     .about-text p{
-        font-size:15px;
+        font-size:
+            15px;
     }
 
     .about-highlight{
-        padding:18px;
-        font-size:14px;
+        padding:
+            18px;
+
+        font-size:
+            14px;
     }
 
     .about-logo{
-        height:290px;
+        height:
+            290px;
     }
 
 
     /* MISION */
 
     .mission-grid{
-        grid-template-columns:1fr;
+        grid-template-columns:
+            1fr;
     }
 
     .mission-card{
@@ -1732,11 +1817,14 @@ footer strong{
     }
 
 
-    /* CARDS */
+    /* QUE HACEMOS */
 
     .cards-grid{
-        grid-template-columns:1fr;
-        gap:18px;
+        grid-template-columns:
+            1fr;
+
+        gap:
+            18px;
     }
 
     .activity-card{
@@ -1745,8 +1833,36 @@ footer strong{
             20px;
     }
 
+    .professional-icon{
+        width:
+            62px;
 
-    /* QUOTE */
+        height:
+            62px;
+    }
+
+    .professional-icon svg{
+        width:
+            32px;
+
+        height:
+            32px;
+    }
+
+    .health-message{
+        margin-top:
+            30px;
+
+        padding:
+            22px
+            17px;
+
+        font-size:
+            14px;
+    }
+
+
+    /* FRASE */
 
     .quote-section{
         padding:
@@ -1755,7 +1871,11 @@ footer strong{
     }
 
     .quote{
-        font-size:21px;
+        font-size:
+            21px;
+
+        line-height:
+            1.45;
     }
 
 
@@ -1768,56 +1888,127 @@ footer strong{
     }
 
     .activity-intro-box p{
-        font-size:14px;
+        font-size:
+            14px;
     }
 
     .training-feature{
-        grid-template-columns:1fr;
+        grid-template-columns:
+            1fr;
 
-        padding:20px;
+        padding:
+            20px;
 
-        gap:25px;
+        gap:
+            25px;
     }
 
     .training-content h3{
-        font-size:25px;
+        font-size:
+            25px;
     }
 
     .program-title{
-        font-size:16px;
+        font-size:
+            16px;
     }
 
     .training-item{
-        font-size:13px;
+        font-size:
+            13px;
     }
 
 
-    /* COLLAGE */
+    /* FOTOS EN MÓVIL */
 
     .course-collage{
-        grid-template-columns:
-            1.08fr
-            .92fr;
+        display:
+            flex !important;
 
-        grid-template-rows:
-            205px
-            145px
-            130px;
+        flex-direction:
+            column !important;
+
+        width:
+            100% !important;
+
+        height:
+            auto !important;
 
         min-height:
-            480px;
+            0 !important;
 
         gap:
-            8px;
+            10px !important;
+
+        overflow:
+            visible !important;
+    }
+
+    .course-photo,
+    .course-photo-main,
+    .course-photo-group,
+    .course-photo-forklift,
+    .course-photo-training{
+
+        display:
+            block !important;
+
+        width:
+            100% !important;
+
+        height:
+            auto !important;
+
+        min-width:
+            0 !important;
+
+        min-height:
+            0 !important;
+
+        max-width:
+            100% !important;
+
+        object-fit:
+            contain !important;
+
+        object-position:
+            center !important;
+
+        flex:
+            none !important;
+
+        grid-column:
+            auto !important;
+    }
+
+    .course-photo-forklift{
+        max-height:
+            520px !important;
+
+        background:
+            #f7f7f7 !important;
+    }
+
+    .course-photo-training{
+        max-height:
+            430px !important;
+
+        object-fit:
+            cover !important;
+
+        object-position:
+            center !important;
     }
 
 
     /* AREAS */
 
     .areas-grid{
-        grid-template-columns:1fr;
+        grid-template-columns:
+            1fr;
 
-        gap:16px;
+        gap:
+            16px;
     }
 
     .area-card{
@@ -1827,16 +2018,25 @@ footer strong{
     }
 
     .area-icon{
-        width:145px;
-        height:90px;
+        width:
+            145px;
 
-        margin-left:auto;
-        margin-right:auto;
+        height:
+            90px;
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
     }
 
     .area-icon svg{
-        width:140px;
-        height:86px;
+        width:
+            140px;
+
+        height:
+            86px;
     }
 
 
@@ -1849,38 +2049,47 @@ footer strong{
     }
 
     .services-panel h3{
-        font-size:21px;
+        font-size:
+            21px;
     }
 
     .service-tags span{
-        font-size:12px;
+        font-size:
+            12px;
     }
 
 
-    /* SOLIDARITY */
+    /* SOLIDARIDAD */
 
     .solidarity-feature{
-        grid-template-columns:1fr;
+        grid-template-columns:
+            1fr;
 
-        padding:20px;
+        padding:
+            20px;
 
-        gap:20px;
+        gap:
+            20px;
     }
 
     .solidarity-content h3{
-        font-size:24px;
+        font-size:
+            24px;
     }
 
     .solidarity-content p{
-        font-size:14px;
+        font-size:
+            14px;
     }
 
     .solidarity-visual{
-        min-height:220px;
+        min-height:
+            220px;
     }
 
     .solidarity-visual img{
-        min-height:220px;
+        min-height:
+            220px;
     }
 
 
@@ -1893,61 +2102,92 @@ footer strong{
     }
 
     .collaboration-banner h3{
-        font-size:22px;
+        font-size:
+            22px;
     }
 
     .collaboration-banner p{
-        font-size:14px;
+        font-size:
+            14px;
     }
 
 
     /* NEWS */
 
     .news-grid{
-        grid-template-columns:1fr;
-        gap:18px;
+        grid-template-columns:
+            1fr;
+
+        gap:
+            18px;
     }
 
     .news-card{
-        min-height:auto;
+        min-height:
+            auto;
 
-        padding:22px;
+        padding:
+            22px;
+    }
+
+
+    /* COLABORA */
+
+    .collaborate-box{
+        padding:
+            30px
+            20px;
+    }
+
+    .collaborate-box .section-title{
+        font-size:
+            26px;
     }
 
 
     /* CONTACTO */
 
     .contact-grid{
-        grid-template-columns:1fr;
+        grid-template-columns:
+            1fr;
 
-        gap:25px;
+        gap:
+            25px;
     }
 
     .contact-item{
-        gap:13px;
+        gap:
+            13px;
 
         padding:
             13px
             10px;
 
-        align-items:flex-start;
+        align-items:
+            flex-start;
     }
 
     .contact-icon{
-        width:50px;
-        height:50px;
+        width:
+            50px;
+
+        height:
+            50px;
     }
 
     .contact-item h4{
-        font-size:15px;
+        font-size:
+            15px;
     }
 
     .contact-item p{
-        font-size:14px;
+        font-size:
+            14px;
     }
 
     .map-container iframe{
-        height:285px;
+        height:
+            285px;
     }
 
 
@@ -1960,32 +2200,44 @@ footer strong{
     }
 
     footer p{
-        font-size:13px;
+        font-size:
+            13px;
+
+        line-height:
+            1.5;
     }
 
 }
 
 
 /* ======================================================
-   MOVIL PEQUEÑO
+   MÓVIL PEQUEÑO
 ====================================================== */
 
 @media(max-width:380px){
 
     .header-logo{
-        width:64px;
-        height:48px;
+        width:
+            64px;
+
+        height:
+            48px;
     }
 
     .social a{
-        width:31px;
-        height:31px;
+        width:
+            31px;
 
-        font-size:13px;
+        height:
+            31px;
+
+        font-size:
+            13px;
     }
 
     nav a{
-        font-size:10px;
+        font-size:
+            10px;
     }
 
     .hero-content{
@@ -1996,48 +2248,46 @@ footer strong{
     }
 
     .hero-emblem{
-        width:108px;
-        height:108px;
+        width:
+            108px;
+
+        height:
+            108px;
     }
 
     .hero-title{
-        font-size:46px;
+        font-size:
+            34px !important;
     }
 
     .hero-formal-name{
-        font-size:11px;
+        font-size:
+            11px;
     }
 
     .hero-tagline{
-        font-size:15px;
+        font-size:
+            15px;
     }
 
     .hero-description{
-        font-size:14px;
+        font-size:
+            14px;
     }
 
     .about-logo{
-        height:255px;
-    }
-
-    .course-collage{
-        grid-template-columns:
-            1fr 1fr;
-
-        grid-template-rows:
-            170px
-            120px
-            115px;
+        height:
+            255px;
     }
 
     .map-container iframe{
-        height:255px;
+        height:
+            255px;
     }
 
 }
 
 </style>
-
 </head>
 
 
@@ -2050,84 +2300,84 @@ footer strong{
 
 <header>
 
-    <div class="header-container">
+<div class="header-container">
 
 
-        <a href="#inicio">
+<a href="#inicio">
 
-            <img
-                class="header-logo"
-                src="LOGO%20ASOGINTER%20%281%29.png"
-                alt="Logo de ASOGINTER"
-            >
+<img
+    class="header-logo"
+    src="LOGO%20ASOGINTER%20%281%29.png"
+    alt="Logo de ASOGINTER">
 
-        </a>
-
-
-        <nav>
-
-            <a href="#inicio">
-                INICIO
-            </a>
-
-            <a href="#quienes-somos">
-                QUIÉNES SOMOS
-            </a>
-
-            <a href="#que-hacemos">
-                QUÉ HACEMOS
-            </a>
-
-            <a href="#actividades">
-                ACTIVIDADES
-            </a>
-
-            <a href="#colabora">
-                COLABORA
-            </a>
-
-            <a href="#contacto">
-                CONTACTO
-            </a>
-
-        </nav>
+</a>
 
 
-        <div class="social">
+<nav>
 
-            <a
-                class="instagram"
-                href="https://www.instagram.com/asoginter/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Instagram">
-                IG
-            </a>
+<a href="#inicio">
+INICIO
+</a>
+
+<a href="#quienes-somos">
+QUIÉNES SOMOS
+</a>
+
+<a href="#que-hacemos">
+QUÉ HACEMOS
+</a>
+
+<a href="#actividades">
+ACTIVIDADES
+</a>
+
+<a href="#colabora">
+COLABORA
+</a>
+
+<a href="#contacto">
+CONTACTO
+</a>
+
+</nav>
 
 
-            <a
-                class="facebook"
-                href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
-                target="_blank"
-                rel="noopener"
-                aria-label="Facebook">
-                f
-            </a>
+<div class="social">
 
-        </div>
-
-
-    </div>
+<a
+    class="instagram"
+    href="https://www.instagram.com/asoginter/"
+    target="_blank"
+    rel="noopener"
+    aria-label="Instagram">
+    IG
+</a>
 
 
-    <div class="color-bar">
+<a
+    class="facebook"
+    href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
+    target="_blank"
+    rel="noopener"
+    aria-label="Facebook">
+    f
+</a>
 
-        <span class="blue"></span>
-        <span class="green"></span>
-        <span class="red"></span>
-        <span class="purple"></span>
+</div>
 
-    </div>
+
+</div>
+
+
+<div class="color-bar">
+
+<span class="blue"></span>
+<span class="green"></span>
+<span class="red"></span>
+<span class="purple"></span>
+
+</div>
+
 
 </header>
 
@@ -2137,79 +2387,75 @@ footer strong{
 ====================================================== -->
 
 <section
-    class="hero"
-    id="inicio"
->
+class="hero"
+id="inicio">
 
-    <div class="hero-content">
-
-
-        <img
-            class="hero-emblem"
-            src="logo-emblema-asoginter.png"
-            alt="Emblema de ASOGINTER"
-        >
+<div class="hero-content">
 
 
-        <div class="hero-formal-name">
-
-            ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL
-            DE TORRENT
-
-        </div>
+<img
+    class="hero-emblem"
+    src="logo-emblema-asoginter.png"
+    alt="Emblema de ASOGINTER">
 
 
-        <h1 class="hero-title">
+<div class="hero-formal-name">
 
-            ASOGINTER
+ASOCIACIÓN GITANA EUROPEA
+E INTERCULTURAL DE TORRENT
 
-        </h1>
-
-
-        <div class="hero-tagline">
-
-            Inclusión · Igualdad · Cultura · Interculturalidad
-
-        </div>
+</div>
 
 
-        <p class="hero-description">
+<h1 class="hero-title">
 
-            Trabajamos por una sociedad más inclusiva,
-            igualitaria e intercultural, promoviendo
-            la convivencia, la participación y las
-            oportunidades para todas las personas.
+ASOGINTER
 
-        </p>
+</h1>
 
 
-        <div class="hero-buttons">
+<div class="hero-tagline">
+
+Inclusión · Igualdad · Cultura · Interculturalidad
+
+</div>
 
 
-            <a
-                class="btn btn-primary"
-                href="#quienes-somos"
-            >
+<p class="hero-description">
 
-                Conócenos
+Trabajamos por una sociedad más inclusiva,
+igualitaria e intercultural, promoviendo
+la convivencia, la participación y las
+oportunidades para todas las personas.
 
-            </a>
-
-
-            <a
-                class="btn btn-secondary"
-                href="#contacto"
-            >
-
-                Contacta con nosotros
-
-            </a>
+</p>
 
 
-        </div>
+<div class="hero-buttons">
 
 
-    </div>
+<a
+    class="btn btn-primary"
+    href="#quienes-somos">
+
+Conócenos
+
+</a>
+
+
+<a
+    class="btn btn-secondary"
+    href="#contacto">
+
+Contacta con nosotros
+
+</a>
+
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -2220,93 +2466,90 @@ footer strong{
 
 <section id="quienes-somos">
 
-    <div class="container">
+<div class="container">
 
 
-        <h2 class="section-title">
+<h2 class="section-title">
 
-            Quiénes
-            <span>somos</span>
+Quiénes
+<span>somos</span>
 
-        </h2>
-
-
-        <p class="section-intro">
-
-            Centro Social de Apoyo para la Inclusión
-            y Promoción de la Comunidad Gitana.
-
-        </p>
+</h2>
 
 
-        <div class="about-grid">
+<p class="section-intro">
+
+Centro Social de Apoyo para la Inclusión
+y Promoción de la Comunidad Gitana.
+
+</p>
 
 
-            <div class="about-text">
+<div class="about-grid">
 
 
-                <p>
-
-                    <strong>ASOGINTER</strong>, Asociación
-                    Gitana Europea e Intercultural de Torrent,
-                    trabaja como centro social de apoyo para
-                    la inclusión y promoción de la comunidad
-                    gitana.
-
-                </p>
+<div class="about-text">
 
 
-                <p>
+<p>
 
-                    Nuestro trabajo busca favorecer la
-                    participación, la igualdad de oportunidades,
-                    el acceso a recursos y la convivencia,
-                    ofreciendo apoyo y acompañamiento en
-                    diferentes ámbitos.
+<strong>ASOGINTER</strong>, Asociación
+Gitana Europea e Intercultural de Torrent,
+trabaja como centro social de apoyo para
+la inclusión y promoción de la comunidad
+gitana.
 
-                </p>
-
-
-                <p>
-
-                    Entre nuestros servicios se encuentra la
-                    <strong>Gestoría Gitana</strong>, desde la
-                    que se ofrece orientación, acompañamiento
-                    en cuestiones administrativas y apoyo en
-                    la gestión de trámites, incluyendo acciones
-                    frente a la brecha digital.
-
-                </p>
+</p>
 
 
-                <div class="about-highlight">
+<p>
 
-                    “Hablar de la comunidad gitana es hablar
-                    de historia, cultura, esfuerzo y futuro.
-                    Gracias por el espacio y por escuchar.”
+Nuestro trabajo busca favorecer la
+participación, la igualdad de oportunidades,
+el acceso a recursos y la convivencia,
+ofreciendo apoyo y acompañamiento en
+diferentes ámbitos.
 
-                </div>
-
-
-            </div>
-
-
-            <div class="about-logo">
+</p>
 
 
-                <img
-                    src="imagen-quienes-somos.png"
-                    alt="Comunidad, convivencia e inclusión en el barrio"
-                >
+<p>
+
+Entre nuestros servicios se encuentra la
+<strong>Gestoría Gitana</strong>, desde la
+que se ofrece orientación, acompañamiento
+en cuestiones administrativas y apoyo en
+la gestión de trámites, incluyendo acciones
+frente a la brecha digital.
+
+</p>
 
 
-            </div>
+<div class="about-highlight">
+
+“Hablar de la comunidad gitana es hablar
+de historia, cultura, esfuerzo y futuro.
+Gracias por el espacio y por escuchar.”
+
+</div>
 
 
-        </div>
+</div>
 
 
-    </div>
+<div class="about-logo">
+
+<img
+    src="imagen-quienes-somos.png"
+    alt="Comunidad, convivencia e inclusión en el barrio">
+
+</div>
+
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -2317,77 +2560,75 @@ footer strong{
 
 <section class="mission">
 
-    <div class="container">
+<div class="container">
 
 
-        <h2 class="section-title">
+<h2 class="section-title">
 
-            Misión y
-            <span>visión</span>
+Misión y
+<span>visión</span>
 
-        </h2>
-
-
-        <p class="section-intro">
-
-            Construimos oportunidades y espacios
-            de convivencia desde la participación
-            y el respeto.
-
-        </p>
+</h2>
 
 
-        <div class="mission-grid">
+<p class="section-intro">
+
+Construimos oportunidades y espacios
+de convivencia desde la participación
+y el respeto.
+
+</p>
 
 
-            <div class="mission-card">
+<div class="mission-grid">
 
 
-                <h3>
-                    Misión
-                </h3>
+<div class="mission-card">
+
+<h3>
+Misión
+</h3>
 
 
-                <p>
+<p>
 
-                    Favorecer la inclusión social y la
-                    igualdad de oportunidades mediante
-                    programas, actividades, formación
-                    y acompañamiento dirigidos a la
-                    comunidad y al conjunto de la sociedad.
+Favorecer la inclusión social y la
+igualdad de oportunidades mediante
+programas, actividades, formación
+y acompañamiento dirigidos a la
+comunidad y al conjunto de la sociedad.
 
-                </p>
-
-
-            </div>
+</p>
 
 
-            <div class="mission-card">
+</div>
 
 
-                <h3>
-                    Visión
-                </h3>
+<div class="mission-card">
+
+<h3>
+Visión
+</h3>
 
 
-                <p>
+<p>
 
-                    Una sociedad donde la diversidad
-                    cultural sea reconocida como una
-                    riqueza y donde todas las personas
-                    puedan participar en igualdad
-                    de condiciones.
+Una sociedad donde la diversidad
+cultural sea reconocida como una
+riqueza y donde todas las personas
+puedan participar en igualdad
+de condiciones.
 
-                </p>
-
-
-            </div>
+</p>
 
 
-        </div>
+</div>
 
 
-    </div>
+</div>
+
+
+</div>
 
 </section>
 
@@ -2398,1463 +2639,1504 @@ footer strong{
 
 <section id="que-hacemos">
 
-    <div class="container">
+<div class="container">
 
 
-        <h2 class="section-title">
+<h2 class="section-title">
 
-            Qué
-            <span>hacemos</span>
+Qué
+<span>hacemos</span>
 
-        </h2>
+</h2>
 
 
-        <p class="section-intro">
+<p class="section-intro">
 
-            Desarrollamos proyectos y acciones dirigidos
-            a mejorar las oportunidades, la participación
-            social y la convivencia.
+Desarrollamos proyectos y acciones dirigidos
+a mejorar las oportunidades, la participación
+social y la convivencia.
 
-        </p>
+</p>
 
 
-        <div class="cards-grid">
+<div class="cards-grid">
 
 
-            <!-- INCLUSION -->
+<div class="activity-card">
 
-            <div class="activity-card">
 
-                <div class="professional-icon icon-blue">
+<div class="professional-icon icon-blue">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    >
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
 
-                        <path
-                            d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
-                        />
+<path
+d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
 
-                        <circle
-                            cx="9"
-                            cy="7"
-                            r="4"
-                        />
+<circle
+cx="9"
+cy="7"
+r="4"/>
 
-                        <path
-                            d="M22 21v-2a4 4 0 0 0-3-3.87"
-                        />
+<path
+d="M22 21v-2a4 4 0 0 0-3-3.87"/>
 
-                        <path
-                            d="M16 3.13a4 4 0 0 1 0 7.75"
-                        />
+<path
+d="M16 3.13a4 4 0 0 1 0 7.75"/>
 
-                    </svg>
+</svg>
 
-                </div>
+</div>
 
 
-                <h3>
-                    Inclusión social
-                </h3>
+<h3>
+Inclusión social
+</h3>
 
 
-                <p>
+<p>
 
-                    Acompañamiento y acciones para favorecer
-                    la participación y la inclusión.
+Acompañamiento y acciones para favorecer
+la participación y la inclusión.
 
-                </p>
+</p>
 
-            </div>
 
+</div>
 
-            <!-- EDUCACION -->
 
-            <div class="activity-card">
+<div class="activity-card">
 
-                <div class="professional-icon icon-green">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    >
+<div class="professional-icon icon-green">
 
-                        <path
-                            d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
-                        />
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
 
-                        <path
-                            d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-                        />
+<path
+d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
 
-                    </svg>
+<path
+d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
 
-                </div>
+</svg>
 
+</div>
 
-                <h3>
-                    Educación y formación
-                </h3>
 
+<h3>
+Educación y formación
+</h3>
 
-                <p>
 
-                    Actividades formativas para mejorar
-                    las capacidades y oportunidades.
+<p>
 
-                </p>
+Actividades formativas para mejorar
+las capacidades y oportunidades.
 
-            </div>
+</p>
 
 
-            <!-- CULTURA -->
+</div>
 
-            <div class="activity-card">
 
-                <div class="professional-icon icon-red">
+<div class="activity-card">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
 
-                        <circle
-                            cx="13.5"
-                            cy="6.5"
-                            r="3.5"
-                        />
+<div class="professional-icon icon-red">
 
-                        <circle
-                            cx="6.5"
-                            cy="12.5"
-                            r="3.5"
-                        />
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2">
 
-                        <circle
-                            cx="17.5"
-                            cy="17.5"
-                            r="3.5"
-                        />
+<circle
+cx="13.5"
+cy="6.5"
+r="3.5"/>
 
-                    </svg>
+<circle
+cx="6.5"
+cy="12.5"
+r="3.5"/>
 
-                </div>
+<circle
+cx="17.5"
+cy="17.5"
+r="3.5"/>
 
+<path
+d="M13 10l-3 2"/>
 
-                <h3>
-                    Cultura gitana
-                </h3>
+<path
+d="M10 15l4 1"/>
 
+</svg>
 
-                <p>
+</div>
 
-                    Promoción, conocimiento y puesta
-                    en valor de la cultura y la
-                    historia gitana.
 
-                </p>
+<h3>
+Cultura gitana
+</h3>
 
-            </div>
 
+<p>
 
-            <!-- IGUALDAD -->
+Promoción, conocimiento y puesta
+en valor de la cultura y la
+historia gitana.
 
-            <div class="activity-card">
+</p>
 
-                <div class="professional-icon icon-purple">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    >
+</div>
 
-                        <path d="M12 3v18"/>
-                        <path d="M3 7h18"/>
 
-                        <path
-                            d="M5 7l-3 6a4 4 0 0 0 6 0L5 7z"
-                        />
+<div class="activity-card">
 
-                        <path
-                            d="M19 7l-3 6a4 4 0 0 0 6 0l-3-6z"
-                        />
 
-                    </svg>
+<div class="professional-icon icon-purple">
 
-                </div>
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
 
+<path d="M12 3v18"/>
+<path d="M3 7h18"/>
 
-                <h3>
-                    Igualdad
-                </h3>
+<path
+d="M5 7l-3 6a4 4 0 0 0 6 0L5 7z"/>
 
+<path
+d="M19 7l-3 6a4 4 0 0 0 6 0l-3-6z"/>
 
-                <p>
+</svg>
 
-                    Trabajamos para combatir las
-                    desigualdades y favorecer
-                    la igualdad de oportunidades.
+</div>
 
-                </p>
 
-            </div>
+<h3>
+Igualdad
+</h3>
 
 
-            <!-- JUVENTUD -->
+<p>
 
-            <div class="activity-card">
+Trabajamos para combatir las
+desigualdades y favorecer
+la igualdad de oportunidades.
 
-                <div class="professional-icon icon-green">
+</p>
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
 
-                        <path
-                            d="M3 17l6-6 4 4 8-8"
-                        />
+</div>
 
-                        <path
-                            d="M14 7h7v7"
-                        />
 
-                    </svg>
+<div class="activity-card">
 
-                </div>
 
+<div class="professional-icon icon-green">
 
-                <h3>
-                    Juventud
-                </h3>
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2">
 
+<path
+d="M3 17l6-6 4 4 8-8"/>
 
-                <p>
+<path
+d="M14 7h7v7"/>
 
-                    Impulsamos la participación,
-                    formación y desarrollo de
-                    niños, niñas y jóvenes.
+</svg>
 
-                </p>
+</div>
 
-            </div>
 
+<h3>
+Juventud
+</h3>
 
-            <!-- INTERCULTURALIDAD -->
 
-            <div class="activity-card">
+<p>
 
-                <div class="professional-icon icon-blue">
+Impulsamos la participación,
+formación y desarrollo de
+niños, niñas y jóvenes.
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    >
+</p>
 
-                        <circle
-                            cx="12"
-                            cy="12"
-                            r="9"
-                        />
 
-                        <path d="M3 12h18"/>
+</div>
 
-                        <path
-                            d="M12 3a14 14 0 0 1 0 18"
-                        />
 
-                        <path
-                            d="M12 3a14 14 0 0 0 0 18"
-                        />
+<div class="activity-card">
 
-                    </svg>
 
-                </div>
+<div class="professional-icon icon-blue">
 
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
 
-                <h3>
-                    Interculturalidad
-                </h3>
+<circle
+cx="12"
+cy="12"
+r="9"/>
 
+<path
+d="M3 12h18"/>
 
-                <p>
+<path
+d="M12 3a14 14 0 0 1 0 18"/>
 
-                    Creamos espacios de encuentro,
-                    diálogo y convivencia entre
-                    diferentes culturas.
+<path
+d="M12 3a14 14 0 0 0 0 18"/>
 
-                </p>
+</svg>
 
-            </div>
+</div>
 
 
-        </div>
+<h3>
+Interculturalidad
+</h3>
 
 
-        <div class="health-message">
+<p>
 
+Creamos espacios de encuentro,
+diálogo y convivencia entre
+diferentes culturas.
 
-            <p>
+</p>
 
-                “La salud empieza en el barrio,
-                crece con la comunidad y llega
-                a todas las personas.”
 
-            </p>
+</div>
 
 
-            <p style="margin-top:12px;">
+</div>
 
-                <strong>
 
-                    Opre Rroma · Salud y libertad
-                    · Sastipen Tali
+<div class="health-message">
 
-                </strong>
 
-            </p>
+<p>
 
+“La salud empieza en el barrio,
+crece con la comunidad y llega
+a todas las personas.”
 
-        </div>
+</p>
 
 
-    </div>
+<p style="margin-top:12px">
+
+<strong>
+
+Opre Rroma · Salud y libertad
+· Sastipen Tali
+
+</strong>
+
+</p>
+
+
+</div>
+
+
+</div>
 
 </section>
 
 
 <!-- ======================================================
-     FRASE DESTACADA
+     FRASE
 ====================================================== -->
 
 <section class="quote-section">
 
 
-    <p class="quote">
+<p class="quote">
 
-        “TODOS A UNA SOLA VOZ DERRIBAREMOS
-        LOS MUROS DE INTOLERANCIA Y DESIGUALDAD
-        PARA CONQUISTAR ESPACIOS DE CONVIVENCIA”
+“TODOS A UNA SOLA VOZ DERRIBAREMOS
+LOS MUROS DE INTOLERANCIA Y DESIGUALDAD
+PARA CONQUISTAR ESPACIOS DE CONVIVENCIA”
 
-    </p>
+</p>
 
 
 </section>
 
 
 <!-- ======================================================
-     ACTIVIDADES Y PROYECTOS
+     ACTIVIDADES
 ====================================================== -->
 
 <section id="actividades">
 
-    <div class="container">
+<div class="container">
 
 
-        <h2 class="section-title">
+<h2 class="section-title">
 
-            Actividades y
-            <span>proyectos</span>
+Actividades y
+<span>proyectos</span>
 
-        </h2>
+</h2>
 
 
-        <p class="section-intro">
+<p class="section-intro">
 
-            Una muestra de nuestros programas,
-            servicios, formaciones y acciones comunitarias.
+Una muestra de nuestros programas,
+servicios, formaciones y acciones comunitarias.
 
-        </p>
+</p>
 
 
-        <div class="activity-intro-box">
+<div class="activity-intro-box">
 
 
-            <p>
+<p>
 
-                Las actividades que aparecen a continuación
-                son <strong>solo una muestra</strong> del
-                trabajo que desarrollamos desde ASOGINTER.
+Las actividades que aparecen a continuación
+son <strong>solo una muestra</strong> del
+trabajo que desarrollamos desde ASOGINTER.
 
-                Colaboramos con diferentes
-                <strong>
-                    colectivos, entidades, administraciones
-                    y empresas
-                </strong>
+Colaboramos con diferentes
+<strong>
+colectivos, entidades, administraciones
+y empresas
+</strong>
 
-                en distintos ámbitos sociales, educativos,
-                laborales, culturales y comunitarios.
+en distintos ámbitos sociales, educativos,
+laborales, culturales y comunitarios.
 
-            </p>
+</p>
 
 
-            <p style="margin-top:12px;">
+<p style="margin-top:12px">
 
-                Adaptamos nuestras acciones a las necesidades
-                de las personas y del entorno y apostamos
-                por el <strong>trabajo en red</strong>.
+Adaptamos nuestras acciones a las necesidades
+de las personas y del entorno y apostamos
+por el <strong>trabajo en red</strong>.
 
-            </p>
+</p>
 
 
-        </div>
+</div>
 
 
-        <!-- ==================================================
-             ITINERARIO FSE+
-        ================================================== -->
+<!-- ==================================================
+     ITINERARIO FSE+
+================================================== -->
 
-        <div class="training-feature">
+<div class="training-feature">
 
 
-            <div class="training-content">
+<div class="training-content">
 
 
-                <div class="training-label">
+<div class="training-label">
 
-                    Formación e inserción sociolaboral
+Formación e inserción sociolaboral
 
-                </div>
+</div>
 
 
-                <h3>
+<h3>
 
-                    Itinerarios para el empleo
+Itinerarios para el empleo
 
-                </h3>
+</h3>
 
 
-                <p class="program-title">
+<p class="program-title">
 
-                    Itinerarios integrados para la
-                    inserción sociolaboral de personas
-                    en situación o riesgo de exclusión
-                    social FSE+ 2021-2027
+Itinerarios integrados para la
+inserción sociolaboral de personas
+en situación o riesgo de exclusión
+social FSE+ 2021-2027
 
-                </p>
+</p>
 
 
-                <p>
+<p>
 
-                    A través de este programa, desde
-                    ASOGINTER se realizan acciones
-                    formativas orientadas a mejorar
-                    las competencias profesionales y
-                    favorecer las oportunidades de
-                    acceso al empleo.
+A través de este programa, desde
+ASOGINTER se realizan acciones
+formativas orientadas a mejorar
+las competencias profesionales y
+favorecer las oportunidades de
+acceso al empleo.
 
-                </p>
+</p>
 
 
-                <div class="training-list">
+<div class="training-list">
 
 
-                    <div class="training-item">
+<div class="training-item">
 
-                        <strong>
-                            Carretillero
-                        </strong>
+<strong>
+Carretillero
+</strong>
 
-                        · Formación realizada en
+· Formación realizada en
 
-                        <span class="company">
-                            Agropeven
-                        </span>.
+<span class="company">
+Agropeven
+</span>.
 
-                    </div>
+</div>
 
 
-                    <div class="training-item">
+<div class="training-item">
 
-                        <strong>
-                            Prevención de Riesgos Laborales
-                        </strong>
+<strong>
+Prevención de Riesgos Laborales
+</strong>
 
-                        · Formación realizada en
+· Formación realizada en
 
-                        <span class="company">
-                            Asonaman
-                        </span>.
+<span class="company">
+Asonaman
+</span>.
 
-                    </div>
+</div>
 
 
-                    <div class="training-item">
+<div class="training-item">
 
-                        <strong>
-                            Manipulador de alimentos
-                        </strong>
+<strong>
+Manipulador de alimentos
+</strong>
 
-                        · Formación realizada en
+· Formación realizada en
 
-                        <span class="company">
-                            Asonaman
-                        </span>.
+<span class="company">
+Asonaman
+</span>.
 
-                    </div>
+</div>
 
 
-                    <div class="training-item">
+<div class="training-item">
 
-                        <strong>
-                            Monitor de ocio y tiempo libre
-                        </strong>
+<strong>
+Monitor de ocio y tiempo libre
+</strong>
 
-                        · Formación realizada en
+· Formación realizada en
 
-                        <span class="company">
-                            Rude Formación
-                        </span>.
+<span class="company">
 
-                    </div>
+<a
+href="http://www.rudeformacion.es/"
+target="_blank"
+rel="noopener">
 
+Rude Formación
 
-                    <div class="training-item">
+</a>
 
-                        <strong>
-                            Curso de comedor
-                        </strong>
+</span>.
 
-                        · Formación realizada en
+</div>
 
-                        <span class="company">
-                            Rude Formación
-                        </span>.
 
-                    </div>
+<div class="training-item">
 
+<strong>
+Curso de comedor
+</strong>
 
-                </div>
+· Formación realizada en
 
+<span class="company">
 
-                <div class="training-note">
+<a
+href="http://www.rudeformacion.es/"
+target="_blank"
+rel="noopener">
 
-                    Formación orientada a reforzar
-                    conocimientos y competencias útiles
-                    para la incorporación y mejora de
-                    las oportunidades laborales.
+Rude Formación
 
-                </div>
+</a>
 
+</span>.
 
-            </div>
+</div>
 
 
-            <!-- FOTOS -->
+</div>
 
-            <div class="course-collage">
 
+<div class="training-note">
 
-                <img
-                    class="course-photo course-photo-main"
-                    src="carretillero-1.jpeg"
-                    alt="Participantes mostrando sus certificados de formación"
-                >
+Formación orientada a reforzar
+conocimientos y competencias útiles
+para la incorporación y mejora de
+las oportunidades laborales.
 
+</div>
 
-                <img
-                    class="course-photo course-photo-group"
-                    src="carretillero-2.jpeg"
-                    alt="Grupo participante durante la formación"
-                >
 
+</div>
 
-                <img
-                    class="course-photo course-photo-forklift"
-                    src="carretillero-3.jpeg"
-                    alt="Participante realizando prácticas con una carretilla elevadora"
-                >
 
+<!-- FOTOS -->
 
-                <img
-                    class="course-photo course-photo-training"
-                    src="formacion-aula.jpg"
-                    alt="Grupo de personas durante una actividad formativa"
-                >
+<div class="course-collage">
 
 
-            </div>
+<img
+class="course-photo course-photo-main"
+src="carretillero-1.jpeg"
+alt="Participantes mostrando sus certificados de formación">
 
 
-        </div>
+<img
+class="course-photo course-photo-group"
+src="carretillero-2.jpeg"
+alt="Grupo participante durante la formación">
 
 
-        <!-- ==================================================
-             LÍNEAS DE TRABAJO
-        ================================================== -->
+<img
+class="course-photo course-photo-forklift"
+src="carretillero-3.jpeg"
+alt="Participante realizando prácticas con una carretilla elevadora">
 
-        <div class="areas-grid">
 
+<img
+class="course-photo course-photo-training"
+src="formacion-aula.jpg"
+alt="Grupo de personas durante una actividad formativa">
 
-            <!-- ATENCIÓN -->
 
-            <div class="area-card">
+</div>
 
-                <div class="area-icon area-blue">
 
-                    <svg
-                        viewBox="0 0 180 110"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+</div>
 
-                        <circle
-                            cx="45"
-                            cy="45"
-                            r="10"
-                            fill="#F2B88B"
-                        />
 
-                        <path
-                            d="M28 82C28 65 35 57 45 57C55 57 62 65 62 82"
-                            fill="#1479B8"
-                        />
+<!-- ==================================================
+     LINEAS DE TRABAJO
+================================================== -->
 
-                        <circle
-                            cx="90"
-                            cy="38"
-                            r="11"
-                            fill="#F2B88B"
-                        />
+<div class="areas-grid">
 
-                        <path
-                            d="M70 81C70 61 78 52 90 52C102 52 110 61 110 81"
-                            fill="#C62828"
-                        />
 
-                        <circle
-                            cx="135"
-                            cy="45"
-                            r="10"
-                            fill="#F2B88B"
-                        />
+<!-- ATENCION -->
 
-                        <path
-                            d="M118 82C118 65 125 57 135 57C145 57 152 65 152 82"
-                            fill="#39A852"
-                        />
+<div class="area-card">
 
-                        <rect
-                            x="65"
-                            y="70"
-                            width="50"
-                            height="27"
-                            rx="6"
-                            fill="#fff"
-                            stroke="#7B3F98"
-                            stroke-width="3"
-                        />
 
-                    </svg>
+<div class="area-icon area-blue">
 
-                </div>
+<svg
+viewBox="0 0 180 110"
+fill="none">
 
+<circle
+cx="45"
+cy="45"
+r="10"
+fill="#F2B88B"/>
 
-                <h3>
-                    Atención y acompañamiento
-                </h3>
+<path
+d="M28 82C28 65 35 57 45 57C55 57 62 65 62 82"
+fill="#1479B8"/>
 
+<circle
+cx="90"
+cy="38"
+r="11"
+fill="#F2B88B"/>
 
-                <p>
+<path
+d="M70 81C70 61 78 52 90 52C102 52 110 61 110 81"
+fill="#C62828"/>
 
-                    Apoyo en la gestión de trámites,
-                    orientación administrativa,
-                    acompañamiento y acciones
-                    para reducir la brecha digital.
+<circle
+cx="135"
+cy="45"
+r="10"
+fill="#F2B88B"/>
 
-                </p>
+<path
+d="M118 82C118 65 125 57 135 57C145 57 152 65 152 82"
+fill="#39A852"/>
 
+<rect
+x="65"
+y="70"
+width="50"
+height="27"
+rx="6"
+fill="#fff"
+stroke="#7B3F98"
+stroke-width="3"/>
 
-            </div>
+</svg>
 
+</div>
 
-            <!-- EDUCACIÓN -->
 
-            <div class="area-card">
+<h3>
 
-                <div class="area-icon area-green">
+Atención y acompañamiento
 
-                    <svg
-                        viewBox="0 0 180 110"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+</h3>
 
-                        <rect
-                            x="18"
-                            y="72"
-                            width="60"
-                            height="11"
-                            rx="4"
-                            fill="#39A852"
-                        />
 
-                        <rect
-                            x="22"
-                            y="59"
-                            width="55"
-                            height="11"
-                            rx="4"
-                            fill="#1479B8"
-                        />
+<p>
 
-                        <rect
-                            x="28"
-                            y="46"
-                            width="48"
-                            height="11"
-                            rx="4"
-                            fill="#C62828"
-                        />
+Apoyo en la gestión de trámites,
+orientación administrativa,
+acompañamiento y acciones
+para reducir la brecha digital.
 
-                        <circle
-                            cx="93"
-                            cy="34"
-                            r="13"
-                            fill="#F2B88B"
-                        />
+</p>
 
-                        <path
-                            d="M81 31C83 16 105 14 108 31C103 27 88 28 81 31Z"
-                            fill="#333"
-                        />
 
-                        <path
-                            d="M78 76C78 57 87 49 98 49C109 49 118 57 118 76"
-                            fill="#1479B8"
-                        />
+</div>
 
-                        <circle
-                            cx="132"
-                            cy="38"
-                            r="12"
-                            fill="#F2B88B"
-                        />
 
-                        <path
-                            d="M119 35C121 18 143 18 146 35"
-                            stroke="#C62828"
-                            stroke-width="5"
-                            stroke-linecap="round"
-                        />
+<!-- EDUCACION -->
 
-                        <path
-                            d="M118 77C118 60 125 52 136 52C147 52 154 60 154 77"
-                            fill="#C62828"
-                        />
+<div class="area-card">
 
-                        <path
-                            d="M84 77C97 69 110 69 121 77V90C109 83 96 83 84 90Z"
-                            fill="#fff"
-                            stroke="#C62828"
-                            stroke-width="3"
-                        />
 
-                        <path
-                            d="M121 77C133 69 146 69 158 77V90C146 83 133 83 121 90Z"
-                            fill="#fff"
-                            stroke="#C62828"
-                            stroke-width="3"
-                        />
+<div class="area-icon area-green">
 
-                    </svg>
+<svg
+viewBox="0 0 180 110"
+fill="none">
 
-                </div>
+<rect
+x="18"
+y="72"
+width="60"
+height="11"
+rx="4"
+fill="#39A852"/>
 
+<rect
+x="22"
+y="59"
+width="55"
+height="11"
+rx="4"
+fill="#1479B8"/>
 
-                <h3>
-                    Educación e infancia
-                </h3>
+<rect
+x="28"
+y="46"
+width="48"
+height="11"
+rx="4"
+fill="#C62828"/>
 
+<circle
+cx="93"
+cy="34"
+r="13"
+fill="#F2B88B"/>
 
-                <p>
+<path
+d="M81 31C83 16 105 14 108 31C103 27 88 28 81 31Z"
+fill="#333"/>
 
-                    Desarrollamos actividades de
-                    <strong>
-                        refuerzo escolar para niños y niñas
-                    </strong>,
-                    junto con otras acciones educativas
-                    y de acompañamiento.
+<path
+d="M78 76C78 57 87 49 98 49C109 49 118 57 118 76"
+fill="#1479B8"/>
 
-                </p>
+<circle
+cx="132"
+cy="38"
+r="12"
+fill="#F2B88B"/>
 
+<path
+d="M119 35C121 18 143 18 146 35"
+stroke="#C62828"
+stroke-width="5"/>
 
-            </div>
+<path
+d="M118 77C118 60 125 52 136 52C147 52 154 60 154 77"
+fill="#C62828"/>
 
+<path
+d="M84 77C97 69 110 69 121 77V90C109 83 96 83 84 90Z"
+fill="#fff"
+stroke="#C62828"
+stroke-width="3"/>
 
-            <!-- FORMACIÓN -->
+<path
+d="M121 77C133 69 146 69 158 77V90C146 83 133 83 121 90Z"
+fill="#fff"
+stroke="#C62828"
+stroke-width="3"/>
 
-            <div class="area-card">
+</svg>
 
-                <div class="area-icon area-green">
+</div>
 
-                    <svg
-                        viewBox="0 0 180 110"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
 
-                        <rect
-                            x="25"
-                            y="42"
-                            width="70"
-                            height="48"
-                            rx="7"
-                            fill="#34495E"
-                        />
+<h3>
 
-                        <path
-                            d="M45 42V34C45 30 49 27 53 27H67C71 27 75 30 75 34V42"
-                            stroke="#34495E"
-                            stroke-width="7"
-                        />
+Educación e infancia
 
-                        <rect
-                            x="55"
-                            y="60"
-                            width="10"
-                            height="10"
-                            rx="2"
-                            fill="#E3A04A"
-                        />
+</h3>
 
-                        <rect
-                            x="111"
-                            y="68"
-                            width="12"
-                            height="22"
-                            rx="2"
-                            fill="#39A852"
-                        />
 
-                        <rect
-                            x="129"
-                            y="56"
-                            width="12"
-                            height="34"
-                            rx="2"
-                            fill="#39A852"
-                        />
+<p>
 
-                        <rect
-                            x="147"
-                            y="42"
-                            width="12"
-                            height="48"
-                            rx="2"
-                            fill="#39A852"
-                        />
+Desarrollamos actividades de
+<strong>
+refuerzo escolar para niños y niñas
+</strong>,
+junto con otras acciones educativas
+y de acompañamiento.
 
-                        <path
-                            d="M107 59L132 36L149 45"
-                            stroke="#C62828"
-                            stroke-width="5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
+</p>
 
-                        <path
-                            d="M140 35H154V49"
-                            stroke="#C62828"
-                            stroke-width="5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
 
-                    </svg>
+</div>
 
-                </div>
 
+<!-- FORMACION -->
 
-                <h3>
-                    Formación e inserción laboral
-                </h3>
+<div class="area-card">
 
 
-                <p>
+<div class="area-icon area-green">
 
-                    Formación y acciones para favorecer
-                    el acceso al empleo, mejorar
-                    competencias y acompañar procesos
-                    de inserción sociolaboral.
+<svg
+viewBox="0 0 180 110"
+fill="none">
 
-                </p>
+<rect
+x="25"
+y="42"
+width="70"
+height="48"
+rx="7"
+fill="#34495E"/>
 
+<path
+d="M45 42V34C45 30 49 27 53 27H67C71 27 75 30 75 34V42"
+stroke="#34495E"
+stroke-width="7"/>
 
-            </div>
+<rect
+x="55"
+y="60"
+width="10"
+height="10"
+rx="2"
+fill="#E3A04A"/>
 
+<rect
+x="111"
+y="68"
+width="12"
+height="22"
+rx="2"
+fill="#39A852"/>
 
-            <!-- IGUALDAD -->
+<rect
+x="129"
+y="56"
+width="12"
+height="34"
+rx="2"
+fill="#39A852"/>
 
-            <div class="area-card">
+<rect
+x="147"
+y="42"
+width="12"
+height="48"
+rx="2"
+fill="#39A852"/>
 
-                <div class="area-icon area-purple">
+<path
+d="M107 59L132 36L149 45"
+stroke="#C62828"
+stroke-width="5"
+stroke-linecap="round"
+stroke-linejoin="round"/>
 
-                    <svg
-                        viewBox="0 0 180 110"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+</svg>
 
-                        <line
-                            x1="90"
-                            y1="18"
-                            x2="90"
-                            y2="92"
-                            stroke="#555"
-                            stroke-width="5"
-                            stroke-linecap="round"
-                        />
+</div>
 
-                        <line
-                            x1="48"
-                            y1="35"
-                            x2="132"
-                            y2="35"
-                            stroke="#555"
-                            stroke-width="5"
-                        />
 
-                        <line
-                            x1="54"
-                            y1="35"
-                            x2="42"
-                            y2="59"
-                            stroke="#555"
-                            stroke-width="3"
-                        />
+<h3>
 
-                        <line
-                            x1="54"
-                            y1="35"
-                            x2="66"
-                            y2="59"
-                            stroke="#555"
-                            stroke-width="3"
-                        />
+Formación e inserción laboral
 
-                        <path
-                            d="M34 59H72C69 70 37 70 34 59Z"
-                            fill="#C62828"
-                        />
+</h3>
 
-                        <line
-                            x1="126"
-                            y1="35"
-                            x2="114"
-                            y2="59"
-                            stroke="#555"
-                            stroke-width="3"
-                        />
 
-                        <line
-                            x1="126"
-                            y1="35"
-                            x2="138"
-                            y2="59"
-                            stroke="#555"
-                            stroke-width="3"
-                        />
+<p>
 
-                        <path
-                            d="M106 59H144C141 70 109 70 106 59Z"
-                            fill="#C62828"
-                        />
+Formación y acciones para
+<strong>
+favorecer el acceso al empleo
+</strong>,
+mejorar competencias y acompañar
+procesos de inserción sociolaboral.
 
-                        <path
-                            d="M75 92H105"
-                            stroke="#555"
-                            stroke-width="6"
-                            stroke-linecap="round"
-                        />
+</p>
 
-                        <circle
-                            cx="90"
-                            cy="18"
-                            r="5"
-                            fill="#7B3F98"
-                        />
 
-                    </svg>
+</div>
 
-                </div>
 
+<!-- IGUALDAD -->
 
-                <h3>
-                    Igualdad y participación
-                </h3>
+<div class="area-card">
 
 
-                <p>
+<div class="area-icon area-purple">
 
-                    Fomento de la participación ciudadana,
-                    la igualdad y la participación de
-                    la mujer gitana en el mundo laboral.
+<svg
+viewBox="0 0 180 110"
+fill="none">
 
-                </p>
+<line
+x1="90"
+y1="18"
+x2="90"
+y2="92"
+stroke="#555"
+stroke-width="5"/>
 
+<line
+x1="48"
+y1="35"
+x2="132"
+y2="35"
+stroke="#555"
+stroke-width="5"/>
 
-            </div>
+<line
+x1="54"
+y1="35"
+x2="42"
+y2="59"
+stroke="#555"
+stroke-width="3"/>
 
+<line
+x1="54"
+y1="35"
+x2="66"
+y2="59"
+stroke="#555"
+stroke-width="3"/>
 
-            <!-- CULTURA -->
+<path
+d="M34 59H72C69 70 37 70 34 59Z"
+fill="#C62828"/>
 
-            <div class="area-card">
+<line
+x1="126"
+y1="35"
+x2="114"
+y2="59"
+stroke="#555"
+stroke-width="3"/>
 
-                <div class="area-icon area-red">
+<line
+x1="126"
+y1="35"
+x2="138"
+y2="59"
+stroke="#555"
+stroke-width="3"/>
 
-                    <svg
-                        viewBox="0 0 180 110"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+<path
+d="M106 59H144C141 70 109 70 106 59Z"
+fill="#C62828"/>
 
-                        <ellipse
-                            cx="52"
-                            cy="62"
-                            rx="17"
-                            ry="22"
-                            fill="#E3A04A"
-                        />
+<path
+d="M75 92H105"
+stroke="#555"
+stroke-width="6"/>
 
-                        <ellipse
-                            cx="43"
-                            cy="52"
-                            rx="12"
-                            ry="15"
-                            fill="#E3A04A"
-                        />
+<circle
+cx="90"
+cy="18"
+r="5"
+fill="#7B3F98"/>
 
-                        <path
-                            d="M57 47L94 21"
-                            stroke="#555"
-                            stroke-width="8"
-                            stroke-linecap="round"
-                        />
+</svg>
 
-                        <circle
-                            cx="126"
-                            cy="61"
-                            r="23"
-                            fill="#1479B8"
-                        />
+</div>
 
-                        <circle
-                            cx="126"
-                            cy="61"
-                            r="18"
-                            fill="#fff"
-                        />
 
-                        <circle
-                            cx="126"
-                            cy="61"
-                            r="6"
-                            fill="#C62828"
-                        />
+<h3>
 
-                        <path
-                            d="M126 43V79M108 61H144M113 48L139 74M139 48L113 74"
-                            stroke="#39A852"
-                            stroke-width="3"
-                        />
+Igualdad y participación
 
-                    </svg>
+</h3>
 
-                </div>
 
+<p>
 
-                <h3>
-                    Cultura y convivencia
-                </h3>
+Fomento de la
+<strong>
+participación ciudadana
+</strong>,
+la igualdad y la participación de
+la mujer gitana en el mundo laboral.
 
+</p>
 
-                <p>
 
-                    Actividades culturales, encuentros
-                    y acciones para favorecer la
-                    convivencia y el reconocimiento
-                    de la diversidad.
+</div>
 
-                </p>
 
+<!-- CULTURA -->
 
-            </div>
+<div class="area-card">
 
 
-            <!-- SALUD -->
+<div class="area-icon area-red">
 
-            <div class="area-card">
+<svg
+viewBox="0 0 180 110"
+fill="none">
 
-                <div class="area-icon area-red">
+<ellipse
+cx="52"
+cy="62"
+rx="17"
+ry="22"
+fill="#E3A04A"/>
 
-                    <svg
-                        viewBox="0 0 180 110"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+<ellipse
+cx="43"
+cy="52"
+rx="12"
+ry="15"
+fill="#E3A04A"/>
 
-                        <path
-                            d="M40 80C28 62 30 45 44 33C56 49 56 67 40 80Z"
-                            fill="#39A852"
-                        />
+<path
+d="M57 47L94 21"
+stroke="#555"
+stroke-width="8"/>
 
-                        <path
-                            d="M140 80C152 62 150 45 136 33C124 49 124 67 140 80Z"
-                            fill="#39A852"
-                        />
+<circle
+cx="126"
+cy="61"
+r="23"
+fill="#1479B8"/>
 
-                        <path
-                            d="M90 76C84 66 61 54 61 38C61 26 73 21 81 29L90 38L99 29C107 21 119 26 119 38C119 54 96 66 90 76Z"
-                            fill="#C62828"
-                        />
+<circle
+cx="126"
+cy="61"
+r="18"
+fill="#fff"/>
 
-                        <path
-                            d="M74 49H82L86 42L91 55L96 45L100 49H106"
-                            stroke="#fff"
-                            stroke-width="3"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
+<circle
+cx="126"
+cy="61"
+r="6"
+fill="#C62828"/>
 
-                    </svg>
+<path
+d="M126 43V79M108 61H144M113 48L139 74M139 48L113 74"
+stroke="#39A852"
+stroke-width="3"/>
 
-                </div>
+</svg>
 
+</div>
 
-                <h3>
-                    Salud y apoyo social
-                </h3>
 
+<h3>
 
-                <p>
+Cultura y convivencia
 
-                    Atención y asistencia psicosocial,
-                    promoción de la salud y acciones
-                    de apoyo para el bienestar de
-                    las personas y las familias.
+</h3>
 
-                </p>
 
+<p>
 
-            </div>
+Actividades culturales, encuentros
+y acciones para favorecer la
+convivencia y el reconocimiento
+de la diversidad.
 
+</p>
 
-        </div>
 
+</div>
 
-        <!-- ==================================================
-             SERVICIOS Y TALLERES
-        ================================================== -->
 
-        <div class="services-panel">
+<!-- SALUD -->
 
+<div class="area-card">
 
-            <h3>
-                Servicios, talleres y otras acciones
-            </h3>
 
+<div class="area-icon area-red">
 
-            <p>
+<svg
+viewBox="0 0 180 110"
+fill="none">
 
-                El trabajo del centro abarca también
-                acciones de apoyo a jóvenes, familias
-                y personas adultas, campañas de
-                sensibilización, información y
-                asesoramiento en derechos y deberes,
-                formación profesional y distintos talleres.
+<path
+d="M40 80C28 62 30 45 44 33C56 49 56 67 40 80Z"
+fill="#39A852"/>
 
-            </p>
+<path
+d="M140 80C152 62 150 45 136 33C124 49 124 67 140 80Z"
+fill="#39A852"/>
 
+<path
+d="M90 76C84 66 61 54 61 38C61 26 73 21 81 29L90 38L99 29C107 21 119 26 119 38C119 54 96 66 90 76Z"
+fill="#C62828"/>
 
-            <div class="service-tags">
+<path
+d="M74 49H82L86 42L91 55L96 45L100 49H106"
+stroke="#fff"
+stroke-width="3"/>
 
+</svg>
 
-                <span>
-                    Gestoría Gitana
-                </span>
+</div>
 
-                <span>
-                    Brecha digital
-                </span>
 
-                <span>
-                    Orientación administrativa
-                </span>
+<h3>
 
-                <span>
-                    Apoyo psicosocial
-                </span>
+Salud y apoyo social
 
-                <span>
-                    Refuerzo escolar
-                </span>
+</h3>
 
-                <span>
-                    Formación profesional
-                </span>
 
-                <span>
-                    Participación ciudadana
-                </span>
+<p>
 
-                <span>
-                    Sensibilización
-                </span>
+Atención y asistencia psicosocial,
+promoción de la salud y acciones
+de apoyo para el bienestar de
+las personas y las familias.
 
-                <span>
-                    Actividades culturales
-                </span>
+</p>
 
-                <span>
-                    Manipulador de alimentos
-                </span>
 
-                <span>
-                    Carretillero
-                </span>
+</div>
 
-                <span>
-                    Belleza
-                </span>
 
-                <span>
-                    Informática
-                </span>
+<!-- PARTICIPACION -->
 
-                <span>
-                    Estilismo
-                </span>
+<div class="area-card">
 
-                <span>
-                    Música
-                </span>
 
-                <span>
-                    Electricidad
-                </span>
+<div class="area-icon area-blue">
 
-                <span>
-                    Corte y confección
-                </span>
+<svg
+viewBox="0 0 180 110"
+fill="none">
 
-                <span>
-                    Deporte
-                </span>
+<circle
+cx="48"
+cy="47"
+r="10"
+fill="#F2B88B"/>
 
-                <span>
-                    Radio
-                </span>
+<path
+d="M30 82C30 65 37 58 48 58C59 58 66 65 66 82"
+fill="#1479B8"/>
 
+<path
+d="M37 62L25 45"
+stroke="#1479B8"
+stroke-width="7"
+stroke-linecap="round"/>
 
-            </div>
+<circle
+cx="90"
+cy="38"
+r="11"
+fill="#F2B88B"/>
 
+<path
+d="M70 81C70 61 78 52 90 52C102 52 110 61 110 81"
+fill="#C62828"/>
 
-        </div>
+<path
+d="M80 58L66 42"
+stroke="#C62828"
+stroke-width="7"/>
 
+<path
+d="M100 58L113 40"
+stroke="#C62828"
+stroke-width="7"/>
 
-        <!-- ==================================================
-             DISPENSA SOLIDARIA
-        ================================================== -->
+<circle
+cx="132"
+cy="47"
+r="10"
+fill="#F2B88B"/>
 
-        <div class="solidarity-feature">
+<path
+d="M114 82C114 65 121 58 132 58C143 58 150 65 150 82"
+fill="#39A852"/>
 
+<path
+d="M141 61L154 45"
+stroke="#39A852"
+stroke-width="7"/>
 
-            <div class="solidarity-content">
+<path
+d="M30 91C60 101 119 101 151 91"
+stroke="#7B3F98"
+stroke-width="4"/>
 
+</svg>
 
-                <div class="solidarity-badge">
+</div>
 
-                    Solidaridad y apoyo a las familias
 
-                </div>
+<h3>
 
+Participación social
 
-                <h3>
+</h3>
 
-                    Dispensa solidaria
-                    de alimentos
 
-                </h3>
+<p>
 
+Impulsamos la participación de
+las personas y el trabajo conjunto
+con el entorno.
 
-                <p>
+</p>
 
-                    Desde ASOGINTER colaboramos con el
-                    <strong>
-                        Banco de Alimentos de Valencia
-                    </strong>
-                    en la atención y apoyo a familias
-                    que se encuentran en situación
-                    de necesidad.
 
-                </p>
+</div>
 
 
-                <p>
+</div>
 
-                    Esta colaboración se desarrolla
-                    en el marco de la distribución de
-                    alimentos vinculada al
-                    <strong>
-                        Programa Profit de Consum
-                    </strong>.
 
-                </p>
+<!-- ==================================================
+     SERVICIOS
+================================================== -->
 
+<div class="services-panel">
 
-                <p class="solidarity-note">
 
-                    Una muestra más del trabajo comunitario
-                    y de la colaboración con otras entidades
-                    para dar respuesta a las necesidades
-                    de las familias.
+<h3>
 
-                </p>
+Servicios, talleres y otras acciones
 
+</h3>
 
-            </div>
 
+<p>
 
-            <div class="solidarity-visual">
+El trabajo del centro abarca también
+acciones de apoyo a jóvenes, familias
+y personas adultas, campañas de
+sensibilización, información y
+asesoramiento en derechos y deberes,
+formación profesional y distintos talleres.
 
+</p>
 
-                <img
-                    src="donacion-alimentos-asoginter.png"
-                    alt="Ilustración de ASOGINTER colaborando en la distribución solidaria de alimentos"
-                >
 
+<div class="service-tags">
 
-            </div>
+<span>
+Gestoría Gitana
+</span>
 
+<span>
+Brecha digital
+</span>
 
-        </div>
+<span>
+Orientación administrativa
+</span>
 
+<span>
+Apoyo psicosocial
+</span>
 
-        <!-- ==================================================
-             TRABAJO EN RED
-        ================================================== -->
+<span>
+Refuerzo escolar
+</span>
 
-        <div class="collaboration-banner">
+<span>
+Formación profesional
+</span>
 
+<span>
+Participación ciudadana
+</span>
 
-            <h3>
-                Trabajamos en red
-            </h3>
+<span>
+Sensibilización
+</span>
 
+<span>
+Actividades culturales
+</span>
 
-            <p>
+<span>
+Manipulador de alimentos
+</span>
 
-                Estas son solo algunas de nuestras
-                actividades. ASOGINTER trabaja con
-                muchos colectivos y entidades en
-                diferentes ámbitos, creando alianzas
-                y proyectos que permiten ampliar
-                las oportunidades y fortalecer la
-                convivencia en la comunidad.
+<span>
+Carretillero
+</span>
 
-            </p>
+<span>
+Belleza
+</span>
 
+<span>
+Informática
+</span>
 
-        </div>
+<span>
+Estilismo
+</span>
 
+<span>
+Música
+</span>
 
-        <!-- ==================================================
-             TARJETAS FINALES
-        ================================================== -->
+<span>
+Electricidad
+</span>
 
-        <div class="news-grid">
+<span>
+Corte y confección
+</span>
 
+<span>
+Deporte
+</span>
 
-            <div class="news-card">
+<span>
+Radio
+</span>
 
+</div>
 
-                <h3>
-                    Otras actividades
-                </h3>
 
+</div>
 
-                <p>
 
-                    En este espacio iremos incorporando
-                    nuevas actividades, proyectos,
-                    talleres y acciones que desarrollamos
-                    desde ASOGINTER.
+<!-- ==================================================
+     DISPENSA SOLIDARIA
+================================================== -->
 
-                </p>
+<div class="solidarity-feature">
 
 
-            </div>
+<div class="solidarity-content">
 
 
-            <div class="news-card">
+<div class="solidarity-badge">
 
+Solidaridad y apoyo a las familias
 
-                <h3>
-                    Colaboraciones
-                </h3>
+</div>
 
 
-                <p>
+<h3>
 
-                    Trabajamos junto a diferentes
-                    entidades, colectivos,
-                    administraciones y empresas
-                    en proyectos compartidos.
+Dispensa solidaria
+de alimentos
 
-                </p>
+</h3>
 
 
-            </div>
+<p>
 
+Desde ASOGINTER colaboramos con el
+<strong>
+Banco de Alimentos de Valencia
+</strong>
+en la atención y apoyo a familias
+que se encuentran en situación
+de necesidad.
 
-            <div class="news-card">
+</p>
 
 
-                <h3>
-                    Actualidad
-                </h3>
+<p>
 
+Esta colaboración se desarrolla
+en el marco de la distribución de
+alimentos vinculada al
+<strong>
+Programa Profit de Consum
+</strong>.
 
-                <p>
+</p>
 
-                    Seguiremos sumando aquí nuevas
-                    formaciones, actividades y
-                    proyectos para mostrar la
-                    evolución de nuestro trabajo.
 
-                </p>
+<p class="solidarity-note">
 
+Una muestra más del trabajo comunitario
+y de la colaboración con otras entidades
+para dar respuesta a las necesidades
+de las familias.
 
-            </div>
+</p>
 
 
-        </div>
+</div>
 
 
-    </div>
+<div class="solidarity-visual">
+
+
+<img
+src="donacion-alimentos-asoginter.png"
+alt="Ilustración de ASOGINTER colaborando en la distribución solidaria de alimentos">
+
+
+</div>
+
+
+</div>
+
+
+<!-- ==================================================
+     TRABAJO EN RED
+================================================== -->
+
+<div class="collaboration-banner">
+
+
+<h3>
+
+Trabajamos en red
+
+</h3>
+
+
+<p>
+
+Estas son solo algunas de nuestras
+actividades. ASOGINTER trabaja con
+muchos colectivos y entidades en
+diferentes ámbitos, creando alianzas
+y proyectos que permiten ampliar
+las oportunidades y fortalecer la
+convivencia en la comunidad.
+
+</p>
+
+
+</div>
+
+
+<!-- ==================================================
+     MÁS ACTIVIDADES
+================================================== -->
+
+<div class="news-grid">
+
+
+<div class="news-card">
+
+
+<h3>
+Otras actividades
+</h3>
+
+
+<p>
+
+En este espacio iremos incorporando
+nuevas actividades, proyectos y acciones
+que desarrollamos desde ASOGINTER.
+
+</p>
+
+
+</div>
+
+
+<div class="news-card">
+
+
+<h3>
+Colaboraciones
+</h3>
+
+
+<p>
+
+Trabajamos junto a diferentes
+entidades, colectivos,
+administraciones y empresas
+en proyectos compartidos.
+
+</p>
+
+
+</div>
+
+
+<div class="news-card">
+
+
+<h3>
+Actualidad
+</h3>
+
+
+<p>
+
+Seguiremos sumando aquí nuevas
+formaciones, actividades y
+proyectos para mostrar la
+evolución de nuestro trabajo.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -3864,52 +4146,48 @@ footer strong{
 ====================================================== -->
 
 <section
-    class="collaborate"
-    id="colabora"
->
+class="collaborate"
+id="colabora">
+
+<div class="container">
 
 
-    <div class="container">
+<div class="collaborate-box">
 
 
-        <div class="collaborate-box">
+<h2 class="section-title">
+
+Colabora con
+<span>
+ASOGINTER
+</span>
+
+</h2>
 
 
-            <h2 class="section-title">
+<p>
 
-                Colabora con
-                <span>
-                    ASOGINTER
-                </span>
+Tu participación puede ayudar
+a construir una sociedad más
+inclusiva, igualitaria
+e intercultural.
 
-            </h2>
-
-
-            <p>
-
-                Tu participación puede ayudar
-                a construir una sociedad más
-                inclusiva, igualitaria
-                e intercultural.
-
-            </p>
+</p>
 
 
-            <a
-                class="btn btn-primary"
-                href="#contacto"
-            >
+<a
+class="btn btn-primary"
+href="#contacto">
 
-                Ponte en contacto
+Ponte en contacto
 
-            </a>
-
-
-        </div>
+</a>
 
 
-    </div>
+</div>
 
+
+</div>
 
 </section>
 
@@ -3920,309 +4198,296 @@ footer strong{
 
 <section id="contacto">
 
+<div class="container">
 
-    <div class="container">
 
+<h2 class="section-title">
 
-        <h2 class="section-title">
+<span>
+Contacto
+</span>
 
-            <span>
-                Contacto
-            </span>
+</h2>
 
-        </h2>
 
+<p class="section-intro">
 
-        <p class="section-intro">
+Estamos en Torrent. Puedes contactar
+con nosotros a través de cualquiera
+de nuestros canales.
 
-            Estamos en Torrent. Puedes contactar
-            con nosotros a través de cualquiera
-            de nuestros canales.
+</p>
 
-        </p>
 
+<div class="contact-grid">
 
-        <div class="contact-grid">
 
+<div class="contact-list">
 
-            <div class="contact-list">
 
+<!-- DIRECCION -->
 
-                <!-- DIRECCIÓN -->
+<div class="contact-item">
 
-                <div class="contact-item">
 
+<div class="contact-icon address-icon">
 
-                    <div class="contact-icon address-icon">
 
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
 
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
+<path
+d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/>
 
-                            <path
-                                d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"
-                            ></path>
+<circle
+cx="12"
+cy="10"
+r="2.5"/>
 
-                            <circle
-                                cx="12"
-                                cy="10"
-                                r="2.5"
-                            ></circle>
+</svg>
 
-                        </svg>
 
+</div>
 
-                    </div>
 
+<div>
 
-                    <div>
 
+<h4>
+Dirección
+</h4>
 
-                        <h4>
-                            Dirección
-                        </h4>
 
+<p>
 
-                        <p>
+Calle Juan XXIII, nº 6 Bajo<br>
 
-                            Calle Juan XXIII, nº 6 Bajo<br>
-                            Torrent, Valencia<br>
-                            CP 46900
+Torrent, Valencia<br>
 
-                        </p>
+CP 46900
 
+</p>
 
-                    </div>
 
+</div>
 
-                </div>
 
+</div>
 
-                <!-- TELÉFONO -->
 
-                <div class="contact-item">
+<!-- TELEFONO -->
 
+<div class="contact-item">
 
-                    <div class="contact-icon phone-icon">
 
+<div class="contact-icon phone-icon">
 
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
 
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2
-                                19.79 19.79 0 0 1-8.63-3.07
-                                19.5 19.5 0 0 1-6-6
-                                A19.79 19.79 0 0 1 2.12 4.18
-                                2 2 0 0 1 4.11 2h3
-                                a2 2 0 0 1 2 1.72
-                                12.84 12.84 0 0 0 .7 2.81
-                                2 2 0 0 1-.45 2.11L8.09 9.91
-                                a16 16 0 0 0 6 6l1.27-1.27
-                                a2 2 0 0 1 2.11-.45
-                                12.84 12.84 0 0 0 2.81.7
-                                A2 2 0 0 1 22 16.92z"
-                            ></path>
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
 
-                        </svg>
+<path
+d="M22 16.92v3a2 2 0 0 1-2.18 2
+19.79 19.79 0 0 1-8.63-3.07
+19.5 19.5 0 0 1-6-6
+A19.79 19.79 0 0 1 2.12 4.18
+2 2 0 0 1 4.11 2h3
+a2 2 0 0 1 2 1.72
+12.84 12.84 0 0 0 .7 2.81
+2 2 0 0 1-.45 2.11L8.09 9.91
+a16 16 0 0 0 6 6l1.27-1.27
+a2 2 0 0 1 2.11-.45
+12.84 12.84 0 0 0 2.81.7
+A2 2 0 0 1 22 16.92z">
+</path>
 
+</svg>
 
-                    </div>
 
+</div>
 
-                    <div>
 
+<div>
 
-                        <h4>
-                            Teléfono
-                        </h4>
 
+<h4>
+Teléfono
+</h4>
 
-                        <p>
 
-                            <a href="tel:+349615578810">
+<p>
 
-                                961 55 78 810
+<a href="tel:+349615578810">
 
-                            </a>
+961 55 78 810
 
-                        </p>
+</a>
 
+</p>
 
-                    </div>
 
+</div>
 
-                </div>
 
+</div>
 
-                <!-- WHATSAPP -->
 
-                <div class="contact-item">
+<!-- WHATSAPP -->
 
+<div class="contact-item">
 
-                    <div class="contact-icon whatsapp-icon">
 
+<div class="contact-icon whatsapp-icon">
 
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
 
-                            <path
-                                d="M21 11.5a8.38 8.38 0 0 1-9
-                                8.5 8.5 0 0 1-4-.95L3 21l1.95-4.7
-                                A8.5 8.5 0 1 1 21 11.5z"
-                            ></path>
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
 
-                            <path
-                                d="M8.5 9.5c.4 2 2 3.6 4 4"
-                            ></path>
+<path
+d="M21 11.5a8.38 8.38 0 0 1-9
+8.5 8.5 0 0 1-4-.95L3 21l1.95-4.7
+A8.5 8.5 0 1 1 21 11.5z">
+</path>
 
-                        </svg>
+</svg>
 
 
-                    </div>
+</div>
 
 
-                    <div>
+<div>
 
 
-                        <h4>
-                            WhatsApp
-                        </h4>
+<h4>
+WhatsApp
+</h4>
 
 
-                        <p>
+<p>
 
-                            <a
-                                href="https://wa.me/34621259271"
-                                target="_blank"
-                                rel="noopener"
-                            >
+<a
+href="https://wa.me/34621259271"
+target="_blank"
+rel="noopener">
 
-                                621 25 92 71
+621 25 92 71
 
-                            </a>
+</a>
 
-                        </p>
+</p>
 
 
-                    </div>
+</div>
 
 
-                </div>
+</div>
 
 
-                <!-- EMAIL -->
+<!-- EMAIL -->
 
-                <div class="contact-item">
+<div class="contact-item">
 
 
-                    <div class="contact-icon email-icon">
+<div class="contact-icon email-icon">
 
 
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
 
-                            <rect
-                                x="3"
-                                y="5"
-                                width="18"
-                                height="14"
-                                rx="2"
-                            ></rect>
+<rect
+x="3"
+y="5"
+width="18"
+height="14"
+rx="2"/>
 
-                            <polyline
-                                points="3,7 12,13 21,7"
-                            ></polyline>
+<polyline
+points="3,7 12,13 21,7"/>
 
-                        </svg>
+</svg>
 
 
-                    </div>
+</div>
 
 
-                    <div>
+<div>
 
 
-                        <h4>
-                            Email
-                        </h4>
+<h4>
+Email
+</h4>
 
 
-                        <p>
+<p>
 
-                            <a href="mailto:asoginter@gmail.com">
+<a href="mailto:asoginter@gmail.com">
 
-                                asoginter@gmail.com
+asoginter@gmail.com
 
-                            </a>
+</a>
 
-                        </p>
+</p>
 
 
-                    </div>
+</div>
 
 
-                </div>
+</div>
 
 
-            </div>
+</div>
 
 
-            <!-- MAPA -->
+<!-- MAPA -->
 
-            <div>
+<div>
 
 
-                <div class="map-container">
+<div class="map-container">
 
 
-                    <iframe
-                        src="https://www.google.com/maps?q=Calle%20Juan%20XXIII%2C%206%20Bajo%2C%20Torrent%2C%20Valencia%2C%2046900&output=embed"
-                        width="100%"
-                        height="400"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    >
-                    </iframe>
+<iframe
+src="https://www.google.com/maps?q=Calle%20Juan%20XXIII%2C%206%20Bajo%2C%20Torrent%2C%20Valencia%2C%2046900&output=embed"
+width="100%"
+height="400"
+style="border:0"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
 
+</iframe>
 
-                </div>
 
+</div>
 
-            </div>
 
+</div>
 
-        </div>
 
+</div>
 
-    </div>
 
+</div>
 
 </section>
 
@@ -4234,42 +4499,41 @@ footer strong{
 <footer>
 
 
-    <p>
+<p>
 
-        <strong>
-            ASOGINTER
-        </strong>
+<strong>
+ASOGINTER
+</strong>
 
-    </p>
-
-
-    <p>
-
-        Asociación Gitana Europea e Intercultural
-        de Torrent
-
-    </p>
+</p>
 
 
-    <p>
+<p>
 
-        Calle Juan XXIII, nº 6 Bajo
-        · Torrent · Valencia · 46900
+Asociación Gitana Europea e Intercultural
+de Torrent
 
-    </p>
+</p>
 
 
-    <p>
+<p>
 
-        © 2026 ASOGINTER.
-        Todos los derechos reservados.
+Calle Juan XXIII, nº 6 Bajo
+· Torrent · Valencia · 46900
 
-    </p>
+</p>
+
+
+<p>
+
+© 2026 ASOGINTER.
+Todos los derechos reservados.
+
+</p>
 
 
 </footer>
 
 
 </body>
-
 </html>
