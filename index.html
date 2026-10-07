@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="ASOGINTER. Asociación Gitana Europea e Intercultural de Torrent. Centro Social de Apoyo para la Inclusión y Promoción de la Comunidad Gitana.">
-<meta name="keywords" content="ASOGINTER, asociación gitana, Torrent, inclusión, igualdad, formación, refuerzo escolar, interculturalidad, cultura gitana">
-<meta name="author" content="Asociación Gitana Europea e Intercultural de Torrent">
+    <title>
+        ASOGINTER | Asociación Gitana Europea e Intercultural de Torrent
+    </title>
+
+    <meta
+        name="description"
+        content="ASOGINTER. Asociación Gitana Europea e Intercultural de Torrent. Centro Social de Apoyo para la Inclusión y Promoción de la Comunidad Gitana."
+    >
+
+    <meta
+        name="keywords"
+        content="ASOGINTER, asociación gitana, Torrent, inclusión, igualdad, formación, cultura, interculturalidad"
+    >
+
+    <meta
+        name="author"
+        content="Asociación Gitana Europea e Intercultural de Torrent"
+    >
+
 
 <style>
 
@@ -25,7 +41,7 @@
 
 html{
     scroll-behavior:smooth;
-    scroll-padding-top:115px;
+    scroll-padding-top:120px;
 }
 
 body{
@@ -37,8 +53,8 @@ body{
 }
 
 a{
-    text-decoration:none;
     color:inherit;
+    text-decoration:none;
 }
 
 img{
@@ -53,7 +69,7 @@ section{
 .container{
     max-width:1150px;
     width:92%;
-    margin:auto;
+    margin:0 auto;
 }
 
 
@@ -65,8 +81,11 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
+
     background:rgba(255,255,255,.97);
-    box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+    box-shadow:
+        0 2px 12px rgba(0,0,0,.08);
 }
 
 .header-container{
@@ -76,8 +95,14 @@ header{
     padding:10px 25px;
 
     display:grid;
-    grid-template-columns:90px 1fr auto;
+
+    grid-template-columns:
+        90px
+        1fr
+        auto;
+
     align-items:center;
+
     gap:20px;
 }
 
@@ -91,8 +116,8 @@ nav{
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
     gap:24px;
+    flex-wrap:wrap;
 }
 
 nav a{
@@ -109,13 +134,14 @@ nav a:hover{
 
 .social{
     display:flex;
-    align-items:center;
     gap:10px;
+    align-items:center;
 }
 
 .social a{
     width:36px;
     height:36px;
+
     border-radius:50%;
 
     display:flex;
@@ -177,10 +203,9 @@ nav a:hover{
     align-items:center;
     justify-content:center;
 
-    position:relative;
-    overflow:hidden;
-
     padding:70px 20px;
+
+    position:relative;
 
     background:
         linear-gradient(
@@ -212,40 +237,58 @@ nav a:hover{
     width:170px;
     height:170px;
 
-    object-fit:contain;
+    margin:
+        0 auto 15px;
 
-    margin:0 auto 15px;
+    object-fit:contain;
 }
 
 .hero-formal-name{
     font-size:20px;
     font-weight:bold;
+
     letter-spacing:1px;
+
     color:#555;
+
     margin-bottom:6px;
 }
 
 .hero-title{
-    font-size:clamp(55px,10vw,105px);
+    font-size:
+        clamp(
+            55px,
+            10vw,
+            105px
+        );
+
     font-weight:900;
+
     letter-spacing:5px;
+
     color:#c62828;
+
     line-height:1;
 
-    margin-bottom:18px;
+    margin-bottom:20px;
 }
 
 .hero-tagline{
     font-size:22px;
     font-weight:bold;
+
     color:#444;
+
     margin-bottom:18px;
 }
 
 .hero-description{
     max-width:760px;
+
     margin:auto;
+
     font-size:18px;
+
     color:#555;
 }
 
@@ -253,6 +296,7 @@ nav a:hover{
     margin-top:30px;
 
     display:flex;
+
     justify-content:center;
 
     gap:15px;
@@ -262,10 +306,13 @@ nav a:hover{
 
 .btn{
     display:inline-flex;
+
     align-items:center;
     justify-content:center;
 
-    padding:13px 25px;
+    padding:
+        13px
+        25px;
 
     border-radius:30px;
 
@@ -281,11 +328,14 @@ nav a:hover{
 
 .btn-primary:hover{
     background:#a91f1f;
-    transform:translateY(-2px);
+
+    transform:
+        translateY(-2px);
 }
 
 .btn-secondary{
     background:#fff;
+
     color:#c62828;
 
     border:
@@ -305,9 +355,13 @@ nav a:hover{
 
 .section-title{
     text-align:center;
+
     font-size:38px;
+
     line-height:1.2;
+
     margin-bottom:15px;
+
     color:#333;
 }
 
@@ -317,9 +371,16 @@ nav a:hover{
 
 .section-intro{
     max-width:820px;
-    margin:0 auto 45px;
+
+    margin:
+        0
+        auto
+        45px;
+
     text-align:center;
+
     color:#666;
+
     font-size:17px;
 }
 
@@ -330,25 +391,32 @@ nav a:hover{
 
 .about-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
     gap:50px;
+
     align-items:center;
 }
 
 .about-text p{
-    margin-bottom:18px;
     font-size:17px;
+
+    margin-bottom:18px;
 }
 
 .about-highlight{
     margin-top:25px;
+
     padding:22px;
+
+    background:#fafafa;
 
     border-left:
         5px solid
         #c62828;
-
-    background:#fafafa;
 
     border-radius:
         0
@@ -357,38 +425,24 @@ nav a:hover{
         0;
 
     font-weight:bold;
+
     color:#555;
-}
-
-.cesi-badge{
-    width:max-content;
-    margin:0 auto 35px;
-
-    padding:7px 17px;
-
-    border-radius:30px;
-
-    background:#fdeaea;
-
-    color:#c62828;
-
-    font-weight:800;
-
-    letter-spacing:1px;
 }
 
 .about-logo{
     height:390px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    overflow:hidden;
 
     border-radius:15px;
 
-    overflow:hidden;
-
     background:#f6f7fb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 }
 
 .about-logo img{
@@ -396,12 +450,11 @@ nav a:hover{
     height:100%;
 
     object-fit:cover;
-    object-position:center;
 }
 
 
 /* ======================================================
-   MISIÓN Y VISIÓN
+   MISION
 ====================================================== */
 
 .mission{
@@ -410,7 +463,11 @@ nav a:hover{
 
 .mission-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
     gap:30px;
 }
 
@@ -453,11 +510,15 @@ nav a:hover{
 
     border-radius:16px;
 
-    padding:30px 25px;
+    padding:
+        30px
+        25px;
 
     text-align:center;
 
-    border:1px solid #eee;
+    border:
+        1px solid
+        #eee;
 
     box-shadow:
         0 7px 25px
@@ -467,7 +528,8 @@ nav a:hover{
 }
 
 .activity-card:hover{
-    transform:translateY(-5px);
+    transform:
+        translateY(-5px);
 
     box-shadow:
         0 12px 30px
@@ -481,10 +543,15 @@ nav a:hover{
     border-radius:18px;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
-    margin:0 auto 18px;
+    margin:
+        0
+        auto
+        18px;
 }
 
 .professional-icon svg{
@@ -513,23 +580,23 @@ nav a:hover{
 }
 
 .activity-card h3{
-    margin-bottom:10px;
     font-size:20px;
+    margin-bottom:10px;
 }
 
 .activity-card p{
-    color:#666;
     font-size:15px;
+    color:#666;
 }
 
 .health-message{
     margin-top:45px;
 
-    background:#f7f7f7;
-
     padding:30px;
 
     border-radius:18px;
+
+    background:#f7f7f7;
 
     text-align:center;
 }
@@ -540,7 +607,7 @@ nav a:hover{
 
 
 /* ======================================================
-   FRASE
+   FRASE DESTACADA
 ====================================================== */
 
 .quote-section{
@@ -602,7 +669,7 @@ nav a:hover{
 }
 
 .activity-intro-box p{
-    color:#5e5e5e;
+    color:#5f5f5f;
 
     font-size:16px;
 
@@ -613,37 +680,9 @@ nav a:hover{
     color:#c62828;
 }
 
-.subsection-title{
-    text-align:center;
-
-    color:#333;
-
-    font-size:28px;
-
-    margin:
-        35px
-        0
-        10px;
-}
-
-.subsection-intro{
-    max-width:780px;
-
-    margin:
-        0
-        auto
-        30px;
-
-    text-align:center;
-
-    color:#666;
-
-    font-size:15px;
-}
-
 
 /* ======================================================
-   FORMACIÓN FSE+
+   FORMACIÓN
 ====================================================== */
 
 .training-feature{
@@ -653,15 +692,17 @@ nav a:hover{
         .92fr
         1.08fr;
 
-    gap:40px;
+    gap:38px;
 
     padding:30px;
 
     background:#fff;
 
-    border-radius:22px;
+    border:
+        1px solid
+        #ececec;
 
-    border:1px solid #ececec;
+    border-radius:22px;
 
     box-shadow:
         0 10px 30px
@@ -679,11 +720,15 @@ nav a:hover{
 }
 
 .training-label{
-    display:inline-flex;
-
     align-self:flex-start;
 
-    padding:7px 12px;
+    display:inline-flex;
+
+    padding:
+        7px
+        12px;
+
+    margin-bottom:15px;
 
     border-radius:20px;
 
@@ -698,8 +743,6 @@ nav a:hover{
     text-transform:uppercase;
 
     letter-spacing:.7px;
-
-    margin-bottom:15px;
 }
 
 .training-content h3{
@@ -743,17 +786,17 @@ nav a:hover{
         11px
         14px;
 
-    border-radius:12px;
-
     background:#fafafa;
+
+    border-radius:12px;
 
     border-left:
         4px solid
         #c62828;
 
-    font-size:14px;
-
     color:#555;
+
+    font-size:14px;
 }
 
 .training-item strong{
@@ -762,6 +805,7 @@ nav a:hover{
 
 .company{
     color:#c62828;
+
     font-weight:bold;
 }
 
@@ -776,9 +820,9 @@ nav a:hover{
         13px
         15px;
 
-    background:#f7f7f7;
-
     border-radius:12px;
+
+    background:#f7f7f7;
 
     font-size:13px;
 
@@ -787,7 +831,7 @@ nav a:hover{
 
 
 /* ======================================================
-   COLLAGE CARRETILLERO
+   COLLAGE DE FORMACIÓN
 ====================================================== */
 
 .course-collage{
@@ -799,16 +843,19 @@ nav a:hover{
 
     grid-template-rows:
         230px
-        185px;
+        175px
+        165px;
 
     gap:12px;
 
-    min-height:427px;
+    min-height:592px;
 }
 
 .course-photo{
     width:100%;
     height:100%;
+
+    display:block;
 
     object-fit:cover;
 
@@ -824,21 +871,33 @@ nav a:hover{
         1 / -1;
 
     object-position:
-        center 43%;
+        center
+        43%;
 }
 
 .course-photo-group{
-    object-position:center;
+    object-position:
+        center;
 }
 
 .course-photo-forklift{
     object-position:
-        center 42%;
+        center
+        42%;
+}
+
+.course-photo-training{
+    grid-column:
+        1 / -1;
+
+    object-position:
+        center
+        50%;
 }
 
 
 /* ======================================================
-   SERVICIOS Y LÍNEAS DE TRABAJO
+   LÍNEAS DE TRABAJO
 ====================================================== */
 
 .areas-grid{
@@ -882,9 +941,9 @@ nav a:hover{
 }
 
 .area-card h3{
-    color:#333;
-
     font-size:19px;
+
+    color:#333;
 
     margin-bottom:9px;
 }
@@ -918,29 +977,27 @@ nav a:hover{
 .area-icon svg{
     width:145px;
     height:90px;
-
-    display:block;
-}
-
-.area-blue{
-    background:#edf7fc;
 }
 
 .area-green{
     background:#eef9f0;
 }
 
-.area-red{
-    background:#fff0f0;
-}
-
 .area-purple{
     background:#f5eef8;
 }
 
+.area-red{
+    background:#fff0f0;
+}
+
+.area-blue{
+    background:#edf7fc;
+}
+
 
 /* ======================================================
-   SERVICIOS, TALLERES Y OTRAS ACCIONES
+   SERVICIOS Y TALLERES
 ====================================================== */
 
 .services-panel{
@@ -952,14 +1009,13 @@ nav a:hover{
     padding:
         30px;
 
-    background:#fff;
+    border-radius:20px;
 
     border:
         1px solid
         #ececec;
 
-    border-radius:
-        20px;
+    background:#fff;
 
     box-shadow:
         0 7px 22px
@@ -1004,8 +1060,7 @@ nav a:hover{
         7px
         11px;
 
-    border-radius:
-        20px;
+    border-radius:20px;
 
     background:#f7f7f7;
 
@@ -1029,34 +1084,34 @@ nav a:hover{
     display:grid;
 
     grid-template-columns:
-        1.15fr
-        .85fr;
+        1fr
+        1fr;
 
     gap:30px;
 
-    align-items:stretch;
+    align-items:center;
 
-    margin-top:30px;
+    padding:30px;
 
     margin-bottom:35px;
-}
 
-.solidarity-content{
-    background:#fff;
+    background:#f7f7f7;
+
+    border-radius:22px;
 
     border:
         1px solid
-        #eeeeee;
+        #ececec;
+}
 
-    border-radius:
-        20px;
+.solidarity-content h3{
+    color:#c62828;
 
-    padding:
-        35px;
+    font-size:28px;
 
-    box-shadow:
-        0 8px 25px
-        rgba(0,0,0,.06);
+    line-height:1.2;
+
+    margin-bottom:15px;
 }
 
 .solidarity-badge{
@@ -1066,164 +1121,64 @@ nav a:hover{
         7px
         12px;
 
-    border-radius:
-        20px;
+    margin-bottom:15px;
 
-    background:
-        #e7f6ea;
+    border-radius:20px;
 
-    color:
-        #2f8f45;
+    background:#e7f6ea;
 
-    font-size:
-        12px;
+    color:#2f8f45;
 
-    font-weight:
-        800;
+    font-size:12px;
 
-    text-transform:
-        uppercase;
+    font-weight:800;
 
-    letter-spacing:
-        .6px;
+    text-transform:uppercase;
 
-    margin-bottom:
-        15px;
-}
-
-.solidarity-content h3{
-    color:
-        #c62828;
-
-    font-size:
-        28px;
-
-    line-height:
-        1.2;
-
-    margin-bottom:
-        15px;
+    letter-spacing:.6px;
 }
 
 .solidarity-content p{
-    color:
-        #666;
+    color:#666;
 
-    font-size:
-        16px;
+    font-size:16px;
 
-    margin-bottom:
-        12px;
+    margin-bottom:12px;
 }
 
 .solidarity-note{
     padding:
-        13px
-        15px;
-
-    border-radius:
-        12px;
-
-    background:
-        #fafafa;
-
-    font-size:
-        13px !important;
-
-    margin-top:
+        14px
         16px;
+
+    border-radius:12px;
+
+    background:#fff;
+
+    font-size:13px !important;
 }
 
 .solidarity-visual{
-    min-height:
-        250px;
+    width:100%;
 
-    display:
-        flex;
+    min-height:280px;
 
-    align-items:
-        center;
+    overflow:hidden;
 
-    justify-content:
-        center;
+    border-radius:18px;
 
-    padding:
-        30px;
-
-    border-radius:
-        20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #fff7f7,
-            #f6fbff
-        );
-
-    border:
-        1px solid
-        #eeeeee;
-
-    text-align:
-        center;
+    background:#fff;
 }
 
-.solidarity-visual-inner{
-    max-width:
-        360px;
-}
+.solidarity-visual img{
+    width:100%;
+    height:100%;
 
-.big-symbol{
-    width:
-        95px;
+    min-height:280px;
 
-    height:
-        95px;
+    object-fit:cover;
 
-    margin:
-        0
-        auto
-        18px;
-
-    border-radius:
-        50%;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    background:
-        #fdeaea;
-
-    color:
-        #c62828;
-}
-
-.solidarity-visual h4{
-    font-size:
-        22px;
-
-    margin-bottom:
-        7px;
-}
-
-.solidarity-visual p{
-    max-width:
-        300px;
-
-    margin:
-        auto;
-
-    color:
-        #666;
-
-    font-size:
-        14px;
+    object-position:center;
 }
 
 
@@ -1236,20 +1191,15 @@ nav a:hover{
         32px
         30px;
 
-    background:
-        #c62828;
+    margin-bottom:35px;
 
-    color:
-        #fff;
+    background:#c62828;
 
-    border-radius:
-        20px;
+    color:#fff;
 
-    text-align:
-        center;
+    border-radius:20px;
 
-    margin-bottom:
-        35px;
+    text-align:center;
 
     box-shadow:
         0 8px 25px
@@ -1257,25 +1207,19 @@ nav a:hover{
 }
 
 .collaboration-banner h3{
-    font-size:
-        27px;
+    font-size:27px;
 
-    margin-bottom:
-        12px;
+    margin-bottom:12px;
 }
 
 .collaboration-banner p{
-    max-width:
-        880px;
+    max-width:900px;
 
-    margin:
-        auto;
+    margin:auto;
 
-    font-size:
-        16px;
+    font-size:16px;
 
-    line-height:
-        1.7;
+    line-height:1.7;
 }
 
 
@@ -1289,21 +1233,17 @@ nav a:hover{
     grid-template-columns:
         repeat(3,1fr);
 
-    gap:
-        25px;
+    gap:25px;
 }
 
 .news-card{
+    min-height:175px;
+
+    padding:25px;
+
     background:#f7f7f7;
 
-    border-radius:
-        15px;
-
-    padding:
-        25px;
-
-    min-height:
-        170px;
+    border-radius:15px;
 
     border-top:
         4px solid
@@ -1321,22 +1261,17 @@ nav a:hover{
 }
 
 .news-card h3{
-    color:
-        #c62828;
+    color:#c62828;
 
-    font-size:
-        20px;
+    margin-bottom:12px;
 
-    margin-bottom:
-        12px;
+    font-size:20px;
 }
 
 .news-card p{
-    color:
-        #666;
+    color:#666;
 
-    font-size:
-        14px;
+    font-size:14px;
 }
 
 
@@ -1345,28 +1280,21 @@ nav a:hover{
 ====================================================== */
 
 .collaborate{
-    background:
-        #f7f7f7;
+    background:#f7f7f7;
 }
 
 .collaborate-box{
-    max-width:
-        900px;
+    max-width:900px;
 
-    margin:
-        auto;
+    margin:auto;
 
-    background:
-        #fff;
+    padding:45px;
 
-    padding:
-        45px;
+    background:#fff;
 
-    border-radius:
-        20px;
+    border-radius:20px;
 
-    text-align:
-        center;
+    text-align:center;
 
     box-shadow:
         0 7px 25px
@@ -1374,11 +1302,9 @@ nav a:hover{
 }
 
 .collaborate-box p{
-    margin-bottom:
-        25px;
+    margin-bottom:25px;
 
-    color:
-        #666;
+    color:#666;
 }
 
 
@@ -1393,21 +1319,17 @@ nav a:hover{
         1fr
         1fr;
 
-    gap:
-        40px;
+    gap:40px;
 
-    align-items:
-        start;
+    align-items:start;
 }
 
 .contact-list{
     display:flex;
 
-    flex-direction:
-        column;
+    flex-direction:column;
 
-    gap:
-        20px;
+    gap:20px;
 }
 
 .contact-item{
@@ -1415,94 +1337,64 @@ nav a:hover{
 
     align-items:center;
 
-    gap:
-        18px;
+    gap:18px;
 
-    padding:
-        15px;
+    padding:15px;
 
-    border-radius:
-        12px;
+    border-radius:12px;
 
-    background:
-        #fafafa;
+    background:#fafafa;
 }
 
 .contact-icon{
-    width:
-        56px;
+    width:56px;
+    height:56px;
 
-    height:
-        56px;
+    flex-shrink:0;
 
-    border-radius:
-        50%;
+    border-radius:50%;
 
     display:flex;
 
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    flex-shrink:
-        0;
+    align-items:center;
+    justify-content:center;
 }
 
 .contact-icon svg{
-    width:
-        27px;
-
-    height:
-        27px;
+    width:27px;
+    height:27px;
 }
 
 .address-icon{
-    background:
-        #e6f2fb;
-
-    color:
-        #1479b8;
+    background:#e6f2fb;
+    color:#1479b8;
 }
 
 .phone-icon{
-    background:
-        #e8f7eb;
-
-    color:
-        #39a852;
+    background:#e8f7eb;
+    color:#39a852;
 }
 
 .whatsapp-icon{
-    background:
-        #e8f7eb;
-
-    color:
-        #25d366;
+    background:#e8f7eb;
+    color:#25d366;
 }
 
 .email-icon{
-    background:
-        #fff1e5;
-
-    color:
-        #ef7d00;
+    background:#fff1e5;
+    color:#ef7d00;
 }
 
 .contact-item h4{
-    margin-bottom:
-        3px;
+    margin-bottom:3px;
 }
 
 .contact-item p{
-    color:
-        #666;
+    color:#666;
 }
 
 .contact-item a:hover{
-    color:
-        #c62828;
+    color:#c62828;
 }
 
 
@@ -1511,32 +1403,27 @@ nav a:hover{
 ====================================================== */
 
 .map-container{
-    width:
-        100%;
+    width:100%;
 
-    border-radius:
-        16px;
+    overflow:hidden;
 
-    overflow:
-        hidden;
-
-    box-shadow:
-        0 8px 25px
-        rgba(0,0,0,.10);
+    border-radius:16px;
 
     border:
         1px solid
         #e5e5e5;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.10);
 }
 
 .map-container iframe{
     display:block;
 
-    width:
-        100%;
+    width:100%;
 
-    height:
-        400px;
+    height:400px;
 
     border:0;
 }
@@ -1547,14 +1434,11 @@ nav a:hover{
 ====================================================== */
 
 footer{
-    background:
-        #222;
+    background:#222;
 
-    color:
-        #fff;
+    color:#fff;
 
-    text-align:
-        center;
+    text-align:center;
 
     padding:
         35px
@@ -1566,16 +1450,12 @@ footer p{
         5px
         0;
 
-    color:
-        #ddd;
+    color:#ddd;
 }
 
 footer strong{
-    color:
-        #fff;
-
-    font-size:
-        25px;
+    font-size:25px;
+    color:#fff;
 }
 
 
@@ -1594,58 +1474,47 @@ footer strong{
             "logo social"
             "nav nav";
 
-        gap:
-            8px
-            12px;
-
         padding:
             10px
             15px;
+
+        gap:
+            8px
+            12px;
     }
 
     .header-logo{
-        grid-area:
-            logo;
+        grid-area:logo;
     }
 
     .social{
-        grid-area:
-            social;
+        grid-area:social;
 
-        justify-content:
-            flex-end;
+        justify-content:flex-end;
     }
 
     nav{
-        grid-area:
-            nav;
+        grid-area:nav;
 
-        justify-content:
-            flex-start;
+        justify-content:flex-start;
 
-        flex-wrap:
-            nowrap;
+        flex-wrap:nowrap;
 
-        overflow-x:
-            auto;
+        overflow-x:auto;
 
-        scrollbar-width:
-            none;
+        scrollbar-width:none;
 
-        gap:
-            20px;
+        gap:20px;
     }
 
     nav::-webkit-scrollbar{
-        display:
-            none;
+        display:none;
     }
 
     .about-grid,
     .mission-grid,
     .contact-grid{
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
     }
 
     .cards-grid,
@@ -1655,7 +1524,11 @@ footer strong{
             repeat(2,1fr);
     }
 
-    .training-feature,
+    .training-feature{
+        grid-template-columns:
+            1fr;
+    }
+
     .solidarity-feature{
         grid-template-columns:
             1fr;
@@ -1677,9 +1550,11 @@ footer strong{
     }
 
     .container{
-        width:
-            92%;
+        width:92%;
     }
+
+
+    /* HEADER */
 
     .header-container{
         grid-template-columns:
@@ -1700,84 +1575,63 @@ footer strong{
     }
 
     .header-logo{
-        width:
-            70px;
+        width:70px;
+        height:52px;
 
-        height:
-            52px;
-
-        justify-self:
-            start;
+        justify-self:start;
     }
 
     .social{
-        justify-self:
-            end;
+        justify-self:end;
 
-        gap:
-            7px;
+        gap:7px;
     }
 
     .social a{
-        width:
-            34px;
-
-        height:
-            34px;
+        width:34px;
+        height:34px;
     }
 
     nav{
         grid-column:
             1 / -1;
 
-        width:
-            100%;
+        width:100%;
 
-        overflow-x:
-            auto;
+        overflow-x:auto;
 
-        overflow-y:
-            hidden;
+        overflow-y:hidden;
 
-        justify-content:
-            flex-start;
+        justify-content:flex-start;
 
-        flex-wrap:
-            nowrap;
+        flex-wrap:nowrap;
 
-        gap:
-            10px;
+        gap:10px;
 
-        padding-bottom:
-            2px;
+        padding-bottom:2px;
 
-        -webkit-overflow-scrolling:
-            touch;
-
-        scrollbar-width:
-            none;
+        scrollbar-width:none;
     }
 
     nav::-webkit-scrollbar{
-        display:
-            none;
+        display:none;
     }
 
     nav a{
-        font-size:
-            10.5px;
+        font-size:10.5px;
 
         padding:
             7px
-            8px;
+            9px;
+
+        white-space:nowrap;
     }
 
 
     /* HERO */
 
     .hero{
-        min-height:
-            auto;
+        min-height:auto;
 
         padding:
             30px
@@ -1791,24 +1645,17 @@ footer strong{
             18px
             35px;
 
-        border-radius:
-            20px;
+        border-radius:20px;
     }
 
     .hero-emblem{
-        width:
-            125px;
-
-        height:
-            125px;
+        width:125px;
+        height:125px;
     }
 
     .hero-formal-name{
-        font-size:
-            13px;
-
-        line-height:
-            1.45;
+        font-size:13px;
+        line-height:1.45;
     }
 
     .hero-title{
@@ -1819,93 +1666,63 @@ footer strong{
                 68px
             );
 
-        letter-spacing:
-            2px;
+        letter-spacing:2px;
     }
 
     .hero-tagline{
-        font-size:
-            17px;
-
-        line-height:
-            1.4;
+        font-size:17px;
     }
 
     .hero-description{
-        font-size:
-            15px;
+        font-size:15px;
     }
 
     .hero-buttons{
-        flex-direction:
-            column;
-
-        gap:
-            10px;
-
-        margin-top:
-            23px;
+        flex-direction:column;
     }
 
     .btn{
-        width:
-            100%;
-
-        min-height:
-            48px;
+        width:100%;
+        min-height:48px;
     }
 
 
     /* TITULOS */
 
     .section-title{
-        font-size:
-            30px;
+        font-size:30px;
     }
 
     .section-intro{
-        font-size:
-            15px;
-
-        margin-bottom:
-            32px;
+        font-size:15px;
     }
 
 
-    /* QUIENES SOMOS */
+    /* ABOUT */
 
     .about-grid{
-        grid-template-columns:
-            1fr;
-
-        gap:
-            28px;
+        grid-template-columns:1fr;
+        gap:28px;
     }
 
     .about-text p{
-        font-size:
-            15px;
+        font-size:15px;
     }
 
     .about-highlight{
-        padding:
-            18px;
-
-        font-size:
-            14px;
+        padding:18px;
+        font-size:14px;
     }
 
     .about-logo{
-        height:
-            290px;
+        height:290px;
     }
 
 
     /* MISION */
 
     .mission-grid{
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
     }
 
     .mission-card{
@@ -1915,18 +1732,21 @@ footer strong{
     }
 
 
-    /* QUÉ HACEMOS */
+    /* CARDS */
 
     .cards-grid{
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
+        gap:18px;
+    }
 
-        gap:
-            18px;
+    .activity-card{
+        padding:
+            25px
+            20px;
     }
 
 
-    /* FRASE */
+    /* QUOTE */
 
     .quote-section{
         padding:
@@ -1935,8 +1755,7 @@ footer strong{
     }
 
     .quote{
-        font-size:
-            21px;
+        font-size:21px;
     }
 
 
@@ -1949,35 +1768,31 @@ footer strong{
     }
 
     .activity-intro-box p{
-        font-size:
-            14px;
+        font-size:14px;
     }
 
     .training-feature{
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
 
-        padding:
-            20px;
+        padding:20px;
 
-        gap:
-            25px;
+        gap:25px;
     }
 
     .training-content h3{
-        font-size:
-            25px;
+        font-size:25px;
     }
 
     .program-title{
-        font-size:
-            16px;
+        font-size:16px;
     }
 
     .training-item{
-        font-size:
-            13px;
+        font-size:13px;
     }
+
+
+    /* COLLAGE */
 
     .course-collage{
         grid-template-columns:
@@ -1985,32 +1800,24 @@ footer strong{
             .92fr;
 
         grid-template-rows:
-            210px
-            160px;
+            205px
+            145px
+            130px;
 
         min-height:
-            382px;
-    }
-
-    .subsection-title{
-        font-size:
-            25px;
-    }
-
-    .subsection-intro{
-        font-size:
-            14px;
-    }
-
-
-    /* SERVICIOS */
-
-    .areas-grid{
-        grid-template-columns:
-            1fr;
+            480px;
 
         gap:
-            16px;
+            8px;
+    }
+
+
+    /* AREAS */
+
+    .areas-grid{
+        grid-template-columns:1fr;
+
+        gap:16px;
     }
 
     .area-card{
@@ -2020,26 +1827,20 @@ footer strong{
     }
 
     .area-icon{
-        width:
-            145px;
+        width:145px;
+        height:90px;
 
-        height:
-            90px;
-
-        margin-left:
-            auto;
-
-        margin-right:
-            auto;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .area-icon svg{
-        width:
-            140px;
-
-        height:
-            86px;
+        width:140px;
+        height:86px;
     }
+
+
+    /* SERVICES */
 
     .services-panel{
         padding:
@@ -2048,49 +1849,38 @@ footer strong{
     }
 
     .services-panel h3{
-        font-size:
-            21px;
+        font-size:21px;
     }
 
     .service-tags span{
-        font-size:
-            12px;
-
-        padding:
-            7px
-            10px;
+        font-size:12px;
     }
 
 
-    /* SOLIDARIDAD */
+    /* SOLIDARITY */
 
     .solidarity-feature{
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
 
-        gap:
-            22px;
-    }
+        padding:20px;
 
-    .solidarity-content{
-        padding:
-            28px
-            22px;
+        gap:20px;
     }
 
     .solidarity-content h3{
-        font-size:
-            24px;
+        font-size:24px;
     }
 
     .solidarity-content p{
-        font-size:
-            14px;
+        font-size:14px;
     }
 
     .solidarity-visual{
-        min-height:
-            210px;
+        min-height:220px;
+    }
+
+    .solidarity-visual img{
+        min-height:220px;
     }
 
 
@@ -2098,100 +1888,66 @@ footer strong{
 
     .collaboration-banner{
         padding:
-            22px
+            24px
             18px;
     }
 
     .collaboration-banner h3{
-        font-size:
-            21px;
+        font-size:22px;
     }
 
     .collaboration-banner p{
-        font-size:
-            14px;
+        font-size:14px;
     }
 
 
     /* NEWS */
 
     .news-grid{
-        grid-template-columns:
-            1fr;
-
-        gap:
-            18px;
+        grid-template-columns:1fr;
+        gap:18px;
     }
 
     .news-card{
-        min-height:
-            auto;
+        min-height:auto;
 
-        padding:
-            22px;
-    }
-
-
-    /* COLABORA */
-
-    .collaborate-box{
-        padding:
-            30px
-            20px;
-    }
-
-    .collaborate-box .section-title{
-        font-size:
-            26px;
+        padding:22px;
     }
 
 
     /* CONTACTO */
 
     .contact-grid{
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
 
-        gap:
-            25px;
+        gap:25px;
     }
 
     .contact-item{
-        gap:
-            13px;
+        gap:13px;
 
         padding:
             13px
             10px;
 
-        align-items:
-            flex-start;
+        align-items:flex-start;
     }
 
     .contact-icon{
-        width:
-            50px;
-
-        height:
-            50px;
+        width:50px;
+        height:50px;
     }
 
     .contact-item h4{
-        font-size:
-            15px;
+        font-size:15px;
     }
 
     .contact-item p{
-        font-size:
-            14px;
-
-        line-height:
-            1.5;
+        font-size:14px;
     }
 
     .map-container iframe{
-        height:
-            285px;
+        height:285px;
     }
 
 
@@ -2204,11 +1960,7 @@ footer strong{
     }
 
     footer p{
-        font-size:
-            13px;
-
-        line-height:
-            1.5;
+        font-size:13px;
     }
 
 }
@@ -2221,27 +1973,19 @@ footer strong{
 @media(max-width:380px){
 
     .header-logo{
-        width:
-            64px;
-
-        height:
-            48px;
+        width:64px;
+        height:48px;
     }
 
     .social a{
-        width:
-            31px;
+        width:31px;
+        height:31px;
 
-        height:
-            31px;
-
-        font-size:
-            13px;
+        font-size:13px;
     }
 
     nav a{
-        font-size:
-            10px;
+        font-size:10px;
     }
 
     .hero-content{
@@ -2252,36 +1996,28 @@ footer strong{
     }
 
     .hero-emblem{
-        width:
-            108px;
-
-        height:
-            108px;
+        width:108px;
+        height:108px;
     }
 
     .hero-title{
-        font-size:
-            46px;
+        font-size:46px;
     }
 
     .hero-formal-name{
-        font-size:
-            11px;
+        font-size:11px;
     }
 
     .hero-tagline{
-        font-size:
-            15px;
+        font-size:15px;
     }
 
     .hero-description{
-        font-size:
-            14px;
+        font-size:14px;
     }
 
     .about-logo{
-        height:
-            255px;
+        height:255px;
     }
 
     .course-collage{
@@ -2290,12 +2026,12 @@ footer strong{
 
         grid-template-rows:
             170px
-            125px;
+            120px
+            115px;
     }
 
     .map-container iframe{
-        height:
-            255px;
+        height:255px;
     }
 
 }
@@ -2315,6 +2051,7 @@ footer strong{
 <header>
 
     <div class="header-container">
+
 
         <a href="#inicio">
 
@@ -2363,8 +2100,7 @@ footer strong{
                 href="https://www.instagram.com/asoginter/"
                 target="_blank"
                 rel="noopener"
-                aria-label="Instagram"
-            >
+                aria-label="Instagram">
                 IG
             </a>
 
@@ -2374,12 +2110,12 @@ footer strong{
                 href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
                 target="_blank"
                 rel="noopener"
-                aria-label="Facebook"
-            >
+                aria-label="Facebook">
                 f
             </a>
 
         </div>
+
 
     </div>
 
@@ -2400,7 +2136,10 @@ footer strong{
      INICIO
 ====================================================== -->
 
-<section class="hero" id="inicio">
+<section
+    class="hero"
+    id="inicio"
+>
 
     <div class="hero-content">
 
@@ -2408,14 +2147,14 @@ footer strong{
         <img
             class="hero-emblem"
             src="logo-emblema-asoginter.png"
-            alt="Emblema ASOGINTER"
+            alt="Emblema de ASOGINTER"
         >
 
 
         <div class="hero-formal-name">
 
-            ASOCIACIÓN GITANA EUROPEA
-            E INTERCULTURAL DE TORRENT
+            ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL
+            DE TORRENT
 
         </div>
 
@@ -2448,8 +2187,8 @@ footer strong{
 
 
             <a
-                href="#quienes-somos"
                 class="btn btn-primary"
+                href="#quienes-somos"
             >
 
                 Conócenos
@@ -2458,8 +2197,8 @@ footer strong{
 
 
             <a
-                href="#contacto"
                 class="btn btn-secondary"
+                href="#contacto"
             >
 
                 Contacta con nosotros
@@ -2500,13 +2239,6 @@ footer strong{
         </p>
 
 
-        <div class="cesi-badge">
-
-            C.E.S.I.
-
-        </div>
-
-
         <div class="about-grid">
 
 
@@ -2517,21 +2249,20 @@ footer strong{
 
                     <strong>ASOGINTER</strong>, Asociación
                     Gitana Europea e Intercultural de Torrent,
-                    es un centro social de apoyo para la
-                    inclusión y promoción de la comunidad gitana.
-
-                    Trabajamos para favorecer la participación,
-                    la igualdad de oportunidades y la convivencia.
+                    trabaja como centro social de apoyo para
+                    la inclusión y promoción de la comunidad
+                    gitana.
 
                 </p>
 
 
                 <p>
 
-                    A través de nuestros servicios y actividades
-                    ofrecemos apoyo, orientación y acompañamiento
-                    a personas y familias en diferentes ámbitos
-                    sociales, educativos, laborales y comunitarios.
+                    Nuestro trabajo busca favorecer la
+                    participación, la igualdad de oportunidades,
+                    el acceso a recursos y la convivencia,
+                    ofreciendo apoyo y acompañamiento en
+                    diferentes ámbitos.
 
                 </p>
 
@@ -2540,10 +2271,10 @@ footer strong{
 
                     Entre nuestros servicios se encuentra la
                     <strong>Gestoría Gitana</strong>, desde la
-                    que se presta apoyo en trámites, orientación
-                    y acompañamiento, especialmente ante
-                    situaciones de brecha digital y necesidades
-                    administrativas.
+                    que se ofrece orientación, acompañamiento
+                    en cuestiones administrativas y apoyo en
+                    la gestión de trámites, incluyendo acciones
+                    frente a la brecha digital.
 
                 </p>
 
@@ -2562,15 +2293,18 @@ footer strong{
 
             <div class="about-logo">
 
+
                 <img
                     src="imagen-quienes-somos.png"
                     alt="Comunidad, convivencia e inclusión en el barrio"
                 >
 
+
             </div>
 
 
         </div>
+
 
     </div>
 
@@ -2596,8 +2330,9 @@ footer strong{
 
         <p class="section-intro">
 
-            Construimos oportunidades y espacios de
-            convivencia desde la participación y el respeto.
+            Construimos oportunidades y espacios
+            de convivencia desde la participación
+            y el respeto.
 
         </p>
 
@@ -2606,6 +2341,7 @@ footer strong{
 
 
             <div class="mission-card">
+
 
                 <h3>
                     Misión
@@ -2622,10 +2358,12 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
             <div class="mission-card">
+
 
                 <h3>
                     Visión
@@ -2642,10 +2380,12 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
         </div>
+
 
     </div>
 
@@ -2672,7 +2412,8 @@ footer strong{
         <p class="section-intro">
 
             Desarrollamos proyectos y acciones dirigidos
-            a mejorar las oportunidades y la participación social.
+            a mejorar las oportunidades, la participación
+            social y la convivencia.
 
         </p>
 
@@ -2680,7 +2421,7 @@ footer strong{
         <div class="cards-grid">
 
 
-            <!-- INCLUSIÓN -->
+            <!-- INCLUSION -->
 
             <div class="activity-card">
 
@@ -2725,17 +2466,15 @@ footer strong{
 
                 <p>
 
-                    Acompañamiento y acciones para
-                    favorecer la participación y
-                    la inclusión.
+                    Acompañamiento y acciones para favorecer
+                    la participación y la inclusión.
 
                 </p>
-
 
             </div>
 
 
-            <!-- EDUCACIÓN -->
+            <!-- EDUCACION -->
 
             <div class="activity-card">
 
@@ -2770,12 +2509,10 @@ footer strong{
 
                 <p>
 
-                    Actividades formativas para
-                    mejorar las capacidades
-                    y oportunidades.
+                    Actividades formativas para mejorar
+                    las capacidades y oportunidades.
 
                 </p>
-
 
             </div>
 
@@ -2791,8 +2528,6 @@ footer strong{
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
                     >
 
                         <circle
@@ -2830,7 +2565,6 @@ footer strong{
                     historia gitana.
 
                 </p>
-
 
             </div>
 
@@ -2874,11 +2608,10 @@ footer strong{
                 <p>
 
                     Trabajamos para combatir las
-                    desigualdades y favorecer la
-                    igualdad de oportunidades.
+                    desigualdades y favorecer
+                    la igualdad de oportunidades.
 
                 </p>
-
 
             </div>
 
@@ -2894,12 +2627,15 @@ footer strong{
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
                     >
 
-                        <path d="M3 17l6-6 4 4 8-8"/>
-                        <path d="M14 7h7v7"/>
+                        <path
+                            d="M3 17l6-6 4 4 8-8"
+                        />
+
+                        <path
+                            d="M14 7h7v7"
+                        />
 
                     </svg>
 
@@ -2918,7 +2654,6 @@ footer strong{
                     niños, niñas y jóvenes.
 
                 </p>
-
 
             </div>
 
@@ -2972,7 +2707,6 @@ footer strong{
 
                 </p>
 
-
             </div>
 
 
@@ -2980,6 +2714,7 @@ footer strong{
 
 
         <div class="health-message">
+
 
             <p>
 
@@ -3001,6 +2736,7 @@ footer strong{
 
             </p>
 
+
         </div>
 
 
@@ -3010,10 +2746,11 @@ footer strong{
 
 
 <!-- ======================================================
-     FRASE
+     FRASE DESTACADA
 ====================================================== -->
 
 <section class="quote-section">
+
 
     <p class="quote">
 
@@ -3022,6 +2759,7 @@ footer strong{
         PARA CONQUISTAR ESPACIOS DE CONVIVENCIA”
 
     </p>
+
 
 </section>
 
@@ -3084,9 +2822,9 @@ footer strong{
         </div>
 
 
-        <!-- =================================================
+        <!-- ==================================================
              ITINERARIO FSE+
-        ================================================= -->
+        ================================================== -->
 
         <div class="training-feature">
 
@@ -3102,7 +2840,9 @@ footer strong{
 
 
                 <h3>
+
                     Itinerarios para el empleo
+
                 </h3>
 
 
@@ -3119,10 +2859,11 @@ footer strong{
                 <p>
 
                     A través de este programa, desde
-                    ASOGINTER se realizan acciones formativas
-                    orientadas a mejorar las competencias
-                    profesionales y favorecer las
-                    oportunidades de acceso al empleo.
+                    ASOGINTER se realizan acciones
+                    formativas orientadas a mejorar
+                    las competencias profesionales y
+                    favorecer las oportunidades de
+                    acceso al empleo.
 
                 </p>
 
@@ -3221,7 +2962,7 @@ footer strong{
             </div>
 
 
-            <!-- COLLAGE -->
+            <!-- FOTOS -->
 
             <div class="course-collage">
 
@@ -3243,7 +2984,14 @@ footer strong{
                 <img
                     class="course-photo course-photo-forklift"
                     src="carretillero-3.jpeg"
-                    alt="Prácticas de manejo de carretilla elevadora"
+                    alt="Participante realizando prácticas con una carretilla elevadora"
+                >
+
+
+                <img
+                    class="course-photo course-photo-training"
+                    src="formacion-aula.jpg"
+                    alt="Grupo de personas durante una actividad formativa"
                 >
 
 
@@ -3253,33 +3001,16 @@ footer strong{
         </div>
 
 
-        <!-- =================================================
-             SERVICIOS
-        ================================================= -->
-
-        <h3 class="subsection-title">
-
-            Servicios y líneas de trabajo
-
-        </h3>
-
-
-        <p class="subsection-intro">
-
-            El centro trabaja en distintos ámbitos y adapta
-            sus acciones a las necesidades de las personas
-            y de la comunidad.
-
-        </p>
-
+        <!-- ==================================================
+             LÍNEAS DE TRABAJO
+        ================================================== -->
 
         <div class="areas-grid">
 
 
-            <!-- ATENCIÓN Y ACOMPAÑAMIENTO -->
+            <!-- ATENCIÓN -->
 
             <div class="area-card">
-
 
                 <div class="area-icon area-blue">
 
@@ -3336,13 +3067,6 @@ footer strong{
                             stroke-width="3"
                         />
 
-                        <path
-                            d="M76 78H104M76 86H98"
-                            stroke="#7B3F98"
-                            stroke-width="3"
-                            stroke-linecap="round"
-                        />
-
                     </svg>
 
                 </div>
@@ -3355,9 +3079,10 @@ footer strong{
 
                 <p>
 
-                    Apoyo en la <strong>gestión de trámites</strong>,
-                    orientación administrativa, acompañamiento
-                    y acciones para reducir la brecha digital.
+                    Apoyo en la gestión de trámites,
+                    orientación administrativa,
+                    acompañamiento y acciones
+                    para reducir la brecha digital.
 
                 </p>
 
@@ -3365,10 +3090,9 @@ footer strong{
             </div>
 
 
-            <!-- EDUCACIÓN E INFANCIA -->
+            <!-- EDUCACIÓN -->
 
             <div class="area-card">
-
 
                 <div class="area-icon area-green">
 
@@ -3377,8 +3101,6 @@ footer strong{
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                     >
-
-                        <!-- libros -->
 
                         <rect
                             x="18"
@@ -3407,9 +3129,6 @@ footer strong{
                             fill="#C62828"
                         />
 
-
-                        <!-- niño -->
-
                         <circle
                             cx="93"
                             cy="34"
@@ -3426,9 +3145,6 @@ footer strong{
                             d="M78 76C78 57 87 49 98 49C109 49 118 57 118 76"
                             fill="#1479B8"
                         />
-
-
-                        <!-- niña -->
 
                         <circle
                             cx="132"
@@ -3448,9 +3164,6 @@ footer strong{
                             d="M118 77C118 60 125 52 136 52C147 52 154 60 154 77"
                             fill="#C62828"
                         />
-
-
-                        <!-- libro -->
 
                         <path
                             d="M84 77C97 69 110 69 121 77V90C109 83 96 83 84 90Z"
@@ -3478,11 +3191,11 @@ footer strong{
 
                 <p>
 
-                    Actividades de
+                    Desarrollamos actividades de
                     <strong>
                         refuerzo escolar para niños y niñas
-                    </strong>
-                    y otras acciones educativas
+                    </strong>,
+                    junto con otras acciones educativas
                     y de acompañamiento.
 
                 </p>
@@ -3491,10 +3204,9 @@ footer strong{
             </div>
 
 
-            <!-- FORMACIÓN E INSERCIÓN -->
+            <!-- FORMACIÓN -->
 
             <div class="area-card">
-
 
                 <div class="area-icon area-green">
 
@@ -3583,12 +3295,10 @@ footer strong{
 
                 <p>
 
-                    Formación y acciones para
-                    <strong>
-                        favorecer el acceso al empleo
-                    </strong>,
-                    mejorar competencias y acompañar
-                    procesos de inserción sociolaboral.
+                    Formación y acciones para favorecer
+                    el acceso al empleo, mejorar
+                    competencias y acompañar procesos
+                    de inserción sociolaboral.
 
                 </p>
 
@@ -3599,7 +3309,6 @@ footer strong{
             <!-- IGUALDAD -->
 
             <div class="area-card">
-
 
                 <div class="area-icon area-purple">
 
@@ -3625,16 +3334,6 @@ footer strong{
                             x2="132"
                             y2="35"
                             stroke="#555"
-                            stroke-width="5"
-                            stroke-linecap="round"
-                        />
-
-                        <line
-                            x1="90"
-                            y1="18"
-                            x2="90"
-                            y2="35"
-                            stroke="#7B3F98"
                             stroke-width="5"
                         />
 
@@ -3710,10 +3409,7 @@ footer strong{
 
                 <p>
 
-                    Fomento de la
-                    <strong>
-                        participación ciudadana
-                    </strong>,
+                    Fomento de la participación ciudadana,
                     la igualdad y la participación de
                     la mujer gitana en el mundo laboral.
 
@@ -3726,7 +3422,6 @@ footer strong{
             <!-- CULTURA -->
 
             <div class="area-card">
-
 
                 <div class="area-icon area-red">
 
@@ -3759,20 +3454,6 @@ footer strong{
                             stroke-linecap="round"
                         />
 
-                        <path
-                            d="M86 25L102 36"
-                            stroke="#555"
-                            stroke-width="7"
-                            stroke-linecap="round"
-                        />
-
-                        <circle
-                            cx="50"
-                            cy="60"
-                            r="5"
-                            fill="#C62828"
-                        />
-
                         <circle
                             cx="126"
                             cy="61"
@@ -3800,13 +3481,6 @@ footer strong{
                             stroke-width="3"
                         />
 
-                        <path
-                            d="M153 24V49C153 54 147 57 143 54C139 51 142 45 148 45C151 45 153 46 153 49"
-                            stroke="#C62828"
-                            stroke-width="4"
-                            stroke-linecap="round"
-                        />
-
                     </svg>
 
                 </div>
@@ -3819,10 +3493,10 @@ footer strong{
 
                 <p>
 
-                    Integración sociocultural,
-                    actividades culturales,
-                    sensibilización y acciones para
-                    favorecer la convivencia.
+                    Actividades culturales, encuentros
+                    y acciones para favorecer la
+                    convivencia y el reconocimiento
+                    de la diversidad.
 
                 </p>
 
@@ -3833,7 +3507,6 @@ footer strong{
             <!-- SALUD -->
 
             <div class="area-card">
-
 
                 <div class="area-icon area-red">
 
@@ -3851,16 +3524,6 @@ footer strong{
                         <path
                             d="M140 80C152 62 150 45 136 33C124 49 124 67 140 80Z"
                             fill="#39A852"
-                        />
-
-                        <path
-                            d="M50 71C57 62 65 57 73 55L85 64C78 71 70 77 62 80Z"
-                            fill="#F2B88B"
-                        />
-
-                        <path
-                            d="M130 71C123 62 115 57 107 55L95 64C102 71 110 77 118 80Z"
-                            fill="#F2B88B"
                         />
 
                         <path
@@ -3902,9 +3565,9 @@ footer strong{
         </div>
 
 
-        <!-- =================================================
+        <!-- ==================================================
              SERVICIOS Y TALLERES
-        ================================================= -->
+        ================================================== -->
 
         <div class="services-panel">
 
@@ -3927,6 +3590,7 @@ footer strong{
 
 
             <div class="service-tags">
+
 
                 <span>
                     Gestoría Gitana
@@ -4004,15 +3668,16 @@ footer strong{
                     Radio
                 </span>
 
+
             </div>
 
 
         </div>
 
 
-        <!-- =================================================
+        <!-- ==================================================
              DISPENSA SOLIDARIA
-        ================================================= -->
+        ================================================== -->
 
         <div class="solidarity-feature">
 
@@ -4076,46 +3741,10 @@ footer strong{
             <div class="solidarity-visual">
 
 
-                <div class="solidarity-visual-inner">
-
-
-                    <div class="big-symbol">
-
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.8"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            style="width:58px;height:58px;"
-                        >
-
-                            <path
-                                d="M20.8 8.6c0-2.4-1.9-4.3-4.3-4.3-1.9 0-3.5 1.2-4.2 2.8-.7-1.6-2.3-2.8-4.2-2.8C5.7 4.3 3.8 6.2 3.8 8.6c0 5 8.5 10.2 8.5 10.2s8.5-5.2 8.5-10.2z"
-                            ></path>
-
-                        </svg>
-
-
-                    </div>
-
-
-                    <h4>
-                        Apoyo y solidaridad
-                    </h4>
-
-
-                    <p>
-
-                        Colaboración, comunidad
-                        y apoyo a las familias.
-
-                    </p>
-
-
-                </div>
+                <img
+                    src="donacion-alimentos-asoginter.png"
+                    alt="Ilustración de ASOGINTER colaborando en la distribución solidaria de alimentos"
+                >
 
 
             </div>
@@ -4124,17 +3753,15 @@ footer strong{
         </div>
 
 
-        <!-- =================================================
+        <!-- ==================================================
              TRABAJO EN RED
-        ================================================= -->
+        ================================================== -->
 
         <div class="collaboration-banner">
 
 
             <h3>
-
                 Trabajamos en red
-
             </h3>
 
 
@@ -4154,18 +3781,20 @@ footer strong{
         </div>
 
 
-        <!-- =================================================
-             MÁS ACTIVIDADES
-        ================================================= -->
+        <!-- ==================================================
+             TARJETAS FINALES
+        ================================================== -->
 
         <div class="news-grid">
 
 
             <div class="news-card">
 
+
                 <h3>
                     Otras actividades
                 </h3>
+
 
                 <p>
 
@@ -4176,14 +3805,17 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
             <div class="news-card">
 
+
                 <h3>
                     Colaboraciones
                 </h3>
+
 
                 <p>
 
@@ -4194,14 +3826,17 @@ footer strong{
 
                 </p>
 
+
             </div>
 
 
             <div class="news-card">
 
+
                 <h3>
                     Actualidad
                 </h3>
+
 
                 <p>
 
@@ -4211,6 +3846,7 @@ footer strong{
                     evolución de nuestro trabajo.
 
                 </p>
+
 
             </div>
 
@@ -4231,6 +3867,7 @@ footer strong{
     class="collaborate"
     id="colabora"
 >
+
 
     <div class="container">
 
@@ -4273,6 +3910,7 @@ footer strong{
 
     </div>
 
+
 </section>
 
 
@@ -4281,6 +3919,7 @@ footer strong{
 ====================================================== -->
 
 <section id="contacto">
+
 
     <div class="container">
 
@@ -4344,6 +3983,7 @@ footer strong{
 
                     <div>
 
+
                         <h4>
                             Dirección
                         </h4>
@@ -4356,6 +3996,7 @@ footer strong{
                             CP 46900
 
                         </p>
+
 
                     </div>
 
@@ -4403,6 +4044,7 @@ footer strong{
 
                     <div>
 
+
                         <h4>
                             Teléfono
                         </h4>
@@ -4410,15 +4052,14 @@ footer strong{
 
                         <p>
 
-                            <a
-                                href="tel:+349615578810"
-                            >
+                            <a href="tel:+349615578810">
 
                                 961 55 78 810
 
                             </a>
 
                         </p>
+
 
                     </div>
 
@@ -4461,6 +4102,7 @@ footer strong{
 
                     <div>
 
+
                         <h4>
                             WhatsApp
                         </h4>
@@ -4479,6 +4121,7 @@ footer strong{
                             </a>
 
                         </p>
+
 
                     </div>
 
@@ -4523,6 +4166,7 @@ footer strong{
 
                     <div>
 
+
                         <h4>
                             Email
                         </h4>
@@ -4530,15 +4174,14 @@ footer strong{
 
                         <p>
 
-                            <a
-                                href="mailto:asoginter@gmail.com"
-                            >
+                            <a href="mailto:asoginter@gmail.com">
 
                                 asoginter@gmail.com
 
                             </a>
 
                         </p>
+
 
                     </div>
 
@@ -4579,6 +4222,7 @@ footer strong{
 
 
     </div>
+
 
 </section>
 
@@ -4627,4 +4271,5 @@ footer strong{
 
 
 </body>
+
 </html>
