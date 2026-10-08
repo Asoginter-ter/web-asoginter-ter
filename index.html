@@ -85,6 +85,159 @@ nav a:hover{color:#c62828}
 .collaboration-banner{padding:32px 30px;margin-bottom:35px;background:#c62828;color:#fff;border-radius:20px;text-align:center;box-shadow:0 8px 25px rgba(198,40,40,.12)}.collaboration-banner h3{font-size:27px;margin-bottom:12px}.collaboration-banner p{max-width:900px;margin:auto;font-size:16px;line-height:1.7}
 .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.news-card{min-height:175px;padding:25px;background:#f7f7f7;border-radius:15px;border-top:4px solid #c62828}.news-card:nth-child(2){border-top-color:#1479b8}.news-card:nth-child(3){border-top-color:#39a852}.news-card h3{color:#c62828;font-size:20px;margin-bottom:12px}.news-card p{color:#666;font-size:14px}
 
+
+/* ==================================================
+   REDES SOCIALES
+================================================== */
+
+.social-follow{
+    background:#fafafa;
+}
+
+.social-follow-box{
+    max-width:900px;
+    margin:0 auto;
+    padding:48px 40px;
+    text-align:center;
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:22px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    position:relative;
+    overflow:hidden;
+}
+
+.social-follow-box::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:5px;
+    background:linear-gradient(90deg,#1479b8,#39a852,#c62828,#7b3f98);
+}
+
+.social-follow-icon{
+    width:74px;
+    height:74px;
+    margin:0 auto 18px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fdeaea;
+    color:#c62828;
+}
+
+.social-follow-icon svg{
+    width:38px;
+    height:38px;
+}
+
+.social-follow-box h2{
+    font-size:32px;
+    color:#333;
+    margin-bottom:15px;
+}
+
+.social-follow-box h2 span{
+    color:#c62828;
+}
+
+.social-follow-box > p{
+    max-width:760px;
+    margin:0 auto 14px;
+    color:#666;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.social-follow-highlight{
+    color:#444 !important;
+    margin-top:8px !important;
+}
+
+.social-follow-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:25px;
+}
+
+.social-follow-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    min-height:48px;
+    padding:12px 20px;
+    border-radius:30px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.social-follow-btn:hover{
+    transform:translateY(-2px);
+}
+
+.social-follow-btn-icon{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:12px;
+    font-weight:800;
+}
+
+.instagram-btn{
+    background:#fff1f6;
+    color:#c2185b;
+    border:1px solid #f1c7da;
+}
+
+.instagram-btn .social-follow-btn-icon{
+    background:#d62976;
+}
+
+.facebook-btn{
+    background:#eef4ff;
+    color:#1769d1;
+    border:1px solid #cbdcff;
+}
+
+.facebook-btn .social-follow-btn-icon{
+    background:#1877f2;
+    font-size:16px;
+}
+
+@media(max-width:600px){
+    .social-follow-box{
+        padding:38px 20px 30px;
+    }
+
+    .social-follow-box h2{
+        font-size:27px;
+    }
+
+    .social-follow-box > p{
+        font-size:14px;
+    }
+
+    .social-follow-buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .social-follow-btn{
+        width:100%;
+        justify-content:center;
+        min-height:50px;
+    }
+}
+
 /* COLABORA */
 .collaborate{background:#f7f7f7}.collaborate-box{max-width:900px;margin:auto;padding:45px;background:#fff;border-radius:20px;text-align:center;box-shadow:0 7px 25px rgba(0,0,0,.07)}.collaborate-box p{margin-bottom:25px;color:#666}
 
@@ -102,342 +255,106 @@ footer{background:#222;color:#fff;text-align:center;padding:35px 20px}footer p{m
 
 /* MOVIL */
 @media(max-width:600px){
-html{scroll-padding-top:120px}
-section{padding:58px 0}
-.container{width:92%}
-
-.header-container{grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:8px 12px;padding:9px 4%}
-.header-logo{width:70px;height:52px;justify-self:start}
-.social{justify-self:end;gap:7px}
-.social a{width:34px;height:34px}
-
-nav{grid-column:1/-1;width:100%;overflow-x:auto;overflow-y:hidden;justify-content:flex-start;flex-wrap:nowrap;gap:10px;padding-bottom:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-nav::-webkit-scrollbar{display:none}
-nav a{font-size:10.5px;padding:7px 9px;white-space:nowrap}
-
-.hero{min-height:auto;padding:30px 12px 38px}
-.hero-content{width:100%;max-width:100%;padding:30px 18px 35px;border-radius:20px;overflow:visible}
-.hero-emblem{width:125px;height:125px}
-.hero-formal-name{font-size:13px;line-height:1.45;letter-spacing:.7px}
-.hero-title{font-size:37px!important;letter-spacing:0!important;line-height:1.05!important;white-space:normal!important;width:100%!important;max-width:100%!important;text-align:center!important;overflow:visible!important;word-break:normal!important;overflow-wrap:normal!important}
-.hero-tagline{font-size:17px;line-height:1.4}
-.hero-description{font-size:15px;line-height:1.55}
-.hero-buttons{flex-direction:column;gap:10px;margin-top:23px}
-.btn{width:100%;min-height:48px}
-
-.section-title{font-size:30px}
-.section-intro{font-size:15px;margin-bottom:32px}
-
-.about-grid{grid-template-columns:1fr;gap:28px}
-.about-text p{font-size:15px}
-.about-highlight{padding:18px;font-size:14px}
-.about-logo{height:290px}
-
-.mission-grid{grid-template-columns:1fr}
-.mission-card{padding:27px 22px}
-
-.cards-grid{grid-template-columns:1fr;gap:18px}
-.activity-card{padding:25px 20px}
-.professional-icon{width:62px;height:62px}
-.professional-icon svg{width:32px;height:32px}
-.health-message{margin-top:30px;padding:22px 17px;font-size:14px}
-
-.quote-section{padding:55px 18px}
-.quote{font-size:21px;line-height:1.45}
-
-.activity-intro-box{padding:20px 17px}
-.activity-intro-box p{font-size:14px}
-
-.training-feature{grid-template-columns:1fr;padding:20px;gap:25px}
-.training-content h3{font-size:25px}
-.program-title{font-size:16px}
-.training-item{font-size:13px}
-
-/* FOTOS EN MÓVIL */
-.course-collage{display:flex!important;flex-direction:column!important;width:100%!important;height:auto!important;min-height:0!important;align-self:auto!important;gap:10px!important;overflow:visible!important}
-
-.course-photo,
-.course-photo-main,
-.course-photo-group,
-.course-photo-forklift,
-.course-photo-training{
-display:block!important;
-width:100%!important;
-height:auto!important;
-min-width:0!important;
-min-height:0!important;
-max-width:100%!important;
-object-fit:contain!important;
-object-position:center!important;
-flex:none!important;
-grid-column:auto!important
+html{scroll-padding-top:120px}section{padding:58px 0}.container{width:92%}
+.header-container{grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:8px 12px;padding:9px 4%}.header-logo{width:70px;height:52px;justify-self:start}.social{justify-self:end;gap:7px}.social a{width:34px;height:34px}nav{grid-column:1/-1;width:100%;overflow-x:auto;overflow-y:hidden;justify-content:flex-start;flex-wrap:nowrap;gap:10px;padding-bottom:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{font-size:10.5px;padding:7px 9px;white-space:nowrap}
+.hero{min-height:auto;padding:30px 12px 38px}.hero-content{width:100%;max-width:100%;padding:30px 18px 35px;border-radius:20px;overflow:visible}.hero-emblem{width:125px;height:125px}.hero-formal-name{font-size:13px;line-height:1.45;letter-spacing:.7px}.hero-title{font-size:37px!important;letter-spacing:0!important;line-height:1.05!important;white-space:normal!important;width:100%!important;max-width:100%!important;text-align:center!important;overflow:visible!important;word-break:normal!important;overflow-wrap:normal!important}.hero-tagline{font-size:17px;line-height:1.4}.hero-description{font-size:15px;line-height:1.55}.hero-buttons{flex-direction:column;gap:10px;margin-top:23px}.btn{width:100%;min-height:48px}
+.section-title{font-size:30px}.section-intro{font-size:15px;margin-bottom:32px}.about-grid{grid-template-columns:1fr;gap:28px}.about-text p{font-size:15px}.about-highlight{padding:18px;font-size:14px}.about-logo{height:290px}.mission-grid{grid-template-columns:1fr}.mission-card{padding:27px 22px}
+.cards-grid{grid-template-columns:1fr;gap:18px}.activity-card{padding:25px 20px}.professional-icon{width:62px;height:62px}.professional-icon svg{width:32px;height:32px}.health-message{margin-top:30px;padding:22px 17px;font-size:14px}
+.quote-section{padding:55px 18px}.quote{font-size:21px;line-height:1.45}
+.activity-intro-box{padding:20px 17px}.activity-intro-box p{font-size:14px}.training-feature{grid-template-columns:1fr;padding:20px;gap:25px}.training-content h3{font-size:25px}.program-title{font-size:16px}.training-item{font-size:13px}
+.course-collage{display:flex!important;flex-direction:column!important;width:100%!important;height:auto!important;min-height:0!important;align-self:auto!important;gap:10px!important;overflow:visible!important}.course-photo,.course-photo-main,.course-photo-group,.course-photo-forklift,.course-photo-training{display:block!important;width:100%!important;height:auto!important;min-width:0!important;min-height:0!important;max-width:100%!important;object-fit:contain!important;object-position:center!important;flex:none!important}.course-photo-forklift{max-height:520px!important;background:#f7f7f7!important}.course-photo-training{max-height:430px!important;object-fit:cover!important;object-position:center!important}
+.areas-grid{grid-template-columns:1fr;gap:16px}.area-card{padding:21px 18px}.area-icon{width:145px;height:90px;margin-left:auto;margin-right:auto}.area-icon svg{width:140px;height:86px}.services-panel{padding:24px 20px}.services-panel h3{font-size:21px}.service-tags span{font-size:12px}.solidarity-feature{grid-template-columns:1fr;padding:20px;gap:20px}.solidarity-content h3{font-size:24px}.solidarity-content p{font-size:14px}.solidarity-visual{min-height:220px}.solidarity-visual img{min-height:220px}.collaboration-banner{padding:24px 18px}.collaboration-banner h3{font-size:22px}.collaboration-banner p{font-size:14px}.news-grid{grid-template-columns:1fr;gap:18px}.news-card{min-height:auto;padding:22px}.collaborate-box{padding:30px 20px}.collaborate-box .section-title{font-size:26px}.contact-grid{grid-template-columns:1fr;gap:25px}.contact-item{gap:13px;padding:13px 10px;align-items:flex-start}.contact-icon{width:50px;height:50px}.contact-item h4{font-size:15px}.contact-item p{font-size:14px}.map-container iframe{height:285px}footer{padding:28px 15px}footer p{font-size:13px;line-height:1.5}
 }
-
-.course-photo-forklift{
-max-height:520px!important;
-background:#f7f7f7!important
-}
-
-.course-photo-training{
-max-height:430px!important;
-object-fit:cover!important;
-object-position:center!important
-}
-
-.areas-grid{grid-template-columns:1fr;gap:16px}
-.area-card{padding:21px 18px}
-.area-icon{width:145px;height:90px;margin-left:auto;margin-right:auto}
-.area-icon svg{width:140px;height:86px}
-
-.services-panel{padding:24px 20px}
-.services-panel h3{font-size:21px}
-.service-tags span{font-size:12px}
-
-.solidarity-feature{grid-template-columns:1fr;padding:20px;gap:20px}
-.solidarity-content h3{font-size:24px}
-.solidarity-content p{font-size:14px}
-.solidarity-visual{min-height:220px}
-.solidarity-visual img{min-height:220px}
-
-.collaboration-banner{padding:24px 18px}
-.collaboration-banner h3{font-size:22px}
-.collaboration-banner p{font-size:14px}
-
-.news-grid{grid-template-columns:1fr;gap:18px}
-.news-card{min-height:auto;padding:22px}
-
-.collaborate-box{padding:30px 20px}
-.collaborate-box .section-title{font-size:26px}
-
-.contact-grid{grid-template-columns:1fr;gap:25px}
-.contact-item{gap:13px;padding:13px 10px;align-items:flex-start}
-.contact-icon{width:50px;height:50px}
-.contact-item h4{font-size:15px}
-.contact-item p{font-size:14px}
-.map-container iframe{height:285px}
-
-footer{padding:28px 15px}
-footer p{font-size:13px;line-height:1.5}
-}
-
-@media(max-width:380px){
-
-.header-logo{
-width:64px;
-height:48px
-}
-
-.social a{
-width:31px;
-height:31px;
-font-size:13px
-}
-
-nav a{
-font-size:10px
-}
-
-.hero-content{
-padding:26px 14px 30px
-}
-
-.hero-emblem{
-width:108px;
-height:108px
-}
-
-.hero-title{
-font-size:34px!important
-}
-
-.hero-formal-name{
-font-size:11px
-}
-
-.hero-tagline{
-font-size:15px
-}
-
-.hero-description{
-font-size:14px
-}
-
-.about-logo{
-height:255px
-}
-
-.map-container iframe{
-height:255px
-}
-
-}
-
+@media(max-width:380px){.header-logo{width:64px;height:48px}.social a{width:31px;height:31px;font-size:13px}nav a{font-size:10px}.hero-content{padding:26px 14px 30px}.hero-emblem{width:108px;height:108px}.hero-title{font-size:34px!important}.hero-formal-name{font-size:11px}.hero-tagline{font-size:15px}.hero-description{font-size:14px}.about-logo{height:255px}.map-container iframe{height:255px}}
 </style>
 </head>
 
 <body>
 
 <header>
-
 <div class="header-container">
 
 <a href="#inicio">
-
-<img
-class="header-logo"
-src="LOGO%20ASOGINTER%20%281%29.png"
-alt="Logo de ASOGINTER">
-
+<img class="header-logo" src="LOGO%20ASOGINTER%20%281%29.png" alt="Logo de ASOGINTER">
 </a>
 
 <nav>
-
 <a href="#inicio">INICIO</a>
-
-<a href="#quienes-somos">
-QUIÉNES SOMOS
-</a>
-
-<a href="#que-hacemos">
-QUÉ HACEMOS
-</a>
-
-<a href="#actividades">
-ACTIVIDADES
-</a>
-
-<a href="#colabora">
-COLABORA
-</a>
-
-<a href="#contacto">
-CONTACTO
-</a>
-
+<a href="#quienes-somos">QUIÉNES SOMOS</a>
+<a href="#que-hacemos">QUÉ HACEMOS</a>
+<a href="#actividades">ACTIVIDADES</a>
+<a href="#colabora">COLABORA</a>
+<a href="#contacto">CONTACTO</a>
 </nav>
 
 <div class="social">
-
-<a
-class="instagram"
-href="https://www.instagram.com/asoginter/"
-target="_blank"
-rel="noopener"
-aria-label="Instagram">
-IG
-</a>
-
-<a
-class="facebook"
-href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
-target="_blank"
-rel="noopener"
-aria-label="Facebook">
-f
-</a>
-
+<a class="instagram" href="https://www.instagram.com/asoginter/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+<a class="facebook" href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES" target="_blank" rel="noopener" aria-label="Facebook">f</a>
 </div>
 
 </div>
 
 <div class="color-bar">
-
 <span class="blue"></span>
 <span class="green"></span>
 <span class="red"></span>
 <span class="purple"></span>
-
 </div>
-
 </header>
 
-
-<!-- ==================================================
-     INICIO
-================================================== -->
 
 <section class="hero" id="inicio">
 
 <div class="hero-content">
 
-<img
-class="hero-emblem"
-src="logo-emblema-asoginter.png"
-alt="Emblema de ASOGINTER">
+<img class="hero-emblem" src="logo-emblema-asoginter.png" alt="Emblema de ASOGINTER">
 
 <div class="hero-formal-name">
-
-ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL
-DE TORRENT
-
+ASOCIACIÓN GITANA EUROPEA E INTERCULTURAL DE TORRENT
 </div>
 
 <h1 class="hero-title">
-
 ASOGINTER
-
 </h1>
 
 <div class="hero-tagline">
-
 Inclusión · Igualdad · Cultura · Interculturalidad
-
 </div>
 
 <p class="hero-description">
-
 Trabajamos por una sociedad más inclusiva,
 igualitaria e intercultural, promoviendo
 la convivencia, la participación y las
 oportunidades para todas las personas.
-
 </p>
 
 <div class="hero-buttons">
 
-<a
-class="btn btn-primary"
-href="#quienes-somos">
-
+<a class="btn btn-primary" href="#quienes-somos">
 Conócenos
-
 </a>
 
-<a
-class="btn btn-secondary"
-href="#contacto">
-
+<a class="btn btn-secondary" href="#contacto">
 Contacta con nosotros
-
 </a>
 
 </div>
 
 </div>
-
 </section>
 
-
-<!-- ==================================================
-     QUIÉNES SOMOS
-================================================== -->
 
 <section id="quienes-somos">
 
 <div class="container">
 
 <h2 class="section-title">
-
-Quiénes
-<span>somos</span>
-
+Quiénes <span>somos</span>
 </h2>
 
 <p class="section-intro">
-
 Centro Social de Apoyo para la Inclusión
 y Promoción de la Comunidad Gitana.
-
 </p>
 
 <div class="about-grid">
@@ -445,7 +362,6 @@ y Promoción de la Comunidad Gitana.
 <div class="about-text">
 
 <p>
-
 <strong>ASOGINTER</strong>, Asociación
 Gitana Europea e Intercultural de Torrent,
 es un centro social de apoyo para
@@ -453,404 +369,250 @@ la inclusión y promoción de la comunidad
 gitana y trabaja también con personas
 y familias de diferentes colectivos
 en situación o riesgo de vulnerabilidad.
-
 </p>
 
 <p>
-
 Nuestro trabajo busca favorecer la
 participación, la igualdad de oportunidades,
 el acceso a recursos y la convivencia,
 ofreciendo apoyo y acompañamiento en
 diferentes ámbitos.
-
 </p>
 
 <p>
-
 Ofrecemos orientación, acompañamiento
 y apoyo en diferentes ámbitos sociales,
 educativos, laborales y comunitarios,
 atendiendo a las necesidades de personas
 y familias en situación o riesgo de
 vulnerabilidad.
-
 </p>
 
 <div class="about-highlight">
-
 “Hablar de la comunidad gitana es hablar
 de historia, cultura, esfuerzo y futuro.
 Gracias por el espacio y por escuchar.”
-
 </div>
 
 </div>
 
 <div class="about-logo">
-
-<img
-src="imagen-quienes-somos.png"
-alt="Comunidad, convivencia e inclusión en el barrio">
-
+<img src="imagen-quienes-somos.png" alt="Comunidad, convivencia e inclusión en el barrio">
 </div>
 
 </div>
 
 </div>
-
 </section>
 
-
-<!-- ==================================================
-     MISION
-================================================== -->
 
 <section class="mission">
 
 <div class="container">
 
 <h2 class="section-title">
-
-Misión y
-<span>visión</span>
-
+Misión y <span>visión</span>
 </h2>
 
 <p class="section-intro">
-
 Construimos oportunidades y espacios
 de convivencia desde la participación
 y el respeto.
-
 </p>
 
 <div class="mission-grid">
 
 <div class="mission-card">
-
-<h3>
-Misión
-</h3>
+<h3>Misión</h3>
 
 <p>
-
 Favorecer la inclusión social y la
 igualdad de oportunidades mediante
 programas, actividades, formación
 y acompañamiento dirigidos a la
 comunidad y al conjunto de la sociedad.
-
 </p>
-
 </div>
 
 <div class="mission-card">
-
-<h3>
-Visión
-</h3>
+<h3>Visión</h3>
 
 <p>
-
 Una sociedad donde la diversidad
 cultural sea reconocida como una
 riqueza y donde todas las personas
 puedan participar en igualdad
 de condiciones.
-
 </p>
-
 </div>
 
 </div>
 
 </div>
-
 </section>
 
-
-<!-- ==================================================
-     QUÉ HACEMOS
-================================================== -->
 
 <section id="que-hacemos">
 
 <div class="container">
 
 <h2 class="section-title">
-
-Qué
-<span>hacemos</span>
-
+Qué <span>hacemos</span>
 </h2>
 
 <p class="section-intro">
-
 Desarrollamos proyectos y acciones dirigidos
 a mejorar las oportunidades, la participación
 social y la convivencia.
-
 </p>
 
 <div class="cards-grid">
 
-
-<!-- INCLUSIÓN -->
-
 <div class="activity-card">
 
 <div class="professional-icon icon-blue">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 
-<svg
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round">
-
-<path
-d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-
-<circle
-cx="9"
-cy="7"
-r="4"/>
-
-<path
-d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-
-<path
-d="M16 3.13a4 4 0 0 1 0 7.75"/>
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+<circle cx="9" cy="7" r="4"/>
+<path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+<path d="M16 3.13a4 4 0 0 1 0 7.75"/>
 
 </svg>
-
 </div>
 
-<h3>
-Inclusión social
-</h3>
+<h3>Inclusión social</h3>
 
 <p>
-
 Acompañamiento y acciones para favorecer
 la participación y la inclusión.
-
 </p>
 
 </div>
 
-
-<!-- EDUCACIÓN -->
 
 <div class="activity-card">
 
 <div class="professional-icon icon-green">
 
-<svg
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 
-<path
-d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-
-<path
-d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
 
 </svg>
 
 </div>
 
-<h3>
-Educación y formación
-</h3>
+<h3>Educación y formación</h3>
 
 <p>
-
 Actividades formativas para mejorar
 las capacidades y oportunidades.
-
 </p>
 
 </div>
 
 
-<!-- CULTURA -->
-
 <div class="activity-card">
 
 <div class="professional-icon icon-red">
 
-<svg
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="2">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 
-<circle
-cx="13.5"
-cy="6.5"
-r="3.5"/>
-
-<circle
-cx="6.5"
-cy="12.5"
-r="3.5"/>
-
-<circle
-cx="17.5"
-cy="17.5"
-r="3.5"/>
-
+<circle cx="13.5" cy="6.5" r="3.5"/>
+<circle cx="6.5" cy="12.5" r="3.5"/>
+<circle cx="17.5" cy="17.5" r="3.5"/>
 <path d="M13 10l-3 2"/>
-
 <path d="M10 15l4 1"/>
 
 </svg>
 
 </div>
 
-<h3>
-Cultura gitana
-</h3>
+<h3>Cultura gitana</h3>
 
 <p>
-
 Promoción, conocimiento y puesta
 en valor de la cultura y la
 historia gitana.
-
 </p>
 
 </div>
 
-
-<!-- IGUALDAD -->
 
 <div class="activity-card">
 
 <div class="professional-icon icon-purple">
 
-<svg
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 
 <path d="M12 3v18"/>
-
 <path d="M3 7h18"/>
 
-<path
-d="M5 7l-3 6a4 4 0 0 0 6 0L5 7z"/>
-
-<path
-d="M19 7l-3 6a4 4 0 0 0 6 0l-3-6z"/>
+<path d="M5 7l-3 6a4 4 0 0 0 6 0L5 7z"/>
+<path d="M19 7l-3 6a4 4 0 0 0 6 0l-3-6z"/>
 
 </svg>
 
 </div>
 
-<h3>
-Igualdad
-</h3>
+<h3>Igualdad</h3>
 
 <p>
-
 Trabajamos para combatir las
 desigualdades y favorecer
 la igualdad de oportunidades.
-
 </p>
 
 </div>
 
-
-<!-- JUVENTUD -->
 
 <div class="activity-card">
 
 <div class="professional-icon icon-green">
 
-<svg
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="2">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 
-<path
-d="M3 17l6-6 4 4 8-8"/>
-
-<path
-d="M14 7h7v7"/>
+<path d="M3 17l6-6 4 4 8-8"/>
+<path d="M14 7h7v7"/>
 
 </svg>
 
 </div>
 
-<h3>
-Juventud
-</h3>
+<h3>Juventud</h3>
 
 <p>
-
 Impulsamos la participación,
 formación y desarrollo de
 niños, niñas y jóvenes.
-
 </p>
 
 </div>
 
 
-<!-- INTERCULTURALIDAD -->
-
 <div class="activity-card">
 
 <div class="professional-icon icon-blue">
 
-<svg
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 
-<circle
-cx="12"
-cy="12"
-r="9"/>
-
+<circle cx="12" cy="12" r="9"/>
 <path d="M3 12h18"/>
-
-<path
-d="M12 3a14 14 0 0 1 0 18"/>
-
-<path
-d="M12 3a14 14 0 0 0 0 18"/>
+<path d="M12 3a14 14 0 0 1 0 18"/>
+<path d="M12 3a14 14 0 0 0 0 18"/>
 
 </svg>
 
 </div>
 
-<h3>
-Interculturalidad
-</h3>
+<h3>Interculturalidad</h3>
 
 <p>
-
 Creamos espacios de encuentro,
 diálogo y convivencia entre
 diferentes culturas.
-
 </p>
 
 </div>
@@ -861,75 +623,52 @@ diferentes culturas.
 <div class="health-message">
 
 <p>
-
 “La salud empieza en el barrio,
 crece con la comunidad y llega
 a todas las personas.”
-
 </p>
 
 <p style="margin-top:12px">
-
 <strong>
-
 Opre Rroma · Salud y libertad
 · Sastipen Tali
-
 </strong>
-
 </p>
 
 </div>
 
 </div>
-
 </section>
 
-
-<!-- ==================================================
-     FRASE
-================================================== -->
 
 <section class="quote-section">
 
 <p class="quote">
-
 “TODOS A UNA SOLA VOZ DERRIBAREMOS
 LOS MUROS DE INTOLERANCIA Y DESIGUALDAD
 PARA CONQUISTAR ESPACIOS DE CONVIVENCIA”
-
 </p>
 
 </section>
 
-
-<!-- ==================================================
-     ACTIVIDADES
-================================================== -->
 
 <section id="actividades">
 
 <div class="container">
 
 <h2 class="section-title">
-
-Actividades y
-<span>proyectos</span>
-
+Actividades y <span>proyectos</span>
 </h2>
 
 <p class="section-intro">
-
 Una muestra de nuestros programas,
 servicios, formaciones y acciones comunitarias.
-
 </p>
 
 
 <div class="activity-intro-box">
 
 <p>
-
 Las actividades que aparecen a continuación
 son <strong>solo una muestra</strong> del
 trabajo que desarrollamos desde ASOGINTER.
@@ -942,7 +681,6 @@ y empresas
 
 en distintos ámbitos sociales, educativos,
 laborales, culturales y comunitarios.
-
 </p>
 
 <p style="margin-top:12px">
@@ -956,29 +694,18 @@ por el <strong>trabajo en red</strong>.
 </div>
 
 
-<!-- ==================================================
-     ITINERARIO FSE+
-================================================== -->
-
 <div class="training-feature">
 
 
 <div class="training-content">
 
-
 <div class="training-label">
-
 Formación e inserción sociolaboral
-
 </div>
 
-
 <h3>
-
 Itinerarios para el empleo
-
 </h3>
-
 
 <p class="program-title">
 
@@ -988,7 +715,6 @@ en situación o riesgo de exclusión
 social FSE+ 2021-2027
 
 </p>
-
 
 <p>
 
@@ -1004,99 +730,43 @@ acceso al empleo.
 
 <div class="training-list">
 
-
 <div class="training-item">
-
-<strong>
-Carretillero
-</strong>
-
+<strong>Carretillero</strong>
 · Formación realizada en
-
-<span class="company">
-Agropeven
-</span>.
-
+<span class="company">Agropeven</span>.
 </div>
 
-
 <div class="training-item">
-
-<strong>
-Prevención de Riesgos Laborales
-</strong>
-
+<strong>Prevención de Riesgos Laborales</strong>
 · Formación realizada en
-
-<span class="company">
-Asonaman
-</span>.
-
+<span class="company">Asonaman</span>.
 </div>
 
-
 <div class="training-item">
-
-<strong>
-Manipulador de alimentos
-</strong>
-
+<strong>Manipulador de alimentos</strong>
 · Formación realizada en
-
-<span class="company">
-Asonaman
-</span>.
-
+<span class="company">Asonaman</span>.
 </div>
 
-
 <div class="training-item">
-
-<strong>
-Monitor de ocio y tiempo libre
-</strong>
-
+<strong>Monitor de ocio y tiempo libre</strong>
 · Formación realizada en
-
 <span class="company">
-
-<a
-href="http://www.rudeformacion.es/"
-target="_blank"
-rel="noopener">
-
+<a href="http://www.rudeformacion.es/" target="_blank" rel="noopener">
 Rude Formación
-
 </a>
-
 </span>.
-
 </div>
-
 
 <div class="training-item">
-
-<strong>
-Curso de comedor
-</strong>
-
+<strong>Curso de comedor</strong>
 · Formación realizada en
-
 <span class="company">
-
-<a
-href="http://www.rudeformacion.es/"
-target="_blank"
-rel="noopener">
-
+<a href="http://www.rudeformacion.es/" target="_blank" rel="noopener">
 Rude Formación
-
 </a>
-
 </span>.
-
 </div>
-
 
 </div>
 
@@ -1110,86 +780,62 @@ las oportunidades laborales.
 
 </div>
 
-
 </div>
 
 
-<!-- FOTOGRAFÍAS -->
-
 <div class="course-collage">
-
 
 <img
 class="course-photo course-photo-main"
 src="carretillero-1.jpeg"
-alt="Participantes mostrando sus certificados de formación">
-
+alt="Participantes mostrando sus certificados de formación"
+>
 
 <img
 class="course-photo course-photo-group"
 src="carretillero-2.jpeg"
-alt="Grupo participante durante la formación">
-
+alt="Grupo participante durante la formación"
+>
 
 <img
 class="course-photo course-photo-forklift"
 src="carretillero-3.jpeg"
-alt="Participante realizando prácticas con una carretilla elevadora">
-
+alt="Participante realizando prácticas con una carretilla elevadora"
+>
 
 <img
 class="course-photo course-photo-training"
 src="formacion-aula.jpg"
-alt="Grupo de personas durante una actividad formativa">
-
-
-</div>
+alt="Grupo de personas durante una actividad formativa"
+>
 
 </div>
 
+</div>
 
-<!-- ==================================================
-     LÍNEAS DE TRABAJO
-================================================== -->
 
 <div class="areas-grid">
 
-
-<!-- ATENCION -->
 
 <div class="area-card">
 
 <div class="area-icon area-blue">
 
-<svg
-viewBox="0 0 180 110"
-fill="none">
+<svg viewBox="0 0 180 110" fill="none">
 
-<circle
-cx="45"
-cy="45"
-r="10"
-fill="#F2B88B"/>
+<circle cx="45" cy="45" r="10" fill="#F2B88B"/>
 
 <path
 d="M28 82C28 65 35 57 45 57C55 57 62 65 62 82"
 fill="#1479B8"/>
 
-<circle
-cx="90"
-cy="38"
-r="11"
-fill="#F2B88B"/>
+<circle cx="90" cy="38" r="11" fill="#F2B88B"/>
 
 <path
 d="M70 81C70 61 78 52 90 52C102 52 110 61 110 81"
 fill="#C62828"/>
 
-<circle
-cx="135"
-cy="45"
-r="10"
-fill="#F2B88B"/>
+<circle cx="135" cy="45" r="10" fill="#F2B88B"/>
 
 <path
 d="M118 82C118 65 125 57 135 57C145 57 152 65 152 82"
@@ -1214,26 +860,20 @@ Atención y acompañamiento
 </h3>
 
 <p>
-
 Apoyo en la gestión de trámites,
 orientación administrativa,
 acompañamiento y acciones para
 reducir la brecha digital.
-
 </p>
 
 </div>
 
 
-<!-- EDUCACIÓN -->
-
 <div class="area-card">
 
 <div class="area-icon area-green">
 
-<svg
-viewBox="0 0 180 110"
-fill="none">
+<svg viewBox="0 0 180 110" fill="none">
 
 <rect
 x="18"
@@ -1259,11 +899,7 @@ height="11"
 rx="4"
 fill="#C62828"/>
 
-<circle
-cx="93"
-cy="34"
-r="13"
-fill="#F2B88B"/>
+<circle cx="93" cy="34" r="13" fill="#F2B88B"/>
 
 <path
 d="M81 31C83 16 105 14 108 31C103 27 88 28 81 31Z"
@@ -1273,11 +909,7 @@ fill="#333"/>
 d="M78 76C78 57 87 49 98 49C109 49 118 57 118 76"
 fill="#1479B8"/>
 
-<circle
-cx="132"
-cy="38"
-r="12"
-fill="#F2B88B"/>
+<circle cx="132" cy="38" r="12" fill="#F2B88B"/>
 
 <path
 d="M119 35C121 18 143 18 146 35"
@@ -1309,28 +941,22 @@ Educación e infancia
 </h3>
 
 <p>
-
 Desarrollamos actividades de
 <strong>
 refuerzo escolar para niños y niñas
 </strong>,
 junto con otras acciones educativas
 y de acompañamiento.
-
 </p>
 
 </div>
 
 
-<!-- FORMACION -->
-
 <div class="area-card">
 
 <div class="area-icon area-green">
 
-<svg
-viewBox="0 0 180 110"
-fill="none">
+<svg viewBox="0 0 180 110" fill="none">
 
 <rect
 x="25"
@@ -1393,28 +1019,22 @@ Formación e inserción laboral
 </h3>
 
 <p>
-
 Formación y acciones para
 <strong>
 favorecer el acceso al empleo
 </strong>,
 mejorar competencias y acompañar
 procesos de inserción sociolaboral.
-
 </p>
 
 </div>
 
 
-<!-- IGUALDAD -->
-
 <div class="area-card">
 
 <div class="area-icon area-purple">
 
-<svg
-viewBox="0 0 180 110"
-fill="none">
+<svg viewBox="0 0 180 110" fill="none">
 
 <line
 x1="90"
@@ -1492,28 +1112,22 @@ Igualdad y participación
 </h3>
 
 <p>
-
 Fomento de la
 <strong>
 participación ciudadana
 </strong>,
 la igualdad y la participación de
 la mujer gitana en el mundo laboral.
-
 </p>
 
 </div>
 
 
-<!-- CULTURA -->
-
 <div class="area-card">
 
 <div class="area-icon area-red">
 
-<svg
-viewBox="0 0 180 110"
-fill="none">
+<svg viewBox="0 0 180 110" fill="none">
 
 <ellipse
 cx="52"
@@ -1566,26 +1180,20 @@ Cultura y convivencia
 </h3>
 
 <p>
-
 Actividades culturales, encuentros
 y acciones para favorecer la
 convivencia y el reconocimiento
 de la diversidad.
-
 </p>
 
 </div>
 
 
-<!-- SALUD -->
-
 <div class="area-card">
 
 <div class="area-icon area-red">
 
-<svg
-viewBox="0 0 180 110"
-fill="none">
+<svg viewBox="0 0 180 110" fill="none">
 
 <path
 d="M40 80C28 62 30 45 44 33C56 49 56 67 40 80Z"
@@ -1613,26 +1221,20 @@ Salud y apoyo social
 </h3>
 
 <p>
-
 Atención y asistencia psicosocial,
 promoción de la salud y acciones
 de apoyo para el bienestar de
 las personas y las familias.
-
 </p>
 
 </div>
 
 
-<!-- PARTICIPACION -->
-
 <div class="area-card">
 
 <div class="area-icon area-blue">
 
-<svg
-viewBox="0 0 180 110"
-fill="none">
+<svg viewBox="0 0 180 110" fill="none">
 
 <circle
 cx="48"
@@ -1699,22 +1301,15 @@ Participación social
 </h3>
 
 <p>
-
 Impulsamos la participación de
 las personas y el trabajo conjunto
 con el entorno.
-
 </p>
 
 </div>
 
-
 </div>
 
-
-<!-- ==================================================
-     SERVICIOS
-================================================== -->
 
 <div class="services-panel">
 
@@ -1723,14 +1318,12 @@ Servicios, talleres y otras acciones
 </h3>
 
 <p>
-
 El trabajo del centro abarca también
 acciones de apoyo a jóvenes, familias
 y personas adultas, campañas de
 sensibilización, información y
 asesoramiento en derechos y deberes,
 formación profesional y distintos talleres.
-
 </p>
 
 <div class="service-tags">
@@ -1759,29 +1352,20 @@ formación profesional y distintos talleres.
 </div>
 
 
-<!-- ==================================================
-     DISPENSA SOLIDARIA
-================================================== -->
-
 <div class="solidarity-feature">
 
 <div class="solidarity-content">
 
 <div class="solidarity-badge">
-
 Solidaridad y apoyo a las familias
-
 </div>
 
 <h3>
-
 Dispensa solidaria
 de alimentos
-
 </h3>
 
 <p>
-
 Desde ASOGINTER colaboramos con el
 <strong>
 Banco de Alimentos de Valencia
@@ -1789,27 +1373,22 @@ Banco de Alimentos de Valencia
 en la atención y apoyo a familias
 que se encuentran en situación
 de necesidad.
-
 </p>
 
 <p>
-
 Esta colaboración se desarrolla
 en el marco de la distribución de
 alimentos vinculada al
 <strong>
 Programa Profit de Consum
 </strong>.
-
 </p>
 
 <p class="solidarity-note">
-
 Una muestra más del trabajo comunitario
 y de la colaboración con otras entidades
 para dar respuesta a las necesidades
 de las familias.
-
 </p>
 
 </div>
@@ -1826,10 +1405,6 @@ alt="Ilustración de ASOGINTER colaborando en la distribución solidaria de alim
 </div>
 
 
-<!-- ==================================================
-     TRABAJO EN RED
-================================================== -->
-
 <div class="collaboration-banner">
 
 <h3>
@@ -1837,7 +1412,6 @@ Trabajamos en red
 </h3>
 
 <p>
-
 Estas son solo algunas de nuestras
 actividades. ASOGINTER trabaja con
 muchos colectivos y entidades en
@@ -1845,15 +1419,10 @@ diferentes ámbitos, creando alianzas
 y proyectos que permiten ampliar
 las oportunidades y fortalecer la
 convivencia en la comunidad.
-
 </p>
 
 </div>
 
-
-<!-- ==================================================
-     MAS ACTIVIDADES
-================================================== -->
 
 <div class="news-grid">
 
@@ -1864,12 +1433,10 @@ Otras actividades
 </h3>
 
 <p>
-
 En este espacio iremos incorporando
 nuevas actividades, proyectos y
 acciones que desarrollamos desde
 ASOGINTER.
-
 </p>
 
 </div>
@@ -1882,12 +1449,10 @@ Colaboraciones
 </h3>
 
 <p>
-
 Trabajamos junto a diferentes
 entidades, colectivos,
 administraciones y empresas
 en proyectos compartidos.
-
 </p>
 
 </div>
@@ -1900,18 +1465,131 @@ Actualidad
 </h3>
 
 <p>
-
 Seguiremos sumando aquí nuevas
 formaciones, actividades y
 proyectos para mostrar la
 evolución de nuestro trabajo.
-
 </p>
 
 </div>
 
 </div>
 
+
+</div>
+</section>
+
+
+<!-- ==================================================
+     REDES SOCIALES
+================================================== -->
+
+<section class="social-follow" id="redes-sociales">
+
+<div class="container">
+
+<div class="social-follow-box">
+
+
+<div class="social-follow-icon">
+
+<svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="1.8"
+stroke-linecap="round"
+stroke-linejoin="round">
+
+<rect
+x="3"
+y="3"
+width="18"
+height="18"
+rx="5">
+</rect>
+
+<circle
+cx="12"
+cy="12"
+r="4.2">
+</circle>
+
+<circle
+cx="17.4"
+cy="6.7"
+r="1">
+</circle>
+
+</svg>
+
+</div>
+
+
+<h2>
+Conócenos <span>más</span>
+</h2>
+
+
+<p>
+
+Para conocer mejor ASOGINTER, puedes seguirnos
+en nuestras redes sociales y descubrir nuestro
+día a día, las actividades que realizamos,
+las formaciones, los proyectos y muchas de
+las acciones que llevamos a cabo junto a las
+personas, colectivos y entidades con las
+que colaboramos.
+
+</p>
+
+
+<p class="social-follow-highlight">
+
+<strong>
+Síguenos para estar al día de todo lo que hacemos.
+</strong>
+
+</p>
+
+
+<div class="social-follow-buttons">
+
+
+<a
+href="https://www.instagram.com/asoginter/"
+target="_blank"
+rel="noopener"
+class="social-follow-btn instagram-btn">
+
+<span class="social-follow-btn-icon">
+IG
+</span>
+
+Instagram · @asoginter
+
+</a>
+
+
+<a
+href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
+target="_blank"
+rel="noopener"
+class="social-follow-btn facebook-btn">
+
+<span class="social-follow-btn-icon">
+f
+</span>
+
+Facebook · ASOGINTER
+
+</a>
+
+
+</div>
+
+
+</div>
 
 </div>
 
@@ -1994,8 +1672,6 @@ de nuestros canales.
 <div class="contact-list">
 
 
-<!-- DIRECCIÓN -->
-
 <div class="contact-item">
 
 <div class="contact-icon address-icon">
@@ -2020,6 +1696,7 @@ r="2.5"/>
 
 </div>
 
+
 <div>
 
 <h4>
@@ -2029,9 +1706,7 @@ Dirección
 <p>
 
 Calle Juan XXIII, nº 6 Bajo<br>
-
 Torrent, Valencia<br>
-
 CP 46900
 
 </p>
@@ -2040,8 +1715,6 @@ CP 46900
 
 </div>
 
-
-<!-- TELEFONO -->
 
 <div class="contact-item">
 
@@ -2074,6 +1747,7 @@ A2 2 0 0 1 22 16.92z">
 
 </div>
 
+
 <div>
 
 <h4>
@@ -2083,9 +1757,7 @@ Teléfono
 <p>
 
 <a href="tel:+349615578810">
-
 961 55 78 810
-
 </a>
 
 </p>
@@ -2094,8 +1766,6 @@ Teléfono
 
 </div>
 
-
-<!-- WHATSAPP -->
 
 <div class="contact-item">
 
@@ -2118,6 +1788,7 @@ A8.5 8.5 0 1 1 21 11.5z">
 </svg>
 
 </div>
+
 
 <div>
 
@@ -2142,8 +1813,6 @@ rel="noopener">
 
 </div>
 
-
-<!-- EMAIL -->
 
 <div class="contact-item">
 
@@ -2171,6 +1840,7 @@ points="3,7 12,13 21,7"/>
 
 </div>
 
+
 <div>
 
 <h4>
@@ -2179,7 +1849,8 @@ Email
 
 <p>
 
-<a href="mailto:asoginter@gmail.com">
+<a
+href="mailto:asoginter@gmail.com">
 
 asoginter@gmail.com
 
@@ -2195,8 +1866,6 @@ asoginter@gmail.com
 </div>
 
 
-<!-- MAPA -->
-
 <div>
 
 <div class="map-container">
@@ -2209,7 +1878,6 @@ style="border:0"
 allowfullscreen=""
 loading="lazy"
 referrerpolicy="no-referrer-when-downgrade">
-
 </iframe>
 
 </div>
@@ -2224,39 +1892,27 @@ referrerpolicy="no-referrer-when-downgrade">
 </section>
 
 
-<!-- ==================================================
-     FOOTER
-================================================== -->
-
 <footer>
 
 <p>
-
 <strong>
 ASOGINTER
 </strong>
-
 </p>
 
 <p>
-
 Asociación Gitana Europea e Intercultural
 de Torrent
-
 </p>
 
 <p>
-
 Calle Juan XXIII, nº 6 Bajo
 · Torrent · Valencia · 46900
-
 </p>
 
 <p>
-
 © 2026 ASOGINTER.
 Todos los derechos reservados.
-
 </p>
 
 </footer>
