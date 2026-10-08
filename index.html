@@ -8,1631 +8,291 @@
 <meta name="author" content="Asociación Gitana Europea e Intercultural de Torrent">
 
 <style>
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0
-}
-
-html{
-    scroll-behavior:smooth;
-    scroll-padding-top:125px
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    color:#333;
-    background:#fff;
-    line-height:1.6;
-    overflow-x:hidden
-}
-
-a{
-    text-decoration:none;
-    color:inherit
-}
-
-img{
-    max-width:100%;
-    display:block
-}
-
-section{
-    padding:80px 20px
-}
-
-.container{
-    max-width:1150px;
-    width:92%;
-    margin:0 auto
-}
-
-
-/* ==================================================
-   HEADER
-================================================== */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(255,255,255,.98);
-    box-shadow:0 2px 12px rgba(0,0,0,.08)
-}
-
-.header-container{
-    max-width:1200px;
-    min-height:82px;
-    margin:auto;
-    padding:10px 25px;
-    display:grid;
-    grid-template-columns:90px 1fr auto;
-    align-items:center;
-    gap:20px
-}
-
-.header-logo{
-    width:85px;
-    height:65px;
-    object-fit:contain
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:24px;
-    flex-wrap:wrap;
-    min-width:0
-}
-
-nav a{
-    font-size:14px;
-    font-weight:700;
-    color:#333;
-    white-space:nowrap;
-    transition:.3s
-}
-
-nav a:hover{
-    color:#c62828
-}
-
-.social{
-    display:flex;
-    align-items:center;
-    gap:10px
-}
-
-.social a{
-    width:36px;
-    height:36px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#fff;
-    font-size:15px;
-    font-weight:700
-}
-
-.instagram{
-    background:#d62976
-}
-
-.facebook{
-    background:#1877f2
-}
-
-.color-bar{
-    height:6px;
-    display:flex
-}
-
-.color-bar span{
-    flex:1
-}
-
-.blue{
-    background:#1479b8
-}
-
-.green{
-    background:#39a852
-}
-
-.red{
-    background:#c62828
-}
-
-.purple{
-    background:#7b3f98
-}
-
-
-/* ==================================================
-   HERO
-================================================== */
-
-.hero{
-    min-height:690px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:70px 20px;
-
-    background:
-        linear-gradient(
-            rgba(255,255,255,.58),
-            rgba(255,255,255,.58)
-        ),
-        url("fondo-asoginter.png")
-        center/cover no-repeat
-}
-
-.hero-content{
-    width:100%;
-    max-width:950px;
-    margin:0 auto;
-    padding:45px 35px;
-    text-align:center;
-    background:rgba(255,255,255,.84);
-    border-radius:25px;
-    box-shadow:0 12px 40px rgba(0,0,0,.12)
-}
-
-.hero-emblem{
-    width:170px;
-    height:170px;
-    object-fit:contain;
-    margin:0 auto 15px
-}
-
-.hero-formal-name{
-    font-size:20px;
-    font-weight:700;
-    letter-spacing:1px;
-    color:#555;
-    margin-bottom:6px
-}
-
-.hero-title{
-    display:block;
-    width:100%;
-    font-size:clamp(55px,10vw,105px);
-    font-weight:900;
-    letter-spacing:3px;
-    color:#c62828;
-    line-height:1;
-    margin:0 auto 20px;
-    text-align:center;
-    white-space:nowrap
-}
-
-.hero-tagline{
-    font-size:22px;
-    font-weight:700;
-    color:#444;
-    margin-bottom:18px
-}
-
-.hero-description{
-    max-width:760px;
-    margin:auto;
-    font-size:18px;
-    color:#555
-}
-
-.hero-buttons{
-    margin-top:30px;
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap
-}
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:13px 25px;
-    border-radius:30px;
-    font-weight:700;
-    transition:.3s
-}
-
-.btn-primary{
-    background:#c62828;
-    color:#fff
-}
-
-.btn-primary:hover{
-    background:#a91f1f;
-    transform:translateY(-2px)
-}
-
-.btn-secondary{
-    background:#fff;
-    color:#c62828;
-    border:2px solid #c62828
-}
-
-.btn-secondary:hover{
-    background:#c62828;
-    color:#fff
-}
-
-
-/* ==================================================
-   TITULOS
-================================================== */
-
-.section-title{
-    text-align:center;
-    font-size:38px;
-    line-height:1.2;
-    margin-bottom:15px;
-    color:#333
-}
-
-.section-title span{
-    color:#c62828
-}
-
-.section-intro{
-    max-width:820px;
-    margin:0 auto 45px;
-    text-align:center;
-    color:#666;
-    font-size:17px
-}
-
-
-/* ==================================================
-   ABOUT
-================================================== */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center
-}
-
-.about-text p{
-    font-size:17px;
-    margin-bottom:18px
-}
-
-.about-highlight{
-    margin-top:25px;
-    padding:22px;
-    border-left:5px solid #c62828;
-    background:#fafafa;
-    border-radius:0 12px 12px 0;
-    font-weight:700;
-    color:#555
-}
-
-.about-logo{
-    height:390px;
-    overflow:hidden;
-    border-radius:15px;
-    background:#f6f7fb
-}
-
-.about-logo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center
-}
-
-
-/* ==================================================
-   MISION
-================================================== */
-
-.mission{
-    background:#f7f7f7
-}
-
-.mission-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px
-}
-
-.mission-card{
-    background:#fff;
-    padding:35px;
-    border-radius:16px;
-    box-shadow:0 6px 22px rgba(0,0,0,.06)
-}
-
-.mission-card h3{
-    color:#c62828;
-    font-size:24px;
-    margin-bottom:15px
-}
-
-
-/* ==================================================
-   QUE HACEMOS
-================================================== */
-
-.cards-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px
-}
-
-.activity-card{
-    background:#fff;
-    border-radius:16px;
-    padding:30px 25px;
-    text-align:center;
-    border:1px solid #eee;
-    box-shadow:0 7px 25px rgba(0,0,0,.06);
-    transition:.3s
-}
-
-.activity-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 30px rgba(0,0,0,.1)
-}
-
-.professional-icon{
-    width:68px;
-    height:68px;
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:0 auto 18px
-}
-
-.professional-icon svg{
-    width:36px;
-    height:36px
-}
-
-.icon-blue{
-    background:#e5f3fb;
-    color:#1479b8
-}
-
-.icon-green{
-    background:#e7f6ea;
-    color:#39a852
-}
-
-.icon-red{
-    background:#fdeaea;
-    color:#c62828
-}
-
-.icon-purple{
-    background:#f1e9f5;
-    color:#7b3f98
-}
-
-.activity-card h3{
-    font-size:20px;
-    margin-bottom:10px
-}
-
-.activity-card p{
-    font-size:15px;
-    color:#666
-}
-
-.health-message{
-    margin-top:45px;
-    background:#f7f7f7;
-    padding:30px;
-    border-radius:18px;
-    text-align:center
-}
-
-.health-message strong{
-    color:#c62828
-}
-
-
-/* ==================================================
-   CITA
-================================================== */
-
-.quote-section{
-    background:#c62828;
-    color:#fff;
-    text-align:center;
-    padding:70px 20px
-}
-
-.quote{
-    max-width:950px;
-    margin:auto;
-    font-size:27px;
-    font-weight:700;
-    line-height:1.5
-}
-
-
-/* ==================================================
-   ACTIVIDADES
-================================================== */
-
-.activity-intro-box{
-    max-width:980px;
-    margin:0 auto 35px;
-    padding:26px 30px;
-    background:#fafafa;
-    border-left:5px solid #c62828;
-    border-radius:0 17px 17px 0;
-    text-align:center;
-    box-shadow:0 6px 20px rgba(0,0,0,.05)
-}
-
-.activity-intro-box p{
-    color:#5f5f5f;
-    font-size:16px;
-    line-height:1.65
-}
-
-.activity-intro-box strong{
-    color:#c62828
-}
-
-
-/* ==================================================
-   FORMACION
-================================================== */
-
-.training-feature{
-    display:grid;
-    grid-template-columns:.92fr 1.08fr;
-    gap:38px;
-    padding:30px;
-    background:#fff;
-    border:1px solid #ececec;
-    border-radius:22px;
-    box-shadow:0 10px 30px rgba(0,0,0,.07);
-    margin-bottom:35px
-}
-
-.training-content{
-    display:flex;
-    flex-direction:column;
-    justify-content:center
-}
-
-.training-label{
-    align-self:flex-start;
-    display:inline-flex;
-    padding:7px 12px;
-    border-radius:20px;
-    background:#fdeaea;
-    color:#c62828;
-    font-size:12px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:.7px;
-    margin-bottom:15px
-}
-
-.training-content h3{
-    color:#c62828;
-    font-size:30px;
-    line-height:1.2;
-    margin-bottom:15px
-}
-
-.program-title{
-    font-size:17px;
-    font-weight:700;
-    line-height:1.5;
-    color:#444;
-    margin-bottom:16px
-}
-
-.training-content > p{
-    color:#666;
-    margin-bottom:16px
-}
-
-.training-list{
-    display:flex;
-    flex-direction:column;
-    gap:10px
-}
-
-.training-item{
-    padding:11px 14px;
-    background:#fafafa;
-    border-radius:12px;
-    border-left:4px solid #c62828;
-    color:#555;
-    font-size:14px
-}
-
-.training-item strong{
-    color:#333
-}
-
-.company{
-    color:#c62828;
-    font-weight:700
-}
-
-.company a:hover{
-    text-decoration:underline
-}
-
-.training-note{
-    margin-top:18px;
-    padding:13px 15px;
-    background:#f7f7f7;
-    border-radius:12px;
-    color:#666;
-    font-size:13px
-}
-
-
-/* ==================================================
-   COLLAGE
-================================================== */
-
-.course-collage{
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    grid-template-rows:230px 175px 165px;
-    gap:12px;
-    min-height:592px;
-    width:100%;
-    min-width:0
-}
-
-.course-photo{
-    display:block;
-    width:100%;
-    height:100%;
-    min-width:0;
-    object-fit:cover;
-    border-radius:15px;
-    box-shadow:0 5px 16px rgba(0,0,0,.1)
-}
-
-.course-photo-main{
-    grid-column:1/-1;
-    object-position:center 43%
-}
-
-.course-photo-group{
-    object-position:center
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:125px}
+body{font-family:Arial,Helvetica,sans-serif;color:#333;background:#fff;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+section{padding:80px 20px}
+.container{max-width:1150px;width:92%;margin:0 auto}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.98);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.header-container{max-width:1200px;min-height:82px;margin:auto;padding:10px 25px;display:grid;grid-template-columns:90px 1fr auto;align-items:center;gap:20px}
+.header-logo{width:85px;height:65px;object-fit:contain}
+nav{display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap;min-width:0}
+nav a{font-size:14px;font-weight:700;color:#333;white-space:nowrap;transition:.3s}
+nav a:hover{color:#c62828}
+.social{display:flex;align-items:center;gap:10px}
+.social a{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:700}
+.instagram{background:#d62976}.facebook{background:#1877f2}
+.color-bar{height:6px;display:flex}.color-bar span{flex:1}.blue{background:#1479b8}.green{background:#39a852}.red{background:#c62828}.purple{background:#7b3f98}
+
+/* HERO */
+.hero{min-height:690px;display:flex;align-items:center;justify-content:center;padding:70px 20px;background:linear-gradient(rgba(255,255,255,.58),rgba(255,255,255,.58)),url("fondo-asoginter.png") center/cover no-repeat}
+.hero-content{width:100%;max-width:950px;margin:0 auto;padding:45px 35px;text-align:center;background:rgba(255,255,255,.84);border-radius:25px;box-shadow:0 12px 40px rgba(0,0,0,.12)}
+.hero-emblem{width:170px;height:170px;object-fit:contain;margin:0 auto 15px}
+.hero-formal-name{font-size:20px;font-weight:700;letter-spacing:1px;color:#555;margin-bottom:6px}
+.hero-title{display:block;width:100%;font-size:clamp(55px,10vw,105px);font-weight:900;letter-spacing:3px;color:#c62828;line-height:1;margin:0 auto 20px;text-align:center;white-space:nowrap}
+.hero-tagline{font-size:22px;font-weight:700;color:#444;margin-bottom:18px}
+.hero-description{max-width:760px;margin:auto;font-size:18px;color:#555}
+.hero-buttons{margin-top:30px;display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 25px;border-radius:30px;font-weight:700;transition:.3s}
+.btn-primary{background:#c62828;color:#fff}.btn-primary:hover{background:#a91f1f;transform:translateY(-2px)}
+.btn-secondary{background:#fff;color:#c62828;border:2px solid #c62828}.btn-secondary:hover{background:#c62828;color:#fff}
+
+/* TITULOS */
+.section-title{text-align:center;font-size:38px;line-height:1.2;margin-bottom:15px;color:#333}.section-title span{color:#c62828}
+.section-intro{max-width:820px;margin:0 auto 45px;text-align:center;color:#666;font-size:17px}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-text p{font-size:17px;margin-bottom:18px}.about-highlight{margin-top:25px;padding:22px;border-left:5px solid #c62828;background:#fafafa;border-radius:0 12px 12px 0;font-weight:700;color:#555}
+.about-logo{height:390px;overflow:hidden;border-radius:15px;background:#f6f7fb}.about-logo img{width:100%;height:100%;object-fit:cover;object-position:center}
+
+/* MISION */
+.mission{background:#f7f7f7}.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.mission-card{background:#fff;padding:35px;border-radius:16px;box-shadow:0 6px 22px rgba(0,0,0,.06)}.mission-card h3{color:#c62828;font-size:24px;margin-bottom:15px}
+
+/* QUE HACEMOS */
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.activity-card{background:#fff;border-radius:16px;padding:30px 25px;text-align:center;border:1px solid #eee;box-shadow:0 7px 25px rgba(0,0,0,.06);transition:.3s}.activity-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,.1)}
+.professional-icon{width:68px;height:68px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}.professional-icon svg{width:36px;height:36px}.icon-blue{background:#e5f3fb;color:#1479b8}.icon-green{background:#e7f6ea;color:#39a852}.icon-red{background:#fdeaea;color:#c62828}.icon-purple{background:#f1e9f5;color:#7b3f98}
+.activity-card h3{font-size:20px;margin-bottom:10px}.activity-card p{font-size:15px;color:#666}.health-message{margin-top:45px;background:#f7f7f7;padding:30px;border-radius:18px;text-align:center}.health-message strong{color:#c62828}
+
+/* CITA */
+.quote-section{background:#c62828;color:#fff;text-align:center;padding:70px 20px}.quote{max-width:950px;margin:auto;font-size:27px;font-weight:700;line-height:1.5}
+
+/* ACTIVIDADES */
+.activity-intro-box{max-width:980px;margin:0 auto 35px;padding:26px 30px;background:#fafafa;border-left:5px solid #c62828;border-radius:0 17px 17px 0;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.05)}.activity-intro-box p{color:#5f5f5f;font-size:16px;line-height:1.65}.activity-intro-box strong{color:#c62828}
+
+/* FORMACION */
+.training-feature{display:grid;grid-template-columns:.92fr 1.08fr;gap:38px;padding:30px;background:#fff;border:1px solid #ececec;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.07);margin-bottom:35px;align-items:stretch}.training-feature .training-content{min-width:0}
+.training-content{display:flex;flex-direction:column;justify-content:center}.training-label{align-self:flex-start;display:inline-flex;padding:7px 12px;border-radius:20px;background:#fdeaea;color:#c62828;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin-bottom:15px}.training-content h3{color:#c62828;font-size:30px;line-height:1.2;margin-bottom:15px}.program-title{font-size:17px;font-weight:700;line-height:1.5;color:#444;margin-bottom:16px}.training-content>p{color:#666;margin-bottom:16px}.training-list{display:flex;flex-direction:column;gap:10px}.training-item{padding:11px 14px;background:#fafafa;border-radius:12px;border-left:4px solid #c62828;color:#555;font-size:14px}.training-item strong{color:#333}.company{color:#c62828;font-weight:700}.company a:hover{text-decoration:underline}.training-note{margin-top:18px;padding:13px 15px;background:#f7f7f7;border-radius:12px;color:#666;font-size:13px}
+
+/* COLLAGE */
+.course-collage{display:grid;grid-template-columns:1.22fr .78fr;grid-template-rows:220px 175px minmax(165px,1fr);gap:12px;min-height:592px;height:100%;width:100%;min-width:0;align-self:stretch}.course-photo{display:block;width:100%;height:100%;min-width:0;object-fit:cover;border-radius:15px;box-shadow:0 5px 16px rgba(0,0,0,.1);background:#f7f7f7}.course-photo-main{grid-column:1/-1;object-position:center 43%}.course-photo-group{object-position:center}.course-photo-forklift{object-fit:contain;object-position:center;background:#f7f7f7}.course-photo-training{grid-column:1/-1;object-fit:cover;object-position:center 48%}
+
+/* LINEAS DE TRABAJO */
+.areas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:35px}.area-card{background:#fff;border:1px solid #ececec;border-radius:17px;padding:25px 22px;box-shadow:0 7px 22px rgba(0,0,0,.05);transition:.3s}.area-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08)}.area-card h3{font-size:19px;color:#333;margin-bottom:9px}.area-card p{font-size:14px;color:#666}.area-card strong{color:#444}
+.area-icon{width:150px;height:95px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;border-radius:22px;overflow:hidden}.area-icon svg{width:145px;height:90px}.area-green{background:#eef9f0}.area-purple{background:#f5eef8}.area-red{background:#fff0f0}.area-blue{background:#edf7fc}
+
+/* SERVICIOS */
+.services-panel{margin:5px 0 35px;padding:30px;border-radius:20px;border:1px solid #ececec;background:#fff;box-shadow:0 7px 22px rgba(0,0,0,.05);text-align:center}.services-panel h3{color:#c62828;font-size:25px;margin-bottom:12px}.services-panel p{max-width:900px;margin:0 auto 22px;color:#666;font-size:15px}.service-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:9px}.service-tags span{padding:7px 11px;border-radius:20px;background:#f7f7f7;border:1px solid #e9e9e9;color:#555;font-size:12px;font-weight:700}
+
+/* DONACION */
+.solidarity-feature{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:30px;margin-bottom:35px;background:#f7f7f7;border:1px solid #ececec;border-radius:22px}.solidarity-content h3{color:#c62828;font-size:28px;line-height:1.2;margin-bottom:15px}.solidarity-badge{display:inline-flex;padding:7px 12px;margin-bottom:15px;border-radius:20px;background:#e7f6ea;color:#2f8f45;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px}.solidarity-content p{color:#666;font-size:16px;margin-bottom:12px}.solidarity-note{padding:14px 16px;background:#fff;border-radius:12px;font-size:13px!important}.solidarity-visual{width:100%;min-height:280px;overflow:hidden;border-radius:18px;background:#fff}.solidarity-visual img{width:100%;height:100%;min-height:280px;object-fit:cover;object-position:center}
+
+/* RED */
+.collaboration-banner{padding:32px 30px;margin-bottom:35px;background:#c62828;color:#fff;border-radius:20px;text-align:center;box-shadow:0 8px 25px rgba(198,40,40,.12)}.collaboration-banner h3{font-size:27px;margin-bottom:12px}.collaboration-banner p{max-width:900px;margin:auto;font-size:16px;line-height:1.7}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.news-card{min-height:175px;padding:25px;background:#f7f7f7;border-radius:15px;border-top:4px solid #c62828}.news-card:nth-child(2){border-top-color:#1479b8}.news-card:nth-child(3){border-top-color:#39a852}.news-card h3{color:#c62828;font-size:20px;margin-bottom:12px}.news-card p{color:#666;font-size:14px}
+
+/* COLABORA */
+.collaborate{background:#f7f7f7}.collaborate-box{max-width:900px;margin:auto;padding:45px;background:#fff;border-radius:20px;text-align:center;box-shadow:0 7px 25px rgba(0,0,0,.07)}.collaborate-box p{margin-bottom:25px;color:#666}
+
+/* CONTACTO */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.contact-list{display:flex;flex-direction:column;gap:20px}.contact-item{display:flex;align-items:center;gap:18px;padding:15px;border-radius:12px;background:#fafafa}.contact-icon{width:56px;height:56px;flex-shrink:0;border-radius:50%;display:flex;align-items:center;justify-content:center}.contact-icon svg{width:27px;height:27px}.address-icon{background:#e6f2fb;color:#1479b8}.phone-icon{background:#e8f7eb;color:#39a852}.whatsapp-icon{background:#e8f7eb;color:#25d366}.email-icon{background:#fff1e5;color:#ef7d00}.contact-item h4{margin-bottom:3px}.contact-item p{color:#666}.contact-item a:hover{color:#c62828}
+.map-container{width:100%;overflow:hidden;border-radius:16px;border:1px solid #e5e5e5;box-shadow:0 8px 25px rgba(0,0,0,.1)}.map-container iframe{display:block;width:100%;height:400px;border:0}
+
+/* FOOTER */
+footer{background:#222;color:#fff;text-align:center;padding:35px 20px}footer p{margin:5px 0;color:#ddd}footer strong{font-size:25px;color:#fff}
+
+/* TABLET */
+@media(max-width:900px){
+.header-container{grid-template-columns:80px 1fr;grid-template-areas:"logo social" "nav nav";gap:8px 12px;padding:10px 15px}.header-logo{grid-area:logo}.social{grid-area:social;justify-content:flex-end}nav{grid-area:nav;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:20px}nav::-webkit-scrollbar{display:none}.about-grid,.mission-grid,.contact-grid,.training-feature,.solidarity-feature{grid-template-columns:1fr}.cards-grid,.areas-grid,.news-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+/* MOVIL */
+@media(max-width:600px){
+html{scroll-padding-top:120px}
+section{padding:58px 0}
+.container{width:92%}
+
+.header-container{grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:8px 12px;padding:9px 4%}
+.header-logo{width:70px;height:52px;justify-self:start}
+.social{justify-self:end;gap:7px}
+.social a{width:34px;height:34px}
+
+nav{grid-column:1/-1;width:100%;overflow-x:auto;overflow-y:hidden;justify-content:flex-start;flex-wrap:nowrap;gap:10px;padding-bottom:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{font-size:10.5px;padding:7px 9px;white-space:nowrap}
+
+.hero{min-height:auto;padding:30px 12px 38px}
+.hero-content{width:100%;max-width:100%;padding:30px 18px 35px;border-radius:20px;overflow:visible}
+.hero-emblem{width:125px;height:125px}
+.hero-formal-name{font-size:13px;line-height:1.45;letter-spacing:.7px}
+.hero-title{font-size:37px!important;letter-spacing:0!important;line-height:1.05!important;white-space:normal!important;width:100%!important;max-width:100%!important;text-align:center!important;overflow:visible!important;word-break:normal!important;overflow-wrap:normal!important}
+.hero-tagline{font-size:17px;line-height:1.4}
+.hero-description{font-size:15px;line-height:1.55}
+.hero-buttons{flex-direction:column;gap:10px;margin-top:23px}
+.btn{width:100%;min-height:48px}
+
+.section-title{font-size:30px}
+.section-intro{font-size:15px;margin-bottom:32px}
+
+.about-grid{grid-template-columns:1fr;gap:28px}
+.about-text p{font-size:15px}
+.about-highlight{padding:18px;font-size:14px}
+.about-logo{height:290px}
+
+.mission-grid{grid-template-columns:1fr}
+.mission-card{padding:27px 22px}
+
+.cards-grid{grid-template-columns:1fr;gap:18px}
+.activity-card{padding:25px 20px}
+.professional-icon{width:62px;height:62px}
+.professional-icon svg{width:32px;height:32px}
+.health-message{margin-top:30px;padding:22px 17px;font-size:14px}
+
+.quote-section{padding:55px 18px}
+.quote{font-size:21px;line-height:1.45}
+
+.activity-intro-box{padding:20px 17px}
+.activity-intro-box p{font-size:14px}
+
+.training-feature{grid-template-columns:1fr;padding:20px;gap:25px}
+.training-content h3{font-size:25px}
+.program-title{font-size:16px}
+.training-item{font-size:13px}
+
+/* FOTOS EN MÓVIL */
+.course-collage{display:flex!important;flex-direction:column!important;width:100%!important;height:auto!important;min-height:0!important;align-self:auto!important;gap:10px!important;overflow:visible!important}
+
+.course-photo,
+.course-photo-main,
+.course-photo-group,
+.course-photo-forklift,
+.course-photo-training{
+display:block!important;
+width:100%!important;
+height:auto!important;
+min-width:0!important;
+min-height:0!important;
+max-width:100%!important;
+object-fit:contain!important;
+object-position:center!important;
+flex:none!important;
+grid-column:auto!important
 }
 
 .course-photo-forklift{
-    object-position:center 42%
+max-height:520px!important;
+background:#f7f7f7!important
 }
 
 .course-photo-training{
-    grid-column:1/-1;
-    object-position:center
+max-height:430px!important;
+object-fit:cover!important;
+object-position:center!important
 }
 
+.areas-grid{grid-template-columns:1fr;gap:16px}
+.area-card{padding:21px 18px}
+.area-icon{width:145px;height:90px;margin-left:auto;margin-right:auto}
+.area-icon svg{width:140px;height:86px}
 
-/* ==================================================
-   LINEAS DE TRABAJO
-================================================== */
+.services-panel{padding:24px 20px}
+.services-panel h3{font-size:21px}
+.service-tags span{font-size:12px}
 
-.areas-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-    margin-bottom:35px
+.solidarity-feature{grid-template-columns:1fr;padding:20px;gap:20px}
+.solidarity-content h3{font-size:24px}
+.solidarity-content p{font-size:14px}
+.solidarity-visual{min-height:220px}
+.solidarity-visual img{min-height:220px}
+
+.collaboration-banner{padding:24px 18px}
+.collaboration-banner h3{font-size:22px}
+.collaboration-banner p{font-size:14px}
+
+.news-grid{grid-template-columns:1fr;gap:18px}
+.news-card{min-height:auto;padding:22px}
+
+.collaborate-box{padding:30px 20px}
+.collaborate-box .section-title{font-size:26px}
+
+.contact-grid{grid-template-columns:1fr;gap:25px}
+.contact-item{gap:13px;padding:13px 10px;align-items:flex-start}
+.contact-icon{width:50px;height:50px}
+.contact-item h4{font-size:15px}
+.contact-item p{font-size:14px}
+.map-container iframe{height:285px}
+
+footer{padding:28px 15px}
+footer p{font-size:13px;line-height:1.5}
 }
-
-.area-card{
-    background:#fff;
-    border:1px solid #ececec;
-    border-radius:17px;
-    padding:25px 22px;
-    box-shadow:0 7px 22px rgba(0,0,0,.05);
-    transition:.3s
-}
-
-.area-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 12px 28px rgba(0,0,0,.08)
-}
-
-.area-card h3{
-    font-size:19px;
-    color:#333;
-    margin-bottom:9px
-}
-
-.area-card p{
-    font-size:14px;
-    color:#666
-}
-
-.area-card strong{
-    color:#444
-}
-
-.area-icon{
-    width:150px;
-    height:95px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:18px;
-    border-radius:22px;
-    overflow:hidden
-}
-
-.area-icon svg{
-    width:145px;
-    height:90px
-}
-
-.area-green{
-    background:#eef9f0
-}
-
-.area-purple{
-    background:#f5eef8
-}
-
-.area-red{
-    background:#fff0f0
-}
-
-.area-blue{
-    background:#edf7fc
-}
-
-
-/* ==================================================
-   SERVICIOS
-================================================== */
-
-.services-panel{
-    margin:5px 0 35px;
-    padding:30px;
-    border-radius:20px;
-    border:1px solid #ececec;
-    background:#fff;
-    box-shadow:0 7px 22px rgba(0,0,0,.05);
-    text-align:center
-}
-
-.services-panel h3{
-    color:#c62828;
-    font-size:25px;
-    margin-bottom:12px
-}
-
-.services-panel p{
-    max-width:900px;
-    margin:0 auto 22px;
-    color:#666;
-    font-size:15px
-}
-
-.service-tags{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:9px
-}
-
-.service-tags span{
-    padding:7px 11px;
-    border-radius:20px;
-    background:#f7f7f7;
-    border:1px solid #e9e9e9;
-    color:#555;
-    font-size:12px;
-    font-weight:700
-}
-
-
-/* ==================================================
-   DONACION
-================================================== */
-
-.solidarity-feature{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-    align-items:center;
-    padding:30px;
-    margin-bottom:35px;
-    background:#f7f7f7;
-    border:1px solid #ececec;
-    border-radius:22px
-}
-
-.solidarity-content h3{
-    color:#c62828;
-    font-size:28px;
-    line-height:1.2;
-    margin-bottom:15px
-}
-
-.solidarity-badge{
-    display:inline-flex;
-    padding:7px 12px;
-    margin-bottom:15px;
-    border-radius:20px;
-    background:#e7f6ea;
-    color:#2f8f45;
-    font-size:12px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:.6px
-}
-
-.solidarity-content p{
-    color:#666;
-    font-size:16px;
-    margin-bottom:12px
-}
-
-.solidarity-note{
-    padding:14px 16px;
-    background:#fff;
-    border-radius:12px;
-    font-size:13px!important
-}
-
-.solidarity-visual{
-    width:100%;
-    min-height:280px;
-    overflow:hidden;
-    border-radius:18px;
-    background:#fff
-}
-
-.solidarity-visual img{
-    width:100%;
-    height:100%;
-    min-height:280px;
-    object-fit:cover;
-    object-position:center
-}
-
-
-/* ==================================================
-   RED
-================================================== */
-
-.collaboration-banner{
-    padding:32px 30px;
-    margin-bottom:35px;
-    background:#c62828;
-    color:#fff;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 8px 25px rgba(198,40,40,.12)
-}
-
-.collaboration-banner h3{
-    font-size:27px;
-    margin-bottom:12px
-}
-
-.collaboration-banner p{
-    max-width:900px;
-    margin:auto;
-    font-size:16px;
-    line-height:1.7
-}
-
-.news-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px
-}
-
-.news-card{
-    min-height:175px;
-    padding:25px;
-    background:#f7f7f7;
-    border-radius:15px;
-    border-top:4px solid #c62828
-}
-
-.news-card:nth-child(2){
-    border-top-color:#1479b8
-}
-
-.news-card:nth-child(3){
-    border-top-color:#39a852
-}
-
-.news-card h3{
-    color:#c62828;
-    font-size:20px;
-    margin-bottom:12px
-}
-
-.news-card p{
-    color:#666;
-    font-size:14px
-}
-
-
-/* ==================================================
-   COLABORA
-================================================== */
-
-.collaborate{
-    background:#f7f7f7
-}
-
-.collaborate-box{
-    max-width:900px;
-    margin:auto;
-    padding:45px;
-    background:#fff;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 7px 25px rgba(0,0,0,.07)
-}
-
-.collaborate-box p{
-    margin-bottom:25px;
-    color:#666
-}
-
-
-/* ==================================================
-   CONTACTO
-================================================== */
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:start
-}
-
-.contact-list{
-    display:flex;
-    flex-direction:column;
-    gap:20px
-}
-
-.contact-item{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    padding:15px;
-    border-radius:12px;
-    background:#fafafa
-}
-
-.contact-icon{
-    width:56px;
-    height:56px;
-    flex-shrink:0;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center
-}
-
-.contact-icon svg{
-    width:27px;
-    height:27px
-}
-
-.address-icon{
-    background:#e6f2fb;
-    color:#1479b8
-}
-
-.phone-icon{
-    background:#e8f7eb;
-    color:#39a852
-}
-
-.whatsapp-icon{
-    background:#e8f7eb;
-    color:#25d366
-}
-
-.email-icon{
-    background:#fff1e5;
-    color:#ef7d00
-}
-
-.contact-item h4{
-    margin-bottom:3px
-}
-
-.contact-item p{
-    color:#666
-}
-
-.contact-item a:hover{
-    color:#c62828
-}
-
-
-/* ==================================================
-   MAPA
-================================================== */
-
-.map-container{
-    width:100%;
-    overflow:hidden;
-    border-radius:16px;
-    border:1px solid #e5e5e5;
-    box-shadow:0 8px 25px rgba(0,0,0,.1)
-}
-
-.map-container iframe{
-    display:block;
-    width:100%;
-    height:400px;
-    border:0
-}
-
-
-/* ==================================================
-   FOOTER
-================================================== */
-
-footer{
-    background:#222;
-    color:#fff;
-    text-align:center;
-    padding:35px 20px
-}
-
-footer p{
-    margin:5px 0;
-    color:#ddd
-}
-
-footer strong{
-    font-size:25px;
-    color:#fff
-}
-
-
-/* ==================================================
-   TABLET
-================================================== */
-
-@media(max-width:900px){
-
-    .header-container{
-        grid-template-columns:80px 1fr;
-
-        grid-template-areas:
-            "logo social"
-            "nav nav";
-
-        gap:8px 12px;
-
-        padding:10px 15px
-    }
-
-    .header-logo{
-        grid-area:logo
-    }
-
-    .social{
-        grid-area:social;
-        justify-content:flex-end
-    }
-
-    nav{
-        grid-area:nav;
-
-        justify-content:flex-start;
-
-        flex-wrap:nowrap;
-
-        overflow-x:auto;
-
-        scrollbar-width:none;
-
-        gap:20px
-    }
-
-    nav::-webkit-scrollbar{
-        display:none
-    }
-
-    .about-grid,
-    .mission-grid,
-    .contact-grid,
-    .training-feature,
-    .solidarity-feature{
-        grid-template-columns:1fr
-    }
-
-    .cards-grid,
-    .areas-grid,
-    .news-grid{
-        grid-template-columns:repeat(2,1fr)
-    }
-}
-
-
-/* ==================================================
-   MOVIL
-================================================== */
-
-@media(max-width:600px){
-
-    html{
-        scroll-padding-top:120px
-    }
-
-    section{
-        padding:58px 0
-    }
-
-    .container{
-        width:92%
-    }
-
-
-    /* HEADER */
-
-    .header-container{
-        grid-template-columns:
-            1fr
-            auto;
-
-        grid-template-rows:
-            auto
-            auto;
-
-        gap:
-            8px
-            12px;
-
-        padding:
-            9px
-            4%
-    }
-
-    .header-logo{
-        width:70px;
-        height:52px;
-        justify-self:start
-    }
-
-    .social{
-        justify-self:end;
-        gap:7px
-    }
-
-    .social a{
-        width:34px;
-        height:34px
-    }
-
-    nav{
-        grid-column:1/-1;
-        width:100%;
-
-        overflow-x:auto;
-        overflow-y:hidden;
-
-        justify-content:flex-start;
-
-        flex-wrap:nowrap;
-
-        gap:10px;
-
-        padding-bottom:2px;
-
-        -webkit-overflow-scrolling:touch;
-
-        scrollbar-width:none
-    }
-
-    nav::-webkit-scrollbar{
-        display:none
-    }
-
-    nav a{
-        font-size:10.5px;
-        padding:7px 9px;
-        white-space:nowrap
-    }
-
-
-    /* HERO */
-
-    .hero{
-        min-height:auto;
-
-        padding:
-            30px
-            12px
-            38px
-    }
-
-    .hero-content{
-        width:100%;
-        max-width:100%;
-
-        margin:0 auto;
-
-        padding:
-            30px
-            18px
-            35px;
-
-        border-radius:20px;
-
-        overflow:visible
-    }
-
-    .hero-emblem{
-        width:125px;
-        height:125px
-    }
-
-    .hero-formal-name{
-        font-size:13px;
-        line-height:1.45;
-        letter-spacing:.7px
-    }
-
-    .hero-title{
-        font-size:37px!important;
-        letter-spacing:0!important;
-        line-height:1.05!important;
-        white-space:normal!important;
-        width:100%!important;
-        max-width:100%!important;
-        text-align:center!important;
-        overflow:visible!important;
-        word-break:normal!important;
-        overflow-wrap:normal!important
-    }
-
-    .hero-tagline{
-        font-size:17px;
-        line-height:1.4
-    }
-
-    .hero-description{
-        font-size:15px;
-        line-height:1.55
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        gap:10px;
-        margin-top:23px
-    }
-
-    .btn{
-        width:100%;
-        min-height:48px
-    }
-
-
-    /* TITULOS */
-
-    .section-title{
-        font-size:30px
-    }
-
-    .section-intro{
-        font-size:15px;
-        margin-bottom:32px
-    }
-
-
-    /* ABOUT */
-
-    .about-grid{
-        grid-template-columns:1fr;
-        gap:28px
-    }
-
-    .about-text p{
-        font-size:15px
-    }
-
-    .about-highlight{
-        padding:18px;
-        font-size:14px
-    }
-
-    .about-logo{
-        height:290px
-    }
-
-
-    /* MISION */
-
-    .mission-grid{
-        grid-template-columns:1fr
-    }
-
-    .mission-card{
-        padding:27px 22px
-    }
-
-
-    /* QUE HACEMOS */
-
-    .cards-grid{
-        grid-template-columns:1fr;
-        gap:18px
-    }
-
-    .activity-card{
-        padding:25px 20px
-    }
-
-    .professional-icon{
-        width:62px;
-        height:62px
-    }
-
-    .professional-icon svg{
-        width:32px;
-        height:32px
-    }
-
-    .health-message{
-        margin-top:30px;
-        padding:22px 17px;
-        font-size:14px
-    }
-
-
-    /* FRASE */
-
-    .quote-section{
-        padding:55px 18px
-    }
-
-    .quote{
-        font-size:21px;
-        line-height:1.45
-    }
-
-
-    /* ACTIVIDADES */
-
-    .activity-intro-box{
-        padding:20px 17px
-    }
-
-    .activity-intro-box p{
-        font-size:14px
-    }
-
-    .training-feature{
-        grid-template-columns:1fr;
-        padding:20px;
-        gap:25px
-    }
-
-    .training-content h3{
-        font-size:25px
-    }
-
-    .program-title{
-        font-size:16px
-    }
-
-    .training-item{
-        font-size:13px
-    }
-
-
-    /* FOTOS EN MÓVIL */
-
-    .course-collage{
-        display:flex!important;
-        flex-direction:column!important;
-
-        width:100%!important;
-        height:auto!important;
-
-        min-height:0!important;
-
-        gap:10px!important;
-
-        overflow:visible!important
-    }
-
-    .course-photo,
-    .course-photo-main,
-    .course-photo-group,
-    .course-photo-forklift,
-    .course-photo-training{
-
-        display:block!important;
-
-        width:100%!important;
-        height:auto!important;
-
-        min-width:0!important;
-        min-height:0!important;
-
-        max-width:100%!important;
-
-        object-fit:contain!important;
-        object-position:center!important;
-
-        flex:none!important;
-
-        grid-column:auto!important
-    }
-
-    .course-photo-forklift{
-        max-height:520px!important;
-        background:#f7f7f7!important
-    }
-
-    .course-photo-training{
-        max-height:430px!important;
-        object-fit:cover!important;
-        object-position:center!important
-    }
-
-
-    /* AREAS */
-
-    .areas-grid{
-        grid-template-columns:1fr;
-        gap:16px
-    }
-
-    .area-card{
-        padding:21px 18px
-    }
-
-    .area-icon{
-        width:145px;
-        height:90px;
-        margin-left:auto;
-        margin-right:auto
-    }
-
-    .area-icon svg{
-        width:140px;
-        height:86px
-    }
-
-
-    /* SERVICES */
-
-    .services-panel{
-        padding:24px 20px
-    }
-
-    .services-panel h3{
-        font-size:21px
-    }
-
-    .service-tags span{
-        font-size:12px
-    }
-
-
-    /* SOLIDARIDAD */
-
-    .solidarity-feature{
-        grid-template-columns:1fr;
-
-        padding:20px;
-
-        gap:20px
-    }
-
-    .solidarity-content h3{
-        font-size:24px
-    }
-
-    .solidarity-content p{
-        font-size:14px
-    }
-
-    .solidarity-visual{
-        min-height:220px
-    }
-
-    .solidarity-visual img{
-        min-height:220px
-    }
-
-
-    /* RED */
-
-    .collaboration-banner{
-        padding:24px 18px
-    }
-
-    .collaboration-banner h3{
-        font-size:22px
-    }
-
-    .collaboration-banner p{
-        font-size:14px
-    }
-
-
-    /* NEWS */
-
-    .news-grid{
-        grid-template-columns:1fr;
-        gap:18px
-    }
-
-    .news-card{
-        min-height:auto;
-        padding:22px
-    }
-
-
-    /* COLABORA */
-
-    .collaborate-box{
-        padding:30px 20px
-    }
-
-    .collaborate-box .section-title{
-        font-size:26px
-    }
-
-
-    /* CONTACTO */
-
-    .contact-grid{
-        grid-template-columns:1fr;
-        gap:25px
-    }
-
-    .contact-item{
-        gap:13px;
-        padding:13px 10px;
-        align-items:flex-start
-    }
-
-    .contact-icon{
-        width:50px;
-        height:50px
-    }
-
-    .contact-item h4{
-        font-size:15px
-    }
-
-    .contact-item p{
-        font-size:14px
-    }
-
-    .map-container iframe{
-        height:285px
-    }
-
-
-    /* FOOTER */
-
-    footer{
-        padding:28px 15px
-    }
-
-    footer p{
-        font-size:13px;
-        line-height:1.5
-    }
-
-}
-
-
-/* ==================================================
-   MOVIL PEQUEÑO
-================================================== */
 
 @media(max-width:380px){
 
-    .header-logo{
-        width:64px;
-        height:48px
-    }
+.header-logo{
+width:64px;
+height:48px
+}
 
-    .social a{
-        width:31px;
-        height:31px;
-        font-size:13px
-    }
+.social a{
+width:31px;
+height:31px;
+font-size:13px
+}
 
-    nav a{
-        font-size:10px
-    }
+nav a{
+font-size:10px
+}
 
-    .hero-content{
-        padding:
-            26px
-            14px
-            30px
-    }
+.hero-content{
+padding:26px 14px 30px
+}
 
-    .hero-emblem{
-        width:108px;
-        height:108px
-    }
+.hero-emblem{
+width:108px;
+height:108px
+}
 
-    .hero-title{
-        font-size:34px!important
-    }
+.hero-title{
+font-size:34px!important
+}
 
-    .hero-formal-name{
-        font-size:11px
-    }
+.hero-formal-name{
+font-size:11px
+}
 
-    .hero-tagline{
-        font-size:15px
-    }
+.hero-tagline{
+font-size:15px
+}
 
-    .hero-description{
-        font-size:14px
-    }
+.hero-description{
+font-size:14px
+}
 
-    .about-logo{
-        height:255px
-    }
+.about-logo{
+height:255px
+}
 
-    .map-container iframe{
-        height:255px
-    }
+.map-container iframe{
+height:255px
+}
 
 }
 
 </style>
 </head>
 
-
 <body>
-
-
-<!-- ==================================================
-     HEADER
-================================================== -->
 
 <header>
 
 <div class="header-container">
 
-
 <a href="#inicio">
 
 <img
-    class="header-logo"
-    src="LOGO%20ASOGINTER%20%281%29.png"
-    alt="Logo de ASOGINTER">
+class="header-logo"
+src="LOGO%20ASOGINTER%20%281%29.png"
+alt="Logo de ASOGINTER">
 
 </a>
-
 
 <nav>
 
-<a href="#inicio">
-INICIO
-</a>
+<a href="#inicio">INICIO</a>
 
 <a href="#quienes-somos">
 QUIÉNES SOMOS
@@ -1656,33 +316,29 @@ CONTACTO
 
 </nav>
 
-
 <div class="social">
 
 <a
-    class="instagram"
-    href="https://www.instagram.com/asoginter/"
-    target="_blank"
-    rel="noopener"
-    aria-label="Instagram">
-    IG
+class="instagram"
+href="https://www.instagram.com/asoginter/"
+target="_blank"
+rel="noopener"
+aria-label="Instagram">
+IG
 </a>
-
 
 <a
-    class="facebook"
-    href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
-    target="_blank"
-    rel="noopener"
-    aria-label="Facebook">
-    f
+class="facebook"
+href="https://www.facebook.com/p/Asociacion-gitana-europea-e-intercultural-100066664478589/?locale=es_ES"
+target="_blank"
+rel="noopener"
+aria-label="Facebook">
+f
 </a>
 
 </div>
 
-
 </div>
-
 
 <div class="color-bar">
 
@@ -1693,7 +349,6 @@ CONTACTO
 
 </div>
 
-
 </header>
 
 
@@ -1701,18 +356,14 @@ CONTACTO
      INICIO
 ================================================== -->
 
-<section
-class="hero"
-id="inicio">
+<section class="hero" id="inicio">
 
 <div class="hero-content">
 
-
 <img
-    class="hero-emblem"
-    src="logo-emblema-asoginter.png"
-    alt="Emblema de ASOGINTER">
-
+class="hero-emblem"
+src="logo-emblema-asoginter.png"
+alt="Emblema de ASOGINTER">
 
 <div class="hero-formal-name">
 
@@ -1721,20 +372,17 @@ DE TORRENT
 
 </div>
 
-
 <h1 class="hero-title">
 
 ASOGINTER
 
 </h1>
 
-
 <div class="hero-tagline">
 
 Inclusión · Igualdad · Cultura · Interculturalidad
 
 </div>
-
 
 <p class="hero-description">
 
@@ -1745,30 +393,25 @@ oportunidades para todas las personas.
 
 </p>
 
-
 <div class="hero-buttons">
 
-
 <a
-    class="btn btn-primary"
-    href="#quienes-somos">
+class="btn btn-primary"
+href="#quienes-somos">
 
 Conócenos
 
 </a>
 
-
 <a
-    class="btn btn-secondary"
-    href="#contacto">
+class="btn btn-secondary"
+href="#contacto">
 
 Contacta con nosotros
 
 </a>
 
-
 </div>
-
 
 </div>
 
@@ -1783,14 +426,12 @@ Contacta con nosotros
 
 <div class="container">
 
-
 <h2 class="section-title">
 
 Quiénes
 <span>somos</span>
 
 </h2>
-
 
 <p class="section-intro">
 
@@ -1799,12 +440,9 @@ y Promoción de la Comunidad Gitana.
 
 </p>
 
-
 <div class="about-grid">
 
-
 <div class="about-text">
-
 
 <p>
 
@@ -1818,7 +456,6 @@ en situación o riesgo de vulnerabilidad.
 
 </p>
 
-
 <p>
 
 Nuestro trabajo busca favorecer la
@@ -1828,7 +465,6 @@ ofreciendo apoyo y acompañamiento en
 diferentes ámbitos.
 
 </p>
-
 
 <p>
 
@@ -1841,7 +477,6 @@ vulnerabilidad.
 
 </p>
 
-
 <div class="about-highlight">
 
 “Hablar de la comunidad gitana es hablar
@@ -1850,21 +485,17 @@ Gracias por el espacio y por escuchar.”
 
 </div>
 
-
 </div>
-
 
 <div class="about-logo">
 
 <img
-    src="imagen-quienes-somos.png"
-    alt="Comunidad, convivencia e inclusión en el barrio">
+src="imagen-quienes-somos.png"
+alt="Comunidad, convivencia e inclusión en el barrio">
 
 </div>
 
-
 </div>
-
 
 </div>
 
@@ -1872,13 +503,12 @@ Gracias por el espacio y por escuchar.”
 
 
 <!-- ==================================================
-     MISIÓN Y VISIÓN
+     MISION
 ================================================== -->
 
 <section class="mission">
 
 <div class="container">
-
 
 <h2 class="section-title">
 
@@ -1886,7 +516,6 @@ Misión y
 <span>visión</span>
 
 </h2>
-
 
 <p class="section-intro">
 
@@ -1896,16 +525,13 @@ y el respeto.
 
 </p>
 
-
 <div class="mission-grid">
-
 
 <div class="mission-card">
 
 <h3>
 Misión
 </h3>
-
 
 <p>
 
@@ -1917,16 +543,13 @@ comunidad y al conjunto de la sociedad.
 
 </p>
 
-
 </div>
-
 
 <div class="mission-card">
 
 <h3>
 Visión
 </h3>
-
 
 <p>
 
@@ -1938,12 +561,9 @@ de condiciones.
 
 </p>
 
-
 </div>
 
-
 </div>
-
 
 </div>
 
@@ -1958,14 +578,12 @@ de condiciones.
 
 <div class="container">
 
-
 <h2 class="section-title">
 
 Qué
 <span>hacemos</span>
 
 </h2>
-
 
 <p class="section-intro">
 
@@ -1975,9 +593,10 @@ social y la convivencia.
 
 </p>
 
-
 <div class="cards-grid">
 
+
+<!-- INCLUSIÓN -->
 
 <div class="activity-card">
 
@@ -2009,11 +628,9 @@ d="M16 3.13a4 4 0 0 1 0 7.75"/>
 
 </div>
 
-
 <h3>
 Inclusión social
 </h3>
-
 
 <p>
 
@@ -2022,9 +639,10 @@ la participación y la inclusión.
 
 </p>
 
-
 </div>
 
+
+<!-- EDUCACIÓN -->
 
 <div class="activity-card">
 
@@ -2048,11 +666,9 @@ d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
 
 </div>
 
-
 <h3>
 Educación y formación
 </h3>
-
 
 <p>
 
@@ -2061,9 +677,10 @@ las capacidades y oportunidades.
 
 </p>
 
-
 </div>
 
+
+<!-- CULTURA -->
 
 <div class="activity-card">
 
@@ -2090,21 +707,17 @@ cx="17.5"
 cy="17.5"
 r="3.5"/>
 
-<path
-d="M13 10l-3 2"/>
+<path d="M13 10l-3 2"/>
 
-<path
-d="M10 15l4 1"/>
+<path d="M10 15l4 1"/>
 
 </svg>
 
 </div>
 
-
 <h3>
 Cultura gitana
 </h3>
-
 
 <p>
 
@@ -2114,9 +727,10 @@ historia gitana.
 
 </p>
 
-
 </div>
 
+
+<!-- IGUALDAD -->
 
 <div class="activity-card">
 
@@ -2131,6 +745,7 @@ stroke-linecap="round"
 stroke-linejoin="round">
 
 <path d="M12 3v18"/>
+
 <path d="M3 7h18"/>
 
 <path
@@ -2143,11 +758,9 @@ d="M19 7l-3 6a4 4 0 0 0 6 0l-3-6z"/>
 
 </div>
 
-
 <h3>
 Igualdad
 </h3>
-
 
 <p>
 
@@ -2157,9 +770,10 @@ la igualdad de oportunidades.
 
 </p>
 
-
 </div>
 
+
+<!-- JUVENTUD -->
 
 <div class="activity-card">
 
@@ -2169,9 +783,7 @@ la igualdad de oportunidades.
 viewBox="0 0 24 24"
 fill="none"
 stroke="currentColor"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round">
+stroke-width="2">
 
 <path
 d="M3 17l6-6 4 4 8-8"/>
@@ -2183,11 +795,9 @@ d="M14 7h7v7"/>
 
 </div>
 
-
 <h3>
 Juventud
 </h3>
-
 
 <p>
 
@@ -2197,9 +807,10 @@ niños, niñas y jóvenes.
 
 </p>
 
-
 </div>
 
+
+<!-- INTERCULTURALIDAD -->
 
 <div class="activity-card">
 
@@ -2218,8 +829,7 @@ cx="12"
 cy="12"
 r="9"/>
 
-<path
-d="M3 12h18"/>
+<path d="M3 12h18"/>
 
 <path
 d="M12 3a14 14 0 0 1 0 18"/>
@@ -2231,11 +841,9 @@ d="M12 3a14 14 0 0 0 0 18"/>
 
 </div>
 
-
 <h3>
 Interculturalidad
 </h3>
-
 
 <p>
 
@@ -2245,15 +853,12 @@ diferentes culturas.
 
 </p>
 
-
 </div>
-
 
 </div>
 
 
 <div class="health-message">
-
 
 <p>
 
@@ -2262,7 +867,6 @@ crece con la comunidad y llega
 a todas las personas.”
 
 </p>
-
 
 <p style="margin-top:12px">
 
@@ -2275,9 +879,7 @@ Opre Rroma · Salud y libertad
 
 </p>
 
-
 </div>
-
 
 </div>
 
@@ -2290,7 +892,6 @@ Opre Rroma · Salud y libertad
 
 <section class="quote-section">
 
-
 <p class="quote">
 
 “TODOS A UNA SOLA VOZ DERRIBAREMOS
@@ -2298,7 +899,6 @@ LOS MUROS DE INTOLERANCIA Y DESIGUALDAD
 PARA CONQUISTAR ESPACIOS DE CONVIVENCIA”
 
 </p>
-
 
 </section>
 
@@ -2311,14 +911,12 @@ PARA CONQUISTAR ESPACIOS DE CONVIVENCIA”
 
 <div class="container">
 
-
 <h2 class="section-title">
 
 Actividades y
 <span>proyectos</span>
 
 </h2>
-
 
 <p class="section-intro">
 
@@ -2329,7 +927,6 @@ servicios, formaciones y acciones comunitarias.
 
 
 <div class="activity-intro-box">
-
 
 <p>
 
@@ -2348,7 +945,6 @@ laborales, culturales y comunitarios.
 
 </p>
 
-
 <p style="margin-top:12px">
 
 Adaptamos nuestras acciones a las necesidades
@@ -2356,7 +952,6 @@ de las personas y del entorno y apostamos
 por el <strong>trabajo en red</strong>.
 
 </p>
-
 
 </div>
 
@@ -2519,7 +1114,7 @@ las oportunidades laborales.
 </div>
 
 
-<!-- FOTOS -->
+<!-- FOTOGRAFÍAS -->
 
 <div class="course-collage">
 
@@ -2550,12 +1145,11 @@ alt="Grupo de personas durante una actividad formativa">
 
 </div>
 
-
 </div>
 
 
 <!-- ==================================================
-     LINEAS DE TRABAJO
+     LÍNEAS DE TRABAJO
 ================================================== -->
 
 <div class="areas-grid">
@@ -2564,7 +1158,6 @@ alt="Grupo de personas durante una actividad formativa">
 <!-- ATENCION -->
 
 <div class="area-card">
-
 
 <div class="area-icon area-blue">
 
@@ -2616,13 +1209,9 @@ stroke-width="3"/>
 
 </div>
 
-
 <h3>
-
 Atención y acompañamiento
-
 </h3>
-
 
 <p>
 
@@ -2633,14 +1222,12 @@ reducir la brecha digital.
 
 </p>
 
-
 </div>
 
 
-<!-- EDUCACION -->
+<!-- EDUCACIÓN -->
 
 <div class="area-card">
-
 
 <div class="area-icon area-green">
 
@@ -2717,13 +1304,9 @@ stroke-width="3"/>
 
 </div>
 
-
 <h3>
-
 Educación e infancia
-
 </h3>
-
 
 <p>
 
@@ -2736,14 +1319,12 @@ y de acompañamiento.
 
 </p>
 
-
 </div>
 
 
 <!-- FORMACION -->
 
 <div class="area-card">
-
 
 <div class="area-icon area-green">
 
@@ -2807,13 +1388,9 @@ stroke-linejoin="round"/>
 
 </div>
 
-
 <h3>
-
 Formación e inserción laboral
-
 </h3>
-
 
 <p>
 
@@ -2826,14 +1403,12 @@ procesos de inserción sociolaboral.
 
 </p>
 
-
 </div>
 
 
 <!-- IGUALDAD -->
 
 <div class="area-card">
-
 
 <div class="area-icon area-purple">
 
@@ -2912,13 +1487,9 @@ fill="#7B3F98"/>
 
 </div>
 
-
 <h3>
-
 Igualdad y participación
-
 </h3>
-
 
 <p>
 
@@ -2931,14 +1502,12 @@ la mujer gitana en el mundo laboral.
 
 </p>
 
-
 </div>
 
 
 <!-- CULTURA -->
 
 <div class="area-card">
-
 
 <div class="area-icon area-red">
 
@@ -2992,13 +1561,9 @@ stroke-width="3"/>
 
 </div>
 
-
 <h3>
-
 Cultura y convivencia
-
 </h3>
-
 
 <p>
 
@@ -3009,14 +1574,12 @@ de la diversidad.
 
 </p>
 
-
 </div>
 
 
 <!-- SALUD -->
 
 <div class="area-card">
-
 
 <div class="area-icon area-red">
 
@@ -3045,13 +1608,9 @@ stroke-width="3"/>
 
 </div>
 
-
 <h3>
-
 Salud y apoyo social
-
 </h3>
-
 
 <p>
 
@@ -3062,14 +1621,12 @@ las personas y las familias.
 
 </p>
 
-
 </div>
 
 
 <!-- PARTICIPACION -->
 
 <div class="area-card">
-
 
 <div class="area-icon area-blue">
 
@@ -3137,13 +1694,9 @@ stroke-width="4"/>
 
 </div>
 
-
 <h3>
-
 Participación social
-
 </h3>
-
 
 <p>
 
@@ -3152,7 +1705,6 @@ las personas y el trabajo conjunto
 con el entorno.
 
 </p>
-
 
 </div>
 
@@ -3166,13 +1718,9 @@ con el entorno.
 
 <div class="services-panel">
 
-
 <h3>
-
 Servicios, talleres y otras acciones
-
 </h3>
-
 
 <p>
 
@@ -3185,83 +1733,28 @@ formación profesional y distintos talleres.
 
 </p>
 
-
 <div class="service-tags">
 
-<span>
-Brecha digital
-</span>
-
-<span>
-Orientación administrativa
-</span>
-
-<span>
-Apoyo psicosocial
-</span>
-
-<span>
-Refuerzo escolar
-</span>
-
-<span>
-Formación profesional
-</span>
-
-<span>
-Participación ciudadana
-</span>
-
-<span>
-Sensibilización
-</span>
-
-<span>
-Actividades culturales
-</span>
-
-<span>
-Manipulador de alimentos
-</span>
-
-<span>
-Carretillero
-</span>
-
-<span>
-Belleza
-</span>
-
-<span>
-Informática
-</span>
-
-<span>
-Estilismo
-</span>
-
-<span>
-Música
-</span>
-
-<span>
-Electricidad
-</span>
-
-<span>
-Corte y confección
-</span>
-
-<span>
-Deporte
-</span>
-
-<span>
-Radio
-</span>
+<span>Brecha digital</span>
+<span>Orientación administrativa</span>
+<span>Apoyo psicosocial</span>
+<span>Refuerzo escolar</span>
+<span>Formación profesional</span>
+<span>Participación ciudadana</span>
+<span>Sensibilización</span>
+<span>Actividades culturales</span>
+<span>Manipulador de alimentos</span>
+<span>Carretillero</span>
+<span>Belleza</span>
+<span>Informática</span>
+<span>Estilismo</span>
+<span>Música</span>
+<span>Electricidad</span>
+<span>Corte y confección</span>
+<span>Deporte</span>
+<span>Radio</span>
 
 </div>
-
 
 </div>
 
@@ -3272,9 +1765,7 @@ Radio
 
 <div class="solidarity-feature">
 
-
 <div class="solidarity-content">
-
 
 <div class="solidarity-badge">
 
@@ -3282,14 +1773,12 @@ Solidaridad y apoyo a las familias
 
 </div>
 
-
 <h3>
 
 Dispensa solidaria
 de alimentos
 
 </h3>
-
 
 <p>
 
@@ -3303,7 +1792,6 @@ de necesidad.
 
 </p>
 
-
 <p>
 
 Esta colaboración se desarrolla
@@ -3315,7 +1803,6 @@ Programa Profit de Consum
 
 </p>
 
-
 <p class="solidarity-note">
 
 Una muestra más del trabajo comunitario
@@ -3325,20 +1812,16 @@ de las familias.
 
 </p>
 
-
 </div>
 
 
 <div class="solidarity-visual">
 
-
 <img
 src="donacion-alimentos-asoginter.png"
 alt="Ilustración de ASOGINTER colaborando en la distribución solidaria de alimentos">
 
-
 </div>
-
 
 </div>
 
@@ -3349,13 +1832,9 @@ alt="Ilustración de ASOGINTER colaborando en la distribución solidaria de alim
 
 <div class="collaboration-banner">
 
-
 <h3>
-
 Trabajamos en red
-
 </h3>
-
 
 <p>
 
@@ -3369,24 +1848,20 @@ convivencia en la comunidad.
 
 </p>
 
-
 </div>
 
 
 <!-- ==================================================
-     MÁS ACTIVIDADES
+     MAS ACTIVIDADES
 ================================================== -->
 
 <div class="news-grid">
 
-
 <div class="news-card">
-
 
 <h3>
 Otras actividades
 </h3>
-
 
 <p>
 
@@ -3397,17 +1872,14 @@ ASOGINTER.
 
 </p>
 
-
 </div>
 
 
 <div class="news-card">
 
-
 <h3>
 Colaboraciones
 </h3>
-
 
 <p>
 
@@ -3418,17 +1890,14 @@ en proyectos compartidos.
 
 </p>
 
-
 </div>
 
 
 <div class="news-card">
 
-
 <h3>
 Actualidad
 </h3>
-
 
 <p>
 
@@ -3439,9 +1908,7 @@ evolución de nuestro trabajo.
 
 </p>
 
-
 </div>
-
 
 </div>
 
@@ -3459,12 +1926,9 @@ evolución de nuestro trabajo.
 class="collaborate"
 id="colabora">
 
-
 <div class="container">
 
-
 <div class="collaborate-box">
-
 
 <h2 class="section-title">
 
@@ -3475,7 +1939,6 @@ ASOGINTER
 
 </h2>
 
-
 <p>
 
 Tu participación puede ayudar
@@ -3485,7 +1948,6 @@ e intercultural.
 
 </p>
 
-
 <a
 class="btn btn-primary"
 href="#contacto">
@@ -3494,9 +1956,7 @@ Ponte en contacto
 
 </a>
 
-
 </div>
-
 
 </div>
 
@@ -3509,9 +1969,7 @@ Ponte en contacto
 
 <section id="contacto">
 
-
 <div class="container">
-
 
 <h2 class="section-title">
 
@@ -3520,7 +1978,6 @@ Contacto
 </span>
 
 </h2>
-
 
 <p class="section-intro">
 
@@ -3537,13 +1994,11 @@ de nuestros canales.
 <div class="contact-list">
 
 
-<!-- DIRECCION -->
+<!-- DIRECCIÓN -->
 
 <div class="contact-item">
 
-
 <div class="contact-icon address-icon">
-
 
 <svg
 viewBox="0 0 24 24"
@@ -3563,29 +2018,25 @@ r="2.5"/>
 
 </svg>
 
-
 </div>
 
-
 <div>
-
 
 <h4>
 Dirección
 </h4>
 
-
 <p>
 
 Calle Juan XXIII, nº 6 Bajo<br>
+
 Torrent, Valencia<br>
+
 CP 46900
 
 </p>
 
-
 </div>
-
 
 </div>
 
@@ -3594,9 +2045,7 @@ CP 46900
 
 <div class="contact-item">
 
-
 <div class="contact-icon phone-icon">
-
 
 <svg
 viewBox="0 0 24 24"
@@ -3623,17 +2072,13 @@ A2 2 0 0 1 22 16.92z">
 
 </svg>
 
-
 </div>
 
-
 <div>
-
 
 <h4>
 Teléfono
 </h4>
-
 
 <p>
 
@@ -3645,9 +2090,7 @@ Teléfono
 
 </p>
 
-
 </div>
-
 
 </div>
 
@@ -3656,9 +2099,7 @@ Teléfono
 
 <div class="contact-item">
 
-
 <div class="contact-icon whatsapp-icon">
-
 
 <svg
 viewBox="0 0 24 24"
@@ -3676,17 +2117,13 @@ A8.5 8.5 0 1 1 21 11.5z">
 
 </svg>
 
-
 </div>
 
-
 <div>
-
 
 <h4>
 WhatsApp
 </h4>
-
 
 <p>
 
@@ -3701,9 +2138,7 @@ rel="noopener">
 
 </p>
 
-
 </div>
-
 
 </div>
 
@@ -3712,9 +2147,7 @@ rel="noopener">
 
 <div class="contact-item">
 
-
 <div class="contact-icon email-icon">
-
 
 <svg
 viewBox="0 0 24 24"
@@ -3736,17 +2169,13 @@ points="3,7 12,13 21,7"/>
 
 </svg>
 
-
 </div>
 
-
 <div>
-
 
 <h4>
 Email
 </h4>
-
 
 <p>
 
@@ -3758,9 +2187,7 @@ asoginter@gmail.com
 
 </p>
 
-
 </div>
-
 
 </div>
 
@@ -3772,9 +2199,7 @@ asoginter@gmail.com
 
 <div>
 
-
 <div class="map-container">
-
 
 <iframe
 src="https://www.google.com/maps?q=Calle%20Juan%20XXIII%2C%206%20Bajo%2C%20Torrent%2C%20Valencia%2C%2046900&output=embed"
@@ -3784,17 +2209,15 @@ style="border:0"
 allowfullscreen=""
 loading="lazy"
 referrerpolicy="no-referrer-when-downgrade">
+
 </iframe>
 
+</div>
 
 </div>
 
 
 </div>
-
-
-</div>
-
 
 </div>
 
@@ -3807,7 +2230,6 @@ referrerpolicy="no-referrer-when-downgrade">
 
 <footer>
 
-
 <p>
 
 <strong>
@@ -3816,14 +2238,12 @@ ASOGINTER
 
 </p>
 
-
 <p>
 
 Asociación Gitana Europea e Intercultural
 de Torrent
 
 </p>
-
 
 <p>
 
@@ -3832,14 +2252,12 @@ Calle Juan XXIII, nº 6 Bajo
 
 </p>
 
-
 <p>
 
 © 2026 ASOGINTER.
 Todos los derechos reservados.
 
 </p>
-
 
 </footer>
 
