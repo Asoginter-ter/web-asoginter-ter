@@ -266,6 +266,107 @@ html{scroll-padding-top:120px}section{padding:58px 0}.container{width:92%}
 .areas-grid{grid-template-columns:1fr;gap:16px}.area-card{padding:21px 18px}.area-icon{width:145px;height:90px;margin-left:auto;margin-right:auto}.area-icon svg{width:140px;height:86px}.services-panel{padding:24px 20px}.services-panel h3{font-size:21px}.service-tags span{font-size:12px}.solidarity-feature{grid-template-columns:1fr;padding:20px;gap:20px}.solidarity-content h3{font-size:24px}.solidarity-content p{font-size:14px}.solidarity-visual{min-height:220px}.solidarity-visual img{min-height:220px}.collaboration-banner{padding:24px 18px}.collaboration-banner h3{font-size:22px}.collaboration-banner p{font-size:14px}.news-grid{grid-template-columns:1fr;gap:18px}.news-card{min-height:auto;padding:22px}.collaborate-box{padding:30px 20px}.collaborate-box .section-title{font-size:26px}.contact-grid{grid-template-columns:1fr;gap:25px}.contact-item{gap:13px;padding:13px 10px;align-items:flex-start}.contact-icon{width:50px;height:50px}.contact-item h4{font-size:15px}.contact-item p{font-size:14px}.map-container iframe{height:285px}footer{padding:28px 15px}footer p{font-size:13px;line-height:1.5}
 }
 @media(max-width:380px){.header-logo{width:64px;height:48px}.social a{width:31px;height:31px;font-size:13px}nav a{font-size:10px}.hero-content{padding:26px 14px 30px}.hero-emblem{width:108px;height:108px}.hero-title{font-size:34px!important}.hero-formal-name{font-size:11px}.hero-tagline{font-size:15px}.hero-description{font-size:14px}.about-logo{height:255px}.map-container iframe{height:255px}}
+/* Aviso de cookies de ASOGINTER */
+.asoginter-cookie-banner {
+  position: fixed;
+  z-index: 99999;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  width: calc(100% - 28px);
+  max-width: 950px;
+  box-sizing: border-box;
+  padding: 22px;
+  background: #ffffff;
+  color: #252525;
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.asoginter-cookie-banner[hidden],
+.asoginter-cookie-preferences[hidden] {
+  display: none !important;
+}
+
+.asoginter-cookie-banner h2 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  color: #c62828;
+}
+
+.asoginter-cookie-banner p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+.asoginter-cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.asoginter-cookie-banner button {
+  border: 1px solid #c62828;
+  border-radius: 8px;
+  padding: 11px 14px;
+  background: #ffffff;
+  color: #a51f1f;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.asoginter-cookie-banner button:hover {
+  background: #fff0f0;
+}
+
+.asoginter-cookie-preferences {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #dddddd;
+}
+
+.asoginter-cookie-preferences label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.asoginter-cookie-open {
+  position: fixed;
+  z-index: 99998;
+  bottom: 16px;
+  left: 16px;
+  padding: 9px 14px;
+  border: 1px solid #c62828;
+  border-radius: 20px;
+  background: white;
+  color: #a51f1f;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .asoginter-cookie-banner {
+    bottom: 8px;
+    padding: 16px;
+    width: calc(100% - 16px);
+  }
+
+  .asoginter-cookie-actions {
+    flex-direction: column;
+  }
+
+  .asoginter-cookie-banner button {
+    width: 100%;
+  }
+}
 </style>
 <meta property="og:site_name" content="ASOGINTER">   
 </head>
@@ -1918,6 +2019,169 @@ Todos los derechos reservados.
 
 </footer>
 
+<!-- AVISO DE COOKIES ASOGINTER -->
+<div id="asoginter-cookie-banner"
+     class="asoginter-cookie-banner"
+     role="dialog"
+     aria-labelledby="asoginter-cookie-title"
+     hidden>
 
+  <h2 id="asoginter-cookie-title">Tu privacidad nos importa</h2>
+
+  <p>
+    Utilizamos funciones técnicas necesarias para mostrar esta web.
+    Si lo autorizas, Google Analytics utilizará cookies analíticas
+    para ayudarnos a conocer las visitas y mejorar la página.
+    Puedes aceptar, rechazar o configurar las cookies analíticas.
+  </p>
+
+  <div class="asoginter-cookie-actions">
+    <button type="button" id="asoginter-cookie-reject">
+      Rechazar analíticas
+    </button>
+
+    <button type="button" id="asoginter-cookie-configure">
+      Configurar
+    </button>
+
+    <button type="button" id="asoginter-cookie-accept">
+      Aceptar analíticas
+    </button>
+  </div>
+
+  <div id="asoginter-cookie-preferences"
+       class="asoginter-cookie-preferences"
+       hidden>
+
+    <p>
+      Las cookies analíticas son opcionales.
+      Si no las autorizas, Google Analytics no se activará.
+    </p>
+
+    <label>
+      <input type="checkbox" id="asoginter-analytics-checkbox">
+      Permitir cookies analíticas de Google Analytics
+    </label>
+
+    <button type="button" id="asoginter-cookie-save">
+      Guardar mi selección
+    </button>
+  </div>
+</div>
+
+<button type="button"
+        id="asoginter-cookie-open"
+        class="asoginter-cookie-open">
+  Cookies
+</button>
+
+<script>
+(function () {
+  const measurementId = 'G-KPM5NELLXD';
+  const storageKey = 'asoginter_analytics_consent_v1';
+
+  const banner = document.getElementById('asoginter-cookie-banner');
+  const preferences = document.getElementById(
+    'asoginter-cookie-preferences'
+  );
+  const checkbox = document.getElementById(
+    'asoginter-analytics-checkbox'
+  );
+
+  let analyticsLoaded = false;
+
+  function getChoice() {
+    try {
+      return localStorage.getItem(storageKey);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function loadAnalytics() {
+    if (analyticsLoaded) return;
+    analyticsLoaded = true;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () {
+      window.dataLayer.push(arguments);
+    };
+
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId);
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src =
+      'https://www.googletagmanager.com/gtag/js?id=' +
+      measurementId;
+
+    document.head.appendChild(script);
+  }
+
+  function saveChoice(choice) {
+    try {
+      localStorage.setItem(storageKey, choice);
+    } catch (error) {
+      console.warn('No se pudo guardar la preferencia de cookies.');
+    }
+
+    banner.hidden = true;
+    preferences.hidden = true;
+
+    if (choice === 'accepted') {
+      loadAnalytics();
+    } else {
+      if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          analytics_storage: 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+      }
+    }
+  }
+
+  document.getElementById('asoginter-cookie-accept')
+    .addEventListener('click', function () {
+      saveChoice('accepted');
+    });
+
+  document.getElementById('asoginter-cookie-reject')
+    .addEventListener('click', function () {
+      saveChoice('rejected');
+    });
+
+  document.getElementById('asoginter-cookie-configure')
+    .addEventListener('click', function () {
+      checkbox.checked = getChoice() === 'accepted';
+      preferences.hidden = false;
+    });
+
+  document.getElementById('asoginter-cookie-save')
+    .addEventListener('click', function () {
+      saveChoice(checkbox.checked ? 'accepted' : 'rejected');
+    });
+
+  document.getElementById('asoginter-cookie-open')
+    .addEventListener('click', function () {
+      checkbox.checked = getChoice() === 'accepted';
+      preferences.hidden = true;
+      banner.hidden = false;
+    });
+
+  const choice = getChoice();
+
+  if (choice === 'accepted') {
+    banner.hidden = true;
+    loadAnalytics();
+  } else if (choice === 'rejected') {
+    banner.hidden = true;
+  } else {
+    banner.hidden = false;
+  }
+})();
+</script>
 </body>
 </html>
