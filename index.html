@@ -2080,6 +2080,9 @@ Todos los derechos reservados.
   const measurementId = 'G-KPM5NELLXD';
   const storageKey = 'asoginter_analytics_consent_v1';
 
+  // La elección se renueva a los seis meses.
+  const consentDuration = 180 * 24 * 60 * 60 * 1000;
+
   const banner = document.getElementById('asoginter-cookie-banner');
   const preferences = document.getElementById(
     'asoginter-cookie-preferences'
@@ -2090,19 +2093,86 @@ Todos los derechos reservados.
 
   let analyticsLoaded = false;
 
+  // Impide que Analytics funcione sin una elección válida.
+  window['ga-disable-' + measurementId] = true;
+
   function getChoice() {
     try {
-      return localStorage.getItem(storageKey);
+      const raw = localStorage.getItem(storageKey);
+
+      if (!raw) return null;
+
+      const saved = JSON.parse(raw);
+
+      if (
+        !saved ||
+        !['accepted', 'rejected'].includes(saved.choice) ||
+        !Number.isFinite(saved.savedAt) ||
+        Date.now() - saved.savedAt > consentDuration ||
+        saved.savedAt > Date.now()
+      ) {
+        localStorage.removeItem(storageKey);
+        return null;
+      }
+
+      return saved.choice;
     } catch (error) {
       return null;
     }
   }
 
+  function saveChoice(choice) {
+    try {
+      localStorage.setItem(
+        storageKey,
+        JSON.stringify({
+          choice: choice,
+          savedAt: Date.now()
+        })
+      );
+    } catch (error) {
+      console.warn('No se pudo guardar la preferencia de cookies.');
+    }
+  }
+
+  function clearAnalyticsCookies() {
+    const names = new Set(['_ga']);
+
+    document.cookie.split(';').forEach(function (cookie) {
+      const name = cookie.trim().split('=')[0];
+
+      if (name === '_ga' || name.startsWith('_ga_')) {
+        names.add(name);
+      }
+    });
+
+    const host = window.location.hostname;
+
+    names.forEach(function (name) {
+      // Intenta eliminar la cookie para el host y la ruta actuales.
+      document.cookie =
+        name + '=; Max-Age=0; path=/; SameSite=Lax';
+
+      document.cookie =
+        name + '=; Max-Age=0; path=/; domain=' +
+        host + '; SameSite=Lax';
+
+      document.cookie =
+        name + '=; Max-Age=0; path=/; domain=.' +
+        host + '; SameSite=Lax';
+    });
+  }
+
   function loadAnalytics() {
     if (analyticsLoaded) return;
+
     analyticsLoaded = true;
 
+    // Activar únicamente después de aceptar.
+    window['ga-disable-' + measurementId] = false;
+
     window.dataLayer = window.dataLayer || [];
+
     window.gtag = window.gtag || function () {
       window.dataLayer.push(arguments);
     };
@@ -2119,39 +2189,37 @@ Todos los derechos reservados.
     document.head.appendChild(script);
   }
 
-  function saveChoice(choice) {
-    try {
-      localStorage.setItem(storageKey, choice);
-    } catch (error) {
-      console.warn('No se pudo guardar la preferencia de cookies.');
-    }
-
-    banner.hidden = true;
+  function acceptAnalytics() {
+    saveChoice('accepted');
     preferences.hidden = true;
+    banner.hidden = true;
+    loadAnalytics();
+  }
 
-    if (choice === 'accepted') {
-      loadAnalytics();
-    } else {
-      if (typeof window.gtag === 'function') {
-        window.gtag('consent', 'update', {
-          analytics_storage: 'denied',
-          ad_storage: 'denied',
-          ad_user_data: 'denied',
-          ad_personalization: 'denied'
-        });
-      }
+  function rejectAnalytics() {
+    const wasLoaded = analyticsLoaded;
+
+    saveChoice('rejected');
+
+    // Detiene Analytics y elimina las cookies accesibles.
+    window['ga-disable-' + measurementId] = true;
+    clearAnalyticsCookies();
+
+    preferences.hidden = true;
+    banner.hidden = true;
+
+    // Recargar descarga el estado de la etiqueta ya cargada.
+    // La elección guardada impedirá que se vuelva a activar.
+    if (wasLoaded) {
+      window.location.reload();
     }
   }
 
   document.getElementById('asoginter-cookie-accept')
-    .addEventListener('click', function () {
-      saveChoice('accepted');
-    });
+    .addEventListener('click', acceptAnalytics);
 
   document.getElementById('asoginter-cookie-reject')
-    .addEventListener('click', function () {
-      saveChoice('rejected');
-    });
+    .addEventListener('click', rejectAnalytics);
 
   document.getElementById('asoginter-cookie-configure')
     .addEventListener('click', function () {
@@ -2161,7 +2229,11 @@ Todos los derechos reservados.
 
   document.getElementById('asoginter-cookie-save')
     .addEventListener('click', function () {
-      saveChoice(checkbox.checked ? 'accepted' : 'rejected');
+      if (checkbox.checked) {
+        acceptAnalytics();
+      } else {
+        rejectAnalytics();
+      }
     });
 
   document.getElementById('asoginter-cookie-open')
@@ -2175,13 +2247,20 @@ Todos los derechos reservados.
 
   if (choice === 'accepted') {
     banner.hidden = true;
+    preferences.hidden = true;
     loadAnalytics();
   } else if (choice === 'rejected') {
     banner.hidden = true;
+    preferences.hidden = true;
+    clearAnalyticsCookies();
   } else {
+    // Incluye las preferencias antiguas que no tienen fecha.
     banner.hidden = false;
+    preferences.hidden = true;
   }
 })();
 </script>
+
+
 </body>
 </html>
