@@ -367,6 +367,72 @@ html{scroll-padding-top:120px}section{padding:58px 0}.container{width:92%}
     width: 100%;
   }
 }
+/* Franja de financiación del programa FSE+ */
+.financiacion-programa {
+  margin: 28px 0;
+  padding: 24px 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.financiacion-texto {
+  max-width: 900px;
+  margin: 0 auto 10px;
+  color: #356b3d;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.financiacion-subtexto {
+  margin: 0 0 20px;
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.financiacion-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.financiacion-logos img {
+  display: block;
+  width: auto;
+  max-width: 175px;
+  max-height: 72px;
+  object-fit: contain;
+}
+
+.financiacion-logos .logo-ue {
+  max-width: 105px;
+  max-height: 110px;
+}
+
+@media (max-width: 600px) {
+  .financiacion-programa {
+    padding: 18px 12px;
+  }
+
+  .financiacion-logos {
+    gap: 18px;
+  }
+
+  .financiacion-logos img {
+    max-width: 130px;
+    max-height: 58px;
+  }
+
+  .financiacion-logos .logo-ue {
+    max-width: 90px;
+    max-height: 95px;
+  }
+}   
 </style>
 <meta property="og:site_name" content="ASOGINTER">   
 </head>
@@ -826,6 +892,55 @@ formativas orientadas a mejorar
 las competencias profesionales y
 favorecer las oportunidades de
 acceso al empleo.
+<!-- FINANCIACIÓN DEL PROGRAMA FSE+ -->
+<div class="financiacion-programa">
+
+  <p class="financiacion-texto">
+    Programa Fondo Social Europeo Plus (FSE+)
+    · Comunitat Valenciana 2021–2027
+  </p>
+
+  <p class="financiacion-subtexto">
+    Acciones de formación e inserción sociolaboral
+    para personas en situación o riesgo de exclusión social.
+  </p>
+
+  <div class="financiacion-logos">
+
+    <img
+      src="logo-generalitat-valenciana.png"
+      alt="Generalitat Valenciana"
+      loading="lazy"
+    >
+
+    <img
+      src="LOGO%20ASOGINTER%20(1).png"
+      alt="Asociación Gitana Europea e Intercultural, ASOGINTER"
+      loading="lazy"
+    >
+
+    <img
+      src="logo-union-europea-financiado.png"
+      class="logo-ue"
+      alt="Financiado por la Unión Europea"
+      loading="lazy"
+    >
+
+    <img
+      src="logo-fondos-europeos.png"
+      alt="Fondos Europeos"
+      loading="lazy"
+    >
+
+    <img
+      src="logo-ayuntamiento-torrent.png"
+      alt="Ayuntamiento de Torrent"
+      loading="lazy"
+    >
+
+  </div>
+</div>
+<!-- FIN DE LA FRANJA DE FINANCIACIÓN -->   
 
 </p>
 
